@@ -10,12 +10,13 @@
 - Added a real `Munich Offices` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Coworking Spaces` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Clinics` GeoJSON layer from OpenStreetMap.
+- Added a real `Munich Restaurants` GeoJSON layer from OpenStreetMap.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
 - Added `scripts/fetch-munich-offices.py` to refresh the Munich offices layer from Overpass.
 - Added `scripts/fetch-munich-coworking.py` to refresh the Munich coworking layer from Overpass.
 - Added `scripts/fetch-munich-clinics.py` to refresh the Munich clinics layer from Overpass.
-- Kept an empty valid GeoJSON placeholder for restaurants.
+- Added `scripts/fetch-munich-restaurants.py` to refresh the Munich restaurant layer from Overpass.
 
 ## Files Changed
 
@@ -33,6 +34,7 @@
 - `scripts/fetch-munich-offices.py`
 - `scripts/fetch-munich-coworking.py`
 - `scripts/fetch-munich-clinics.py`
+- `scripts/fetch-munich-restaurants.py`
 - `README.md`
 
 Backup copies with `.backup-city-cockpit` suffix were created before editing existing files.
@@ -212,3 +214,45 @@ Verification notes:
 - `Munich Clinics` appeared in the `City Intelligence Cockpit` catalog group.
 - `Munich Clinics` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
 - Clicking the map opened Feature Information with clinic records; expanding `Munich Clinics - Site Data` showed fields including `Name`, `Category`, `Healthcare Type`, `Address`, `Phone`, `Website`, `Opening Hours`, `Osm Id`, `Osm Type`, and `Source`.
+
+## Real OpenStreetMap Restaurant Data
+
+The current `Munich Restaurants` layer is generated from OpenStreetMap via Overpass. It uses the Munich prototype bounds and exports locations tagged with `amenity=restaurant`, `amenity=cafe`, `amenity=fast_food`, `amenity=bar`, `amenity=pub`, or `amenity=food_court`.
+
+The latest fetch wrote `5,406` restaurant and food-service features.
+
+Each feature includes:
+
+- `name`
+- `category`
+- `food_type`
+- `cuisine`
+- `address`
+- `phone`
+- `website`
+- `opening_hours`
+- `osm_id`
+- `osm_type`
+- `source`
+- `opportunity_score`
+- `notes`
+
+Refresh the layer with:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+python3 scripts/fetch-munich-restaurants.py
+```
+
+The script writes:
+
+`open-source/TerriaMap/wwwroot/data/city-intelligence/munich-restaurants.geojson`
+
+Verification notes:
+
+- Browser loaded `http://localhost:3001/` with no map configuration error.
+- `Munich Pharmacies` stayed enabled in the workbench.
+- `Munich Offices`, `Munich Clinics`, and `Munich Coworking Spaces` still appeared in the `City Intelligence Cockpit` catalog group.
+- `Munich Restaurants` appeared in the `City Intelligence Cockpit` catalog group.
+- `Munich Restaurants` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
+- Clicking the map opened Feature Information with restaurant records; expanding `Munich Restaurants - Site Data` showed fields including `Name`, `Category`, `Food Type`, `Cuisine`, `Address`, `Phone`, `Website`, `Opening Hours`, `Osm Id`, `Osm Type`, and `Source`.

@@ -52,7 +52,7 @@
           "type": "geojson",
           "name": "Munich Restaurants",
           "url": "data/city-intelligence/munich-restaurants.geojson",
-          "description": "Placeholder for future Munich restaurant data."
+          "description": "Restaurant, cafe, fast-food, bar, pub, and food-court locations in the Munich prototype bounds from OpenStreetMap via Overpass."
         }
       ]
     }
