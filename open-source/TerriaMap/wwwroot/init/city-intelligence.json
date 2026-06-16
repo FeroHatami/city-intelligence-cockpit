@@ -45,7 +45,7 @@
           "type": "geojson",
           "name": "Munich Clinics",
           "url": "data/city-intelligence/munich-clinics.geojson",
-          "description": "Placeholder for future Munich clinic data."
+          "description": "Clinic, doctor, and dentist locations in the Munich prototype bounds from OpenStreetMap via Overpass."
         },
         {
           "id": "city-intelligence-munich-restaurants",

@@ -8,10 +8,12 @@
 - Renamed visible app branding to `City Intelligence Cockpit`.
 - Added a `City Intelligence Cockpit` catalog group with a real `Munich Pharmacies` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Offices` GeoJSON layer from OpenStreetMap.
+- Added a real `Munich Clinics` GeoJSON layer from OpenStreetMap.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
 - Added `scripts/fetch-munich-offices.py` to refresh the Munich offices layer from Overpass.
-- Kept empty valid GeoJSON placeholders for coworking spaces, clinics, and restaurants.
+- Added `scripts/fetch-munich-clinics.py` to refresh the Munich clinics layer from Overpass.
+- Kept empty valid GeoJSON placeholders for coworking spaces and restaurants.
 
 ## Files Changed
 
@@ -27,6 +29,7 @@
 - `open-source/TerriaMap/wwwroot/favicons/manifest.json`
 - `scripts/fetch-munich-pharmacies.py`
 - `scripts/fetch-munich-offices.py`
+- `scripts/fetch-munich-clinics.py`
 - `README.md`
 
 Backup copies with `.backup-city-cockpit` suffix were created before editing existing files.
@@ -124,3 +127,44 @@ Verification notes:
 - `Munich Offices` appeared in the `City Intelligence Cockpit` catalog group.
 - `Munich Offices` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
 - Clicking the map opened Feature Information with office records; expanding `Munich Offices - Site Data` showed fields including `Name`, `Category`, `Office Type`, `Address`, `Phone`, `Website`, `Opening Hours`, `Osm Id`, `Osm Type`, and `Source`.
+
+## Real OpenStreetMap Clinic Data
+
+The current `Munich Clinics` layer is generated from OpenStreetMap via Overpass. It uses the Munich prototype bounds and exports locations tagged with `amenity=clinic`, `healthcare=clinic`, `amenity=doctors`, `healthcare=doctor`, `amenity=dentist`, or `healthcare=dentist`.
+
+The latest fetch wrote `1,845` clinic features.
+
+Each feature includes:
+
+- `name`
+- `category`
+- `healthcare_type`
+- `address`
+- `phone`
+- `website`
+- `opening_hours`
+- `osm_id`
+- `osm_type`
+- `source`
+- `opportunity_score`
+- `notes`
+
+Refresh the layer with:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+python3 scripts/fetch-munich-clinics.py
+```
+
+The script writes:
+
+`open-source/TerriaMap/wwwroot/data/city-intelligence/munich-clinics.geojson`
+
+Verification notes:
+
+- Browser loaded `http://localhost:3001/` with no map configuration error.
+- `Munich Pharmacies` stayed enabled in the workbench.
+- `Munich Offices` still appeared in the `City Intelligence Cockpit` catalog group.
+- `Munich Clinics` appeared in the `City Intelligence Cockpit` catalog group.
+- `Munich Clinics` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
+- Clicking the map opened Feature Information with clinic records; expanding `Munich Clinics - Site Data` showed fields including `Name`, `Category`, `Healthcare Type`, `Address`, `Phone`, `Website`, `Opening Hours`, `Osm Id`, `Osm Type`, and `Source`.
