@@ -22,3 +22,6 @@ open-source/TerriaMap/coverage/
 open-source/TerriaMap/terriajs-server.log
 
 open-source/TerriaMap/.git-terriamap-backup*
+
+obsidian-vault/.obsidian/workspace.json
+obsidian-vault/.obsidian/app.json
