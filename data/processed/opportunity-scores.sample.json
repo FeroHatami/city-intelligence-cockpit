@@ -1,0 +1,48 @@
+{
+  "dry_run": true,
+  "scoring_method": "rule_based",
+  "records": [
+    {
+      "feature_index": 0,
+      "feature_name": "ABC-Apotheke",
+      "category": "Pharmacy",
+      "osm_id": 318861629,
+      "osm_type": "node",
+      "source_layer": "Munich Pharmacies",
+      "opportunity_score": 8,
+      "score_reason": "Pharmacies often have recurring procurement, inventory, and supplier communication workflows that can benefit from lightweight automation.",
+      "suggested_offer": "Inventory and supplier communication workflow audit.",
+      "suggested_first_message": "I noticed your pharmacy may handle recurring inventory and supplier coordination. Would a short workflow audit be useful to find admin tasks that can be automated safely?",
+      "recommended_next_action": "Research current website/contact path, then prepare a pharmacy-specific workflow audit note.",
+      "risk_notes": "Healthcare-adjacent outreach should avoid patient data claims and stay focused on operations, procurement, and public business information."
+    },
+    {
+      "feature_index": 1,
+      "feature_name": "Adler Apotheke",
+      "category": "Pharmacy",
+      "osm_id": 2093487719,
+      "osm_type": "node",
+      "source_layer": "Munich Pharmacies",
+      "opportunity_score": 8,
+      "score_reason": "Pharmacies often have recurring procurement, inventory, and supplier communication workflows that can benefit from lightweight automation.",
+      "suggested_offer": "Inventory and supplier communication workflow audit.",
+      "suggested_first_message": "I noticed your pharmacy may handle recurring inventory and supplier coordination. Would a short workflow audit be useful to find admin tasks that can be automated safely?",
+      "recommended_next_action": "Research current website/contact path, then prepare a pharmacy-specific workflow audit note.",
+      "risk_notes": "Healthcare-adjacent outreach should avoid patient data claims and stay focused on operations, procurement, and public business information."
+    },
+    {
+      "feature_index": 2,
+      "feature_name": "Adler-Apotheke",
+      "category": "Pharmacy",
+      "osm_id": 865397997,
+      "osm_type": "node",
+      "source_layer": "Munich Pharmacies",
+      "opportunity_score": 8,
+      "score_reason": "Pharmacies often have recurring procurement, inventory, and supplier communication workflows that can benefit from lightweight automation.",
+      "suggested_offer": "Inventory and supplier communication workflow audit.",
+      "suggested_first_message": "I noticed your pharmacy may handle recurring inventory and supplier coordination. Would a short workflow audit be useful to find admin tasks that can be automated safely?",
+      "recommended_next_action": "Research current website/contact path, then prepare a pharmacy-specific workflow audit note.",
+      "risk_notes": "Healthcare-adjacent outreach should avoid patient data claims and stay focused on operations, procurement, and public business information."
+    }
+  ]
+}

@@ -38,3 +38,22 @@ python3 scripts/create-lead-from-feature.py \
   --feature-index 0 \
   --source-layer "Munich Pharmacies"
 ```
+
+## Current Opportunity Scoring Status
+
+AI opportunity scoring is currently an offline dry-run/script foundation. It does not require an API key, does not call paid APIs, and does not overwrite source GeoJSON files unless an explicit output path is provided.
+
+Scoring docs and prompt:
+
+- `docs/ai-opportunity-scoring.md`
+- `prompts/opportunity-scoring-prompt.md`
+- `data/processed/opportunity-scores.sample.json`
+
+Run dry-run scoring:
+
+```bash
+python3 scripts/score-opportunity.py \
+  --input open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.geojson \
+  --source-layer "Munich Pharmacies" \
+  --limit 5
+```

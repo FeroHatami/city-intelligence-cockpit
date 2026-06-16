@@ -12,12 +12,14 @@
 - Added a real `Munich Clinics` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Restaurants` GeoJSON layer from OpenStreetMap.
 - Cleaned the `City Intelligence Cockpit` catalog group so all current layers use real-data descriptions and a consistent layer order.
+- Added an offline AI opportunity scoring foundation with dry-run rule-based scoring.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
 - Added `scripts/fetch-munich-offices.py` to refresh the Munich offices layer from Overpass.
 - Added `scripts/fetch-munich-coworking.py` to refresh the Munich coworking layer from Overpass.
 - Added `scripts/fetch-munich-clinics.py` to refresh the Munich clinics layer from Overpass.
 - Added `scripts/fetch-munich-restaurants.py` to refresh the Munich restaurant layer from Overpass.
+- Added `scripts/score-opportunity.py` to generate dry-run opportunity scores from GeoJSON features.
 
 ## Files Changed
 
@@ -36,6 +38,10 @@
 - `scripts/fetch-munich-coworking.py`
 - `scripts/fetch-munich-clinics.py`
 - `scripts/fetch-munich-restaurants.py`
+- `scripts/score-opportunity.py`
+- `docs/ai-opportunity-scoring.md`
+- `prompts/opportunity-scoring-prompt.md`
+- `data/processed/opportunity-scores.sample.json`
 - `README.md`
 
 Backup copies with `.backup-city-cockpit` suffix were created before editing existing files.
@@ -83,6 +89,44 @@ Verification notes:
 - Layer order appeared as `Munich Pharmacies`, `Munich Offices`, `Munich Clinics`, `Munich Coworking Spaces`, and `Munich Restaurants`.
 - Startup workbench count was `1`, confirming only `Munich Pharmacies` was enabled by default.
 - `Munich Coworking Spaces` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
+
+## AI Opportunity Scoring Foundation
+
+The current scoring foundation is offline and rule-based. It does not require an API key, does not call paid APIs, and does not overwrite source GeoJSON files unless an explicit output path is provided.
+
+Files:
+
+- `scripts/score-opportunity.py`
+- `docs/ai-opportunity-scoring.md`
+- `prompts/opportunity-scoring-prompt.md`
+- `data/processed/opportunity-scores.sample.json`
+
+The score output structure includes:
+
+- `opportunity_score`
+- `score_reason`
+- `suggested_offer`
+- `suggested_first_message`
+- `recommended_next_action`
+- `risk_notes`
+
+Run dry-run scoring with:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+python3 scripts/score-opportunity.py \
+  --input open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.geojson \
+  --source-layer "Munich Pharmacies" \
+  --limit 5
+```
+
+Verification notes:
+
+- `scripts/score-opportunity.py` parsed successfully.
+- Dry-run JSON scoring ran against `Munich Pharmacies` with no API key.
+- Dry-run CSV scoring ran against `Munich Restaurants` with no API key.
+- Sample output was generated at `data/processed/opportunity-scores.sample.json`.
+- Browser loaded `http://localhost:3001/` with no map configuration error after adding the scoring files.
 
 ## Real OpenStreetMap Pharmacy Data
 
