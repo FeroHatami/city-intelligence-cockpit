@@ -1,0 +1,61 @@
+{
+  "viewerMode": "2d",
+  "homeCamera": {
+    "west": 11.35,
+    "south": 48.02,
+    "east": 11.85,
+    "north": 48.28
+  },
+  "initialCamera": {
+    "west": 11.35,
+    "south": 48.02,
+    "east": 11.85,
+    "north": 48.28
+  },
+  "catalog": [
+    {
+      "id": "city-intelligence-cockpit",
+      "type": "group",
+      "name": "City Intelligence Cockpit",
+      "isOpen": true,
+      "members": [
+        {
+          "id": "city-intelligence-munich-pharmacies",
+          "type": "geojson",
+          "name": "Munich Pharmacies",
+          "url": "data/city-intelligence/munich-pharmacies.geojson",
+          "description": "Starter pharmacy opportunity layer for Munich. Replace this test dataset with OpenStreetMap or Overpass data."
+        },
+        {
+          "id": "city-intelligence-munich-offices",
+          "type": "geojson",
+          "name": "Munich Offices",
+          "url": "data/city-intelligence/munich-offices.geojson",
+          "description": "Placeholder for future Munich office data."
+        },
+        {
+          "id": "city-intelligence-munich-coworking",
+          "type": "geojson",
+          "name": "Munich Coworking Spaces",
+          "url": "data/city-intelligence/munich-coworking.geojson",
+          "description": "Placeholder for future Munich coworking space data."
+        },
+        {
+          "id": "city-intelligence-munich-clinics",
+          "type": "geojson",
+          "name": "Munich Clinics",
+          "url": "data/city-intelligence/munich-clinics.geojson",
+          "description": "Placeholder for future Munich clinic data."
+        },
+        {
+          "id": "city-intelligence-munich-restaurants",
+          "type": "geojson",
+          "name": "Munich Restaurants",
+          "url": "data/city-intelligence/munich-restaurants.geojson",
+          "description": "Placeholder for future Munich restaurant data."
+        }
+      ]
+    }
+  ],
+  "workbench": ["city-intelligence-munich-pharmacies"]
+}

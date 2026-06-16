@@ -1,0 +1,48 @@
+{
+  "type": "FeatureCollection",
+  "name": "Munich Pharmacies",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Example Pharmacy - Munich Center",
+        "category": "Pharmacy",
+        "opportunity_score": 8,
+        "notes": "Starter pharmacy point. Replace later with real OpenStreetMap data.",
+        "source": "Manual starter test data"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.5755, 48.1374]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Example Pharmacy - Schwabing",
+        "category": "Pharmacy",
+        "opportunity_score": 7,
+        "notes": "Starter pharmacy point. Replace later with real OpenStreetMap data.",
+        "source": "Manual starter test data"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.586, 48.161]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Example Pharmacy - Isarvorstadt",
+        "category": "Pharmacy",
+        "opportunity_score": 7,
+        "notes": "Starter pharmacy point. Replace later with real OpenStreetMap data.",
+        "source": "Manual starter test data"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.566, 48.125]
+      }
+    }
+  ]
+}
