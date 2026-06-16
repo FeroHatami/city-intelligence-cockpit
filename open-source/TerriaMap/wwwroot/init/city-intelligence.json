@@ -31,7 +31,7 @@
           "type": "geojson",
           "name": "Munich Offices",
           "url": "data/city-intelligence/munich-offices.geojson",
-          "description": "Placeholder for future Munich office data."
+          "description": "Office-related locations in the Munich prototype bounds from OpenStreetMap via Overpass, including office=* and building=office features."
         },
         {
           "id": "city-intelligence-munich-coworking",

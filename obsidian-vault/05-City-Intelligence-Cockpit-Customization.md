@@ -7,9 +7,11 @@
 - Set the initial viewer mode to `2d` for a stable Munich-first local prototype. 3D mode remains available through Map Settings.
 - Renamed visible app branding to `City Intelligence Cockpit`.
 - Added a `City Intelligence Cockpit` catalog group with a real `Munich Pharmacies` GeoJSON layer from OpenStreetMap.
+- Added a real `Munich Offices` GeoJSON layer from OpenStreetMap.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
-- Added empty valid GeoJSON placeholders for offices, coworking spaces, clinics, and restaurants.
+- Added `scripts/fetch-munich-offices.py` to refresh the Munich offices layer from Overpass.
+- Kept empty valid GeoJSON placeholders for coworking spaces, clinics, and restaurants.
 
 ## Files Changed
 
@@ -24,6 +26,7 @@
 - `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-restaurants.geojson`
 - `open-source/TerriaMap/wwwroot/favicons/manifest.json`
 - `scripts/fetch-munich-pharmacies.py`
+- `scripts/fetch-munich-offices.py`
 - `README.md`
 
 Backup copies with `.backup-city-cockpit` suffix were created before editing existing files.
@@ -81,3 +84,43 @@ yarn gulp dev
 The script writes:
 
 `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.geojson`
+
+## Real OpenStreetMap Office Data
+
+The current `Munich Offices` layer is generated from OpenStreetMap via Overpass. It uses the Munich prototype bounds and exports locations tagged with `office=*` or `building=office`.
+
+The latest fetch wrote `6,706` office features.
+
+Each feature includes:
+
+- `name`
+- `category`
+- `office_type`
+- `address`
+- `phone`
+- `website`
+- `opening_hours`
+- `osm_id`
+- `osm_type`
+- `source`
+- `opportunity_score`
+- `notes`
+
+Refresh the layer with:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+python3 scripts/fetch-munich-offices.py
+```
+
+The script writes:
+
+`open-source/TerriaMap/wwwroot/data/city-intelligence/munich-offices.geojson`
+
+Verification notes:
+
+- Browser loaded `http://localhost:3001/` with no map configuration error.
+- `Munich Pharmacies` stayed enabled in the workbench.
+- `Munich Offices` appeared in the `City Intelligence Cockpit` catalog group.
+- `Munich Offices` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
+- Clicking the map opened Feature Information with office records; expanding `Munich Offices - Site Data` showed fields including `Name`, `Category`, `Office Type`, `Address`, `Phone`, `Website`, `Opening Hours`, `Osm Id`, `Osm Type`, and `Source`.
