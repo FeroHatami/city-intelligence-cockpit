@@ -1,0 +1,20 @@
+[
+  {
+    "id": "lead-munich-pharmacies-node-318861629",
+    "name": "ABC-Apotheke",
+    "category": "Pharmacy",
+    "address": "Minnewitstrasse 41, 81549 Munich",
+    "phone": "",
+    "website": "",
+    "latitude": 48.087486,
+    "longitude": 11.6001175,
+    "osm_id": 318861629,
+    "osm_type": "node",
+    "source_layer": "Munich Pharmacies",
+    "opportunity_score": "",
+    "notes": "",
+    "status": "interesting",
+    "created_at": "2026-06-17T00:00:00Z",
+    "updated_at": "2026-06-17T00:00:00Z"
+  }
+]

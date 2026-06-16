@@ -20,3 +20,21 @@ nvm use 22
 yarn gulp dev
 open http://localhost:3001
 ```
+
+## Current Lead-Saving Status
+
+Save-as-lead is currently a data/script foundation, not yet a full in-app button.
+
+Lead schema and sample data:
+
+- `docs/lead-schema.md`
+- `data/processed/leads.sample.json`
+
+Create a lead JSON record from a GeoJSON feature:
+
+```bash
+python3 scripts/create-lead-from-feature.py \
+  --feature-file open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.geojson \
+  --feature-index 0 \
+  --source-layer "Munich Pharmacies"
+```
