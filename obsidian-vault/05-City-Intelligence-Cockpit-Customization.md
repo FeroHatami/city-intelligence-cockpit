@@ -11,6 +11,7 @@
 - Added a real `Munich Coworking Spaces` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Clinics` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Restaurants` GeoJSON layer from OpenStreetMap.
+- Cleaned the `City Intelligence Cockpit` catalog group so all current layers use real-data descriptions and a consistent layer order.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
 - Added `scripts/fetch-munich-offices.py` to refresh the Munich offices layer from Overpass.
@@ -55,6 +56,33 @@ http://localhost:3001
 
 - Sass deprecation warnings may appear during development builds. They are non-fatal.
 - The previous map configuration error was caused by an invalid init structure. The custom init is now a plain application init source loaded after `simple`.
+
+## Catalog Organization
+
+All City Intelligence Cockpit layers are grouped under one `City Intelligence Cockpit` catalog group.
+
+Current layer order:
+
+- `Munich Pharmacies`
+- `Munich Offices`
+- `Munich Clinics`
+- `Munich Coworking Spaces`
+- `Munich Restaurants`
+
+Startup behavior:
+
+- `Munich Pharmacies` is the only layer enabled by default.
+- Offices, clinics, coworking spaces, and restaurants are available in the catalog but disabled by default to avoid crowding the startup map.
+
+Category filtering is currently handled by separate catalog layers. More advanced attribute filtering can be added later if it is worth deeper TerriaMap UI work.
+
+Verification notes:
+
+- Browser loaded `http://localhost:3001/` with no map configuration error.
+- The `City Intelligence Cockpit` catalog group appeared clearly in Data.
+- Layer order appeared as `Munich Pharmacies`, `Munich Offices`, `Munich Clinics`, `Munich Coworking Spaces`, and `Munich Restaurants`.
+- Startup workbench count was `1`, confirming only `Munich Pharmacies` was enabled by default.
+- `Munich Coworking Spaces` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
 
 ## Real OpenStreetMap Pharmacy Data
 

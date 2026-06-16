@@ -24,7 +24,7 @@
           "type": "geojson",
           "name": "Munich Pharmacies",
           "url": "data/city-intelligence/munich-pharmacies.geojson",
-          "description": "Starter pharmacy opportunity layer for Munich. Replace this test dataset with OpenStreetMap or Overpass data."
+          "description": "Pharmacy locations in the Munich prototype bounds from OpenStreetMap via Overpass."
         },
         {
           "id": "city-intelligence-munich-offices",
@@ -34,18 +34,18 @@
           "description": "Office-related locations in the Munich prototype bounds from OpenStreetMap via Overpass, including office=* and building=office features."
         },
         {
-          "id": "city-intelligence-munich-coworking",
-          "type": "geojson",
-          "name": "Munich Coworking Spaces",
-          "url": "data/city-intelligence/munich-coworking.geojson",
-          "description": "Coworking and startup workspace locations in the Munich prototype bounds from OpenStreetMap via Overpass."
-        },
-        {
           "id": "city-intelligence-munich-clinics",
           "type": "geojson",
           "name": "Munich Clinics",
           "url": "data/city-intelligence/munich-clinics.geojson",
           "description": "Clinic, doctor, and dentist locations in the Munich prototype bounds from OpenStreetMap via Overpass."
+        },
+        {
+          "id": "city-intelligence-munich-coworking",
+          "type": "geojson",
+          "name": "Munich Coworking Spaces",
+          "url": "data/city-intelligence/munich-coworking.geojson",
+          "description": "Coworking and startup workspace locations in the Munich prototype bounds from OpenStreetMap via Overpass."
         },
         {
           "id": "city-intelligence-munich-restaurants",
