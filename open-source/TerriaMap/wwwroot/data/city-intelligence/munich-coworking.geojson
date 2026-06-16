@@ -1,5 +1,1183 @@
 {
   "type": "FeatureCollection",
   "name": "Munich Coworking Spaces",
-  "features": []
+  "source": "OpenStreetMap / Overpass",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Accelerator Community Unterschleißheim",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Emmy-Noether-Ring 18, 85716 Unterschleißheim",
+        "phone": "+49 89 990156510",
+        "website": "https://acu-net.de/",
+        "opening_hours": "",
+        "osm_id": 11136130704,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5589206,
+          48.2766085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "agnes",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Agnesstraße 58, 80797 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2164514492,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5624035,
+          48.1585462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BASE Coworking",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Blütenstraße 15",
+        "phone": "+49 151 11141748",
+        "website": "https://www.base-coworking.com/",
+        "opening_hours": "",
+        "osm_id": 13543251871,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5752508,
+          48.1514696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bienewitz",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Apianstraße 1, 80796 München",
+        "phone": "",
+        "website": "https://www.bienewitz.de/",
+        "opening_hours": "We-Fr 11:00-13:00,13:30-17:00; Sa 10:00-14:00",
+        "osm_id": 10647592388,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5735449,
+          48.1632208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bÿro",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "",
+        "phone": "",
+        "website": "https://www.the-byro.com",
+        "opening_hours": "",
+        "osm_id": 11608655502,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5706574,
+          48.1307905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CK Workspace GmbH",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12990406554,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5932948,
+          48.2628325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Comn",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "",
+        "phone": "",
+        "website": "https://www.urbanprogress.de/projekt/comn-das-netzwerkhaus/",
+        "opening_hours": "",
+        "osm_id": 11097624915,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5505357,
+          48.1199481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Concepting 33",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1005405900,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5751003,
+          48.1503727
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coworking Space Beauty",
+        "category": "Coworking",
+        "coworking_type": "name_match",
+        "address": "Römerstraße 21, 80801 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10914330711,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5772872,
+          48.1604691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coworking Space Hair",
+        "category": "Coworking",
+        "coworking_type": "name_match",
+        "address": "Römerstraße 21, 80801 München",
+        "phone": "+49 89 399223",
+        "website": "https://www.cut-and-curl.de/",
+        "opening_hours": "Mo 09:00-19:00; We-Fr 09:00-14:00",
+        "osm_id": 1797065719,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5772705,
+          48.1603999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CoWorx Coworking-Space",
+        "category": "Coworking",
+        "coworking_type": "name_match",
+        "address": "Industriestraße 12, 82194 Gröbenzell",
+        "phone": "",
+        "website": "https://www.coworx.space/",
+        "opening_hours": "24/7",
+        "osm_id": 2195984960,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3807067,
+          48.1902428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design & Architektur Salon München",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Infanteriestraße 11a, 80797 München",
+        "phone": "",
+        "website": "https://dasmuenchen.com/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 12967407668,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.554234,
+          48.1593046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design Offices",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Luise-Ullrich-Straße 20, 80636 München",
+        "phone": "+49 89 262071102",
+        "website": "https://www.designoffices.de",
+        "opening_hours": "Mo-Fr 08:30-18:00",
+        "osm_id": 7230228510,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5379661,
+          48.1437859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design Offices",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Riesstraße 16, 80992 München",
+        "phone": "+49 89 26204750",
+        "website": "https://www.designoffices.de",
+        "opening_hours": "Mo-Fr 08:30-18:00",
+        "osm_id": 7230247332,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5377933,
+          48.1782772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design Offices",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Rosenheimer Straße 143c, 81671 München",
+        "phone": "+49 89 26203600",
+        "website": "https://designoffices.de",
+        "opening_hours": "Mo-Fr 08:30-18:00",
+        "osm_id": 7230262315,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6046007,
+          48.1229036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design Offices",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Einsteinstraße 174, 81677 München",
+        "phone": "+49 89 26207180",
+        "website": "https://www.designoffices.de",
+        "opening_hours": "Mo-Fr 08:30-18:00",
+        "osm_id": 7230282318,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6236306,
+          48.1377982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design Offices",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Arnulfstraße 122-126, 80636 München",
+        "phone": "+49 89 262071102",
+        "website": "https://www.designoffices.de/",
+        "opening_hours": "Mo-Fr 08:30-18:00",
+        "osm_id": 7230283591,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5380267,
+          48.1462483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design Offices",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Mies-van-der-Rohe-Straße 6, 80807 München",
+        "phone": "+49 89 1891740",
+        "website": "https://www.designoffices.de",
+        "opening_hours": "Mo-Fr 08:30-18:00",
+        "osm_id": 7230297174,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5925742,
+          48.1763726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design Offices",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Luise-Ullrich-Straße 14, 80636 München",
+        "phone": "+49 89 262071102",
+        "website": "https://www.designoffices.de/standorte/buero-mieten-muenchen/muenchen-nove",
+        "opening_hours": "Mo-Fr 08:30-18:00",
+        "osm_id": 7230316141,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5381603,
+          48.1447579
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Design Offices",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Weihenstephaner Straße 12, 81673 München",
+        "phone": "+49 89 2080448-0",
+        "website": "https://www.designoffices.de/standorte/buero-mieten-muenchen/muenchen-macherei",
+        "opening_hours": "",
+        "osm_id": 9733449864,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6238418,
+          48.1305972
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ecos work spaces",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Landsberger Straße 155, 80687 München",
+        "phone": "+49 89 545 580",
+        "website": "https://www.ecos-workspaces.com/de/standorte/muenchen/",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 9688823476,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5264659,
+          48.1400105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Else Together",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Elsenheimerstraße 15, 80687 München",
+        "phone": "+49 156 78 403 100",
+        "website": "https://www.elsetogether.de/",
+        "opening_hours": "24/7",
+        "osm_id": 10836527792,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5194058,
+          48.1397015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flyeralarm Lounge",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Rindermarkt 16, 80331 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 10:00-17:00; PH off",
+        "osm_id": 7699326781,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5748327,
+          48.1364104
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Freelancer",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10223727692,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5388011,
+          48.1564137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Friseur Co-Working SPACE",
+        "category": "Coworking",
+        "coworking_type": "name_match",
+        "address": "Gabelsbergerstraße 73, 80333 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3864678930,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.562006,
+          48.1491935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ganghofer80",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Ganghoferstraße 80",
+        "phone": "",
+        "website": "https://www.ganghofer80.de/",
+        "opening_hours": "",
+        "osm_id": 11112196028,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5386034,
+          48.1280769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Idea Kitchen",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Werinherstraße 3, 81541 München",
+        "phone": "",
+        "website": "https://www.idea-kitchen.de/",
+        "opening_hours": "",
+        "osm_id": 8658489934,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.58169,
+          48.1155774
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Impact Hub",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Gotzinger Straße 8, 81371 München",
+        "phone": "+49 89 72997347",
+        "website": "https://munich.impacthub.net",
+        "opening_hours": "Mo-Th 09:00-19:00, Fr 09:00-17:00",
+        "osm_id": 2446895563,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5501564,
+          48.1211825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "K22 Co-Working Unterhaching",
+        "category": "Coworking",
+        "coworking_type": "name_match",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7106828786,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6220421,
+          48.0670055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Loisl House",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Kirchenstraße 7",
+        "phone": "",
+        "website": "https://www.loisl.house/",
+        "opening_hours": "",
+        "osm_id": 13176720401,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5986179,
+          48.1347761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mindspace",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Herzogspitalstraße 24, 80331 München",
+        "phone": "",
+        "website": "https://www.mindspace.me/munich/stachus/",
+        "opening_hours": "Mo-Su 09:00-18:00",
+        "osm_id": 9652291115,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5664211,
+          48.1380825
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mindspace Viktualienmarkt",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Rosental 7, 80331 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5273329157,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5752659,
+          48.1354468
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich Urban Colab",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "",
+        "phone": "+49 89 541 9870000",
+        "website": "https://www.munich-urban-colab.de",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 923823559,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5516197,
+          48.1568415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Office Club Coworking",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "3, 80335 München",
+        "phone": "+49 89 230 350",
+        "website": "https://www.officeclub.com/standorte/coworking-space-business-center-muenchen-stachus-office-club",
+        "opening_hours": "",
+        "osm_id": 13543251870,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5670628,
+          48.1398865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Praxis Am Nussbaumpark",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Nußbaumstraße 14",
+        "phone": "",
+        "website": "https://praxis-nussbaumpark.de",
+        "opening_hours": "",
+        "osm_id": 12887509572,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5632725,
+          48.1335847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Projektraum Nautilus",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Dachauer Straße 110c, 80636 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9972004214,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5506667,
+          48.1583178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rivvers",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Landsberger Straße 314, 80687 München",
+        "phone": "+49 69 9072 0198-1",
+        "website": "https://rivvers.de/muenchen/coworking-space-muenchen-laim/",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 13398323892,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4989255,
+          48.1437821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Satellite Office München Alte Hopfenpost",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Rundfunkplatz 2, 80335 München",
+        "phone": "+49 89 206054100",
+        "website": "https://www.satelliteoffice.de/standorte/muenchen/alte-hopfenpost/",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 13856066133,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5550658,
+          48.1436462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Satellite Office München Ludwigpalais",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Ludwigstraße 8, 80539 München",
+        "phone": "+49 89 206021600",
+        "website": "https://www.satelliteoffice.de/standorte/muenchen/ludwigpalais/",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 13856015890,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5793151,
+          48.1456893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Satellite Office München MAXI14",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Maximilianstraße 14, 80539 München",
+        "phone": "+49 89 20 60 54 400",
+        "website": "https://www.satelliteoffice.de/standorte/muenchen/maxi14/",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 13856178439,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5804117,
+          48.1389102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "smartvillage",
+        "category": "Coworking",
+        "coworking_type": "coworking_space",
+        "address": "Ganghoferstraße 66b, 80339 München",
+        "phone": "",
+        "website": "https://smartvillage.com/",
+        "opening_hours": "",
+        "osm_id": 10554837260,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5378842,
+          48.1306539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "smartvillage",
+        "category": "Coworking",
+        "coworking_type": "coworking_space",
+        "address": "Rosenkavalierplatz 13, 81925 München",
+        "phone": "",
+        "website": "https://smartvillage.com/muenchen/bogenhausen",
+        "opening_hours": "Mo-Fr 09:00-18:00; \"Abends & Wochenende: auf Anfrage\"",
+        "osm_id": 12025157887,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.619051,
+          48.1511002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Boni",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Sankt-Bonifatius-Straße 6, 81541 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3015220833,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5828227,
+          48.1192857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "velvet space",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Amalienstraße 71",
+        "phone": "+49 89 2017 92 90",
+        "website": "https://velvet-space.com",
+        "opening_hours": "",
+        "osm_id": 13540275979,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5776793,
+          48.1506877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WERK1",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "81671 München",
+        "phone": "+49 89 995299 22",
+        "website": "https://www.werk1.com/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 169986927,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6081612,
+          48.1236583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WERK1.4",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "",
+        "phone": "",
+        "website": "https://www.werksviertel-mitte.de/orte/werk1-4/",
+        "opening_hours": "",
+        "osm_id": 980667795,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6074075,
+          48.123322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WeWork",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "Oskar-von-Miller-Ring 20, 80333 München",
+        "phone": "",
+        "website": "https://www.wework.com/de-DE/buildings/oskar-von-miller-ring-20--munich",
+        "opening_hours": "",
+        "osm_id": 13930956232,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5758639,
+          48.1452545
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "wogeno co-working",
+        "category": "Coworking",
+        "coworking_type": "coworking",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"Nutzer bekommen Schlüssel\"",
+        "osm_id": 5155384186,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.597261,
+          48.1840064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zentrum für Co-Working und Digitale Bildung",
+        "category": "Coworking",
+        "coworking_type": "name_match",
+        "address": "",
+        "phone": "",
+        "website": "https://space.interlink.org/de/locations/germering/",
+        "opening_hours": "",
+        "osm_id": 1057704013,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3627514,
+          48.1301531
+        ]
+      }
+    }
+  ]
 }

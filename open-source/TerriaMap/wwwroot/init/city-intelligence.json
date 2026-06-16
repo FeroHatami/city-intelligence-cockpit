@@ -38,7 +38,7 @@
           "type": "geojson",
           "name": "Munich Coworking Spaces",
           "url": "data/city-intelligence/munich-coworking.geojson",
-          "description": "Placeholder for future Munich coworking space data."
+          "description": "Coworking and startup workspace locations in the Munich prototype bounds from OpenStreetMap via Overpass."
         },
         {
           "id": "city-intelligence-munich-clinics",

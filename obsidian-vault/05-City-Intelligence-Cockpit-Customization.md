@@ -8,12 +8,14 @@
 - Renamed visible app branding to `City Intelligence Cockpit`.
 - Added a `City Intelligence Cockpit` catalog group with a real `Munich Pharmacies` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Offices` GeoJSON layer from OpenStreetMap.
+- Added a real `Munich Coworking Spaces` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Clinics` GeoJSON layer from OpenStreetMap.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
 - Added `scripts/fetch-munich-offices.py` to refresh the Munich offices layer from Overpass.
+- Added `scripts/fetch-munich-coworking.py` to refresh the Munich coworking layer from Overpass.
 - Added `scripts/fetch-munich-clinics.py` to refresh the Munich clinics layer from Overpass.
-- Kept empty valid GeoJSON placeholders for coworking spaces and restaurants.
+- Kept an empty valid GeoJSON placeholder for restaurants.
 
 ## Files Changed
 
@@ -29,6 +31,7 @@
 - `open-source/TerriaMap/wwwroot/favicons/manifest.json`
 - `scripts/fetch-munich-pharmacies.py`
 - `scripts/fetch-munich-offices.py`
+- `scripts/fetch-munich-coworking.py`
 - `scripts/fetch-munich-clinics.py`
 - `README.md`
 
@@ -127,6 +130,47 @@ Verification notes:
 - `Munich Offices` appeared in the `City Intelligence Cockpit` catalog group.
 - `Munich Offices` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
 - Clicking the map opened Feature Information with office records; expanding `Munich Offices - Site Data` showed fields including `Name`, `Category`, `Office Type`, `Address`, `Phone`, `Website`, `Opening Hours`, `Osm Id`, `Osm Type`, and `Source`.
+
+## Real OpenStreetMap Coworking Data
+
+The current `Munich Coworking Spaces` layer is generated from OpenStreetMap via Overpass. It uses the Munich prototype bounds and exports locations tagged with `amenity=coworking_space`, `office=coworking`, `coworking=*`, or coworking-related name matches.
+
+The latest fetch wrote `49` coworking features.
+
+Each feature includes:
+
+- `name`
+- `category`
+- `coworking_type`
+- `address`
+- `phone`
+- `website`
+- `opening_hours`
+- `osm_id`
+- `osm_type`
+- `source`
+- `opportunity_score`
+- `notes`
+
+Refresh the layer with:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+python3 scripts/fetch-munich-coworking.py
+```
+
+The script writes:
+
+`open-source/TerriaMap/wwwroot/data/city-intelligence/munich-coworking.geojson`
+
+Verification notes:
+
+- Browser loaded `http://localhost:3001/` with no map configuration error.
+- `Munich Pharmacies` stayed enabled in the workbench.
+- `Munich Offices` still appeared in the `City Intelligence Cockpit` catalog group.
+- `Munich Coworking Spaces` appeared in the `City Intelligence Cockpit` catalog group.
+- `Munich Coworking Spaces` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
+- Clicking the map opened Feature Information with coworking records; expanding `Munich Coworking Spaces - Site Data` showed fields including `Name`, `Category`, `Coworking Type`, `Address`, `Website`, `Opening Hours`, `Osm Id`, `Osm Type`, and `Source`.
 
 ## Real OpenStreetMap Clinic Data
 
