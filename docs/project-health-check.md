@@ -21,4 +21,20 @@ The script verifies:
 - `.env.local` is ignored
 - Node guidance says to use Node 22
 
-The check is local-only. It does not call external APIs, does not require secrets, and does not modify project files.
+The check is local-only. It does not call external APIs, does not require
+secrets, and does not modify project files.
+
+## When To Run It
+
+- before committing a stage
+- after editing `city-intelligence.json`
+- after adding or replacing GeoJSON data
+- after changing lead workflow code
+- before taking screenshots
+- before final handoff
+
+## What A Pass Means
+
+A passing health check means the main project invariants still hold. It does not
+replace browser QA. Always open the app after user-facing changes and confirm the
+map, catalog, and Saved Leads panel still work.
