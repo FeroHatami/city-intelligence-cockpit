@@ -1,0 +1,4375 @@
+{
+  "type": "FeatureCollection",
+  "name": "Munich Real Estate Offices",
+  "source": "OpenStreetMap / Overpass",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "1st Asset Assekuranzmakler GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Plinganserstraße 8",
+        "phone": "+49 89 726319000",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13243082564,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5406018,
+          48.121432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "5-Seen-Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4518644051,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4291213,
+          48.1016027
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aigner",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hohenzollernstraße 118, 80796 München",
+        "phone": "+49 89 178 78 70",
+        "website": "https://aigner-immobilien.de/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 11063740900,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5701153,
+          48.1610989
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aigner Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Konrad-Adenauer-Straße 32, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13063105614,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4368121,
+          48.2617101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aigner Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Steinsdorfstraße 18, 80538 München",
+        "phone": "",
+        "website": "https://aigner-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 305686063,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5853927,
+          48.1330425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AkuRat Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Otto-Wagner-Straße 8, 82110 Germering",
+        "phone": "",
+        "website": "https://www.akurat.net/immobilienmakler-germering/",
+        "opening_hours": "",
+        "osm_id": 13177199772,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3658712,
+          48.1259999
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AlpHaus Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Bodenseestraße 10",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5609782098,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4577082,
+          48.1471355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "alt+kelber Immobilienverwaltung GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Schloßstraße 14, 82031 Grünwald",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4174467937,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5233532,
+          48.0413167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Angele Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 31888090",
+        "website": "http://www.angele-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 13260060069,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5779346,
+          48.2719047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AP Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Wolfratshauser Straße 191",
+        "phone": "+49 89 7491520",
+        "website": "https://www.ap-immobilien.com/",
+        "opening_hours": "",
+        "osm_id": 3591575052,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5233553,
+          48.0751186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ARTE Immobilien Group",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Frauenstraße 38, 80469 München",
+        "phone": "",
+        "website": "https://www.gerschlauer.de/",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 87406566,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5806388,
+          48.1344439
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "asgari immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Maximilianstraße 2, 80539 München",
+        "phone": "+49 89 24244695",
+        "website": "https://asgari-immobilien.de",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 9868826558,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5783123,
+          48.1390389
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "auctiora",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Richard-Strauss-Straße 33, 81677 München",
+        "phone": "",
+        "website": "https://www.auctiora.com/",
+        "opening_hours": "",
+        "osm_id": 6822273679,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6149915,
+          48.1420773
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aufrecht Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Wieningerstraße 22, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13063105610,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4337835,
+          48.2601955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aufrecht Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6651583884,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5728932,
+          48.1305004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Avaria Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 387446364,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5740986,
+          48.1089346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bartsch Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Th 09:00-13:00,14:00-18:00; Fr 09:00-13:00,14:00-16:00",
+        "osm_id": 2498525274,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5747243,
+          48.139004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baugenossenschaft Ober- und Unterschleißheim e.G.",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12954084962,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5565025,
+          48.2604157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baugesellschaft München-Land",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Ludwig-van-Beethoven-Straße 12, 85540 Haar",
+        "phone": "+49 89 456 77-0",
+        "website": "https://www.bml-online.de/de",
+        "opening_hours": "Mo-Fr 08:30-12:00, Mo-Th 13:30-15:30",
+        "osm_id": 3225135758,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7298341,
+          48.1059715
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerische Haus- und Grund Projekt GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3639904098,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5374987,
+          48.1397127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerische Wert- und Grundbesitz Verwaltung GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Arastraße 2, 85579 Neubiberg",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1139224603,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.66719,
+          48.0723042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bella Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 176 68906875",
+        "website": "https://www.bella-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 11690261007,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5723841,
+          48.2750568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Belmonte Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hofmarkweg 4, 82008 Unterhaching",
+        "phone": "",
+        "website": "https://www.belmonte-immobilien.de",
+        "opening_hours": "Mo-Fr 09:00-16:00",
+        "osm_id": 4860541522,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6103015,
+          48.0670481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Benno Köbler",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Agnes-Bernauer-Straße 88",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13537285636,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.501739,
+          48.1398793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BeNo Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Herbergstraße 14, 80995",
+        "phone": "+49 89 312 219 82",
+        "website": "http://www.beno-immobilien.de",
+        "opening_hours": "",
+        "osm_id": 3613209026,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5328742,
+          48.2172961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bernhard Horrer",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:30-18:30",
+        "osm_id": 11023531405,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5345307,
+          48.151654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Best of homes",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Südliche Münchner Straße 8a, 82031 Grünwald",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 10:00-17:00",
+        "osm_id": 4575180646,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5258626,
+          48.0413281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bichlmeier Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Am Bogen 44, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-13:00,15:00-18:00",
+        "osm_id": 8963979018,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6659081,
+          48.066313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bierbrauer Immobilien Service SüdOst",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+491728558671",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3023050936,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6663521,
+          48.0597583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Borst Immobilien GmbH & Co.KG",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Dachauer Straße 140d, 80637 München",
+        "phone": "+49 89 153015",
+        "website": "https://www.borstei.de/",
+        "opening_hours": "",
+        "osm_id": 7728759563,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5335436,
+          48.1697039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BPL Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hohenzollernstraße 31, 80801 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12635859938,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5789142,
+          48.1599491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bunz & Co.",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Kirchplatz 9, 82049 Pullach i. Isartal",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 07:30-13:30, 15:00-18:30; Sa 07:30-13:00",
+        "osm_id": 1781398293,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5236823,
+          48.0569606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BVG",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 780430",
+        "website": "https://www.bvg-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 4696400501,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5296806,
+          48.1010898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CARAT-Gruppe",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Carl-Zeiss-Straße 49, 85521 Hohenbrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9300610600,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6710955,
+          48.0509671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Century 21 Golden time Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Ottostraße 132, 85521 Ottobrunn",
+        "phone": "+49 89 41311878",
+        "website": "https://century21.de/",
+        "opening_hours": "",
+        "osm_id": 333126083,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6895516,
+          48.0646209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "cki-Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Bahnhofstraße 43, 82152 Planegg",
+        "phone": "",
+        "website": "https://www.cki-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 3719941227,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4160878,
+          48.1046309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Corina Jebens & Rosemarie Baur Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Schloßstraße 19, 82031 Grünwald",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3416626930,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5242122,
+          48.0413831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dahler",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Maximilianstraße 32, 80539 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5216496524,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.58336,
+          48.1382088
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deutsche Bank",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13063105613,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4326395,
+          48.2603917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "E.T. Myer Immobilien GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "https://www.etmyer.de/",
+        "opening_hours": "",
+        "osm_id": 8243941949,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5320043,
+          48.0706313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eckert Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2876768297,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.51456,
+          48.0561962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eder Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Münchner Straße 65, 85221 Dachau",
+        "phone": "+49 8131 616130",
+        "website": "https://www.immoservice-eder.de",
+        "opening_hours": "",
+        "osm_id": 10053168030,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4441464,
+          48.2488101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Egger & Graf Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Laurinweg 7, 85521 Ottobrunn",
+        "phone": "+49 89 63287230",
+        "website": "https://www.egger-immo.de/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 1073613504,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6630756,
+          48.0640952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eichler Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Karl-Böhm-Straße 84, 85598 Vaterstetten",
+        "phone": "+49 89 45505045",
+        "website": "https://eichler.de/",
+        "opening_hours": "Mo-Th 08:30-12:30,13:30-17:00; Fr 08:30-15:00",
+        "osm_id": 9877409590,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7860415,
+          48.096681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eißfeld Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Kapuzinerstraße 12, 80337 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4436862663,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5569601,
+          48.1273265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elke Schätz Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Rosenheimer Landstraße 72, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 8954520299,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6630958,
+          48.0617429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Engel & Völkers",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Rosenheimer Landstraße 56, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1073613575,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6619952,
+          48.0632071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Engel & Völkers",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Wasserburger Landstraße 237",
+        "phone": "+49 89 4207990",
+        "website": "https://www.engelvoelkers.com/de/de/shops/muenchen-waldtrudering",
+        "opening_hours": "Mo-Fr 09:30-18:00; Sa-Su,PH off",
+        "osm_id": 13108548036,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7060477,
+          48.1123092
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Engel & Völkers",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Residenzstraße 23, 80333 München",
+        "phone": "+49 89 237 083 00",
+        "website": "https://www.engelvoelkers.com/de/de/shops/muenchen-city",
+        "opening_hours": "",
+        "osm_id": 13893844815,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.57731,
+          48.1408207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Engl & Völkers",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3718621330,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4286754,
+          48.1187229
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ESW",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Weitlstraße 16, 80935 München",
+        "phone": "",
+        "website": "https://www.esw.de/",
+        "opening_hours": "",
+        "osm_id": 11902118817,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5582421,
+          48.2084761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Falc Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Luise-Kiesselbach-Platz 31, 81377 München",
+        "phone": "+49 89 78707710",
+        "website": "https://www.falcimmo.de/",
+        "opening_hours": "",
+        "osm_id": 6262339092,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.516853,
+          48.1119726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FALC Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hauptstraße 24, 85579 Neubiberg",
+        "phone": "",
+        "website": "https://www.falcimmo.de",
+        "opening_hours": "Mo-Fr 08:30-17:00",
+        "osm_id": 9082402658,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6647339,
+          48.0755602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fine Step Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo 09:00-18:00; Tu,We 09:00-17:00",
+        "osm_id": 1382530925,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5722405,
+          48.1205953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finest Homes Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Grünwalder Straße 177, München",
+        "phone": "",
+        "website": "https://www.finesthomes.immobilien/",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 5303383396,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5637554,
+          48.0955053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finest Properties München GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Augustenstraße 29, 80333 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 5768742004,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5615801,
+          48.1475303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fleckenstein Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Grünbauerstraße 1",
+        "phone": "+49 89 7498230",
+        "website": "https://fleckenstein-immobilien.com",
+        "opening_hours": "",
+        "osm_id": 3417267896,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5169797,
+          48.0764605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FM Immo GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13247738888,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5873188,
+          48.2779909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gattinger Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Augsburger Straße 11",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,Th 09:00-12:00,13:30-16:00; Tu,Fr 09:00-12:00",
+        "osm_id": 12697232544,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4333614,
+          48.2594504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Geiger Immobilien GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Pündterplatz 7, 80803 München",
+        "phone": "+49 89 44999870;+49 170 7381348",
+        "website": "https://www.geiger-immobilien-gmbh.de/",
+        "opening_hours": "",
+        "osm_id": 6411370390,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5769263,
+          48.1633161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GEME Wohnbau",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Dachauer Straße 92",
+        "phone": "",
+        "website": "https://geme-wohnbau.de/",
+        "opening_hours": "",
+        "osm_id": 5105641902,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5586303,
+          48.1519775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Georgi Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Sollerbauerweg 3, 81241 München",
+        "phone": "",
+        "website": "https://georgi-immobilien.com",
+        "opening_hours": "",
+        "osm_id": 9885545896,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4597797,
+          48.1430351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Germania Real Invest Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6786063496,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.546619,
+          48.1956609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gerschlauer GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Herterichstraße 42, München",
+        "phone": "",
+        "website": "https://www.gerschlauer.de/",
+        "opening_hours": "\"Termine nach Vereinbarung\"",
+        "osm_id": 3349502244,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5164708,
+          48.0763672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glanz & Reithmeier",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "https://gr-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 8243941950,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5319366,
+          48.0705856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Graf",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Nordendstraße 26, 80801 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11160818563,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5754641,
+          48.155479
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Graf Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 2006 0930",
+        "website": "https://www.grafimmo.de",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 3921899440,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5759666,
+          48.1302434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Graf Immobilien e.K.",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Innere Wiener Straße 13",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1338615314,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5941096,
+          48.1337898
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grüning Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 37073780",
+        "website": "https://grueningimmobilien.de/",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 12998887416,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5702618,
+          48.2736214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "H&K Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hauptstraße 11, 85579 Neubiberg",
+        "phone": "+49 89 21556724",
+        "website": "https://huk-immobilien.com/",
+        "opening_hours": "",
+        "osm_id": 8025007930,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.661982,
+          48.0764804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "H25",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hohenzollernstraße 25, 80801 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10555824246,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5807765,
+          48.1598038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haberstumpf",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "https://www.haberstumpf.de",
+        "opening_hours": "",
+        "osm_id": 9878393717,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5453425,
+          48.1215176
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hallinger Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Münchner Straße 17, 82152 Planegg",
+        "phone": "+49 89 89999411",
+        "website": "https://www.hallingerimmobilien.de/",
+        "opening_hours": "Mo-Fr 09:00-11:00",
+        "osm_id": 7397288429,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4296888,
+          48.1030142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hans-Jochen Schwanzl Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Georg-Hann-Straße 5, 81247 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13236296781,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.466067,
+          48.168394
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HARINALI Immobiliengruppe",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13017980419,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5484363,
+          48.2557582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hauser Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Kastanienweg 7, 82178 Puchheim",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4759466652,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3553071,
+          48.1752968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hausverwaltung Münchner Wohnen",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Kegelhof 3, 81669 München",
+        "phone": "",
+        "website": "https://www.muenchner-wohnen.de/",
+        "opening_hours": "Mo, Tu, Th 08:30-11:30; Th 15:00-17:30",
+        "osm_id": 5633267774,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.586697,
+          48.1279481
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heckl Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"Zettel sagt vorübergehend Geschlossen\"",
+        "osm_id": 5730341831,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5822275,
+          48.1820386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hegerich Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Belgradstraße 3, 80796 München",
+        "phone": "",
+        "website": "https://hegerichimmobilien.my.canva.site/belgrad-lp",
+        "opening_hours": "",
+        "osm_id": 1814070393,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5748806,
+          48.160669
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hegerich Immobilien GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Am Westpark 5",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12730503802,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5346524,
+          48.1241265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heike Borchers Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hauptstraße 15, 82008 Unterhaching",
+        "phone": "",
+        "website": "https://www.immobilien-borchers.com/",
+        "opening_hours": "Mo-Fr 09:30-13:00,14:00-17:30",
+        "osm_id": 7359366754,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6138613,
+          48.0643307
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Heinrich Bossert Inmobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Leopoldstraße 9, 80802 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9130217718,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5827462,
+          48.1546878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HTG-Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Bahnhofsweg 10, 82008 Unterhaching",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:30-12:30,14:00-17:00",
+        "osm_id": 8822039793,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6133342,
+          48.0659139
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Iliev",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Nordendstraße 41, 80801 München",
+        "phone": "+49 89 6606 4874",
+        "website": "https://iliev-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 10555476661,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5747897,
+          48.1580623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "IMF Immobilien-Vertriebsgesellschaft mbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Sternstraße 28, 80538 München",
+        "phone": "+49 89 297 720",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 332275828,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5912459,
+          48.1403051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immo Ferreira",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 11251712837,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6507973,
+          48.2498393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immobilien A. Schmid",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 3514308",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11063045618,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5435229,
+          48.1181285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immobilien Hagl",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"Termine nach Vereinbarung\"",
+        "osm_id": 12147606188,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7724336,
+          48.1120749
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immobilien Mößel",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Fasanenstraße 32, 82008 Unterhaching",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 8818622306,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6103352,
+          48.0715159
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immobilien-T-raum",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Köglweg 30, 82024 Taufkirchen",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 543379059,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6151716,
+          48.0465616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immobilienbüro Seibold",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 8121 976747",
+        "website": "https://www.immobilien-seibold.de/",
+        "opening_hours": "",
+        "osm_id": 2947259828,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8141813,
+          48.2290556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immoneb",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Forstenrieder Allee 181, 81476 München",
+        "phone": "+49 89 21668888",
+        "website": "https://www.immoneb.de",
+        "opening_hours": "Mo-Fr 09:00-16:00",
+        "osm_id": 2140653007,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4951369,
+          48.0852757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Immoservice komplett GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8603346350,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6229944,
+          48.1175572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Isar Estate",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Armanspergstraße 2, 81545 München",
+        "phone": "",
+        "website": "https://isarestate.de",
+        "opening_hours": "Mo-Fr 09:00-12:30,14:00-18:00",
+        "osm_id": 3366530175,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5672602,
+          48.091796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jedl Wohnbau GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 08:30-17:00; Fr 08:30-12:00",
+        "osm_id": 8608308366,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6284919,
+          48.0970925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Katerina Rogers Immobilienvermittlung",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Maximilianstraße 2, 80539 München",
+        "phone": "+49 89 700 650 20",
+        "website": "https://www.rogers-immobilien.de",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 5763877342,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.578431,
+          48.1390809
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kensington",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Wolfratshauser Straße 181",
+        "phone": "+49 89 20944873",
+        "website": "https://kensington-international.com/de/de/muenchen/",
+        "opening_hours": "Mo-Fr 10:00-17:00",
+        "osm_id": 3640287370,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5244622,
+          48.0760367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kensington Finest Properties München GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-18:00; PH off",
+        "osm_id": 3719985732,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4205089,
+          48.1036219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kia-Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11063072423,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5436935,
+          48.1197804
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kolba Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Birkenstraße 11, 85604 Zorneding",
+        "phone": "+49 8106 39 49 939",
+        "website": "https://www.kolba-immobilien.de/",
+        "opening_hours": "Mo-Fr 14:30-18:00, Sa 10:30-14:00",
+        "osm_id": 11354081448,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8292039,
+          48.0873498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kopp",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Münchner Straße 66",
+        "phone": "+49 89 444432130",
+        "website": "https://kopp-re.de/",
+        "opening_hours": "Nach Vereinbarung",
+        "osm_id": 13460976893,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6043953,
+          48.0744434
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KRAFT.IMMObilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Landsberger Straße 291, 80687 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6562596923,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5044431,
+          48.1426613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kreuzlinger Feld",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "https://www.kreuzlinger-feld.de/",
+        "opening_hours": "",
+        "osm_id": 9121855448,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3552741,
+          48.123589
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Krulich Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Herzogstraße 39, 80803 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4411544390,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5793759,
+          48.1626673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Layer Immobilien und Bau",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Romanstraße 14a, 80639 München",
+        "phone": "+49 89 5450 5077",
+        "website": "https://layer-gruppe.de",
+        "opening_hours": "\"Nach Vereinbarung\"",
+        "osm_id": 11463181354,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5259515,
+          48.1562752
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maier Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Oberanger 42",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:30-18:30",
+        "osm_id": 700142534,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5690997,
+          48.1339108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marklerbüro Franz Pallagi & Jolanda Scholler",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 41129799",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10756126170,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5527837,
+          48.1124795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mavero Real Estate",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13785109023,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5806604,
+          48.1692111
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "McMakler",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Fritz-Hommel-Weg 4",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12584746801,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5949164,
+          48.1728487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mein München Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 12227996",
+        "website": "https://www.meinmuenchenimmobilien.de/",
+        "opening_hours": "",
+        "osm_id": 13037311545,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.571473,
+          48.2737563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "mhomes",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hohenzollernstraße 37, 80801 München",
+        "phone": "",
+        "website": "https://www.mhomes.de",
+        "opening_hours": "",
+        "osm_id": 1864479412,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5780366,
+          48.1600126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Michael Glas Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Daiserstraße 41, 81371 München",
+        "phone": "",
+        "website": "https://www.michael-glas-immobilien.de",
+        "opening_hours": "",
+        "osm_id": 13038750095,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5437217,
+          48.1179831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "monetaria GmbH & Co. Immobilienvermittlungs KG",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Wasserburger Landstraße 169c, 81827 München",
+        "phone": "+49 89 340834-0",
+        "website": "https://www.monetaria.de/",
+        "opening_hours": "",
+        "osm_id": 12085482803,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6944761,
+          48.1160553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mr. Lodge GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Barer Straße 32, 80333 München",
+        "phone": "+49 89 3408230",
+        "website": "https://www.mrlodge.de/",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 1227896706,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5702606,
+          48.1461217
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MT Immobilien München",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11099414878,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5604846,
+          48.1234123
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MunichRealty",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4473551290,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5597982,
+          48.1513673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MW Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Münchener Straße 73, 85737 Ismaning",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8118614031,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6684392,
+          48.222445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Müller-Groscurth",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4860633221,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6064593,
+          48.0718341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Niederl Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Helene-Mayer-Ring",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12554685702,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5528985,
+          48.1821902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nußbaumer GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10223808143,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5363389,
+          48.1542633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "O & B Living",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Margreider Platz 4, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 10:30-17:00",
+        "osm_id": 968101619,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6628438,
+          48.0637313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Paul Schmidmaier Immobilien GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Fürstenrieder Straße 42, 80686",
+        "phone": "+49 89 5890980",
+        "website": "https://www.immobilien-ps.de",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 7782188985,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5025534,
+          48.1378304
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peter Pflug Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 35 43 551",
+        "website": "https://oly24.de",
+        "opening_hours": "Mo-Fr 09:00-12:00,14:00-18:00; Sa 09:00-12:00",
+        "osm_id": 9310860607,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5528094,
+          48.1815747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peter Strobl Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Marktplatz 8, 82031 Grünwald",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2953673023,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5217699,
+          48.0394374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Petra Neumeier",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "https://immobilien-neumeier.de",
+        "opening_hours": "",
+        "osm_id": 10746854826,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4343764,
+          48.2631332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pienzenauer",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 451088630",
+        "website": "https://www.pienzenauer-trudering.de",
+        "opening_hours": "",
+        "osm_id": 13108859314,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.704925,
+          48.1120928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Poehlmann Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12165966990,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6039507,
+          48.1509531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Porta Mondial",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8176199559,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5762708,
+          48.1476407
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Purger Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 17620387355",
+        "website": "",
+        "opening_hours": "Tu,Th 10:00-13:00,15:00-18:00; Sa 09:00-12:00",
+        "osm_id": 12791858521,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4796414,
+          48.1164671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quartier Acht",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Südliche Münchner Straße 8, 82031 Grünwald",
+        "phone": "+49 89 6495580",
+        "website": "https://www.quartieracht.de/",
+        "opening_hours": "",
+        "osm_id": 4575180648,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.525552,
+          48.0411302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Re/Max",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Konrad-Adenauer-Straße 17, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13063105609,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4365058,
+          48.2615003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RE/MAX Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 45678460",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-18:00; Sa-Su off",
+        "osm_id": 5443259739,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7047998,
+          48.1125621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RE/MAX Living Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hans-Pinsel-Straße 1, 85540 Haar",
+        "phone": "+498945678460",
+        "website": "https://remax-living.de/",
+        "opening_hours": "",
+        "osm_id": 11012961219,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.715555,
+          48.1103143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "REA",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Blieskastelstraße 6, 81379 München",
+        "phone": "+49 89 173500",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5360909586,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5353516,
+          48.0945416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ReMax",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Plinganserstraße 5",
+        "phone": "",
+        "website": "https://central-muenchen-sendling.remax.de/de/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 11063970451,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5413291,
+          48.1210411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ReMaxx",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Rosenheimer Landstraße 65, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Tu-Fr 09:00-18:00",
+        "osm_id": 10114529264,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6616473,
+          48.0646419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rena Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Volkartstraße 64, 80636 München",
+        "phone": "",
+        "website": "https://www.rena-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 12137104556,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5408454,
+          48.1579236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riedel",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Südliche Münchner Straße 10, 82031 Grünwald",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10594487167,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5262139,
+          48.0415336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riedel",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hohenzollernstraße 21, 80801 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2493800182,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5815274,
+          48.1597703
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riedel Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Bahnhofstraße 77",
+        "phone": "+49 89 15945520",
+        "website": "https://www.riedel-immobilien.de/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 3718624525,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4294997,
+          48.1182663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Riedel Immobilien GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Tizianstraße 50, 80638",
+        "phone": "+49 89 1594550",
+        "website": "https://www.riedel-immobilien.de/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 7922074685,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5234875,
+          48.1615469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ries Immobilien KG",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13758803235,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5607279,
+          48.1563219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rosemarie Baur Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Dr.-Hans-Staub-Straße 8, 82031 Grünwald",
+        "phone": "",
+        "website": "",
+        "opening_hours": "09:00-18:00",
+        "osm_id": 4644178856,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5384914,
+          48.047062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RPP Immobilien - Robert Pauly & Partner",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 45350280",
+        "website": "https://www.rpp-immo.de/",
+        "opening_hours": "",
+        "osm_id": 13115262702,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5739674,
+          48.2790173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RS Immobilien GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 3107286",
+        "website": "http://rs-unternehmensgruppe.eu/",
+        "opening_hours": "",
+        "osm_id": 13260060068,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5740262,
+          48.2772198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Römerstein Grundbesitz",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "https://roemerstein-immobilien.de/",
+        "opening_hours": "",
+        "osm_id": 1138929791,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3625985,
+          48.1290945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S. E. Immobilien und Versicherungsmakler",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3750348725,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4379029,
+          48.1169219
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sachwertpark",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Bahnhofplatz 4e, 85540 Haar",
+        "phone": "+49 89 55 26 42 90",
+        "website": "https://www.sachwertpark-haar.de/",
+        "opening_hours": "Mo-Fr 10:00-13:00",
+        "osm_id": 3231622364,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7310905,
+          48.1102938
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sigorta Cakmakei - Versicherungen | Finanzen | Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Schleißheimer Straße 425a, 80935 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6875356637,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5631965,
+          48.2053458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SK Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Tu,Th 10:00-16:00; We,Fr 10:00-14:00",
+        "osm_id": 7181175332,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3578996,
+          48.1741235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sparkasse",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2972004462,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3662321,
+          48.1267183
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sperr & Zellner",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8575653536,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8010439,
+          48.220889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spotlight Real Estate",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Lohengrinstraße 12, 81925 München",
+        "phone": "+4989248866110",
+        "website": "https://spotlight-real.de",
+        "opening_hours": "",
+        "osm_id": 9560269110,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6222017,
+          48.163268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Square-Meter",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13033304570,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5329026,
+          48.1553312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stadt Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 13267172658,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6493153,
+          48.2492074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stanger & Partner Immobilien & Konzepte",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 173 6286017",
+        "website": "https://www.stanger-partner.com/de/",
+        "opening_hours": "",
+        "osm_id": 13260060070,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5789749,
+          48.2756828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stiller WOHNEN GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Augsburger Straße 34, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13063105611,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.432014,
+          48.2615338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strobl",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "https://www.immobilien-strobl.de",
+        "opening_hours": "",
+        "osm_id": 12037568557,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5579524,
+          48.0905078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TerraSELECT Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7744315857,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6306108,
+          48.0821315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "THE RE/MAX COLLECTION",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Wolfratshauser Straße 210a",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4470000164,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5282555,
+          48.0806299
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Remax Collection",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 298116252,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.588055,
+          48.1371551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13505073682,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5352386,
+          48.1518352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8269860340,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5225971,
+          48.0408071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1455829900,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7429627,
+          48.1132862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Urbanwerk",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Hauptstraße 33, 85579 Neubiberg",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1139285073,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6678825,
+          48.0754222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Von Poll Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Ismaninger Straße, München",
+        "phone": "+498918917110",
+        "website": "https://www.von-poll.com/",
+        "opening_hours": "Mo-Fr 09:00-17:00; \"sowie nach Vereinbarung\"",
+        "osm_id": 11017584149,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6046188,
+          48.1470964
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Von Poll Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Gottesackerstraße 20, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13063105608,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4331091,
+          48.2606828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Von Poll Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+498106 3062100",
+        "website": "https://www.von-poll.com/",
+        "opening_hours": "Mo,We,Fr 13:00-18:00; Tu,Th 09:00-14:00",
+        "osm_id": 13627036919,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7673422,
+          48.1057169
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Von Poll Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 10:00-18:00; Sa,Su,PH off",
+        "osm_id": 725576826,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4309598,
+          48.1179906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Von Poll Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8090549600,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5136258,
+          48.0761885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Von Poll Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Margreider Platz 5, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 970064073,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6625527,
+          48.0634668
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vorstadtmarkler",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1363074437,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6080631,
+          48.138339
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "W & N Immobilienvertriebs GmbH",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Newtonstraße 3, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13261381660,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4715015,
+          48.2618543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WAX Grundstücksverwaltung",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2558316929,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4945262,
+          48.0835763
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wegener",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Truderinger Straße 296, 81825 München",
+        "phone": "+49 89 20947332",
+        "website": "https://www.wegenerimmobilien.de",
+        "opening_hours": "Mo-Fr 09:00-13:00",
+        "osm_id": 279876602,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.668322,
+          48.1227673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Weichselgartner Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Daglfinger Straße 2, 81929 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4796568040,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6402774,
+          48.1462341
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "windhager",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Luisenstraße 62",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7938859966,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5679967,
+          48.1519811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wob Group",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Lilienthalstraße 19, 85579 Neubiberg",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7743731999,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6382081,
+          48.0831681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wohnen Huttner Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "",
+        "website": "http://www.wohnen-huttner-immobilien.de/",
+        "opening_hours": "Tu,Th 10:00-12:00,14:00-18:00",
+        "osm_id": 1373718133,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4137031,
+          48.1623776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WSB Bayern",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "",
+        "phone": "+49 89 67990",
+        "website": "https://www.wsb-bayern.de/startseite/",
+        "opening_hours": "Mo-Th 08:00-12:00; Fr off",
+        "osm_id": 3205271394,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7216699,
+          48.1080362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wüstenrot Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Leibstraße 14, 85540 Haar",
+        "phone": "+49 89 45187650",
+        "website": "",
+        "opening_hours": "Mo-Fr 10:00-14:00",
+        "osm_id": 3216419312,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7321823,
+          48.1081243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zeller Immobilien",
+        "category": "Office",
+        "office_type": "estate_agent",
+        "address": "Walter-Sartorius-Straße 9, 82152 Planegg",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 415528240,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4226278,
+          48.1101616
+        ]
+      }
+    }
+  ]
+}

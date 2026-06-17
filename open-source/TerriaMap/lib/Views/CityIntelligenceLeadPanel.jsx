@@ -32,7 +32,15 @@ const CATEGORIES = [
 
 const SOURCE_LAYERS = [
   "Munich Pharmacies",
-  "Munich Offices",
+  "Munich Offices — All",
+  "Munich Law Firms",
+  "Munich Consultants",
+  "Munich Real Estate Offices",
+  "Munich Insurance Offices",
+  "Munich Government Offices",
+  "Munich Company Offices",
+  "Munich Generic Office Buildings",
+  "Munich Other Offices",
   "Munich Clinics",
   "Munich Coworking Spaces",
   "Munich Restaurants",

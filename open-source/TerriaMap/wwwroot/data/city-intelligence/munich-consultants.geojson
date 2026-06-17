@@ -1,0 +1,1975 @@
+{
+  "type": "FeatureCollection",
+  "name": "Munich Consultants",
+  "source": "OpenStreetMap / Overpass",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ABG-Partner",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11020298890,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.524288,
+          48.1561148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Accenture",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Schleißheimer Straße 93b, 85748 Garching bei München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2509535436,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6230363,
+          48.2494333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Accenture",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Anni-Albers-Straße 11, 80807 München",
+        "phone": "+49 89 930810",
+        "website": "https://www.accenture.com/de-de",
+        "opening_hours": "",
+        "osm_id": 7023690565,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.591156,
+          48.1774826
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "acterience management partners GmbH & Co. KG",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Pfeuferstraße 9, 81373 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5646067156,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5406549,
+          48.1260776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Agentur Brauer",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Kreittmayrstraße 6, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4337590510,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5566415,
+          48.1507827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Andreas Gast Coaching GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 17926808",
+        "website": "https://www.andreas-gast-coaching.com/",
+        "opening_hours": "",
+        "osm_id": 13254766694,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.560586,
+          48.278648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arqum GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Leonrodstraße 54, 80639 München",
+        "phone": "+49 8912109940",
+        "website": "https://www.arqum.de/",
+        "opening_hours": "",
+        "osm_id": 3929290103,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5450098,
+          48.1572487
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arup Deutschland GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Tölzer Straße 1",
+        "phone": "+49 89 262036100",
+        "website": "https://www.arup.com",
+        "opening_hours": "",
+        "osm_id": 13861094565,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5383288,
+          48.1031637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barkawi Management Consultants",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Baierbrunner Straße 35, 81379 München",
+        "phone": "+49 89 7498260",
+        "website": "https://www.barkawi.com/",
+        "opening_hours": "",
+        "osm_id": 4617191054,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5322166,
+          48.0959084
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BBV LandSiedlung GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Karolinenplatz 2, 80333 München",
+        "phone": "+49 89 590 682 910",
+        "website": "https://www.bbv-ls.de/",
+        "opening_hours": "",
+        "osm_id": 4331927999,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5690507,
+          48.1440991
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bechtle PLM Deutschland",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 306664770",
+        "website": "https://www.bechtle-plm.com/",
+        "opening_hours": "",
+        "osm_id": 13295383609,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5582197,
+          48.271878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bildung im Quartier",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 62837751;+49 89 62837531",
+        "website": "https://stadt.muenchen.de/service/info/bildungslokal-neuperlach/10257469/#k-contact",
+        "opening_hours": "Mo 14:00-18:00; Tu,Fr 09:00-13:00; Th 13:00-17:00",
+        "osm_id": 3074986959,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6560453,
+          48.1076031
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BIPM Project Consulting GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 13999790",
+        "website": "https://www.bipm.de/",
+        "opening_hours": "",
+        "osm_id": 13248708308,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5731173,
+          48.2777222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boston Consulting Group",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Ludwigstraße 21, 80539 München",
+        "phone": "+49 89 231 740",
+        "website": "https://www.bcg.com/offices/munich/default",
+        "opening_hours": "",
+        "osm_id": 2285922406,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5792847,
+          48.1471939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "change factory",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Gotzinger Straße 52b, 81371 München",
+        "phone": "",
+        "website": "https://www.change-factory.de/",
+        "opening_hours": "",
+        "osm_id": 13745467802,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5497726,
+          48.1188781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ClimatePartner Deutschland GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Ainmillerstraße 22, 80801 München",
+        "phone": "+49 89 1222 875-0",
+        "website": "https://www.climatepartner.com/de",
+        "opening_hours": "",
+        "osm_id": 3929290119,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.580834,
+          48.158915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "cocondi",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Oetztaler Straße 1, 81373",
+        "phone": "+49 89 12012552",
+        "website": "https://www.cocondi.de",
+        "opening_hours": "",
+        "osm_id": 12826573715,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5339898,
+          48.1189116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CROZ DACH GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Aschauer Straße 30, 81549 München",
+        "phone": "",
+        "website": "https://croz.net/de/",
+        "opening_hours": "",
+        "osm_id": 13040869561,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6002217,
+          48.1047143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CSO Pharma",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Bachbauernstraße 1, 81241 München",
+        "phone": "",
+        "website": "https://www.cso-pharma.eu/",
+        "opening_hours": "",
+        "osm_id": 10300670729,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4583196,
+          48.147259
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CTcon",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Georg-Muche-Straße 4, 80807 München",
+        "phone": "",
+        "website": "https://www.ctcon.de/",
+        "opening_hours": "",
+        "osm_id": 11427226058,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5941478,
+          48.1813128
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Culture Options",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Heinrich-Heine-Straße 13, 80686 München",
+        "phone": "+49 89 48999838",
+        "website": "https://www.culture-options.de/",
+        "opening_hours": "",
+        "osm_id": 11759196250,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.510005,
+          48.1342184
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "D3 Data Services GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Metzstraße 18, 81667 München",
+        "phone": "",
+        "website": "https://www.d3-data.com/",
+        "opening_hours": "Mo-Su 00:00-24:00",
+        "osm_id": 7339775219,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5982498,
+          48.1292331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Daum Security Consulting",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Zeppelinstraße 73, 81669 München",
+        "phone": "+49 170 1028699",
+        "website": "https://www.daseco.de/",
+        "opening_hours": "",
+        "osm_id": 13285449735,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5863564,
+          48.1302185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DerCzaja Solutions",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 1578 6040215",
+        "website": "https://tech.derczaja.de/",
+        "opening_hours": "",
+        "osm_id": 13368321318,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5882274,
+          48.2752298
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dornieden Gruppe",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Gottfried-Keller-Straße 20, 81245 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10137516373,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4627143,
+          48.1505562
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Energie Store",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13564403269,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5474771,
+          48.1365868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "esmarch",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9084042462,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5146481,
+          48.0737327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "EUXEA",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12589838673,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6159434,
+          48.1491828
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flottenkenner GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 277826775",
+        "website": "https://www.flottenkenner.de/",
+        "opening_hours": "",
+        "osm_id": 13295383608,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5588066,
+          48.2764136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fox Academy",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Marienplatz 17, 80331 München",
+        "phone": "+49 89 200 060 798",
+        "website": "https://www.fox-academy.de",
+        "opening_hours": "",
+        "osm_id": 8001201639,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5764011,
+          48.1366983
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FSQ Functional Safety & Quality Experts GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Balanstraße 14, 81669 München",
+        "phone": "+49 89 588087571",
+        "website": "https://fsq-experts.com",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 8706837870,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5946864,
+          48.1270175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FutureCamp Climate GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Aschauer Straße 30, 81549 München",
+        "phone": "",
+        "website": "https://www.future-camp.de/de",
+        "opening_hours": "",
+        "osm_id": 3929290150,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6001964,
+          48.1048022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "generateleads!",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Oetztaler Straße 1, 81373",
+        "phone": "+49 89 74 32 677-0",
+        "website": "http://www.generateleads.de",
+        "opening_hours": "",
+        "osm_id": 12826573717,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.533829,
+          48.1189623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gimpel-Ehe- und Lebensberatung",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Hofenfelsstraße 46, 80637 München",
+        "phone": "",
+        "website": "http://gimpel-beratung.de",
+        "opening_hours": "",
+        "osm_id": 9966750966,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5302633,
+          48.164437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Homburg & Partner",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Ludwigstraße 19",
+        "phone": "+49 89 20359-0",
+        "website": "https://www.accenture.com/de-de/services/strategy",
+        "opening_hours": "",
+        "osm_id": 6261240089,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5790656,
+          48.1466255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Horváth",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13598455788,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5398395,
+          48.1308381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HTWO systems",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 41433032",
+        "website": "https://www.htwo.net/",
+        "opening_hours": "",
+        "osm_id": 13831148891,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5904556,
+          48.2733941
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ingenieurbüro S&T für Umwelt- und Energieberatung",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Theodor-Heuss-Straße 29, 85764 Oberschleißheim",
+        "phone": "+49 89 120 240 60",
+        "website": "https://www.st-energieberatung.de/",
+        "opening_hours": "",
+        "osm_id": 3929291571,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5537221,
+          48.2552049
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institute",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Gottfried-Keller-Straße 20, 81245 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10137516374,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.462778,
+          48.1505719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Intega Consulting",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 544163615,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6755277,
+          48.2272064
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ITO Business Consultants GmbH & Co. KG",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Fürstenstraße 15, 80333 München",
+        "phone": "",
+        "website": "https://ito-bc.com/",
+        "opening_hours": "",
+        "osm_id": 2830215527,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5769712,
+          48.1468435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kloepfer Coaching",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 2720875",
+        "website": "https://kloepfer-coaching.com/",
+        "opening_hours": "",
+        "osm_id": 13128343004,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5829108,
+          48.272997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KPMG",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 9282-00",
+        "website": "https://kpmg.com/de/de/home/ueber-kpmg/standorte/muenchen.html",
+        "opening_hours": "",
+        "osm_id": 10905996174,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6041589,
+          48.1250168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Körber.Seminare",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Wendelsteinstraße 7, 82194 Gröbenzell",
+        "phone": "+49 8142 6551507",
+        "website": "https://www.koerber-seminare.de/",
+        "opening_hours": "",
+        "osm_id": 2190950042,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3643535,
+          48.1914039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "L.E.K. Consulting",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Brienner Straße 14, 80333 München",
+        "phone": "+49 89 922 005-0",
+        "website": "https://www.lek.com",
+        "opening_hours": "",
+        "osm_id": 12681645407,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5742197,
+          48.1435226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manyone",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Nymphenburger Straße 51, 80335 München",
+        "phone": "",
+        "website": "https://manyone.com/locations/munich",
+        "opening_hours": "",
+        "osm_id": 3722075976,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.548985,
+          48.1490953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Medienberatung Vorwerg",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8500690009,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6239576,
+          48.0817086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Muniq IT Solutions GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 20000221",
+        "website": "https://muniq-group.de/it/",
+        "opening_hours": "",
+        "osm_id": 13368321316,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5739474,
+          48.279002
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Münchner Gesellschaft für Stadterneuerung mbH (MGS)",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Haager Straße 5, 81671 München",
+        "phone": "+49 89 233 339-00",
+        "website": "https://www.mgs-muenchen.de/",
+        "opening_hours": "",
+        "osm_id": 3929291596,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6084858,
+          48.1270573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Northwai",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 175 2463559",
+        "website": "https://northwai.com/",
+        "opening_hours": "",
+        "osm_id": 13254766695,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5780681,
+          48.2713181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Okari",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Steinsdorfstraße 2, 80538 München",
+        "phone": "",
+        "website": "https://okari.com/",
+        "opening_hours": "",
+        "osm_id": 6806028019,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5886703,
+          48.1365635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "OKR Experten",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Römerstraße 30, 80803 München",
+        "phone": "",
+        "website": "https://okrexperten.de/",
+        "opening_hours": "",
+        "osm_id": 9266139261,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5778418,
+          48.1624022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ONE Business & Technology GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Nymphenburger Straße 14, 80335 München",
+        "phone": "",
+        "website": "https://www.one-bt.de",
+        "opening_hours": "",
+        "osm_id": 10686149570,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5564046,
+          48.1487606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "One Pager",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12589890626,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6158601,
+          48.1491665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pantarhei",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Gotzinger Straße 52f, 81371 München",
+        "phone": "",
+        "website": "https://www.pantarhei.com/de/",
+        "opening_hours": "",
+        "osm_id": 13745250687,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5501103,
+          48.118679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pixida GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Marcel-Breuer-Straße 6",
+        "phone": "",
+        "website": "https://www.pixida.de",
+        "opening_hours": "",
+        "osm_id": 13918219611,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5979771,
+          48.1820378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PlaceOfJoy",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11559591555,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5148938,
+          48.0799122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rau Consultants",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Friedenheimer Brücke 21, 80639 München",
+        "phone": "+49 89 1895 520-0",
+        "website": "https://www.rau-consultants.de/",
+        "opening_hours": "",
+        "osm_id": 6414968718,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5197413,
+          48.14563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "S3Consult",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Am Harras 10",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13019133846,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5388606,
+          48.1167643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sabego Qualitätsmanagement",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 31098315",
+        "website": "https://sabego.de/",
+        "opening_hours": "",
+        "osm_id": 12998887404,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5589963,
+          48.2794916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sabine Lutzenberger",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Blütenstraße 16, 80799 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2335153733,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5748277,
+          48.1521231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sage & Schreibe",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Herzogstraße 105, 80796 München",
+        "phone": "+49 89 238 88 98-0",
+        "website": "https://sage-schreibe.de/",
+        "opening_hours": "",
+        "osm_id": 6008134452,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5687235,
+          48.1630775
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandra Kunstwadl Consulting & Training – Hotelberatung - Hotels & Gastro",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 176 81450507",
+        "website": "https://www.sandra-kunstwadl.de/",
+        "opening_hours": "",
+        "osm_id": 13248708306,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.586565,
+          48.2751248
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sieghörtner Solutions GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 1517 0874341",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13248654096,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5882634,
+          48.275195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SifaXpert Arbeitssicherheit München",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Dieselstraße 11, 80993 München",
+        "phone": "+49 176 23542314",
+        "website": "https://arbeitssicherheitmuenchen.de",
+        "opening_hours": "",
+        "osm_id": 13780859564,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5343797,
+          48.1854396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SignatureConsult | Managementsystemberatung",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Maximilianstraße 2, 80539 München",
+        "phone": "+49 89 2000 3785",
+        "website": "https://signatureconsult.de/",
+        "opening_hours": "Mo-Th 09:00-17:00; Fr 09:00-14:00; Sa,Su,PH off",
+        "osm_id": 8582795535,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5784372,
+          48.1389943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siventus",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10101782650,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5508501,
+          48.1087955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sophie Kompe - Coach für Schreiben und Sprechen",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 1515 9111506",
+        "website": "https://sites.google.com/view/kompe/home",
+        "opening_hours": "",
+        "osm_id": 13257372011,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5602371,
+          48.2790197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spunk",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Belgradstraße 27, 80796 München",
+        "phone": "+49 89 326 688 88",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4618444989,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5744347,
+          48.163332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Teamwille",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "https://www.teamwille.com/",
+        "opening_hours": "",
+        "osm_id": 6808292222,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5964893,
+          48.1805455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TEN Information Management GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Altlaufstraße 40, 85635 Höhenkirchen-Siegertsbrunn",
+        "phone": "+49 8102 7278934 0",
+        "website": "https://www.ten-im.com",
+        "opening_hours": "",
+        "osm_id": 13285489585,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7155885,
+          48.0230662
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Lejeune Academy",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12589855307,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6156972,
+          48.1492359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Topos",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Gottfried-Keller-Straße 20, 81245 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10137516375,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4626204,
+          48.1505705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tops",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "https://www.tops-ev.de/kontakt/",
+        "opening_hours": "",
+        "osm_id": 9950857557,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5449932,
+          48.1209103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "triqube Beratung",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 81303102",
+        "website": "http://triqube.de/triqube/_start.html",
+        "opening_hours": "",
+        "osm_id": 13248708303,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5839378,
+          48.275469
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TRUSTEQ",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Theresienhöhe 13a, 80339 München",
+        "phone": "+49 221 67057690",
+        "website": "https://trusteq.de",
+        "opening_hours": "",
+        "osm_id": 13064168541,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5457206,
+          48.1332973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unternehmensberatung",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8603346363,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6216925,
+          48.1185418
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ventum Consulting",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Georg-Brauchle-Ring 23",
+        "phone": "+4989122219642",
+        "website": "https://www.ventum-consulting.com",
+        "opening_hours": "",
+        "osm_id": 12818572625,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5379967,
+          48.1759172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ventx GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Landsberger Straße 94, 80339 München",
+        "phone": "+49 89 416 125 700",
+        "website": "https://www.ventx.de",
+        "opening_hours": "",
+        "osm_id": 10065301381,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5379715,
+          48.1400556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Worm Marketing Consulting GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Oetztaler Straße 1",
+        "phone": "+49 89 2306930-00",
+        "website": "https://www.worm-consulting.de",
+        "opening_hours": "",
+        "osm_id": 12826573716,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5339206,
+          48.1189444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "woyb",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "",
+        "phone": "+49 89 23 74 74 16",
+        "website": "https://www.woyb.de/",
+        "opening_hours": "",
+        "osm_id": 261052935,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5955,
+          48.1233531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "x-log Elektronik GmbH",
+        "category": "Office",
+        "office_type": "consulting",
+        "address": "Adlerfarnstraße 4",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10876075786,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5513496,
+          48.19593
+        ]
+      }
+    }
+  ]
+}

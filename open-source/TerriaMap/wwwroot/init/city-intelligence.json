@@ -29,9 +29,65 @@
         {
           "id": "city-intelligence-munich-offices",
           "type": "geojson",
-          "name": "Munich Offices",
+          "name": "Munich Offices — All",
           "url": "data/city-intelligence/munich-offices.geojson",
           "description": "Office-related locations in the Munich prototype bounds from OpenStreetMap via Overpass, including office=* and building=office features."
+        },
+        {
+          "id": "city-intelligence-munich-law-firms",
+          "type": "geojson",
+          "name": "Munich Law Firms",
+          "url": "data/city-intelligence/munich-law-firms.geojson",
+          "description": "Law firm office locations split from the Munich Offices layer."
+        },
+        {
+          "id": "city-intelligence-munich-consultants",
+          "type": "geojson",
+          "name": "Munich Consultants",
+          "url": "data/city-intelligence/munich-consultants.geojson",
+          "description": "Consulting office locations split from the Munich Offices layer."
+        },
+        {
+          "id": "city-intelligence-munich-real-estate-offices",
+          "type": "geojson",
+          "name": "Munich Real Estate Offices",
+          "url": "data/city-intelligence/munich-real-estate-offices.geojson",
+          "description": "Real estate office locations split from the Munich Offices layer."
+        },
+        {
+          "id": "city-intelligence-munich-insurance-offices",
+          "type": "geojson",
+          "name": "Munich Insurance Offices",
+          "url": "data/city-intelligence/munich-insurance-offices.geojson",
+          "description": "Insurance office locations split from the Munich Offices layer."
+        },
+        {
+          "id": "city-intelligence-munich-government-offices",
+          "type": "geojson",
+          "name": "Munich Government Offices",
+          "url": "data/city-intelligence/munich-government-offices.geojson",
+          "description": "Government office locations split from the Munich Offices layer."
+        },
+        {
+          "id": "city-intelligence-munich-company-offices",
+          "type": "geojson",
+          "name": "Munich Company Offices",
+          "url": "data/city-intelligence/munich-company-offices.geojson",
+          "description": "Company office locations split from the Munich Offices layer."
+        },
+        {
+          "id": "city-intelligence-munich-generic-office-buildings",
+          "type": "geojson",
+          "name": "Munich Generic Office Buildings",
+          "url": "data/city-intelligence/munich-generic-office-buildings.geojson",
+          "description": "Generic office building locations split from the Munich Offices layer."
+        },
+        {
+          "id": "city-intelligence-munich-other-offices",
+          "type": "geojson",
+          "name": "Munich Other Offices",
+          "url": "data/city-intelligence/munich-other-offices.geojson",
+          "description": "Other office-related locations split from the Munich Offices layer."
         },
         {
           "id": "city-intelligence-munich-clinics",

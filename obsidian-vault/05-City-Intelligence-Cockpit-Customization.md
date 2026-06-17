@@ -8,6 +8,7 @@
 - Renamed visible app branding to `City Intelligence Cockpit`.
 - Added a `City Intelligence Cockpit` catalog group with a real `Munich Pharmacies` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Offices` GeoJSON layer from OpenStreetMap.
+- Split `Munich Offices` into focused business sublayers while keeping `Munich Offices — All`.
 - Added a real `Munich Coworking Spaces` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Clinics` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Restaurants` GeoJSON layer from OpenStreetMap.
@@ -19,6 +20,7 @@
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
 - Added `scripts/fetch-munich-offices.py` to refresh the Munich offices layer from Overpass.
+- Added `scripts/split-munich-offices.py` to regenerate local office sublayers from `munich-offices.geojson`.
 - Added `scripts/fetch-munich-coworking.py` to refresh the Munich coworking layer from Overpass.
 - Added `scripts/fetch-munich-clinics.py` to refresh the Munich clinics layer from Overpass.
 - Added `scripts/fetch-munich-restaurants.py` to refresh the Munich restaurant layer from Overpass.
@@ -34,6 +36,14 @@
 - `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.geojson`
 - `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`
 - `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-offices.geojson`
+- `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-law-firms.geojson`
+- `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-consultants.geojson`
+- `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-real-estate-offices.geojson`
+- `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-insurance-offices.geojson`
+- `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-government-offices.geojson`
+- `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-company-offices.geojson`
+- `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-generic-office-buildings.geojson`
+- `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-other-offices.geojson`
 - `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-coworking.geojson`
 - `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-clinics.geojson`
 - `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-restaurants.geojson`
@@ -43,6 +53,7 @@
 - `open-source/TerriaMap/lib/Views/UserInterface.jsx`
 - `scripts/fetch-munich-pharmacies.py`
 - `scripts/fetch-munich-offices.py`
+- `scripts/split-munich-offices.py`
 - `scripts/fetch-munich-coworking.py`
 - `scripts/fetch-munich-clinics.py`
 - `scripts/fetch-munich-restaurants.py`
@@ -78,7 +89,15 @@ All City Intelligence Cockpit layers are grouped under one `City Intelligence Co
 Current layer order:
 
 - `Munich Pharmacies`
-- `Munich Offices`
+- `Munich Offices — All`
+- `Munich Law Firms`
+- `Munich Consultants`
+- `Munich Real Estate Offices`
+- `Munich Insurance Offices`
+- `Munich Government Offices`
+- `Munich Company Offices`
+- `Munich Generic Office Buildings`
+- `Munich Other Offices`
 - `Munich Clinics`
 - `Munich Coworking Spaces`
 - `Munich Restaurants`
@@ -86,15 +105,15 @@ Current layer order:
 Startup behavior:
 
 - `Munich Pharmacies` is the only layer enabled by default.
-- Offices, clinics, coworking spaces, and restaurants are available in the catalog but disabled by default to avoid crowding the startup map.
+- Offices, office sublayers, clinics, coworking spaces, and restaurants are available in the catalog but disabled by default to avoid crowding the startup map.
 
-Category filtering is currently handled by separate catalog layers. More advanced attribute filtering can be added later if it is worth deeper TerriaMap UI work.
+Category filtering is currently handled by separate catalog layers. Office sublayers are generated locally from `office_type` in `munich-offices.geojson`.
 
 Verification notes:
 
 - Browser loaded `http://localhost:3001/` with no map configuration error.
 - The `City Intelligence Cockpit` catalog group appeared clearly in Data.
-- Layer order appeared as `Munich Pharmacies`, `Munich Offices`, `Munich Clinics`, `Munich Coworking Spaces`, and `Munich Restaurants`.
+- Layer order appeared as `Munich Pharmacies`, `Munich Offices — All`, the office sublayers, `Munich Clinics`, `Munich Coworking Spaces`, and `Munich Restaurants`.
 - Startup workbench count was `1`, confirming only `Munich Pharmacies` was enabled by default.
 - `Munich Coworking Spaces` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
 
@@ -229,6 +248,25 @@ The script writes:
 The current `Munich Offices` layer is generated from OpenStreetMap via Overpass. It uses the Munich prototype bounds and exports locations tagged with `office=*` or `building=office`.
 
 The latest fetch wrote `6,706` office features.
+
+The all-offices layer is split into local sublayers with:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+python3 scripts/split-munich-offices.py
+```
+
+Latest split counts:
+
+- `Munich Law Firms`: `184`
+- `Munich Consultants`: `82`
+- `Munich Real Estate Offices`: `182`
+- `Munich Insurance Offices`: `247`
+- `Munich Government Offices`: `167`
+- `Munich Company Offices`: `1,757`
+- `Munich Generic Office Buildings`: `2,204`
+- `Munich Other Offices`: `1,883`
+- Sublayer total: `6,706`
 
 Each feature includes:
 

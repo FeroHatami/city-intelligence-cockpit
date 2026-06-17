@@ -1,0 +1,4015 @@
+{
+  "type": "FeatureCollection",
+  "name": "Munich Government Offices",
+  "source": "OpenStreetMap / Overpass",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amt für Digitalisierung, Breitband und Vermessung Dachau",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Krankenhausstraße 9, 85221 Dachau",
+        "phone": "",
+        "website": "https://www.adbv-dachau.de",
+        "opening_hours": "",
+        "osm_id": 251318369,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.430874,
+          48.2637162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amt für Digitalisierung, Breitband und Vermessung München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Prinzregentenstraße 5, 80538 München",
+        "phone": "+49 89 216380",
+        "website": "https://www.ldbv.bayern.de/",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-12:00",
+        "osm_id": 27959436,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5925874,
+          48.1425264
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amt für Familie, Jugend & Bildung der Gemeinde Vaterstetten",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Wendelsteinstraße 10, 85591 Vaterstetten",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-12:00, Th 14:00-18:00",
+        "osm_id": 9331976684,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7700145,
+          48.1050373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amt für Jugend und Familie Fürstenfeldbruck - Sozialraum Germering",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Planegger Straße 9, 82110 Germering",
+        "phone": "+49 8141 519 599",
+        "website": "https://www.lra-ffb.de/gesundheit-soziales-migration/kinder-jugendliche-und-familien#panel-9009-2",
+        "opening_hours": "",
+        "osm_id": 12696746495,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3690271,
+          48.1259981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amt für Jugend und Familie Fürstenfeldbruck - Sozialraum Olching/Gröbenzell",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Kirchenstraße 11, 82194 Gröbenzell",
+        "phone": "+49 8141 519 599",
+        "website": "https://www.lra-ffb.de/gesundheit-soziales-migration/kinder-jugendliche-und-familien#panel-9009-2",
+        "opening_hours": "",
+        "osm_id": 12696746497,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3728575,
+          48.1942931
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amt für Ländliche Entwicklung Oberbayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Infanteriestraße 1, 80797 München",
+        "phone": "+49 89 1213 01",
+        "website": "https://www.ale-oberbayern.bayern.de/",
+        "opening_hours": "Mo-Th 08:00-12:00,13:30-16:00; Fr 08:00-12:00; PH off",
+        "osm_id": 7775742423,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5573375,
+          48.1572043
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amt für Wohnen und Migration",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 16328047,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5925316,
+          48.1278126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ausländerbehörde",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Seidlstraße 27, 80335 München",
+        "phone": "+4989115",
+        "website": "https://stadt.muenchen.de/infos/asyl.html",
+        "opening_hours": "Mo,Fr 07:30-12:00; Tu 08:30-12:00,14:00-18:00; We \"nur mit Termin\"; Th 08:30-15:00; Sa,Su,PH off",
+        "osm_id": 6418521130,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5581597,
+          48.1468733
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Außenstelle Bauamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Valerystraße 1, 85716 Unterschleißheim",
+        "phone": "",
+        "website": "https://www.unterschleissheim.de/planen-bauen-wohnen-klimaschutz/aussenstelle-bauamt.html",
+        "opening_hours": "Mo-We,Fr 08:00-12:30; Th 14:00-18:00",
+        "osm_id": 12289904248,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.568278,
+          48.2721025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bauamt Gemeinde Zorneding",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Münchner Straße 15a, 85604 Zorneding",
+        "phone": "",
+        "website": "https://www.zorneding.de/verwaltung/rathaus/index.shtml",
+        "opening_hours": "",
+        "osm_id": 5214202721,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8219421,
+          48.0827815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bauamt Oberschleißheim",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13100654569,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.557596,
+          48.2617197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bauhof",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1105718924,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.800275,
+          48.2230491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baureferat Gartenbau, Stützpunkt Dornröschenstraße 2a",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 85177874,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6722584,
+          48.0794156
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baureferat Tiefbau",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Belgradstraße 89, 80804",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13907989467,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.573561,
+          48.1686266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baureferat, Tiefbau, Straßenunterhaltsbezirk West",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Planegger Straße 111",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5555074809,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4532637,
+          48.1355615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerische Eisenbahngesellschaft",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://bahnland-bayern.de",
+        "opening_hours": "",
+        "osm_id": 7297764878,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5300998,
+          48.0996252
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerische Staatskanzlei",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Franz-Josef-Strauß-Ring 1, 80539 München",
+        "phone": "",
+        "website": "https://www.bayern.de/staatskanzlei/staatskanzlei/",
+        "opening_hours": "",
+        "osm_id": 124911353,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5827541,
+          48.142347
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerischer Landesbeauftragte für den Datenschutz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Wagmüllerstraße 18, 80538 München",
+        "phone": "+49 89 212672 0",
+        "website": "https://www.datenschutz-bayern.de/",
+        "opening_hours": "",
+        "osm_id": 11328877067,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5887887,
+          48.1421747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerischer Landtag",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "+498941260",
+        "website": "https://www.bayern.landtag.de/",
+        "opening_hours": "",
+        "osm_id": 4305720928,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5941368,
+          48.1361881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerischer Oberster Rechnungshof",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Kaulbachstraße 9, 80539 München",
+        "phone": "+49 89 28626-0",
+        "website": "https://www.orh.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 7772494080,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5824426,
+          48.1467732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Altlastenkataster, Referat für Gesundheit und Umwelt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bayerstraße 28a, 80335 München",
+        "phone": "+49 89 233 963 00",
+        "website": "https://www.lfu.bayern.de/altlasten/altlastenkataster/index.htm",
+        "opening_hours": "",
+        "osm_id": 3929290107,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.552618,
+          48.139409
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Hauptmünzamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Zamdorfer Straße 92, 81677 München",
+        "phone": "+49 89 992690 0",
+        "website": "https://hauptmuenzamt.bayern/",
+        "opening_hours": "",
+        "osm_id": 42018056,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6437701,
+          48.1383736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Landesamt für Denkmalpflege",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-14:00",
+        "osm_id": 2546598971,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5786852,
+          48.1388672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Landesamt für Gesundheit und Lebensmittelsicherheit (LGL)",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13100654566,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5577011,
+          48.2610872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Landesamt für Gesundheit und Lebensmittelsicherheit, Dienststelle Oberschleißheim",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 403813406,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5496805,
+          48.2496676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Landesamt für Statistik, Dienststelle München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Sankt-Martin-Straße 47, 81541 München",
+        "phone": "+49 89 21190",
+        "website": "https://www.statistik.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 355775564,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5978839,
+          48.1195602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Landesamt für Steuern, Dienststelle München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Sophienstraße 6, 80333 München",
+        "phone": "+49 89 9991 0",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2431031657,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5658007,
+          48.1423923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Landeskriminalamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13529465900,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.533666,
+          48.1323312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium der Justiz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12591506308,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5642598,
+          48.1406332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium des Innern, für Sport und Integration",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Odeonsplatz 3, 80539 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 27445058,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5769279,
+          48.1434541
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Arbeit und Soziales, Familie und Integration",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Winzererstraße 9, 80797 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4683603591,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5589529,
+          48.1562237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Digitales",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Oskar-von-Miller-Ring 35, 80333 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6089726292,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5768711,
+          48.1458876
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Ernährung, Landwirtschaft, Forsten und Tourismus",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Ludwigstraße 2, 80539 München",
+        "phone": "+49 89 2182-0",
+        "website": "https://www.stmelf.bayern.de",
+        "opening_hours": "",
+        "osm_id": 3929290108,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5789463,
+          48.1448131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Familie, Arbeit und Soziales",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://www.stmas.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 35834768,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5592681,
+          48.1553046
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Gesundheit, Pflege und Prävention",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Haidenauplatz 1, 81667 München",
+        "phone": "+49 89 540233-0",
+        "website": "https://www.stmgp.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 347324093,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6108471,
+          48.1328789
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Umwelt und Verbraucherschutz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Rosenkavalierplatz 2, 81925 München",
+        "phone": "+49 89 9214 00",
+        "website": "https://www.stmuv.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 1657606,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.618572,
+          48.1529508
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Unterricht und Kultus, Bayerisches Staatsministerium für Wissenschaft, Forschung und Kunst",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1612042136,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5747846,
+          48.142371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Wirtschaft und Medien, Energie und Technologie",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Prinzregentenstraße 28, 80538 München",
+        "phone": "+49 89 2162-0",
+        "website": "https://www.stmwi.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 331600047,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5906861,
+          48.1422445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Wissenschaft und Kunst",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Salvatorstraße 2, 80333 München",
+        "phone": "+49 89 2186-0",
+        "website": "https://www.stmwk.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 1014277820,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5764312,
+          48.1414195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerisches Staatsministerium für Wohnen, Bau und Verkehr",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Franz-Josef-Strauß-Ring 4, 80539 München",
+        "phone": "+49 89 2192-02",
+        "website": "https://www.stmb.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 67886,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5846554,
+          48.143034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayrisches Landesamt für Steuern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Katharina-von-Bora-Straße 6, 80333 München",
+        "phone": "",
+        "website": "https://www.lfst.bayern.de/ueber-uns/kontakt/dienststelle-muenchen",
+        "opening_hours": "",
+        "osm_id": 30600740,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5659061,
+          48.143687
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayrisches Staatsministerium für Unterricht und Kultus",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Salvatorstraße 2, 80333 München",
+        "phone": "+49 89 21860",
+        "website": "https://www.km.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 1014275352,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5763413,
+          48.1414346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bezirk Oberbayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Prinzregentenstraße 14, 80538 München",
+        "phone": "+49 89 219801",
+        "website": "https://www.bezirk-oberbayern.de/",
+        "opening_hours": "Mo-Th 08:00-17:00; Fr 08:00-13:00",
+        "osm_id": 14000383,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5861869,
+          48.1429035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Branddirektion München: Einsatzvorbeugung: Blitzschutz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Gotzinger Straße 52b, 81371 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13745467809,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5497154,
+          48.1187491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bundesamt für Strahlenschutz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-15:00",
+        "osm_id": 7326395828,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.589453,
+          48.2210641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bundesnetzagentur",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Betzenweg 32, 81247 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8040868568,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4678249,
+          48.1674853
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Rathausplatz 1, 85716 Unterschleißheim",
+        "phone": "+49 89 310090",
+        "website": "https://www.unterschleissheim.de/rathaus-politik-buergerservice-online/rathaus/buergerbuero-information.html",
+        "opening_hours": "Mo 08:00-12:30,14:00-16:00; Tu 08:00-12:30,14:00-16:00 \"by appointment\"; We 07:00-12:30; Th 14:00-18:00; Fr 08:00-12:30",
+        "osm_id": 23983246,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5713114,
+          48.2734296
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro Bezirksausschuss 3",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Schellingstraße 28a",
+        "phone": "",
+        "website": "https://stadt.muenchen.de/infos/bezirksausschuss3_maxvorstadt.html",
+        "opening_hours": "",
+        "osm_id": 34103891,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5762008,
+          48.1503107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro Forstenried",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Forstenrieder Allee 61a, 81476 München",
+        "phone": "+49 89 233-96000",
+        "website": "https://stadt.muenchen.de/rathaus/verwaltung/kreisverwaltungsreferat.html",
+        "opening_hours": "Mo 07:30-13:00, Tu 08:30-13:00,14:00-18:00, We 07:30-13:00, Th 08:30-13:00, Fr 07:30-13:00; Sa off; Su off, Th 14:00-18:00",
+        "osm_id": 2373046141,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4992006,
+          48.0938686
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro Leonrodstraße",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Leonrodstraße 21, 80634 München",
+        "phone": "+49 89 233-96000",
+        "website": "https://stadt.muenchen.de/service/info/burgerburo-leonrodstrasse/1073581/",
+        "opening_hours": "Mo,We,Fr 07:30-13:00; Tu 08:30-13:00,14:00-18:00; Th 07:30-13:00; PH,Sa,Su off",
+        "osm_id": 747135577,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5357696,
+          48.153615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro Neubiberg",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-We,Fr 07:30-12:00; Th 07:30-12:00,14:00-18:00",
+        "osm_id": 6069330974,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6610639,
+          48.0755557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro Orleansplatz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Orleansstraße 50",
+        "phone": "+49 89 233-96000",
+        "website": "https://stadt.muenchen.de/service/info/burgerburo-orleansplatz/1073580/",
+        "opening_hours": "Mo,We,Fr 07:30-13:00; Tu,Th 08:30-13:00,14:00-18:00",
+        "osm_id": 925722568,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6048834,
+          48.1287122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro Scheidplatz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Belgradstraße 77, 80804 München",
+        "phone": "+49 89 233-96000",
+        "website": "https://stadt.muenchen.de/service/info/burgerburo-scheidplatz/1073582/",
+        "opening_hours": "Mo, We, Fr 07:30-13:00; Tu, Th 08:30-13:00, 14:00-18:00; Sa,Su,PH off",
+        "osm_id": 13173696106,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5736218,
+          48.1676858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro Stadt Dachau",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Pfarrstraße 2, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 07:30-12:30, Th 14:00-18:00",
+        "osm_id": 11088972028,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4339109,
+          48.2598237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerbüro Stockdorf",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Harmsplatz 2-4, 82131 Gauting",
+        "phone": "+49 89 89337150",
+        "website": "https://www.gauting.de/",
+        "opening_hours": "closed \"Bis auf Weiteres geschlossen.\"",
+        "osm_id": 11336369705,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4049895,
+          48.0924203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bürgerzentrum Pasinger Rathaus (Altbau)",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Landsberger Straße 486, 81241 München",
+        "phone": "+49 89 233-96000",
+        "website": "https://stadt.muenchen.de/rathaus/verwaltung/kreisverwaltungsreferat.html",
+        "opening_hours": "Mo,We,Fr 07:30-12:00; Tu 08:30-12:00,14:00-18:00; Th 08:30-15:00",
+        "osm_id": 25299100,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4621564,
+          48.1469489
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deutsche Rentenversicherung Bayern Süd",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Thomas-Dehler-Straße 3, 81737 München",
+        "phone": "",
+        "website": "https://www.deutsche-rentenversicherung.de/BayernSued/DE/Home/home_node.html",
+        "opening_hours": "",
+        "osm_id": 8032785,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6482252,
+          48.1028616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deutscher Wetterdienst - Niederlassung München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Helene-Weber-Allee 21-23, 80637 München",
+        "phone": "+49 69 8062-0",
+        "website": "https://www.dwd.de/DE/Home/home_node.html",
+        "opening_hours": "Mo-Th 08:00-15:30; Fr 08:00-14:30",
+        "osm_id": 9361125,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5433825,
+          48.1633613
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deutscher Wetterdienst - Service und Logistik",
+        "category": "Office",
+        "office_type": "government",
+        "address": "August-Schmauß-Straße 1, 85764 Oberschleißheim",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 206920067,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5529123,
+          48.2446404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deutsches Patent- und Markenamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Anzinger Straße 29",
+        "phone": "",
+        "website": "https://www.dpma.de/",
+        "opening_hours": "",
+        "osm_id": 13430346801,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.610136,
+          48.1214566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deutsches Patent- und Markenamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Zweibrückenstraße 12, 80331 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1665166,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5833044,
+          48.1319706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Einbürgerungsstelle",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bavariastraße 7a, 80336 München",
+        "phone": "",
+        "website": "https://stadt.muenchen.de/service/info/einburgerungsbehorde/1080548/",
+        "opening_hours": "Mo,We \"nur mit Termin\"; Tu 08:30-12:00, 14:00-18:00; Th 08:30-15:00; Fr 07:30-12:00; PH off",
+        "osm_id": 4695118547,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5466431,
+          48.1260425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erstanlaufstelle für ukrainische Geflüchtete",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Dachauer Straße 122, 80637 München",
+        "phone": "",
+        "website": "https://stadt.muenchen.de/infos/hilfen_fuer_gefluechtete_aus_ukraine.html",
+        "opening_hours": "Mo-Fr 08:00-16:00",
+        "osm_id": 11362970076,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5445686,
+          48.1620437
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erzbischöfliches Matrikelamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Pacellistraße 10, 80333 München",
+        "phone": "+49 89 2137 1355",
+        "website": "",
+        "opening_hours": "Mo-We 08:00-12:00,13:00-15:00; Th 08:00-12:00,13:00-17:00",
+        "osm_id": 332790689,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5709147,
+          48.1406933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erzbischöfliches Ordinariat, Baureferat",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 699702754,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5724723,
+          48.141265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Patent Office - Haar building - Board of Appeal",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Richard-Reitzner-Allee 8, 85540 Haar",
+        "phone": "+49 89 2399-0",
+        "website": "https://www.epo.org/en/service-support/contact-us/locations/",
+        "opening_hours": "",
+        "osm_id": 5167241037,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7319149,
+          48.1146147
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "European Patent Office - Pschorr VIII",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://www.epo.org/en/service-support/contact-us",
+        "opening_hours": "",
+        "osm_id": 5167233260,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5469337,
+          48.1405483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Europäisches Patentamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bob-van-Benthem-Platz 1, 80469 München",
+        "phone": "",
+        "website": "https://www.epo.org/de/service-support/contact-us",
+        "opening_hours": "",
+        "osm_id": 11701898,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5803848,
+          48.1306676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Europäisches Patentamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://www.epo.org/",
+        "opening_hours": "",
+        "osm_id": 12787953,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5481307,
+          48.1396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzamt Dachau",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bürgermeister-Zauner-Ring 2, 85221 Dachau",
+        "phone": "",
+        "website": "https://www.finanzamt.bayern.de/Dachau/",
+        "opening_hours": "",
+        "osm_id": 171377969,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4259796,
+          48.2624222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzamt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Deroystraße 4, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2068621,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.545349,
+          48.1461094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzamt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 646051346,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5443984,
+          48.1462942
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzamt München Servicezentrum",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://www.finanzamt.bayern/",
+        "opening_hours": "Mo-We 07:30-16:00; Th 07:30-18:00; Fr 07:30-12:30",
+        "osm_id": 27572226,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5451512,
+          48.145392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzamt München – Steuerfahndungsstelle",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Prinz-Ludwig-Straße 1-3, 80333 München",
+        "phone": "+49 89 1252 1111",
+        "website": "https://www.finanzamt-muenchen.de/kontakt/anschrift-fax-e-mail/aussenpruefung",
+        "opening_hours": "",
+        "osm_id": 7775849838,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5715568,
+          48.1452552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzamt München, Abteilung IV",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Karlstraße 9;11, 80333 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12346373520,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5668461,
+          48.1428985
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzamt München, Abteilung Körperschaften",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Karlstraße 21, 80333 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7852554049,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5656747,
+          48.1431962
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzverwaltung",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Rathausplatz 1, 85748 Garching bei München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13659596169,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6505997,
+          48.2508903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finanzverwaltung der Gemeinde Vaterstetten",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Wendelsteinstraße 10, 85591 Vaterstetten",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-12:00, Th 14:00-18:00",
+        "osm_id": 654176727,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7700197,
+          48.1050241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Forstbetrieb München - Revier Gauting",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 376720675,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3729179,
+          48.0973091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Führerscheinstelle",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bretonischer Ring 4, 85630 Grasbrunn",
+        "phone": "+49 89 6221-3000",
+        "website": "https://www.landkreis-muenchen.de/landratsamt/standorte-und-oeffnungszeiten/grasbrunn-neukeferloh/",
+        "opening_hours": "Mo-Fr 07:30-12:00, Tu,Th 13:30-16:00",
+        "osm_id": 9575366954,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7621459,
+          48.1005993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Generaldirektion und Zentralverwaltung der Staatlichen Naturwissenschaftlichen Sammlungen Bayerns",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Menzinger Straße 71, 80638 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 99148945,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4987533,
+          48.1645681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gesundheits- und Vetärinäramt, Lebensmittelüberwachung Dachau",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Doktor-Hiller-Straße 36, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 336700212,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4286881,
+          48.2668529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gesundheitsreferat",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bayerstraße 28a, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:00, Mo,Tu,Th 13:30-15:00",
+        "osm_id": 2271561877,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5527682,
+          48.1392297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gewerbeaufsichtsamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Heßstraße 130, 80797 München",
+        "phone": "",
+        "website": "https://www.regierung.oberbayern.bayern.de/ueber_uns/organisation/dienststellen/index.html",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-14:00; PH off",
+        "osm_id": 13049941923,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5542291,
+          48.1576278
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Handwerkskammer für München und Oberbayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Max-Joseph-Straße 4, 80333 München",
+        "phone": "+49 89 5119-0",
+        "website": "https://www.hwk-muenchen.de/",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-13:00",
+        "osm_id": 389764678,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5707494,
+          48.1433351
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hauptzollamt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Sophienstraße 6, 80333 München",
+        "phone": "+49 89 5995 00",
+        "website": "https://www.zoll.de/SharedDocs/Dienststellen/DE/1_DSSD_Importer/Hauptzollamt/HZA_Muenchen/HZA_Muenchen_7600/HZA_Muenchen_7600.html?bcnn=121952",
+        "opening_hours": "",
+        "osm_id": 4052287012,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.567419,
+          48.1423625
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hauptzollamt München - Dienstsitz Landsberger Str. 122 - KFZ-Steuerstelle",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Landsberger Straße 122, 80339 München",
+        "phone": "+49 89 5109 2900",
+        "website": "https://www.zoll.de/SharedDocs/Dienststellen/DE/1_DSSD_Importer/ZZ_Sonderdienststellen_suchindexausschluss/HZA_Muenchen_Dienstort_Landsberger_Strasse_7605/HZA_Muenchen_Dienstort_Landsberger_Strasse_7605.html?category=KFZSteuer&bcnn=281734",
+        "opening_hours": "",
+        "osm_id": 4052272989,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5336533,
+          48.1404006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hauptzollamt München - Dienstsitz Landsberger Str. 124",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Landsberger Straße 124, 80339 München",
+        "phone": "+49 89 5109 2602",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4050350306,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5335529,
+          48.1410348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hauptzollamt München Zollamt Garching-Hochbrück",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Dieselstraße 9, 85748 Garching bei München",
+        "phone": "+49 89 480 907 0",
+        "website": "https://www.zoll.de/SharedDocs/Dienststellen/DE/1_DSSD_Importer/Hauptzollamt/HZA_Muenchen/ZA/ZA_Garching_Hochbrueck_7602/ZA_Garching_Hochbrueck_7602.html?bcnn=121952",
+        "opening_hours": "",
+        "osm_id": 30824687,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6255964,
+          48.2531682
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Internationales Beratungszentrum",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Goethestraße 53",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2503209466,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5587817,
+          48.1330636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jobcenter",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,We 09:00-12:00,13:00-15:00; Th 13:00-16:00; Fr 09:00-12:00",
+        "osm_id": 3679340327,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5551034,
+          48.1376379
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "jobcenter",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Fr 08:00-16:00; Mo-Th 08:00-18:00",
+        "osm_id": 9765061652,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5931323,
+          48.1277717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jugendinformationszentrum München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Sendlinger Straße 7, 80331 München",
+        "phone": "+49 89 550 521 50",
+        "website": "https://jugendinfo-muenchen.de/",
+        "opening_hours": "Mo 12:00-19:00; Tu-Fr 13:00-18:00",
+        "osm_id": 1660556255,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5724085,
+          48.1355433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kassen- und Steueramt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Herzog-Wilhelm-Straße 11, 80331 München",
+        "phone": "",
+        "website": "https://www.muenchen.de/",
+        "opening_hours": "Mo-Fr 08:30-12:00",
+        "osm_id": 439216980,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5667201,
+          48.1369482
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kfz-Zulassungsstelle",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bretonischer Ring 1, 85630 Grasbrunn",
+        "phone": "+49 89 6221-3000",
+        "website": "https://www.landkreis-muenchen.de/landratsamt/standorte-und-oeffnungszeiten/grasbrunn-neukeferloh/",
+        "opening_hours": "Mo-Fr 07:30-12:00, Tu,Th 13:30-16:00",
+        "osm_id": 35223851,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7615365,
+          48.1002067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kommunalreferat",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8100536922,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5698792,
+          48.1335855
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koordinierungsstelle zur Gleichstellung von LGBTI*",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Angertorstraße 7, 80469 München",
+        "phone": "+49 89 23001981",
+        "website": "https://stadt.muenchen.de/rathaus/verwaltung/direktorium/lgbtiq-stelle",
+        "opening_hours": "\"Termine nur nach Vereinbarung\"",
+        "osm_id": 884381038,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5703264,
+          48.1310492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kraftfahrzeugzulassungs- und Fahrerlaubnisbehörde",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Eichstätter Straße 2, 80686 München",
+        "phone": "+49 89 23396090",
+        "website": "https://stadt.muenchen.de/buergerservice/verkehr-mobilitaet/fahrzeuge.html",
+        "opening_hours": "Mo 07:00-12:30; Tu 08:30-12:30,13:30-18:00; We 07:00-12:30; Th 07:30-15:00; Fr 07:00-12:30",
+        "osm_id": 30076084,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5203492,
+          48.1318411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kreisjugendamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:00, Th 14:00-17:30",
+        "osm_id": 268034584,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5828879,
+          48.1241317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kreisverwaltungsreferat",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Hanauer Straße 56, 80992 München",
+        "phone": "+49 89 233 38600",
+        "website": "",
+        "opening_hours": "Mo,We,Fr 07:30-12:00; Tu 08:30-12:00,14:00-16:00; Th 08:30-15:00; PH off",
+        "osm_id": 4846393162,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5299618,
+          48.1811934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kreisverwaltungsreferat München (KVR)",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Pilgersheimer Straße 20, 81543 München",
+        "phone": "+49 89 23386644",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 523279069,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.574045,
+          48.118191
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kulturreferat",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Rathausplatz 1, 85748 Garching bei München",
+        "phone": "",
+        "website": "https://www.kultur-garching.de/",
+        "opening_hours": "Mo-We, Fr 08:00-12:00; Th 08:00-12:00, 14:00-18:00; PH off",
+        "osm_id": 1331241824,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6507879,
+          48.2508756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KVR Ruppertstraße",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Ruppertstraße 19, 80337 München",
+        "phone": "+49 89 233 96000",
+        "website": "https://stadt.muenchen.de/rathaus/verwaltung/kreisverwaltungsreferat.html",
+        "opening_hours": "Mo,We,Fr 07:30-12:00; Tu 08:30-12:00,14:00-18:00; Th 08:30-15:00; PH off",
+        "osm_id": 6257785,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5504108,
+          48.124378
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landesamt für Digitalisierung, Breitband und Vermessung",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Alexandrastraße 4, 80538 München",
+        "phone": "+49 89 2129 0",
+        "website": "https://ldbv.bayern.de/",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-14:00",
+        "osm_id": 259713050,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5903622,
+          48.1416478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landesamt für Digitalisierung, Breitband und Vermessung",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Sankt-Martin-Straße 47, 81541 München",
+        "phone": "",
+        "website": "https://www.ldbv.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 37805971,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5967295,
+          48.1192134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landesamt für Finanzen",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Alexandrastraße 3, 80538 München",
+        "phone": "+49 89 219001",
+        "website": "https://www.lff.bayern.de/",
+        "opening_hours": "Mo-Fr 08:00-12:00",
+        "osm_id": 259714807,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5898292,
+          48.1417857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landesamt für Finanzen - Dienststelle München Bezügestelle Besoldung",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Wagmüllerstraße 14, 80538 München",
+        "phone": "+49 89 219001",
+        "website": "https://www.lff.bayern.de/lff/organisationseinheiten/dienststelle-muenchen/",
+        "opening_hours": "",
+        "osm_id": 292168587,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5889055,
+          48.1415956
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landesbaudirektion Bayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Schwere-Reiter-Straße 41, 80797 München",
+        "phone": "",
+        "website": "https://www.lbd.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 80379416,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5604535,
+          48.1616197
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landeshauptstadt München Führerscheinstelle",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Garmischer Straße 19-21, 81373 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7523056624,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5319574,
+          48.1315975
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landeshauptstadt München, Personal- und Organisationsreferat",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9241416608,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5989447,
+          48.1226979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landeshauptstadt München, Sozialreferat, Amt für Wohnen und Migration",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://stadt.muenchen.de/buergerservice/wohnen-meldewesen/mieten.html",
+        "opening_hours": "Mo,We,Fr 08:30-12:00 \"Vorsprache bitte spätestens bis 11:30 Uhr\"; We 15:00-17:00 \"nur für Berufstätige\"",
+        "osm_id": 9303773998,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5973185,
+          48.1157914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landratsamt Dachau",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bürgermeister-Zauner-Ring 11, 85221 Dachau",
+        "phone": "",
+        "website": "https://www.landratsamt-dachau.de",
+        "opening_hours": "Mo-Fr 08:00-12:00, Th 14:00-18:00",
+        "osm_id": 249976610,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4267986,
+          48.2605269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landratsamt Dachau - Kfz-Zulassungsstelle",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Rudolf-Diesel-Straße 18c, 85221 Dachau",
+        "phone": "",
+        "website": "https://www.landratsamt-dachau.de/zulassung",
+        "opening_hours": "",
+        "osm_id": 13361132631,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.474747,
+          48.2636547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landratsamt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Mariahilfplatz 17, 81541 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-12:00, Th 14:00-17:30",
+        "osm_id": 268034613,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5824732,
+          48.1242585
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landratsamt München (München Riem)",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Joseph-Wild-Straße 20, 81829 München",
+        "phone": "+49 89 62210",
+        "website": "https://www.landkreis-muenchen.de/landratsamt/standorte-und-oeffnungszeiten/muenchen-riem/",
+        "opening_hours": "Mo-Fr 08:00-12:00; Th 08:00-12:00,14:00-17:30; Sa,Su,PH off",
+        "osm_id": 9694465355,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6882069,
+          48.1353393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landratsamt München Außenstelle Ludmillastraße",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Ludmillastraße 26, 81543 München",
+        "phone": "+49 89 62 21 18 00",
+        "website": "https://www.landkreis-muenchen.de/landratsamt/standorte-und-oeffnungszeiten/ludmillastrasse/",
+        "opening_hours": "Mo-We 08:00-12:00; Th 08:00-12:00,14:00-17:30; Fr 08:00-12:00",
+        "osm_id": 122004629,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5669297,
+          48.1106486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landtagsamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Praterinsel 3, 80538 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9849605022,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5908653,
+          48.136376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luftamt Südbayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Heßstraße 130, 80797 München",
+        "phone": "",
+        "website": "https://www.regierung.oberbayern.bayern.de/ueber_uns/zentralezustaendigkeiten/luftamt_suedbayern/index.html",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-14:00; PH off",
+        "osm_id": 9974574480,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5541528,
+          48.15758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mobilitätsreferat",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Implerstraße 9, 81371 München",
+        "phone": "+49 89 115",
+        "website": "https://stadt.muenchen.de/rathaus/verwaltung/mobiliaetsreferat.html",
+        "opening_hours": "Mo-Th 08:00-15:00; Fr 08:00-12:00",
+        "osm_id": 1398393983,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5490481,
+          48.1234728
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MPA/MPE/MPCDF Verwaltung",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Gießenbachstraße 1, 85748 Garching bei München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 07:55-16:45; Fr 07:55-15:00",
+        "osm_id": 5866241755,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.671093,
+          48.2612889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oberste Baubehörde - Lehrgangsgebäude",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Heßstraße 136, 80797 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 97455685,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5526992,
+          48.1584087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Orff-Zentrum München Staatsinstitut für Forschung und Dokumentation",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Kaulbachstraße 16, 80539 München",
+        "phone": "+49 89 288105-0",
+        "website": "https://www.orff-zentrum.de/",
+        "opening_hours": "",
+        "osm_id": 7772258205,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5835932,
+          48.1478558
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ratsaal",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Rathausplatz 1, 85748 Garching bei München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13659596170,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6507597,
+          48.2509269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Referat für Bildung und Sport",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bayerstraße 28, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-12:00",
+        "osm_id": 1516240570,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5531893,
+          48.1392417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Referat für Gesundheit und Umwelt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 07:45-12:00, 13:00-16:00; Fr 07:45-12:00",
+        "osm_id": 4082319826,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5551428,
+          48.1373619
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Referat für Klima und Umweltschutz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bayerstraße 28a, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8696362972,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5527196,
+          48.1392276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Regierung von Oberbayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Maximilianstraße 39, 80538 München",
+        "phone": "+49 89 2176-0",
+        "website": "https://www.regierung.oberbayern.bayern.de/",
+        "opening_hours": "Mo-Fr 07:30-19:00; PH,Sa,Su off",
+        "osm_id": 27923953,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5859782,
+          48.1384598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sozialbürgerhaus Orleansplatz",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://stadt.muenchen.de/infos/sbh-orl.html",
+        "opening_hours": "Mo-Fr 08:00-12:00",
+        "osm_id": 349435519,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6044402,
+          48.1276736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sozialbürgerhaus Schwabing-Freimann",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Heidemannstraße 170, 80939 München",
+        "phone": "+49 89 233 96833",
+        "website": "https://stadt.muenchen.de/infos/sbh-sf.html",
+        "opening_hours": "",
+        "osm_id": 12395359449,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6067485,
+          48.1994387
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sozialpsychiatrischer Dienst München-Land Süd",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Ludwig-Thoma-Straße 46-48, 85521 Ottobrunn",
+        "phone": "",
+        "website": "https://projekteverein.de/standorte/munchen-land-sued/",
+        "opening_hours": "",
+        "osm_id": 9017869322,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6801082,
+          48.0636445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sozialreferat Jugendamt",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 37701742,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5800831,
+          48.1637978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sozialreferat Landeshauptstadt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Sankt-Martin-Straße 53, 81669 München",
+        "phone": "+49 89 233 49723",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5352753647,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6004258,
+          48.1199461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatliches Bauamt Freising",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Winzererstraße 43, 80797 München",
+        "phone": "",
+        "website": "https://stbafs.bayern.de",
+        "opening_hours": "",
+        "osm_id": 10809230529,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5620447,
+          48.1624503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatliches Bauamt München 1",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Peter-Auzinger-Straße 10, 81547 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 37792728,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5838616,
+          48.0994917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatliches Bauamt München 2",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1979034879,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4748812,
+          48.1116044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatliches Bauamt München 2",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Pettenkoferstraße 9, München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 974569623,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5630275,
+          48.1339365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatliches Bauamt München 2",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://www.stbam2.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 34103818,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5807337,
+          48.1484075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatsanwaltschaft München I",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Linprunstraße 25, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-12:00",
+        "osm_id": 255886292,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.553928,
+          48.1496535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatsanwaltschaft München I - Außenstelle Infanteriestraße",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Infanteriestraße 9, 80797 München",
+        "phone": "+49 89 5597-07",
+        "website": "https://www.justiz.bayern.de/gerichte-und-behoerden/staatsanwaltschaft/muenchen-1/",
+        "opening_hours": "",
+        "osm_id": 11090526304,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5551739,
+          48.1577814
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatsanwaltschaft München II",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Arnulfstraße 16-18",
+        "phone": "+49 89 559705",
+        "website": "https://www.justiz.bayern.de/gerichte-und-behoerden/staatsanwaltschaft/muenchen-2/",
+        "opening_hours": "Mo-Fr 08:00-12:00",
+        "osm_id": 6085975522,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5580815,
+          48.1420344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Staatsinstitut für Schulqualität und Bildungsforschung (ISB)",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Schellingstraße 155, 80797 München",
+        "phone": "+49 89 2170-2008",
+        "website": "https://www.isb.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 3929291629,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5580276,
+          48.1547928
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stadtjugendamt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Streitfeldstraße 23, 81673 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 08:00-16:00; Fr 08:00-12:00",
+        "osm_id": 3672244983,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6198507,
+          48.1316075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stadtjugendamt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Luitpoldstraße 3, 80335 München",
+        "phone": "+498923349501",
+        "website": "https://stadt.muenchen.de/infos/jugendamt.html",
+        "opening_hours": "Mo-Fr 08:00-15:00",
+        "osm_id": 9602375044,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5625567,
+          48.1409582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stadtjugendamt, Beistandschaft, Beurkundung",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 3484123118,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5801005,
+          48.1101816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stadtwerke München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Hanauer Straße 56, 80992 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4846393161,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5300374,
+          48.1811974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Standesamt Ismaning",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo 08:00-12:00,14:00-18:00; Tu-Fr 08:00-12:00",
+        "osm_id": 3481206851,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6742301,
+          48.228143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Standesamt Mandlstraße",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Mandlstraße 14, 80802 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 174695008,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.59101,
+          48.1582658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Standesamt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Ruppertstraße 11, 80337",
+        "phone": "",
+        "website": "https://stadt.muenchen.de/buergerservice/familie-kind.html",
+        "opening_hours": "",
+        "osm_id": 12704577602,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5520216,
+          48.1238232
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Städtische Forstverwaltung München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "+49 89 8573337",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 371799161,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4150563,
+          48.0889502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Technisches Rathaus",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Friedenstraße 40",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,We,Fr 07:30-12:00; Tu 08:30-12:00,14:00-16:00; Th 08:30-15:00",
+        "osm_id": 4125963,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6124101,
+          48.1304492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "THW Landesverband Bayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Hedwig-Dransfeld-Allee 11, 80637 München",
+        "phone": "+49 228 9945310",
+        "website": "https://www.lv-by.thw.de/",
+        "opening_hours": "",
+        "osm_id": 89457146,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5435644,
+          48.1642449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "THW Regionalstelle München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bayerwaldstraße 11, 81737 München",
+        "phone": "+49 89 6302160",
+        "website": "https://www.thw.de/",
+        "opening_hours": "",
+        "osm_id": 4837335594,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6311069,
+          48.0914756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TÜV Süd Auto Service GmbH – Bereich Fahrerlaubnis",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Rüdesheimer Straße 7, 80686 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7128037228,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5230154,
+          48.1322961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Winzererstraße 9, 80797 München",
+        "phone": "",
+        "website": "https://www.stmas.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 156362,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5586051,
+          48.1558834
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1158371941,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5850231,
+          48.1433157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Lazarettstraße 67, 80636 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 117383033,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5503826,
+          48.1548284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "https://www.stmas.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 35834769,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5596608,
+          48.155992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versicherungskammer Bayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Sternstraße 3, 80538 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 27938538,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5896378,
+          48.1385404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Verwaltung",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Freseniusstraße 47, 81247 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 556112730,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4767013,
+          48.1692424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Verwaltungs-Berufsgenossenschaft (VBG)",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Barthstraße 20, 80339 München",
+        "phone": "+4989500950",
+        "website": "https://www.vbg.de/cms/standorte-der-vbg/muenchen",
+        "opening_hours": "",
+        "osm_id": 5789807130,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5278414,
+          48.1379365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Veterinärwesen",
+        "category": "Office",
+        "office_type": "government",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "We,Fr 09:00-11:30; PH off",
+        "osm_id": 4076247012,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5823584,
+          48.1233458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wasserwirtschaftsamt München",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Heßstraße 128, 80797 München",
+        "phone": "+49 89 2123303",
+        "website": "https://www.wwa-m.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 35834967,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5551218,
+          48.157151
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wasserwirtschaftsamt München - Flußmeisterstelle",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Ifflandstraße 10, 80538 München",
+        "phone": "+49 89 3301 9181",
+        "website": "https://www.wwa-m.bayern.de/",
+        "opening_hours": "",
+        "osm_id": 419196422,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5998623,
+          48.1518547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zentrale Anlaufstelle des Amtes für Jugend und Familie",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Boschstraße 1, 82178 Puchheim",
+        "phone": "+49 8141 519 599",
+        "website": "https://www.lra-ffb.de/gesundheit-soziales-migration/kinder-jugendliche-und-familien#panel-9009-2",
+        "opening_hours": "",
+        "osm_id": 12696746496,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3629733,
+          48.1707772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zentrum Bayern Familie und Soziales - Region Oberbayern",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Richelstraße 17, 80634 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8696741219,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5278502,
+          48.1455601
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zentrum für Informationstechnologie im Bildungsbereich (ZIB)",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Bayerstraße 28, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1516240573,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5531991,
+          48.139596
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ZITiS",
+        "category": "Office",
+        "office_type": "government",
+        "address": "Zamdorfer Straße 88, 81677",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 42033691,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.641615,
+          48.1383839
+        ]
+      }
+    }
+  ]
+}

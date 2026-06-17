@@ -1,0 +1,5935 @@
+{
+  "type": "FeatureCollection",
+  "name": "Munich Insurance Offices",
+  "source": "OpenStreetMap / Overpass",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A.N.H. Assekuranz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Ruppertstraße 34, 80337 München",
+        "phone": "+49 89 7473360",
+        "website": "https://www.pkv34.de/",
+        "opening_hours": "",
+        "osm_id": 5062807219,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5501918,
+          48.1249224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allfinanz Deutsche Vermögensberatung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,We,Fr 10:00-13:00; Tu,Th,Sa,Su,PH off",
+        "osm_id": 10166970708,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6176821,
+          48.1308233
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Am Bogen 36, 85521 Ottobrunn",
+        "phone": "+49 89 6096829",
+        "website": "https://vertretung.allianz.de/max.gawlitta/",
+        "opening_hours": "Mo,Tu,We,Fr 09:00-13:00; Th 09:00-13:00,16:00-18:30; Sa,Su,PH off",
+        "osm_id": 1008931130,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6661369,
+          48.0658653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Karl-Theodor-Straße 95, 80796 München",
+        "phone": "+49 89 300 019 56; +49 89 322 124 44",
+        "website": "https://vertretung.allianz.de/guenter.striegl/",
+        "opening_hours": "Mo,We 09:00-13:00; Tu,Th 09:00-13:00,15:00-18:00",
+        "osm_id": 10707458514,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5711024,
+          48.1671957
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-16:00",
+        "osm_id": 10753991709,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.548457,
+          48.1134529
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Loestraße 9, 85221 Dachau",
+        "phone": "",
+        "website": "https://vertretung.allianz.de/christian.schilling/",
+        "opening_hours": "",
+        "osm_id": 10778886205,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4340183,
+          48.2623315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10942427253,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5291915,
+          48.1613569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 28938182",
+        "website": "https://vertretung.allianz.de/david.heinrich/",
+        "opening_hours": "Mo-Th 09:00-15:00; Fr 09:00-13:00",
+        "osm_id": 11063746837,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5407165,
+          48.1192865
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Knorrstraße 20",
+        "phone": "+49 89 355360",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-13:00",
+        "osm_id": 11920541571,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5734079,
+          48.1802892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Montgelasstraße 15, 81679 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12138785255,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.601365,
+          48.1489543
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13092261495,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5183041,
+          48.1406607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Kidlerstraße 2",
+        "phone": "+49 89 74781820",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13243138822,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.542352,
+          48.1217023
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2567043042,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.52998,
+          48.2152934
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Ohlmüllerstraße 20, 81541 München",
+        "phone": "+49 89 69370451",
+        "website": "https://vertretung.allianz.de/murad.arikan",
+        "opening_hours": "Mo-Fr 09:00-13:00",
+        "osm_id": 3623392579,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5800242,
+          48.1249231
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://vertretung.allianz.de/thomas.reinholz/",
+        "opening_hours": "Mo-Fr 09:00-12:00",
+        "osm_id": 4228893174,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3651099,
+          48.1279706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Aidenbachstraße 72, 81379 München",
+        "phone": "",
+        "website": "https://vertretung.allianz.de/agentur.abdel/",
+        "opening_hours": "Mo-Th 09:00-16:00; Fr 09:00-14:00",
+        "osm_id": 4727980381,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5231427,
+          48.0956903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Alramstraße 8",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6857637108,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5475894,
+          48.1209907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-13:00",
+        "osm_id": 7181175333,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3568056,
+          48.173726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Gerner Straße 22, 80638 München",
+        "phone": "+49 89 152000",
+        "website": "https://vertretung.allianz.de/michael.schmieg/",
+        "opening_hours": "Mo-Fr 09:00-12:00",
+        "osm_id": 790035313,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5246636,
+          48.1606602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://vertretung.allianz.de/matthias.thadewald/",
+        "opening_hours": "",
+        "osm_id": 9059523054,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.713164,
+          48.076734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:00,14:00-17:00",
+        "osm_id": 9530451997,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.60826,
+          48.1017371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://vertretung.allianz.de/vogel.ueblacker/",
+        "opening_hours": "",
+        "osm_id": 9620403298,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7577784,
+          48.1624591
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz 4 U",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 244301628,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5886316,
+          48.1547959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Agentur Thomas Kleiner",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13717161190,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6449652,
+          48.1919201
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Agenturen",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Sauerbruchstraße 7",
+        "phone": "+49 89 23527563; +49 89 4522240",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11881372742,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4773641,
+          48.1146909
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Alfred Moritz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 6786018200,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5476709,
+          48.1931412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Campus Unterföhring",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1350617546,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6501818,
+          48.1883368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Eric Tancsis Generalvertretung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Rappstraße 19, 80687 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:00",
+        "osm_id": 13022291304,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4896294,
+          48.1419016
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Genaralagentur Klaus Schneider",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Kapuzinerstraße 52, 80469 München",
+        "phone": "+49 172 8417049",
+        "website": "https://vertretung.allianz.de/k.schneider/",
+        "opening_hours": "",
+        "osm_id": 4019886389,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5661654,
+          48.1235477
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Generalagentur Einhellig & Hoffmann OHG",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Pater-Augustin-Rösch-Straße 3, 82049 Pullach i. Isartal",
+        "phone": "+49 89 147277880",
+        "website": "https://vertretung.allianz.de/einhellig.hoffmann/",
+        "opening_hours": "Mo-Fr 08:30-12:30,13:30-16:30",
+        "osm_id": 2645297472,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5119284,
+          48.0566292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Generalvertretung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Einsteinstraße 101, 81675 München",
+        "phone": "+49 89 79078890",
+        "website": "https://vertretung.allianz.de/marcus.ziegert/",
+        "opening_hours": "Mo-Fr 09:00-12:00; Mo-Th 13:00-17:00",
+        "osm_id": 1361789972,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6059273,
+          48.1357952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Generalvertretung Reden",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hauptplatz 4, 82131 Gauting",
+        "phone": "+49 89 89359871",
+        "website": "https://vertretung.allianz.de/agentur.reden/",
+        "opening_hours": "",
+        "osm_id": 3493522428,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3803791,
+          48.0669467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Gerhard Reden",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Bahnhofstraße 12, 82131 Gauting",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 450136689,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3791234,
+          48.0673522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Hauptvertretung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Warngauer Straße 58, 81539 München",
+        "phone": "",
+        "website": "https://vertretung.allianz.de/bugrahan.tastan/",
+        "opening_hours": "",
+        "osm_id": 1668564137,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5921022,
+          48.1127392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Hauptvertretung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 429192",
+        "website": "https://vertretung.allianz.de/johannes.seyfried/",
+        "opening_hours": "Mo-Fr 09:00-13:00 || \"sowie nach Vereinbarung\"",
+        "osm_id": 3473164620,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6512183,
+          48.1140054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Hauptvertretung Michael Eisenschmid",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Bahnwiesenstraße 2, 85604 Zorneding",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-12:30, Tu,Th 14:00-18:00",
+        "osm_id": 2665184010,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.827026,
+          48.0877118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Hontschik & Hontschik",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 7415553879,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.534109,
+          48.148164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Kostas Tsoklanidis-Michailidis",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 7167 762-0",
+        "website": "https://vertretung.allianz.de/kostas.tsoklanidis1/",
+        "opening_hours": "Mo-Th 09:00-13:00,15:00-18:00; Fr 09:00-15:00",
+        "osm_id": 366128466,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5646137,
+          48.1689251
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Kunde & Markt",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12522469301,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6505096,
+          48.1886163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Print and Output Services",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Am Lohfeld 18, 85630 Grasbrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10090472999,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7260713,
+          48.0933453
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Richard Niemeier",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Turnerstraße 70a",
+        "phone": "+49 89 45345770",
+        "website": "https://vertretung.allianz.de/agentur-niemeier/",
+        "opening_hours": "Mo-We 09:00-17:00; Th 09:00-19:00; Fr 09:00-14:00; Sa-Su,PH off",
+        "osm_id": 13108859305,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6967299,
+          48.1142325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz S.E.",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1470290,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5862388,
+          48.1543158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz S.E.",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 103752536,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5888505,
+          48.1542885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz S.E.",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 193108151,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5874613,
+          48.1541523
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz S.E.",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 286825216,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5846449,
+          48.1547255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz S.E.",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 86134481,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5839646,
+          48.1548793
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Ulrich Rose",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hofmannstraße 30, 81379 München",
+        "phone": "+49 89 782796",
+        "website": "https://vertretung.allianz.de/ulrich.rose/",
+        "opening_hours": "Mo-Fr 09:00-14:00",
+        "osm_id": 1788462553,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5287222,
+          48.0993161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Umweltstiftung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://allianzfoundation.org/de",
+        "opening_hours": "",
+        "osm_id": 10174542560,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5976004,
+          48.1380697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Versicherung Generalvertretung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 3103450",
+        "website": "https://vertretung.allianz.de/peter.wenger/?AZMEDID=Sharelink_CH-Custom_TH-VTHP_PA-ABV_PD-Vertreterseite_KA-perma%7Copen%7CGBP.Termin",
+        "opening_hours": "",
+        "osm_id": 13270796149,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5633182,
+          48.2713285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Vertretung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Friedrich-Ebert-Straße 20a, 85540 Haar",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,Th 09:00-17:00; Tu,We,Fr 09:00-14:00",
+        "osm_id": 3236285352,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7323195,
+          48.1092676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Vertretung Florian Hummel",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Eschenstraße 13, 82024 Taufkirchen",
+        "phone": "",
+        "website": "https://vertretung.allianz.de/florian.hummel/",
+        "opening_hours": "",
+        "osm_id": 956407563,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6076188,
+          48.0509881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianz Zenker Pape",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Passauerstraße 56",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,Th 10:00-18:00; Tu 10:00-17:00; We 09:00-14:00; Fr 09:00-15:00",
+        "osm_id": 10925189508,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5337702,
+          48.111223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allianzvertretung Stefan Werly und Olivera Miljanic",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Regerplatz 3, 81541 München",
+        "phone": "+49 89 4410 9006",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:30-12:30, Mo 14:00-18:00",
+        "osm_id": 12043796891,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.587457,
+          48.1240459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alte Leipziger Hallesche",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6593502840,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5665236,
+          48.1343494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Andreas Bremm, Bayerische Versicherungskammer",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hofmarkweg 7, 82008 Unterhaching",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-13:00",
+        "osm_id": 8821860714,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6103381,
+          48.0666856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Münchner Straße 60, 85221 Dachau",
+        "phone": "+49 8131 378 115",
+        "website": "https://www.aok.de/pk/bayern/",
+        "opening_hours": "Mo-We 08:00-16:30; Th 08:00-17:30; Fr 08:00-15:00",
+        "osm_id": 11150483579,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4432549,
+          48.2508372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Otto-Wagner-Straße 10a, 82110 Germering",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo 09:00-16:30; Tu-We,Fr 09:00-13:00; Th 09:00-17:30",
+        "osm_id": 13179859638,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3660226,
+          48.1255665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 896810",
+        "website": "",
+        "opening_hours": "Mo,Tu 09:00-16:30; Th 09:00-17:30; Fr 09:00-13:00; We 09:00-13:00",
+        "osm_id": 1617814667,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4615427,
+          48.1477498
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Josef-Frankl-Straße 25, 80995 München",
+        "phone": "+49 89 312 120",
+        "website": "",
+        "opening_hours": "Mo,We 09:00-13:00; Tu 09:00-16:30; Th 09:00-17:30; Fr 09:00-15:00",
+        "osm_id": 2566745857,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5353382,
+          48.2143978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK Bayern",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12987962545,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5974024,
+          48.174238
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK Bayern Die Gesundheitskasse Zentrale",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Carl-Wery-Straße 28, 81739 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2704347698,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6444371,
+          48.0903137
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK Bayern Geschäftsstelle am Olympiaeinkaufszentrum",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hanauer Straße 56, 80992 München",
+        "phone": "+49 89 22844050",
+        "website": "https://www.aok.de/pk/bayern/",
+        "opening_hours": "Mo-We 08:30-16:30; Th 08:30-17:30; Fr 08:30-15:00",
+        "osm_id": 4697430134,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5298599,
+          48.1812885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK Geschäftsstelle Trudering",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Elritzenstraße 27, 81825 München",
+        "phone": "+49 89 42772 138",
+        "website": "https://www.aok.de/pk/kontakt/aok-vor-ort/?q=81667+München",
+        "opening_hours": "Mo,Tu 09:00-16:30; Th 09:00-17:30; We,Fr 09:00-13:00; Sa,Su,PH off",
+        "osm_id": 8835770837,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.662362,
+          48.1250478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AOK Geschäftsstelle Unterföhring",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Münchner Straße 24, 85774 Unterföhring",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-We 08:00-16:30; Th 08:00-17:30; Fr 08:00-15:00; PH off",
+        "osm_id": 7071749550,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6341307,
+          48.1839849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arnhofer & Engl",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Westendstraße 195, 80686 München",
+        "phone": "+49 89 57 20 18",
+        "website": "",
+        "opening_hours": "Mo,We,Fr 08:00-13:00; Tu 09:30-17:00; Th 08:00-15:00",
+        "osm_id": 329332136,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5220239,
+          48.1336322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AS ASSEKURANZ SERVICE",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 1502007",
+        "website": "https://www.versichert-optimal.de/",
+        "opening_hours": "",
+        "osm_id": 13037030603,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5916563,
+          48.27382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Attikon",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Quagliostraße 9, 81543 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13647211913,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5610021,
+          48.1046815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AXA",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.axa-betreuer.de/wolfgang_polak",
+        "opening_hours": "",
+        "osm_id": 6499450260,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3871045,
+          48.1364494
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AXA Agentur Nieß-Wohlfart",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Postweg 4a, 81827 München",
+        "phone": "",
+        "website": "https://www.axa-betreuer.de/agentur-niess-wohlfart",
+        "opening_hours": "Mo-Th 08:30-12:00,13:00-17:00; Fr 08:30-15:00",
+        "osm_id": 10799899146,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6840999,
+          48.1178811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bahn-BKK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.bahn-bkk.de/",
+        "opening_hours": "",
+        "osm_id": 3709889917,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5554595,
+          48.1397425
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ballnath",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.ballnath.de/home.html",
+        "opening_hours": "",
+        "osm_id": 4947385094,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5445376,
+          48.112037
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Bauhausplatz 6, 80807 München",
+        "phone": "+49 89 2350940",
+        "website": "https://agentur.barmenia.de/muenchen",
+        "opening_hours": "Mo-Fr 09:00-15:00; Sa,Su,PH off",
+        "osm_id": 11676573877,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5920724,
+          48.1866702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Bernhard Sturm",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Lochhauser Straße 18, 82178 Puchheim",
+        "phone": "+49 89 55007244",
+        "website": "https://agentur.barmenia.de/bernhard_sturm",
+        "opening_hours": "Mo-Fr 09:30-13:00, Mo,Tu,Th,Fr 13:45-18:00, Sa 10:00-13:00",
+        "osm_id": 11681052414,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3542164,
+          48.1727921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Christian Simon",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Grünwalder Straße 151d, 81547 München",
+        "phone": "+49 176 32693823",
+        "website": "https://agentur.barmenia.de/christian_simon",
+        "opening_hours": "",
+        "osm_id": 11690647839,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5652087,
+          48.0984359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Eduard Riedl",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Jägerstraße 12, 85737 Ismaning",
+        "phone": "+49 160 97770334",
+        "website": "https://agentur.barmenia.de/eduard_riedl",
+        "opening_hours": "",
+        "osm_id": 11676840272,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6733466,
+          48.2332185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Friedrich Rödler",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Krumbadstraße 26, 81671 München",
+        "phone": "+49 179 4908719",
+        "website": "https://agentur.barmenia.de/friedrich_roedler",
+        "opening_hours": "",
+        "osm_id": 11676867148,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6244519,
+          48.1209518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Hans Wolff von Schutter",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hauptstraße 5, 85586 Poing",
+        "phone": "+49 176 23983268",
+        "website": "https://agentur.barmenia.de/hans_wolff-von-schutter",
+        "opening_hours": "",
+        "osm_id": 11681139721,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8131204,
+          48.1708847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Kenan Akkus",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Richard-Riemerschmid-Allee 5, 81241 München",
+        "phone": "+49 89 38042363",
+        "website": "https://agentur.barmenia.de/kenan_akkus",
+        "opening_hours": "",
+        "osm_id": 11690195347,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4569754,
+          48.1348363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Manuela Süß",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hermann-Oberth-Straße 9, 85640 Putzbrunn",
+        "phone": "+49 176 14673896",
+        "website": "https://agentur.barmenia.de/manuela_suess",
+        "opening_hours": "",
+        "osm_id": 11681030858,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.721574,
+          48.0754167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Maximilian Wolff von Schutter",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Theatinerstraße 11, 80333 München",
+        "phone": "",
+        "website": "https://agentur.barmenia.de/maximilian_wolff-von-schutter",
+        "opening_hours": "",
+        "osm_id": 11681154158,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5757706,
+          48.1402114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Stefan Aigner",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Dresdner Straße 2, 82110 Germering",
+        "phone": "+491602854291",
+        "website": "https://agentur.barmenia.de/stefan_aigner",
+        "opening_hours": "",
+        "osm_id": 11576795747,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3737823,
+          48.1382973
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Timo Maßmann",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Tengstraße 36, 80796 München",
+        "phone": "+49 8121 7607227",
+        "website": "https://agentur.barmenia.de/timo_massmann",
+        "opening_hours": "",
+        "osm_id": 11690685775,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5692686,
+          48.1599852
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Tobias Radwan",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Tucholskystraße 10, 81737 München",
+        "phone": "+49 157 87836119",
+        "website": "https://agentur.barmenia.de/tobias_radwan",
+        "opening_hours": "",
+        "osm_id": 11690955500,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6510839,
+          48.0969921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Barmenia Versicherung - Werner Rossmann",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Carl-Orff-Weg 18, 82110 Germering",
+        "phone": "+49 151 54600053",
+        "website": "https://agentur.barmenia.de/werner_rossmann",
+        "opening_hours": "",
+        "osm_id": 11676846538,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3696745,
+          48.1356096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BARMER GEK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Am Bogen 2, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-We 09:00-17:00, Th 09:00-19:00, Fr 09:00-15:00, Mo,Tu 09:00-17:00, We 09:00-13:00, Th 09:00-18:00, Fr 09:00-13:00",
+        "osm_id": 3423461823,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6627606,
+          48.0631464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayerische Versicherungskammer",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 1506365",
+        "website": "https://www.vkb.de/muk",
+        "opening_hours": "Mo-Fr 08:30-12:00, Mo,We 14:00-17:00",
+        "osm_id": 1080745009,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5256256,
+          48.1962547
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Benesch & Gegg KG",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Thorwaldsenstraße 21, 80335 München",
+        "phone": "+49 89 6144160",
+        "website": "https://vertretung.allianz.de/benesch-gegg/",
+        "opening_hours": "",
+        "osm_id": 6387618553,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5483807,
+          48.1511199
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Benjamin Scheider",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 9042 22350",
+        "website": "https://agentur.lvm.de/scheider/1",
+        "opening_hours": "",
+        "osm_id": 7181175308,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3568458,
+          48.1741754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berufsgenossenschaft der Bauwirtschaft",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Landsberger Straße 309, 80687 München",
+        "phone": "",
+        "website": "https://www.bgbau.de",
+        "opening_hours": "",
+        "osm_id": 5570488775,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5002049,
+          48.1431125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Betriebskrankenkasse Mobil",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Friedenheimer Brücke 29, 80639 München",
+        "phone": "",
+        "website": "https://mobil-krankenkasse.de/",
+        "opening_hours": "Sa,Su,PH off; Mo-We 09:00-16:00; Th 09:00-18:00; Fr 09:00-14:00",
+        "osm_id": 6414912315,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5199327,
+          48.1461094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CGAP",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hohenzollernstraße 69, 80796 München",
+        "phone": "+49 89 18941 6665",
+        "website": "https://www.vermittlerdeckung.de/",
+        "opening_hours": "",
+        "osm_id": 11115122645,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5722878,
+          48.1604393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Christian Krah",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Karl-Böhm-Straße 17, 85598 Vaterstetten",
+        "phone": "+49 8106 20266",
+        "website": "https://www.krah.vkb.de",
+        "opening_hours": "Mo-Fr 09:00-13:00",
+        "osm_id": 13906286440,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7843221,
+          48.0937478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Concordia",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8603332248,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6442297,
+          48.1022894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Continentale",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Wendelsteinstraße 10, 85591 Vaterstetten",
+        "phone": "+49 8106 9299814",
+        "website": "https://www.continentale.de/web/info-stegmeier",
+        "opening_hours": "Mo-Fr 09:00-12:30",
+        "osm_id": 659900013,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7699307,
+          48.1048226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Continentale",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Putzbrunner Straße 17, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8963971202,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6644228,
+          48.0667981
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Continentale Lebensversicherung A.G.",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Baierbrunner Straße 31, 81379 München",
+        "phone": "",
+        "website": "https://www.Continentale.de",
+        "opening_hours": "",
+        "osm_id": 2402765200,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.532463,
+          48.096243
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DA Direkt",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Brienner Straße 59",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 09:00-13:00,14:00-18:00; Fr 09:00-13:00,14:00-16:00, Sa,Su,PH off",
+        "osm_id": 1813634385,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5593006,
+          48.1467518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Debeka",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Rosenheimer Landstraße 27, 85521 Ottobrunn",
+        "phone": "+49 89 6656198-0",
+        "website": "https://www.debeka.de/cdn/ansprechpartnersuche/?url=https%3A%2F%2Fwww.debeka.de%2Fgs%2Fmuenchen-land%2Findex.html",
+        "opening_hours": "Mo-Fr 08:00-17:00; Sa,Su,PH off",
+        "osm_id": 1284482141,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6586058,
+          48.0685695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Debeka",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Damenstiftstraße 9, 80331 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 340078523,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5688042,
+          48.1366905
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Debeka",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.debeka.de/cdn/ansprechpartnersuche/?url=https%3A%2F%2Fwww.debeka.de%2Fgs%2Fmuenchen-pasing%2Findex.html",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "osm_id": 5609602192,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4590661,
+          48.1455449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Debeka-Geschäftsstelle München-Süd",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Albert-Roßhaupter-Straße 73, 81369 München",
+        "phone": "+49 89 729974-0",
+        "website": "https://www.debeka.de/cdn/ansprechpartnersuche/?url=https%3A%2F%2Fwww.debeka.de%2Fgs%2Fmuenchen-sued%2Findex.html",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "osm_id": 1314437920,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5262837,
+          48.1161758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Debeka-Servicebüro München",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Schellingstraße 10, 80799 München",
+        "phone": "+49 89 280 9107",
+        "website": "https://www.debeka.de/cdn/ansprechpartnersuche/",
+        "opening_hours": "Sa,Su,PH off; Mo-Fr 09:00-17:00",
+        "osm_id": 6421368081,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5788644,
+          48.1495537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Denis Radlinger LVM Versicherungen",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2056519860,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4071782,
+          48.0914158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deutsche Rentenversicherung Knappschaft-Bahn-See",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Putzbrunner Straße 73, 81739 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,Tu 08:00-17:00; We 08:00-16:00; Th 08:00-18:00; Fr 08:00-14:00",
+        "osm_id": 5032825492,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.645827,
+          48.0970235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Mittermayerstraße 4, 85221 Dachau",
+        "phone": "",
+        "website": "https://beratung.devk.de/vtp/dachau/simon-jones",
+        "opening_hours": "",
+        "osm_id": 10778886229,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4320494,
+          48.262018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-13:30, Tu,Th 15:00-19:00",
+        "osm_id": 1426030752,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4586091,
+          48.1475009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Münchener Straße 11, 85540 Haar",
+        "phone": "+49 89 42 07 93 89",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:30",
+        "osm_id": 2285461095,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7233332,
+          48.1089355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-13:00, Mo 15:00-17:00, We,Th 15:00-19:00",
+        "osm_id": 2616061480,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6148811,
+          48.1898025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4344917152,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4768332,
+          48.1641833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.devk.de/",
+        "opening_hours": "Mo,Tu,Th,Fr 09:00-13:00; Th 16:00-19:00",
+        "osm_id": 4835060621,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5826676,
+          48.0984318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.devk.de/",
+        "opening_hours": "Mo-Fr 09:00-13:00; Mo-Th14:00-16:00",
+        "osm_id": 4835060622,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5823001,
+          48.0982634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hirtenstraße 24, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 7340385014,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5572667,
+          48.142518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-13:00, Tu 14:00-19:00",
+        "osm_id": 8112540431,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6291922,
+          48.1010427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Astallerstraße 18, 80339 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,Tu,Fr 09:30-13:00; We 16:00-18:00",
+        "osm_id": 950280839,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5309375,
+          48.1381401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK Beratungsstelle",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4820224197,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5575251,
+          48.1431235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK Jürgen Sibert",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 2354 0250",
+        "website": "https://beratung.devk.de/vtp/m%C3%BCnchen/j%C3%BCrgen-sibert",
+        "opening_hours": "Mo,We,Fr 09:00-14:00; Tu,Th 09:00-19:00",
+        "osm_id": 12050059025,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6391543,
+          48.1329078
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK Versicherung S. Moser",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Baubergerstraße 49, 80992 München",
+        "phone": "",
+        "website": "https://beratung.devk.de/vtp/m%C3%BCnchen/stefan-moser",
+        "opening_hours": "Mo-Th 09:30-12:30,14:30-18:30; Fr 09:30-12:30",
+        "osm_id": 9905791025,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5053662,
+          48.1763557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DEVK Versicherungen: Ferdinand Beutel",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 176 62103793",
+        "website": "https://devk.de",
+        "opening_hours": "",
+        "osm_id": 13585652729,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5675245,
+          48.2735666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "die Bayerische",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Thomas-Dehler-Straße 25, 81737 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3070745910,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6459879,
+          48.0982582
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Die Continentale",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Am Bogen 5, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1008177200,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6631118,
+          48.0637025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Die Continentale Landesdirektion",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-18:00; Sa,Su,PH off",
+        "osm_id": 4532532540,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5686266,
+          48.1552769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Die Continentale Landesdirektion Renner",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 31907700",
+        "website": "https://continentale-renner.de/",
+        "opening_hours": "",
+        "osm_id": 12981992819,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5674817,
+          48.276791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Die Continentale Landesdirektion Zellerer GmbH",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9524410958,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4978801,
+          48.0959652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DKV",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Belgradstraße 34, 80796 München",
+        "phone": "+49 89 4545 5950",
+        "website": "https://alfred-leutner-dkv.ergo.de/",
+        "opening_hours": "Mo-Fr 09:30-12:00",
+        "osm_id": 10709793471,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5746493,
+          48.164444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DKV",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo, We, Fr 09:00-12:00; Tu,Th 09:00-12:00, 13:00-17:30",
+        "osm_id": 12684821701,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5521339,
+          48.1258451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DKV Carsten Intelmann",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://carsten-intelmann-dkv.ergo.de/de/Agentur/referenzen",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 9878410417,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.545483,
+          48.1224899
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DKV-ERGO-Geschäftsstelle",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hauptstraße 26a, 85579 Neubiberg",
+        "phone": "",
+        "website": "https://th-braeuer-dkv.ergo.de/",
+        "opening_hours": "Mo-Fr 08:00-13:00,14:00-18:00; Sa 09:00-13:00",
+        "osm_id": 9082430619,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6650906,
+          48.0752215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "e-assecuranz Versicherungsmakler GmbH & Co.KG",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Wamslerstraße 2",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11851168706,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6609116,
+          48.1353127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ebert Versicherungsmakler",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Marchioninistraße 2",
+        "phone": "",
+        "website": "https://www.ebert-vm.de",
+        "opening_hours": "",
+        "osm_id": 11881372746,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4779396,
+          48.1135227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eichner Assekuranz Versicherungsmakler GmbH",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Wasserburger Straße 3, 85540 Haar",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:00",
+        "osm_id": 3186923499,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7281955,
+          48.1080165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ergo",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Winzererstraße 47, 80797 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Tu,Th-Fr 09:00-12:00",
+        "osm_id": 11112300861,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5624824,
+          48.1636114
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ERGO",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Rosenheimer Landstraße 25, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 11:00-15:00",
+        "osm_id": 1284200469,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6584159,
+          48.0687995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ergo",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8841562110,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4684891,
+          48.1458353
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ergo Kompetenzcenter",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6260372893,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5609192,
+          48.1544166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ERGO Thomas Ostermair",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Münchner Straße 74",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 09:00-14:00",
+        "osm_id": 13460976895,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6040269,
+          48.0752138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ERGO Versicherung Konrad Klein",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 160 4985836",
+        "website": "https://konrad-klein.ergo.de/",
+        "opening_hours": "",
+        "osm_id": 13089986951,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5714981,
+          48.2704376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ergo Victoria",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Josef-Kistler-Straße 2, 82110 Germering",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 884917275,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.360241,
+          48.1341963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ergo Wimbeck&Partner",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 7201 3630",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7158173561,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5531666,
+          48.127074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ergo-Victoria",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13108859323,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7074221,
+          48.1120342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Florian Richter",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Bahnhofstraße 4, 85737 Ismaning",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11476402289,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6766885,
+          48.2250569
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "FVO",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Mehlbeerenstraße 4, 82024",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9300610602,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6079101,
+          48.0528618
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gemeinschaftspraxis Dr. Münz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"by appointment\"",
+        "osm_id": 3883747065,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4918008,
+          48.0306509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Generalagentur Auerweck & Stricker",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Ismaninger Straße 9, 85452 Moosinning",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 664439807,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.8346822,
+          48.2754745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Generali",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13033285920,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5350473,
+          48.1543024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gothaer",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13529465481,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.533449,
+          48.1322167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gracic & Rix",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Lörenskogstraße 1b, 85748 Garching bei München",
+        "phone": "",
+        "website": "https://www.lvm.de/",
+        "opening_hours": "Mo-Th 09:00-12:00,13:30-17:00",
+        "osm_id": 13300049276,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6498385,
+          48.2516497
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hanse Merkur",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 318752816,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4297349,
+          48.1052359
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Harald Mehringer",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Garmischer Straße 234, 81377 München",
+        "phone": "+49 89 71049882",
+        "website": "https://www.axa-betreuer.de/harald_mehringer",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 2442537470,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5170165,
+          48.1185207
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HDI",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 09:00-18:00; Fr 09:00-16:00",
+        "osm_id": 3663689755,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5513986,
+          48.137369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Helmut Amesreiter, Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Rathausplatz 10, 82008 Unterhaching",
+        "phone": "+49 89 6115481",
+        "website": "https://vertretung.allianz.de/helmut.amesreiter/",
+        "opening_hours": "Mo-Fr 09:00-13:00, Tu 16:00-18:30",
+        "osm_id": 8822039780,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.61055,
+          48.066483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Helvetia",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Kameterstraße 46, 85579 Neubiberg",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9352836484,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6710616,
+          48.0723748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUH-Coburg",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Tu,Th 09:00-13:00,15:00-17:30; We,Fr 09:00-13:00",
+        "osm_id": 13179645388,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.36654,
+          48.1246035
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 72402188",
+        "website": "",
+        "opening_hours": "Mo-Tu,Th 09:00-12:00,14:00-17:00; We,Fr 09:00-12:00",
+        "osm_id": 10695139745,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.565268,
+          48.1682436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Rathausplatz 2, 82008 Unterhaching",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Tu,Th 09:00-13:00,14:00-17:00; We 09:00-13:00",
+        "osm_id": 8822039782,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6107485,
+          48.0659892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUK Coburg",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Grünwalder Straße 35, München",
+        "phone": "+49 89 69378454",
+        "website": "https://www.huk-vor-ort.de/christian.holzner",
+        "opening_hours": "Mo-Fr 09:00-13:00; Mo, We, Th 14:00-17:00",
+        "osm_id": 8878414817,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5727462,
+          48.1070657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUK Coburg Sabine Ziemer",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,Tu,Th 09:00-12:30,16:00-18:00; We 09:00-12:30",
+        "osm_id": 7449193068,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6427575,
+          48.157034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUK-Coburg",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Pelkovenstraße 35, 80992 München",
+        "phone": "+49 89 1439 0375",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:30-13:00, 16:00-18:00",
+        "osm_id": 12009999592,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5125903,
+          48.1815212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUK-Coburg",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Naupliaallee 4, 85521 Ottobrunn",
+        "phone": "+49 89 60824930",
+        "website": "",
+        "opening_hours": "Mo,Th 08:30-12:30,15:00-18:00; Tu,We,Fr 08:30-12:30; Sa,Su,PH off",
+        "osm_id": 243693313,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.662045,
+          48.0643039
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUK-Coburg",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 08:00-18:00; Fr 08:00-16:00",
+        "osm_id": 15461926,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5502836,
+          48.1383778
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HUK-Coburg | Ulrike Klose",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Landsberger Straße 461, 81241 München",
+        "phone": "+49 89 8202 0422",
+        "website": "https://www.huk-vor-ort.de/ulrike.klose",
+        "opening_hours": "Mo,Tu,Th 09:00-12:30, 15:00-18:00; We,Fr 09:00-12:30",
+        "osm_id": 2338452430,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4693622,
+          48.1453968
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Image Factory Werbeagentur GmbH",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Schlesierstraße 4, 82024 Taufkirchen",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1950989898,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6166288,
+          48.0507297
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ines Obermaier",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Trollblumenstraße 28a, 80995 München",
+        "phone": "+49 89 1500 1501",
+        "website": "https://vertretung.allianz.de/ines.obermaier/",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 1079181879,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5146051,
+          48.1967801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ITS Kennzeichenversicherung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.its-zoll.de/",
+        "opening_hours": "Mo-Th 08:00-17:00; Fr 08:00-15:00",
+        "osm_id": 2882602593,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5470631,
+          48.1379055
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jakob Frank",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:30, Mo,Tu,Th 14:30-18:00",
+        "osm_id": 4829344876,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5607439,
+          48.1304331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karsten Laubert",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3298245581,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.417707,
+          48.1042391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kaszynski und Hoffmann OHG Allianz Agentur",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Johann-Karg-Straße 29, 85540 Haar",
+        "phone": "+49 89 4569923",
+        "website": "https://vertretung.allianz.de/kaszynski.hoffmann/",
+        "opening_hours": "",
+        "osm_id": 2651602440,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7161777,
+          48.1303416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kerscher Versicherungsmakler",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8500690012,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6239549,
+          48.0817632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KHH Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2278623901,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4600245,
+          48.1469939
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KKH",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Sonnenstraße 14",
+        "phone": "+49 911 8818020",
+        "website": "https://www.krankenkassen.de/krankenkassen-geschaeftsstellen/kkh/muenchen/",
+        "opening_hours": "Mo 12:00-16:00; Tu-We,Fr 10:00-13:00,14:00-16:00",
+        "osm_id": 5216346423,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5639874,
+          48.1367375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Klaus Brouwer",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hauptstraße 111c, 85579 Neubiberg",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-13:00, Mo,Tu,Th 14:00-17:00",
+        "osm_id": 9067030398,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6828471,
+          48.0745214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Knappschaft",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Putzbrunner Straße 73, 81739 München",
+        "phone": "0800 0200501",
+        "website": "https://www.knappschaft.de/",
+        "opening_hours": "Mo,Tu 08:00-17:00; Th 08:00-18:00; Fr 08:00-14:00; PH,Sa,Su off; We 08:00-16:00",
+        "osm_id": 5032819973,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6457921,
+          48.0969474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koppenleitner",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Kaiserstraße 49, 80801 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 09:00-13:00,14:00-17:00; Fr 09:00-14:00",
+        "osm_id": 5188325711,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5784571,
+          48.1611132
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kurt Schäfer",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10912504269,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4340467,
+          48.2598538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LV 1871",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Maximiliansplatz 5, 80333 München",
+        "phone": "+49 89 55167 0",
+        "website": "https://www.lv1871.de/",
+        "opening_hours": "",
+        "osm_id": 1578566307,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5703858,
+          48.1422216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "LVM-Versicherung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Blumenstraße 3, 85540 Haar",
+        "phone": "+49 89 60 86 00 61",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5520055227,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7164978,
+          48.1128362
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Markgraf Allianz",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 45870000",
+        "website": "",
+        "opening_hours": "Mo-Fr 10:00-15:00",
+        "osm_id": 9454047243,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5959724,
+          48.1271856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Meyer & Meyer Versicherungsmakler GmbH",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9522234914,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5512823,
+          48.1934671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Miguael Ortega",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Mittermayerstraße 27a, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13306740321,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.435112,
+          48.2637276
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich Re",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Mandlstraße 20, 80802 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2517372431,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5913774,
+          48.1589312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich Re",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8867980146,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5858327,
+          48.1558976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich Re",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1387671,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5848138,
+          48.1563417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich Re",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Martiusstraße 8, 80802 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1470293,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5861709,
+          48.1566404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich Re",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.munichre.com/",
+        "opening_hours": "",
+        "osm_id": 17704539,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5884993,
+          48.1567405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich Re",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 103752514,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5859782,
+          48.1562398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Munich RE (Building N6)",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1658459,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5941304,
+          48.1740568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "münchener verein",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Arnulfstraße 212",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12202531825,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5225388,
+          48.1498398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Münchner Verein Agenturservice",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Baumkirchner Straße 29, 81673 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5834830358,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6309952,
+          48.129871
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nürnberger Versicherung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Leonrodstraße 43",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11134787848,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5395103,
+          48.155422
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Olaf Hein, Rainer Lippert",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hauptstraße 19, 85579 Neubiberg",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-13:00",
+        "osm_id": 9108153007,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.663653,
+          48.0760969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Patras Versicherungsmakler",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.vsp-muenchen.de",
+        "opening_hours": "",
+        "osm_id": 13108859333,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7083634,
+          48.1118882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pensionskasse der Genossenschaftsorganisation VVaG",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Herzog-Heinrich-Straße 20, 80336 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9379216780,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5553968,
+          48.1305354
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peter Martin",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Türkenstraße 43, 80799 München",
+        "phone": "+49 89 598 131",
+        "website": "https://signal-iduna-agentur.de/peter.martin/",
+        "opening_hours": "Mo-Fr 09:00-18:00, Sa 12:00-16:00",
+        "osm_id": 6651323651,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5754841,
+          48.1497929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PKH GmbH Versicherungsmakler / LKH Vermittlungsagentur",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Rablstraße 36, 81669",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1379720939,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.593292,
+          48.12684
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pocci10",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 178 8837777;+49 177 8838833;+49 172 7704766; +49 163 2880590",
+        "website": "https://pocci10.com/",
+        "opening_hours": "Mo-Th 08:30-13:00, Fr 08:30-13:00,14:00-16:00, Mo-Th 14:00-17:00",
+        "osm_id": 6391737149,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5485076,
+          48.1261325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "R+V Versicherung",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12983026296,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5567775,
+          48.2578309
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Raiffeisenbank München Süd eG Versicherungsdienst",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+4989759060",
+        "website": "https://www.raiba-muc-sued.de/",
+        "opening_hours": "",
+        "osm_id": 1856730405,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.490186,
+          48.0855318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rauch GmbH",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Elsenheimerstraße 5, 80687 München",
+        "phone": "+49895794900",
+        "website": "https://www.rauchgmbh.de/",
+        "opening_hours": "Mo-Fr 08:00-17:00",
+        "osm_id": 6386823747,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.518762,
+          48.1403966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SBK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.sbk.org/",
+        "opening_hours": "",
+        "osm_id": 10748422556,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6167511,
+          48.0792281
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SBK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 118875242,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6532475,
+          48.091135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SBK Schulungszentrum",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9629235421,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.595675,
+          48.1161367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schulz-Sembten oHG & Klaus Zielesny",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 8106 3930670",
+        "website": "https://www.axa-betreuer.de/schulz-sembten-zielesny",
+        "opening_hours": "Mo-Th 09:00-12:00,13:00-17:00; Fr 09:00-15:00",
+        "osm_id": 1470949902,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7859742,
+          48.0962382
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Seidenaher oHG",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Schleißheimer Straße 9, 85748 Garching bei München",
+        "phone": "",
+        "website": "https://www.vkb.de/content/aussendienst/s/seidenader/",
+        "opening_hours": "Mo,Tu,Th 09:00-12:00,13:00-16:00, Tu,Fr 09:00-12:00",
+        "osm_id": 13266918295,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6497183,
+          48.2492822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Siemens Betriebskrankenkasse",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Jagdfeldring 1, 85540 Haar",
+        "phone": "+49 89 627 00-660",
+        "website": "https://www.sbk.org/",
+        "opening_hours": "Mo-Th 09:00-12:15,13:00-16:00",
+        "osm_id": 9490241139,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.720391,
+          48.1090786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Signal Iduna",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Wasserburger Landstraße 244a",
+        "phone": "+49 89 45463860",
+        "website": "",
+        "opening_hours": "Mo-Th 14:00-18:00; Fr 09:00-12:00; Sa-Su,PH off",
+        "osm_id": 13108859340,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7061918,
+          48.1118751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Signal Iduna",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 87788110",
+        "website": "https://www.signal-iduna-agentur.de/petra.perret",
+        "opening_hours": "Tu-Th 08:30-13:45",
+        "osm_id": 4765626418,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.42368,
+          48.143594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Signal Iduna Heinz Hermann",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Mittermayerstraße 25, 85221 Dachau",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13306740304,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4348324,
+          48.2635862
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skyline Assekuranzmakler",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 726350 0",
+        "website": "https://www.skyline-versicherungen.de/",
+        "opening_hours": "",
+        "osm_id": 1694633540,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4625127,
+          48.1512223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ssb GmbH",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Thomas-Dehler-Straße 9, 81737",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1805795094,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6467247,
+          48.1014021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stichaner & Borowski",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Hiltenspergerstraße 30",
+        "phone": "+49 89 700765911",
+        "website": "",
+        "opening_hours": "Mo,Th,Fr 09:00-12:00, Mo-We 14:00-17:00",
+        "osm_id": 6008134451,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5670255,
+          48.1600416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Swiss Life Lebensversicherung SE",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Zeppelinstraße 1, 85748 Garching",
+        "phone": "",
+        "website": "https://www.swisslife.de",
+        "opening_hours": "",
+        "osm_id": 304212320,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6297165,
+          48.2500413
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Swiss Life Select Finanzkanzlei",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.swisslife-select.de/privatkunden.html",
+        "opening_hours": "",
+        "osm_id": 1404676648,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4489318,
+          48.1106538
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Swiss Re",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5992518,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6524592,
+          48.1875136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "T. Schmidbauer",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Görresstraße 15, 80798 München",
+        "phone": "+49 89 351 10 10",
+        "website": "https://vertretung.allianz.de/schmidbauer.agentur/",
+        "opening_hours": "Mo,We 09:00-15:00; Tu,Th 09:00-13:00,15:00-18:00; Fr 09:00-12:00; Sa,Su,PH off",
+        "osm_id": 6387618526,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5655284,
+          48.1549242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Techniker Krankenkasse",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo,Tu 10:00-16:00; We 09:00-14:00; Th 10:00-17:00; Fr 09:00-13:00",
+        "osm_id": 7331322173,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6026072,
+          48.124015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TK München-Pasing",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "0800 2858585",
+        "website": "",
+        "opening_hours": "Tu 09:00-14:00; We 10:00-14:00; Th 10:00-17:00; Fr 09:00-13:00; Mo 10:00-14:00",
+        "osm_id": 8009689564,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4599314,
+          48.1493986
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Universa Versicherungen",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4853553831,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5655553,
+          48.1327011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Gedonstraße 10, 80802 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1470292,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5880146,
+          48.1555467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1470294,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5881016,
+          48.1563022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1609450,
+        "osm_type": "relation",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5893627,
+          48.1559577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 86134503,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.584289,
+          48.1545788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 86134529,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5845589,
+          48.1545173
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versicherungsbüro Geiger",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Ottostraße 53, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8221842709,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6749477,
+          48.062235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versicherungsdienste Missio, Hiltmair, Peschl",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Naupliaallee 18, 85521 Ottobrunn",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"Termine nach Vereinbarung\"",
+        "osm_id": 1012585491,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.66372,
+          48.0645974
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versicherungskammer Bayern",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:00; PH,Sa,Su off",
+        "osm_id": 1008931169,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6662335,
+          48.0656302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versicherungskammer Bayern",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 6806188",
+        "website": "",
+        "opening_hours": "Mo,We,Fr 09:00-12:00; Tu,Th 16:00-18:00; Sa-Su,PH off",
+        "osm_id": 13108859328,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7054402,
+          48.1119192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versicherungskammer Bayern",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Warngauer Straße 30, 81539 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 300736291,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5890763,
+          48.1134266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versicherungskammer Bayern - Hubert-Christian Volk",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Helene-Mayer-Ring 10, 80809 München",
+        "phone": "+49 89 8974 4330",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:00",
+        "osm_id": 4238836141,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5529797,
+          48.1809929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Versicherungsservice M-Nord GmbH",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 3100032204",
+        "website": "https://versicherung-mnord.de/",
+        "opening_hours": "",
+        "osm_id": 6346037616,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5671352,
+          48.2765978
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VHV Versicherungen",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Paul-Heyse-Straße 38, 80336 München",
+        "phone": "",
+        "website": "https://www.vhv.de/",
+        "opening_hours": "",
+        "osm_id": 46829480,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5553118,
+          48.1352234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "vivida bkk",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.vividabkk.de/de/vivida-bkk/standorte#collapse2503",
+        "opening_hours": "Mo-Fr 08:00-15:30",
+        "osm_id": 5611634005,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5232769,
+          48.0575902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VPV",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "80687",
+        "phone": "",
+        "website": "https://www.vpv.de/",
+        "opening_hours": "",
+        "osm_id": 9713021717,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5228926,
+          48.1372822
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "VVS Versicherungsmakler",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"Termine nach Vereinbarung\"",
+        "osm_id": 11559667434,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4797806,
+          48.11835
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WWK",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Karl-Theodor-Straße 31a",
+        "phone": "+49 89 344141",
+        "website": "",
+        "opening_hours": "Nach Vereinbarung",
+        "osm_id": 11918044964,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5815465,
+          48.1661375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WWK Versicherungen",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 413731164,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5518258,
+          48.1448475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Württembergische",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo 09:00-12:30,15:30-18:00, Tu,We 08:30-14:30,15:30-18:00, Th 15:30-18:00, Fr 09:00-12:30,15:30-17:00; PH,Su off, Mo-Th 09:00-12:00,13:00-18:00, Fr 09:00-12:00,13:00-17:00",
+        "osm_id": 1008045619,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.66171,
+          48.0645653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "württembergische",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "+49 89 64273922",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:30-12:30, Mo,Th 14:30-17:00",
+        "osm_id": 1319553860,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5980031,
+          48.1268376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Württembergische Generalagentur Roider & Hinterhäuser",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Neubiberger Straße 7, 81737 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-12:00",
+        "osm_id": 8500693283,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6312847,
+          48.0992287
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wüstenrot",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Wasserburger Landstraße 184",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 09:00-12:00,14:00-18:00; Fr 09:00-12:00; Sa-Su,PH off",
+        "osm_id": 10799962512,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.695364,
+          48.1151552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wüstenrot",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12982870125,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5606556,
+          48.2508534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wüstenrot",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Lindwurmstraße 9, 80337 München",
+        "phone": "+49 89 54904821",
+        "website": "https://www.wuestenrot.de",
+        "opening_hours": "Mo-Fr 08:00-22:00",
+        "osm_id": 4255111946,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5646968,
+          48.1322691
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wüstenrot",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo 09:30-18:00; We 14:00-18:00; Th 09:30-18:00; Fr 08:30-12:00",
+        "osm_id": 5610576045,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4605534,
+          48.1467664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zellner & Rist oHG",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:30-15:00",
+        "osm_id": 8603360576,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6077946,
+          48.0932342
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zurich",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Ungererstraße 58, 80805 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 312384655,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5907881,
+          48.166768
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zurich",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "",
+        "phone": "",
+        "website": "https://www.zurich.de/de-de/vor-ort/andreas-strasser",
+        "opening_hours": "",
+        "osm_id": 5290472632,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5057589,
+          48.1120642
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zurich",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Nymphenburger Straße, 80335 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6029453491,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5520292,
+          48.1490414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zurich Vertriebsdirektion Süd-Ost",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Ungererstraße 129",
+        "phone": "",
+        "website": "https://www.zurich.de/",
+        "opening_hours": "",
+        "osm_id": 12987962546,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5976921,
+          48.1741396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zürich",
+        "category": "Office",
+        "office_type": "insurance",
+        "address": "Schleißheimer Straße 110",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Nach Vereinbarung",
+        "osm_id": 13818527308,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5625243,
+          48.1575227
+        ]
+      }
+    }
+  ]
+}

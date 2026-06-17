@@ -1,0 +1,4423 @@
+{
+  "type": "FeatureCollection",
+  "name": "Munich Law Firms",
+  "source": "OpenStreetMap / Overpass",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "abante",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Ganghoferstraße 68a",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13556229702,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5373298,
+          48.1305117
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "AGNI Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Albert-Roßhaupter-Straße 73, 81369 München",
+        "phone": "+49 89 7474 7901",
+        "website": "https://www.agni-law.de/",
+        "opening_hours": "",
+        "osm_id": 8119336519,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5262511,
+          48.116167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alexander Ginzburg",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Schleißheimer Straße 182, 80797 München",
+        "phone": "+49 89 4117 9859",
+        "website": "https://rechtsanwalt-ginzburg.de/",
+        "opening_hours": "",
+        "osm_id": 11862742862,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5649262,
+          48.1649006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alexander Vetter",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Rattenberger Straße 35",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13391035481,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5276285,
+          48.1189269
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amperlex - Rechtsanwälte Riedl & Koll",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 8131 374970",
+        "website": "https://www.amperlex.de",
+        "opening_hours": "",
+        "osm_id": 10053204261,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4440039,
+          48.2498154
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anwaltskanzlei Dagmar Braun-Lutz",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Bahnhofstraße 29, 85591 Vaterstetten",
+        "phone": "+49 8106 213230",
+        "website": "https://www.kanzlei-braun-lutz.de/",
+        "opening_hours": "",
+        "osm_id": 12629015030,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7673172,
+          48.1056858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anwaltskanzlei Hans, Dr. Popp & Partner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Sendlinger-Tor-Platz 10, 80336 München",
+        "phone": "+49 89 5521440",
+        "website": "",
+        "opening_hours": "Mo-Th 09:00-17:00; Fr 09:00-14:00",
+        "osm_id": 10584307060,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5667126,
+          48.1339568
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anwaltskanzlei Happ",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4938980923,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5382707,
+          48.109463
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anwaltskanzlei Holztrattner/Schmid",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 89459630",
+        "website": "https://www.holztrattner-schmid.de",
+        "opening_hours": "",
+        "osm_id": 1673249848,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3656471,
+          48.1271844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anwaltskanzlei Rechtsanwalt Klaus Eckenweber",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Grafinger Straße 31",
+        "phone": "+49 89 4505640",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10246924809,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6125254,
+          48.124849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anwaltskanzlei Rifesser",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 76757597",
+        "website": "",
+        "opening_hours": "\"Nach Vereinbarung\"",
+        "osm_id": 11063241545,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5420509,
+          48.1203185
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anwaltskanzlei Solloch",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Reichenhaller Straße 42, 81547 München",
+        "phone": "+49 89 6201100",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8212928883,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5690507,
+          48.1059503
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Anwaltskanzlei Ulusan",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Winzererstraße 49a, 80797 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Fr 09:00-12:00,13:00-17:00",
+        "osm_id": 272246018,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5624411,
+          48.1642444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arbeitsrecht Bauer Bell",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Kidlerstraße 22",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13243166373,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5415773,
+          48.1198872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bals & Vogel",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Sendlinger Straße 42a, 80331",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5068473121,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5686434,
+          48.1352656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bettina Ogidan",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Am Harras 14",
+        "phone": "+49 89 44239580",
+        "website": "https://www.kanzlei-ogidan.de/",
+        "opening_hours": "",
+        "osm_id": 13716075917,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5392047,
+          48.1175548
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Birkenmaier & Obser",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Viktualienmarkt 5, 80331 München",
+        "phone": "+49 89 232 387 19-0",
+        "website": "https://www.birkenmaier-obser.de/",
+        "opening_hours": "",
+        "osm_id": 5116881633,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5769431,
+          48.1355896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blum & Dickerboom",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Kaiserplatz 12",
+        "phone": "+49 89 7463150",
+        "website": "https://www.blum-kollegen.de/",
+        "opening_hours": "",
+        "osm_id": 13926715733,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5794607,
+          48.1613474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bockhorni und Brüntjen",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Agnes-Bernauer-Straße 88",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13537285633,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5018777,
+          48.1400057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boehmert & Boehmert",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "80336",
+        "phone": "",
+        "website": "https://www.boehmert.de/",
+        "opening_hours": "",
+        "osm_id": 5068473021,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5576711,
+          48.1348266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bronhofer Lukac Langlotz & Partner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4853554626,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5666081,
+          48.1326101
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Burgmair, Lechler & Wiedenmann Rechtsanwälte in Partnerschaft mbB",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Sparkassenplatz 9, 85221 Dachau",
+        "phone": "+49 8131 37195-0",
+        "website": "https://www.garibulex.de/",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 10246268336,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.439392,
+          48.2553764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buse, Heberer & Fromm",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Maximiliansplatz 18, 80333 München",
+        "phone": "+49 89 242 23 30",
+        "website": "https://buse.de/standorte/",
+        "opening_hours": "",
+        "osm_id": 8922928189,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5713392,
+          48.1414086
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Christoph Tenbörg",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13363751820,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5289452,
+          48.1572242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Claudia Enghofer",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Lindenschmitstraße 45",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13715650982,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5391624,
+          48.1182712
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Claudia Kunckel-Miller",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 334028",
+        "website": "",
+        "opening_hours": "Nach Vereinbarung",
+        "osm_id": 13825078410,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5652365,
+          48.1718331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Daniel Neumann",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13737494613,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5594428,
+          48.1515598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Demuth Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 31609030",
+        "website": "https://www.demuth-recht.de/",
+        "opening_hours": "",
+        "osm_id": 12998887412,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5709353,
+          48.2734467
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Deutsche Stiftungsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202070316,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5926699,
+          48.1393525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "di Pace • Schulze-Schoenherr Rechtsanwaltsgesellschaft mbH",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Perusastraße 1, 80333 München",
+        "phone": "+49 89 2422670",
+        "website": "https://dpss-rechtsanwaelte.de/",
+        "opening_hours": "Mo-Th 08:30-18:00; Fr 08:30-15:00",
+        "osm_id": 9532197272,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5765703,
+          48.1397881
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr\n Hermann O. Th. Diehl",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11020491365,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5227067,
+          48.1554709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Eduard Ingerl",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Abt-Petto-Straße 23, 82041 Oberhaching",
+        "phone": "+49 89 6136135",
+        "website": "",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 3687928576,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5885187,
+          48.0241138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Huber Dr. Olsen",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Sonnenstraße 32, 80331 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5216346622,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5655495,
+          48.1343005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Kuehn & Partner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Goethestraße 8, 80336 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5188272626,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5583235,
+          48.1384764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Lang Rechtsanwalt",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Sophienstraße 1, 80333 München",
+        "phone": "+4915730229990",
+        "website": "https://www.langrechtsanwalt.com/",
+        "opening_hours": "24/7",
+        "osm_id": 11574522286,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5663989,
+          48.1412559
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Maukisch & Reichert",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Am Westpark 7",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12730504001,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5347508,
+          48.1241011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Menges",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Herzogstraße 127",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11862742861,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5647291,
+          48.1633306
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Peters & Partner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202080491,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5925592,
+          48.1391616
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Thomas Angele",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Pognerstraße 11, München",
+        "phone": "",
+        "website": "https://drangele.de/",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 1157115842,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5461238,
+          48.1036883
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dr. Thomas Fritz",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "https://www.drthomasfritz.de/",
+        "opening_hours": "",
+        "osm_id": 11359664020,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5222281,
+          48.1582984
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DR. THORN Rechtsanwälte PartGmbB",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Clemensstraße 30, 80803 München",
+        "phone": "+49 89 380 19 90",
+        "website": "https://www.thorn-arbeitsrecht-muenchen.de",
+        "opening_hours": "Mo-Fr 07:00-21:00",
+        "osm_id": 11052524028,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.580727,
+          48.1640824
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Döring Spieß",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11020290870,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5223076,
+          48.1569693
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "eidos Projekt Mediation",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "https://www.eidos-projekt-mediation.de",
+        "opening_hours": "",
+        "osm_id": 11022507490,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5221957,
+          48.1580943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eisvogel, Hagn und Kollegen",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Fritz-Kneidl-Straße 5a",
+        "phone": "+49 89 30904370",
+        "website": "http://www.ehr-recht.de/",
+        "opening_hours": "",
+        "osm_id": 11120658520,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5350521,
+          48.0385172
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elisabeth Braun",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Mauerkircherstraße 93, 81925 München",
+        "phone": "+49 89 998 888 43",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1488265584,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6127237,
+          48.1600175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ELR Patentanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Wilhelm-Wagenfeld-Straße 24",
+        "phone": "+49 89 4524145-0",
+        "website": "https://www.elr-ip.law/",
+        "opening_hours": "",
+        "osm_id": 12754193349,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5918373,
+          48.1832628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Elsholz Beratung GmbH",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Grafinger Straße 31",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10246894635,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6125152,
+          48.1248465
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Epping · Hermann · Fische",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Schloßschmidstraße 5, 80639 München",
+        "phone": "+49 89 500 329-0",
+        "website": "https://www.ehf-ip.com",
+        "opening_hours": "",
+        "osm_id": 9549069823,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5189103,
+          48.1464303
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Erhard Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "https://rechtsanwalt-erhard.de",
+        "opening_hours": "",
+        "osm_id": 12880450425,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5433654,
+          48.1263428
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Familienrecht Dr. jur. Jörg Schröck",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Landshuter Allee 8-10, 80637 München",
+        "phone": "+49 89 215541810",
+        "website": "https://www.familienrecht-ratgeber.com/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 5730079988,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5370725,
+          48.1474732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Flügel Preissner Schober Seidel Patentanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4526791587,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5534729,
+          48.1488402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Franke & Partner Intellectual Property LAw Firm",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Widenmayerstraße 25, 80538 München",
+        "phone": "+49 89 5404 2233",
+        "website": "https://www.franke-ip.com/de/home.php",
+        "opening_hours": "",
+        "osm_id": 2427749437,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5946795,
+          48.1428063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fritsche",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8618684919,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5675347,
+          48.0924396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "H. J. Möller",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Türkenstraße 67, 80799 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6408938491,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5764652,
+          48.1515335
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hans Werner Bauer Rechtsanwalt",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Turnerstraße 64",
+        "phone": "",
+        "website": "https://www.rahwb.de/",
+        "opening_hours": "",
+        "osm_id": 13132318198,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6962851,
+          48.1139087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hermann Fink",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Kameterstraße 47, 85579 Neubiberg",
+        "phone": "+49 89 6018096",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 9352836477,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6735542,
+          48.0734105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hogan Lovells",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Karl-Scharnagl-Ring 5, 80539 München",
+        "phone": "",
+        "website": "https://www.hoganlovells.com/de",
+        "opening_hours": "",
+        "osm_id": 11762649977,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5836065,
+          48.1399617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "hph Halmburger & Kampf Partnerschaft Steuerberater Rechtsanwalt Wirtschaftsprüfer mbB",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 1711240",
+        "website": "https://www.hph.de/",
+        "opening_hours": "",
+        "osm_id": 5826776319,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5370335,
+          48.1681461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Huber & Schlüssler",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Truderinger Straße 246, 81825 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11687828148,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6618415,
+          48.125606
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ingrid Spiegel-Hauber",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Karl-Theodor-Straße 77",
+        "phone": "+49 89 27275674",
+        "website": "",
+        "opening_hours": "\"Nach Vereinbarung\"",
+        "osm_id": 11584754763,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.574638,
+          48.1669649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "isarpatent",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Friedrichstraße 31, 80801 München",
+        "phone": "+49 89 3816100",
+        "website": "https://www.isarpatent.com/",
+        "opening_hours": "",
+        "osm_id": 4411544289,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5800821,
+          48.1605884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jakob & Meyer",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Weißdornstraße 21, 80995 München",
+        "phone": "+49 89 1588 2759",
+        "website": "http://www.inso-verwalter.de",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 1036016704,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.52463,
+          48.19982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jakubowicz & Collegen",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Brienner Straße 21, 80333 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3929290146,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5716669,
+          48.1438008
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Joachim Neugebauer",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Franz-Joseph-Straße 43, 80801 München",
+        "phone": "+49 89 540 307 61",
+        "website": "https://www.verkehrsrecht-muenchen.com",
+        "opening_hours": "",
+        "osm_id": 10538291461,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5764329,
+          48.157555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Johanna Jeschke",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "https://jeschke-ra.de/",
+        "opening_hours": "",
+        "osm_id": 10893618599,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3764203,
+          48.1345759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Albrecht",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11359664019,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5222308,
+          48.1582313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Braun",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Waldmeisterstraße 42, 80935 München",
+        "phone": "+49 89 740 771 96",
+        "website": "https://kanzleibraun.com/",
+        "opening_hours": "\"nach Vereinbarung\"",
+        "osm_id": 6801879366,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5491179,
+          48.1971211
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Dligatch Voß Rechtsanwaltspartnerschaft",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Romanplatz 12, 80639 München",
+        "phone": "+49 89 17 30 02 0",
+        "website": "https://dligatch-voss.de/",
+        "opening_hours": "Mo-Th 09:30-17:00; Fr 09:30-14:00",
+        "osm_id": 10704822754,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5111921,
+          48.1542029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei für Arbeitsrecht",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Karl-Theodor-Straße 48",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13785109012,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5806193,
+          48.1665325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Gaube",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Mondseestraße 6, 81827 München",
+        "phone": "+49 89 4300001",
+        "website": "http://www.kanzlei-gaube.de/",
+        "opening_hours": "\"Nach Vereinbarung\"",
+        "osm_id": 8618129580,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6708974,
+          48.10697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Graßinger",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Am Westpark 7",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12730503902,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5348133,
+          48.1241236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Hidalgo",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Angererstraße 38",
+        "phone": "",
+        "website": "https://www.kanzlei-hidalgo.de/",
+        "opening_hours": "",
+        "osm_id": 11099827566,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5712984,
+          48.1666408
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Hösch",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Schachblumenweg 9a, 81377 München",
+        "phone": "+49 89 7145819",
+        "website": "https://kanzlei-hösch.de/",
+        "opening_hours": "",
+        "osm_id": 7660814478,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4858299,
+          48.1132277
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Kamloth & Ultsch",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Rosenheimer Landstraße 145, 85521 Ottobrunn",
+        "phone": "+49 89 6092087",
+        "website": "https://www.rakamloth.de/",
+        "opening_hours": "Mo-Th 08:00-12:00,14:00-17:00; fr 08:00-12:00; Sa,Su,Ph off",
+        "osm_id": 300255726,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6703084,
+          48.0523096
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Kanis & Kanis",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "http://www.kanis-kanis.de/",
+        "opening_hours": "",
+        "osm_id": 10098886225,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5381533,
+          48.1085118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Lippmann",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 39299593",
+        "website": "https://www.kanzlei-lippmann.de/",
+        "opening_hours": "",
+        "osm_id": 13002291036,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5626454,
+          48.2705808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "kanzlei michalka",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Schwanthalerstraße 99, 80336 München",
+        "phone": "+49 89 242 435 44",
+        "website": "https://kanzleimichalka.de/",
+        "opening_hours": "",
+        "osm_id": 2440802234,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5501567,
+          48.137399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Petra Scharl",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Türkenstraße 103, 80799 München",
+        "phone": "+49 89 38888717",
+        "website": "https://www.kanzlei-petrascharl.de/",
+        "opening_hours": "",
+        "osm_id": 3506777094,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.578507,
+          48.1545756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Rudorf-Schröder",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Thierschstraße 34, München",
+        "phone": "",
+        "website": "https://kanzlei-rudorf-schroeder.de/",
+        "opening_hours": "",
+        "osm_id": 10212485837,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5877271,
+          48.1361258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Sandra Jetzfellner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "https://www.steuer-und-recht.info/",
+        "opening_hours": "",
+        "osm_id": 9764536450,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.37897,
+          48.1890063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Sommer",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Schloßstraße 14, 82031 Grünwald",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4174465314,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5233687,
+          48.0412617
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kanzlei Zilz",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Augustenstraße 88, 80798 München",
+        "phone": "+49 89 41226622",
+        "website": "http://www.kanzlei-zilz.de",
+        "opening_hours": "",
+        "osm_id": 567203674,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5646079,
+          48.1514638
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karel Schweiss",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202042897,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5925148,
+          48.1391326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karin Eichleiter-Fink",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Kameterstraße 47, 85579 Neubiberg",
+        "phone": "+49 89 602117",
+        "website": "",
+        "opening_hours": "Mo-Fr 08:00-18:00",
+        "osm_id": 9352836478,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6735781,
+          48.0733971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kiskalt Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Münchener Straße 11, 85540 Haar",
+        "phone": "+49 89 9 50 02 71-0",
+        "website": "https://www.kiskalt.com/",
+        "opening_hours": "",
+        "osm_id": 3206796617,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7235528,
+          48.1089165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KK&KK Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Renatastraße 71, 80639 München",
+        "phone": "+49 89 1307 900",
+        "website": "https://kkkk.eu/",
+        "opening_hours": "",
+        "osm_id": 11020553588,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5263348,
+          48.156315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Klapp Röschmann Rieger",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202079729,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5925114,
+          48.139186
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Klaus Bader",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "https://www.bac-consulting.de",
+        "opening_hours": "",
+        "osm_id": 7474460930,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5160148,
+          48.0781593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kristina Mueller-Stöfen",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10942380307,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5286907,
+          48.1620451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kränzlein Adams Eckstein Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4526791619,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5535155,
+          48.1488455
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kursawe Foitzik Hohlweg Rechtsanwälte PartG mbB",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Widenmayerstraße 16, 80538 München",
+        "phone": "+49 89 45 220 930",
+        "website": "https://kfh.legal",
+        "opening_hours": "",
+        "osm_id": 13197143424,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5935209,
+          48.1405946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kühne & Dr. Raith",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12802410225,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.576245,
+          48.1626776
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lausen Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Residenzstraße 25, 80333 München",
+        "phone": "+49 89 202 496-0",
+        "website": "https://www.lausen.com/",
+        "opening_hours": "",
+        "osm_id": 617126149,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5773161,
+          48.1410933
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leinweber & Zimmermann - Patentanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Viktualienmarkt 8, 80331 München",
+        "phone": "+49 89 231124-0",
+        "website": "https://leinweber-zimmermann.com",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 6871542391,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5755161,
+          48.1357486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Leitner & Kollegen Rechtsanwälte Wirtschaftsstrafrecht",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Herzogspitalstraße 5, 80331 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4178889205,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.568259,
+          48.1375521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lentzke Grienanth & Partner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Isabellastraße 17, 80798 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 1817730625,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5704925,
+          48.1566552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Llp",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12925955427,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4944176,
+          48.1125369
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ludwig Amesmaier",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Tengstraße 31",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13882758523,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5689089,
+          48.1593888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "M Legal",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Thierschstraße 34, München",
+        "phone": "",
+        "website": "https://www.m-legal.de/",
+        "opening_hours": "",
+        "osm_id": 10212485836,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5876765,
+          48.1361327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MAGELLAN Rechtsanwälte. Legal. Datenschutz. IT.",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11933477315,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5849851,
+          48.0334054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maiwald Patentanwalts- und Rechtsanwaltsgesellschaft",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Elisenstraße 3, 80335 München",
+        "phone": "+49 89 747 266 0",
+        "website": "https://www.maiwald.eu/de/",
+        "opening_hours": "Mo-Fr 09:00-18:00",
+        "osm_id": 9983237825,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5623881,
+          48.1416033
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Manitz Finsterwald",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Martin-Greif-Straße 1, 80336 München",
+        "phone": "+49 89 21 99 430",
+        "website": "https://www.patente.de/de/impressum.html",
+        "opening_hours": "",
+        "osm_id": 10648563808,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5501445,
+          48.1385593
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marina Molis, Andreas Christ, Stephan Dinkel",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Kellerstraße 14, 81667 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2515489661,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5939443,
+          48.1307338
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Martina Kellner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Hofmarkstraße 23, München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6927499130,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6306586,
+          48.1017552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Matthias Schwarzer",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "3, 80335 München",
+        "phone": "+49 89 548 03 99",
+        "website": "https://mobile.wssonline.de/rechtsanwalt-matthias-schwarzer/",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 10169250042,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5667839,
+          48.139907
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maucher Jenkins",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202061277,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.592353,
+          48.1407635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Maurice Brodski, Alice Brodski",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Grafinger Straße 31",
+        "phone": "+49 89 481069",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10246890377,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6125637,
+          48.1248744
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MHBK Rechtsanwälte Müller-Heydenreich Bierbach & Kollegen",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12994512301,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5561421,
+          48.1334955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Müller-Boré & Partner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Friedenheimer Brücke 21, 80639 München",
+        "phone": "+49 89 49057-0",
+        "website": "https://www.mueller-bore.de/",
+        "opening_hours": "",
+        "osm_id": 6414968719,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5197455,
+          48.1456649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nikolas Vatant",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Am Harras 14",
+        "phone": "+49 89 99019825",
+        "website": "https://kanzlei-vatant.de/",
+        "opening_hours": "",
+        "osm_id": 13716075918,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5392078,
+          48.1175636
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Noerr",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "https://www.noerr.com/",
+        "opening_hours": "",
+        "osm_id": 13293632083,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5705864,
+          48.1444685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nowak und Schulz",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Türkenstraße 70, 80799 München",
+        "phone": "+49 89 4564 030",
+        "website": "https://www.novak-schulz.de",
+        "opening_hours": "",
+        "osm_id": 10773466312,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5775012,
+          48.1510212
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oppler Büchner Rechtsanwalt PartGmbB",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Lipowskystraße 12",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13082240017,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5434423,
+          48.1249961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "P11 Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Sophienstraße 1, 80333 München",
+        "phone": "+49 89 203 570 00",
+        "website": "https://p11-rechtsanwaelte.de/impressum/",
+        "opening_hours": "",
+        "osm_id": 699702756,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5663985,
+          48.1413759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Page White Farrer",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202057049,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5927516,
+          48.1393218
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Patentanwälte Henkel & Partner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Maximiliansplatz 21, 80333 München",
+        "phone": "+49 89 982085",
+        "website": "https://henkel-ip.com/",
+        "opening_hours": "",
+        "osm_id": 8922928186,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5705274,
+          48.1412432
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Patentanwälte Wunderlich & Heim",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Irmgardstraße 3, 81479 München",
+        "phone": "+49 89 750 7550-0",
+        "website": "https://www.whpat.de/",
+        "opening_hours": "",
+        "osm_id": 11291127073,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5313251,
+          48.08015
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pawlik Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 9992972-0",
+        "website": "https://www.pawlik-rechtsanwaelte.de/",
+        "opening_hours": "",
+        "osm_id": 9830624041,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6139543,
+          48.065164
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Peterreins Schley",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202083955,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5715843,
+          48.1353796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Putz • Sessel • Soukup • Steldinger Kanzlei für Medizinrecht",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Uhlandstraße 5, 80336 München",
+        "phone": "",
+        "website": "https://www.putz-medizinrecht.de/",
+        "opening_hours": "",
+        "osm_id": 10103506932,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5545295,
+          48.1339685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RA Donle",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Schleißheimer Straße 162a",
+        "phone": "+49 89 303075",
+        "website": "",
+        "opening_hours": "Nach Vereinbarung",
+        "osm_id": 13924017535,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5643641,
+          48.163162
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RA Martin Wentzler",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Sollner Straße 67e, 81479 München",
+        "phone": "+49892881560",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8775878431,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5270822,
+          48.0771571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwalt Christian Kachler",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Auf der Eierwiese 1, 82031 Grünwald",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 2952363941,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5211961,
+          48.0386143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwalt Hanno Köster",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Waldtruderinger Straße 67, 81827 München",
+        "phone": "+498945600410",
+        "website": "https://www.advocatonline.de",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 8859180016,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7008131,
+          48.1131006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwalt Hans F. Fleige",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Am Bahnsteig 2, 82024 Taufkirchen",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 3084959249,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6101117,
+          48.0513839
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwalt Joachim W. Lugert",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 76753703",
+        "website": "https://www.rechtsanwalt-lugert.de/",
+        "opening_hours": "\"nach Terminvereinbarung\"",
+        "osm_id": 11063241532,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5457597,
+          48.1195314
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwalt Landes",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Arcostraße 3, 80333 München",
+        "phone": "+49 89 997 471 81",
+        "website": "https://www.rechtsanwalt-landes.de/",
+        "opening_hours": "",
+        "osm_id": 8922928190,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5669128,
+          48.1419331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwalt Marguerre",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 17109277",
+        "website": "https://www.rechtsanwalt-marguerre.de/",
+        "opening_hours": "",
+        "osm_id": 13040888043,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.585685,
+          48.2625772
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Binner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "\"Termin nach telefonischer Vereinbarung\"",
+        "osm_id": 11085708048,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4604084,
+          48.146811
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Danica Vulin",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Baumkirchner Straße 29, 81673 München",
+        "phone": "+49 89 99936216",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 5834801773,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6310414,
+          48.1298779
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Danzer",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Garmischer Straße 4, 80339 München",
+        "phone": "",
+        "website": "https://www.kanzlei-danzer.de/",
+        "opening_hours": "",
+        "osm_id": 2438127257,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.532081,
+          48.1333258
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Dr. Jan Moritz",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Fürstenrieder Straße 61, 80686 München",
+        "phone": "+49 89 38667360",
+        "website": "https://www.ra-moritz.de",
+        "opening_hours": "",
+        "osm_id": 12098768634,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5033171,
+          48.135769
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Herrlitz",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Hauptstraße 63, 82008 Unterhaching",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8618008791,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6188852,
+          48.0591275
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Kampe",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Thierschstraße 34, München",
+        "phone": "",
+        "website": "https://www.kampepartner.de/",
+        "opening_hours": "",
+        "osm_id": 297933555,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5875717,
+          48.1360242
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Kurul",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Leopoldstraße 109, 80802 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "Mo-Th 09:00-12:30,13:30-17:00; Fr 09:00-12:30",
+        "osm_id": 1343582381,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5859939,
+          48.1668869
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Reinhold von Drüben",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Zugspitzstraße 4, 82131 Gauting",
+        "phone": "+49898509862",
+        "website": "https://www.anwaltskanzlei-reinhold.de",
+        "opening_hours": "Mo-Fr 09:00-16:00",
+        "osm_id": 13470037599,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.3748389,
+          48.0668902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei Schwarzenau",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10912504242,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4333947,
+          48.259466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei von Heldmann",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Raiffeisenallee 13, 82041 Oberhaching",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7067212288,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5847316,
+          48.0339689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwaltskanzlei WTW & Kollegen",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Nördliche Auffahrtsallee 19, 80638 München",
+        "phone": "+49 89 546 05 05",
+        "website": "https://kanzlei-wtw.de/",
+        "opening_hours": "Mo-Fr 09:00-12:00,14:00-17:00; Sa-Su,PH off",
+        "osm_id": 10942352699,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5245339,
+          48.1597376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Gottfried-Keller-Straße 20, 81245 München",
+        "phone": "+49 89 886169",
+        "website": "",
+        "opening_hours": "Mo-Th 09:00-17:30; Fr 09:00-13:00",
+        "osm_id": 10137516376,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4628081,
+          48.1506372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwälte Rupprecht & Rösch",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Nördliche Auffahrtsallee 19, 80638 München",
+        "phone": "+49 89 157 802 85",
+        "website": "https://www.rupprecht-roesch.de",
+        "opening_hours": "Mo-Th 08:00-17:00; Fr 08:00-15:00; Sa-Su,PH off",
+        "osm_id": 10942472143,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5245211,
+          48.1597718
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwältin Julia Tomczyk",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Waldtruderinger Straße 67, 81827 München",
+        "phone": "+498945600410",
+        "website": "https://www.advocatonline.de/",
+        "opening_hours": "Mo-Fr 09:00-17:00",
+        "osm_id": 8859195126,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7007759,
+          48.1131221
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwältin Kroll",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Nymphenburger Straße 154, 80634 München",
+        "phone": "+49 89 379 49 614",
+        "website": "https://www.rechtsanwalt-kroll.eu/",
+        "opening_hours": "",
+        "osm_id": 2520263551,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5352816,
+          48.1525504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rechtsanwältin Stefanie Merz",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Ludwigstraße 8, 80539 München",
+        "phone": "+49 89 57 95 68-66",
+        "website": "https://www.merz-arbeitsrecht.de",
+        "opening_hours": "",
+        "osm_id": 7985761293,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5793342,
+          48.1456386
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Robert Gödel",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 4185 0279",
+        "website": "",
+        "opening_hours": "\"Termine nach Vereinbarung\"",
+        "osm_id": 7158173562,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5532941,
+          48.1271501
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rossbach & Beier",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Jakob-Klar-Straße 14, 80796 München",
+        "phone": "",
+        "website": "https://rossbach-beier.de/",
+        "opening_hours": "",
+        "osm_id": 11063740901,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.571823,
+          48.1603634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rösler Rasch van der Heide",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Bodenseestraße 18, 81241 München",
+        "phone": "",
+        "website": "https://www.ip-law-partner.de/",
+        "opening_hours": "",
+        "osm_id": 8916079864,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4557322,
+          48.1473396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schiweck Weinzierl Koch Patentanwälte mbB",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Ganghoferstraße 68b",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 13556223643,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5372172,
+          48.1306751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schwarzer",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 4526791590,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5535222,
+          48.1488661
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Schädler Rechtsanwaltskanzlei",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Liebigstraße 10b, 80538 München",
+        "phone": "",
+        "website": "https://www.schaedler-recht.de/",
+        "opening_hours": "",
+        "osm_id": 5459060707,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5893898,
+          48.1409333
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "semperIP",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 41117847",
+        "website": "https://www.semperip.com/",
+        "opening_hours": "",
+        "osm_id": 263868885,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5996502,
+          48.1288364
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sibylle Dowie, Dr. Wolfgang Dowie",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 8762538539,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6580505,
+          48.0806213
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Simmet & Henkel",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 45055699",
+        "website": "",
+        "opening_hours": "\"Terminvereinbarung: 0894505560\"",
+        "osm_id": 8644120781,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6306886,
+          48.1171868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SKW Schwarz Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "https://www.skwschwarz.de/",
+        "opening_hours": "",
+        "osm_id": 4561736340,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.575648,
+          48.1434522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Springer | Kuss Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10121812176,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5686169,
+          48.1346878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SSM Patentanwälte / Rechtanwalt",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Joseph-Wild-Straße 20, 81829 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 6629899422,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6885584,
+          48.1352456
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steinpichler Rechtsanwälte Partnerschaftsgesellschaft mbB",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Ottostraße 8, 80333 München",
+        "phone": "+49 89 2126852-0",
+        "website": "https://steinpichler.de",
+        "opening_hours": "",
+        "osm_id": 8841218904,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5683012,
+          48.1418766
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stellbrink & Partner",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202083656,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.592707,
+          48.1393349
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stephan Biagosch",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Truderinger Straße 246, 81825 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11687828149,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6618269,
+          48.1256131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steuerberatung Sebastian Held",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Brudermühlstraße 40, 81371 München",
+        "phone": "+49 89 2371 8910",
+        "website": "https://www.ksh-beratung.de/",
+        "opening_hours": "",
+        "osm_id": 4947385102,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.546975,
+          48.1122171
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Steuerkanzlei Eva Damm",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Hauptstraße 49, 85579",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9859848117,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.670189,
+          48.0753066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stolz Goldbrunner Klein",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Nymphenburger Straße 179, 80634 München",
+        "phone": "+49 89 4522 977 0",
+        "website": "https://stolzgoldbrunnerklein.de",
+        "opening_hours": "",
+        "osm_id": 11463289084,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5315119,
+          48.1557555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strafverteidiger München • Anwalt für Strafrecht • Rechtsanwaltskanzlei Kunkel",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Sankt-Paul-Straße 9, 80336 München",
+        "phone": "+49 89 41150288",
+        "website": "https://www.kanzlei-kunkel.de",
+        "opening_hours": "24/7",
+        "osm_id": 10896324512,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5533893,
+          48.1358334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TBK",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Bavariaring 4-6, 80336 München",
+        "phone": "+49 89 544 690",
+        "website": "https://www.tbk.de/contact.html",
+        "opening_hours": "",
+        "osm_id": 10648563812,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5501629,
+          48.1369952
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tec Legal",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12925955426,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4944252,
+          48.1125563
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Thomas Vogl",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Maria-Luiko-Straße 20, 80636 München",
+        "phone": "+49 89 330 66 20",
+        "website": "https://www.ra-vogl.de/",
+        "opening_hours": "Mo,We-Th 09:00-12:30,13:30-17:30; PH closed; Tu,Fr 09:00-13:00",
+        "osm_id": 10949218494,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5464594,
+          48.1571496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "TV Office, Brühmüller Rechtsanwaltkanzlei",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11933477319,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5850284,
+          48.0334513
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11020286849,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5303708,
+          48.1559954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11063746855,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5403525,
+          48.1196322
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11076250545,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6778367,
+          48.0669719
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Belgradstraße 43",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 12791808998,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5738661,
+          48.1649953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9419304370,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.610914,
+          48.0892336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Unnamed office",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Oberanger 45, 80331 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 93979521,
+        "osm_type": "way",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5687728,
+          48.1335392
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "van den Hoevel LAW",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "+49 89 18954100",
+        "website": "http://vandenhoevel.com/",
+        "opening_hours": "",
+        "osm_id": 13041417817,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5930595,
+          48.2741863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viechtl Anwalt",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Altostraße 5, 81245 München",
+        "phone": "+49 89 8633 737",
+        "website": "https://www.viechtl.de/",
+        "opening_hours": "",
+        "osm_id": 3294191241,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.4153314,
+          48.157318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Von Wilmowski Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 11022507488,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5222011,
+          48.1580433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Voswinkel Rechtsanwälte",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Montenstraße 9, 80639",
+        "phone": "",
+        "website": "http://www.ra-voswinkel.de/",
+        "opening_hours": "",
+        "osm_id": 11022507489,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5222584,
+          48.158105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WALDORF FROMMER",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Beethovenstraße 12, 80336 München",
+        "phone": "+49 89 520572 10",
+        "website": "https://frommer.legal/",
+        "opening_hours": "",
+        "osm_id": 4951567514,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.554626,
+          48.1323223
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Walter Hornung",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 7897818107,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5485057,
+          48.1946119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Weber & Sismani",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Carl-Zeiss-Ring 4, 85737 Ismaning",
+        "phone": "+49 89 9626000",
+        "website": "https://www.weber-kollegen.de/index.html",
+        "opening_hours": "",
+        "osm_id": 6899068553,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.6797041,
+          48.2350846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wellensiek",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Frauenplatz 11, 80331 München",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 703266507,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5746645,
+          48.1387454
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wirtschaftskanzlei Kohlenz",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Arastraße 2, 85579 Neubiberg",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 9352836491,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.666708,
+          48.07225
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ziermann",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "Paul-Heyse-Straße 6, 80336 München",
+        "phone": "+49 89 5440 3662",
+        "website": "http://www.kanzlei-klapproth-ziermann.de/impressum.html",
+        "opening_hours": "",
+        "osm_id": 10648563810,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5555327,
+          48.1383355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zillich",
+        "category": "Office",
+        "office_type": "lawyer",
+        "address": "",
+        "phone": "",
+        "website": "",
+        "opening_hours": "",
+        "osm_id": 10202042896,
+        "osm_type": "node",
+        "source": "OpenStreetMap / Overpass",
+        "opportunity_score": "",
+        "notes": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5924673,
+          48.1392066
+        ]
+      }
+    }
+  ]
+}
