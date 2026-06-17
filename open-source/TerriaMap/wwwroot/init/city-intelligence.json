@@ -24,9 +24,9 @@
           "type": "geojson",
           "name": "Munich Pharmacies",
           "url": "data/city-intelligence/munich-pharmacies.geojson",
-          "description": "Pharmacy locations in the Munich prototype bounds from OpenStreetMap via Overpass.",
+          "description": "Pharmacy locations in the Munich prototype bounds from OpenStreetMap via Overpass. Styled green and enabled by default as the primary lead-discovery layer.",
           "style": {
-            "marker-color": "#2f80ed",
+            "marker-color": "#16a34a",
             "marker-size": "medium"
           }
         },
@@ -35,9 +35,9 @@
           "type": "geojson",
           "name": "Munich Offices — All",
           "url": "data/city-intelligence/munich-offices.geojson",
-          "description": "Office-related locations in the Munich prototype bounds from OpenStreetMap via Overpass, including office=* and building=office features.",
+          "description": "All office-related locations in the Munich prototype bounds from OpenStreetMap via Overpass, including office=* and building=office features. Styled neutral gray and disabled by default because it is a large context layer.",
           "style": {
-            "marker-color": "#6b7280",
+            "marker-color": "#374151",
             "marker-size": "small"
           }
         },
@@ -46,9 +46,9 @@
           "type": "geojson",
           "name": "Munich Law Firms",
           "url": "data/city-intelligence/munich-law-firms.geojson",
-          "description": "Law firm office locations split from the Munich Offices layer.",
+          "description": "Law firm office locations split from the Munich Offices layer. Styled deep purple for legal-service lead discovery.",
           "style": {
-            "marker-color": "#8e44ad",
+            "marker-color": "#6d28d9",
             "marker-size": "small"
           }
         },
@@ -57,9 +57,9 @@
           "type": "geojson",
           "name": "Munich Consultants",
           "url": "data/city-intelligence/munich-consultants.geojson",
-          "description": "Consulting office locations split from the Munich Offices layer.",
+          "description": "Consulting office locations split from the Munich Offices layer. Styled teal for advisory and professional-services leads.",
           "style": {
-            "marker-color": "#16a085",
+            "marker-color": "#0f766e",
             "marker-size": "small"
           }
         },
@@ -68,9 +68,9 @@
           "type": "geojson",
           "name": "Munich Real Estate Offices",
           "url": "data/city-intelligence/munich-real-estate-offices.geojson",
-          "description": "Real estate office locations split from the Munich Offices layer.",
+          "description": "Real estate office locations split from the Munich Offices layer. Styled burnt orange for property, listings, and brokerage workflows.",
           "style": {
-            "marker-color": "#d35400",
+            "marker-color": "#c2410c",
             "marker-size": "small"
           }
         },
@@ -79,9 +79,9 @@
           "type": "geojson",
           "name": "Munich Insurance Offices",
           "url": "data/city-intelligence/munich-insurance-offices.geojson",
-          "description": "Insurance office locations split from the Munich Offices layer.",
+          "description": "Insurance office locations split from the Munich Offices layer. Styled civic blue for claims, forms, and customer-service workflows.",
           "style": {
-            "marker-color": "#2980b9",
+            "marker-color": "#0369a1",
             "marker-size": "small"
           }
         },
@@ -90,9 +90,9 @@
           "type": "geojson",
           "name": "Munich Government Offices",
           "url": "data/city-intelligence/munich-government-offices.geojson",
-          "description": "Government office locations split from the Munich Offices layer.",
+          "description": "Government office locations split from the Munich Offices layer. Styled near-black to distinguish public-sector offices from private businesses.",
           "style": {
-            "marker-color": "#2c3e50",
+            "marker-color": "#111827",
             "marker-size": "small"
           }
         },
@@ -101,9 +101,9 @@
           "type": "geojson",
           "name": "Munich Company Offices",
           "url": "data/city-intelligence/munich-company-offices.geojson",
-          "description": "Company office locations split from the Munich Offices layer.",
+          "description": "Company office locations split from the Munich Offices layer. Styled green to highlight general business-development targets.",
           "style": {
-            "marker-color": "#27ae60",
+            "marker-color": "#15803d",
             "marker-size": "small"
           }
         },
@@ -112,9 +112,9 @@
           "type": "geojson",
           "name": "Munich Generic Office Buildings",
           "url": "data/city-intelligence/munich-generic-office-buildings.geojson",
-          "description": "Generic office building locations split from the Munich Offices layer.",
+          "description": "Generic office building locations split from the Munich Offices layer. Styled slate gray as building-level context rather than individual named prospects.",
           "style": {
-            "marker-color": "#7f8c8d",
+            "marker-color": "#64748b",
             "marker-size": "small"
           }
         },
@@ -123,9 +123,9 @@
           "type": "geojson",
           "name": "Munich Other Offices",
           "url": "data/city-intelligence/munich-other-offices.geojson",
-          "description": "Other office-related locations split from the Munich Offices layer.",
+          "description": "Other office-related locations split from the Munich Offices layer. Styled light gray for lower-specificity office records that still may be useful for research.",
           "style": {
-            "marker-color": "#95a5a6",
+            "marker-color": "#94a3b8",
             "marker-size": "small"
           }
         },
@@ -134,10 +134,10 @@
           "type": "geojson",
           "name": "Munich Clinics",
           "url": "data/city-intelligence/munich-clinics.geojson",
-          "description": "Clinic, doctor, and dentist locations in the Munich prototype bounds from OpenStreetMap via Overpass.",
+          "description": "Clinic, doctor, and dentist locations in the Munich prototype bounds from OpenStreetMap via Overpass. Styled blue for health-service lead discovery and disabled by default to keep the startup map readable.",
           "style": {
-            "marker-color": "#c0392b",
-            "marker-size": "small"
+            "marker-color": "#2563eb",
+            "marker-size": "medium"
           }
         },
         {
@@ -145,10 +145,10 @@
           "type": "geojson",
           "name": "Munich Coworking Spaces",
           "url": "data/city-intelligence/munich-coworking.geojson",
-          "description": "Coworking and startup workspace locations in the Munich prototype bounds from OpenStreetMap via Overpass.",
+          "description": "Coworking and startup workspace locations in the Munich prototype bounds from OpenStreetMap via Overpass. Styled purple for founder-network, partnership, and event leads.",
           "style": {
-            "marker-color": "#f39c12",
-            "marker-size": "small"
+            "marker-color": "#7c3aed",
+            "marker-size": "medium"
           }
         },
         {
@@ -156,9 +156,9 @@
           "type": "geojson",
           "name": "Munich Restaurants",
           "url": "data/city-intelligence/munich-restaurants.geojson",
-          "description": "Restaurant, cafe, fast-food, bar, pub, and food-court locations in the Munich prototype bounds from OpenStreetMap via Overpass.",
+          "description": "Restaurant, cafe, fast-food, bar, pub, and food-court locations in the Munich prototype bounds from OpenStreetMap via Overpass. Styled orange for local-marketing, reviews, reservations, and inventory leads.",
           "style": {
-            "marker-color": "#e67e22",
+            "marker-color": "#f97316",
             "marker-size": "small"
           }
         }
@@ -168,13 +168,13 @@
       "id": "munich-public-datasets",
       "type": "group",
       "name": "Munich Public Datasets",
-      "description": "Verified no-key Munich public and open geodata layers from the official Munich Open Data and GeoPortal services. All layers are disabled by default.",
+      "description": "Verified no-key Munich public and open geodata layers from the official Munich Open Data and GeoPortal services. Civic layers use blue-gray, teal, and green styling where Terria supports it, and all layers are disabled by default.",
       "members": [
         {
           "id": "munich-boundaries-administration",
           "type": "group",
           "name": "Boundaries & Administration",
-          "description": "Official Munich administrative geography.",
+          "description": "Official Munich administrative geography, styled with restrained civic boundary colors.",
           "members": [
             {
               "id": "munich-public-city-districts",
@@ -202,7 +202,7 @@
           "id": "munich-transport-mobility",
           "type": "group",
           "name": "Transport & Mobility",
-          "description": "Official Munich transport, traffic, curb, charging, and shared-mobility datasets.",
+          "description": "Official Munich transport, traffic, curb, charging, and shared-mobility datasets, styled with blue and teal map symbols where point styling is supported.",
           "members": [
             {
               "id": "munich-public-traffic-signals",
@@ -434,7 +434,7 @@
           "id": "munich-environment-green-space",
           "type": "group",
           "name": "Environment & Green Space",
-          "description": "Official Munich environment-related public layers currently verified for this cockpit.",
+          "description": "Official Munich environment-related public layers currently verified for this cockpit, styled with green and blue civic colors for quick visual separation from business leads.",
           "members": [
             {
               "id": "munich-public-drinking-fountains-environment",
@@ -460,7 +460,7 @@
           "id": "munich-infrastructure-utilities",
           "type": "group",
           "name": "Infrastructure & Utilities",
-          "description": "Official Munich utility and city infrastructure datasets.",
+          "description": "Official Munich utility and city infrastructure datasets, styled with blue-green utility colors where point styling is supported.",
           "members": [
             {
               "id": "munich-public-drinking-fountains",
@@ -506,13 +506,13 @@
       "id": "germany-public-datasets",
       "type": "group",
       "name": "Germany Public Datasets",
-      "description": "Verified no-key Germany-wide public map layers from official BKG services. All layers are disabled by default.",
+      "description": "Verified no-key Germany-wide public map layers from official BKG services. These layers use restrained blue-gray civic styling and are disabled by default.",
       "members": [
         {
           "id": "germany-basemaps",
           "type": "group",
           "name": "Basemaps",
-          "description": "Official Germany basemap layers from basemap.de/BKG.",
+          "description": "Official Germany basemap layers from basemap.de/BKG, useful as manually enabled civic context layers.",
           "members": [
             {
               "id": "germany-basemapde-web-raster-color",
@@ -562,7 +562,7 @@
           "id": "germany-administrative-boundaries",
           "type": "group",
           "name": "Administrative Boundaries",
-          "description": "Official BKG VG250 administrative boundary WMS layers.",
+          "description": "Official BKG VG250 administrative boundary WMS layers, useful for regional context and disabled by default.",
           "members": [
             {
               "id": "germany-bkg-vg250-states",
@@ -640,13 +640,13 @@
       "id": "europe-public-datasets",
       "type": "group",
       "name": "Europe Public Datasets",
-      "description": "Verified no-key Europe-wide public geodata from Eurostat/GISCO and Copernicus/EEA services. All layers are disabled by default.",
+      "description": "Verified no-key Europe-wide public geodata from Eurostat/GISCO and Copernicus/EEA services. These large context layers use simple civic styling and remain disabled by default.",
       "members": [
         {
           "id": "europe-administrative-statistical-boundaries",
           "type": "group",
           "name": "Administrative / Statistical Boundaries",
-          "description": "Official EU statistical geography layers from Eurostat/GISCO.",
+          "description": "Official EU statistical geography layers from Eurostat/GISCO, styled with blue-gray boundary fills for continental context.",
           "members": [
             {
               "id": "europe-gisco-countries-2024",
@@ -736,7 +736,7 @@
           "id": "europe-environment",
           "type": "group",
           "name": "Environment",
-          "description": "Europe-wide environmental public layers.",
+          "description": "Europe-wide environmental public layers from Copernicus/EEA, intended for optional regional context.",
           "members": [
             {
               "id": "europe-eea-corine-land-cover-2018-raster",
@@ -780,20 +780,20 @@
       "id": "demo-visual-examples",
       "type": "group",
       "name": "Visual Reference Layers",
-      "description": "Optional no-key visual context layers and Munich 3D dataset footprints. They are disabled by default and do not re-enable token-dependent terrain, external feeds, or API keys.",
+      "description": "Optional no-key visual context layers and Munich 3D dataset footprints. These use simple technical styling, are disabled by default, and do not re-enable token-dependent terrain, external feeds, or API keys.",
       "members": [
         {
           "id": "demo-basemaps-visual-references",
           "type": "group",
           "name": "Basemaps & Visual References",
-          "description": "Optional public visual layers that can be manually enabled for context.",
+          "description": "Optional public visual layers that can be manually enabled for context. These are visual references, not lead sources.",
           "members": [
             {
               "id": "demo-natural-earth-ii",
               "type": "tms",
               "name": "Natural Earth II (Optional Visual Layer)",
               "url": "https://storage.googleapis.com/terria-datasets-public/basemaps/natural-earth-tiles",
-              "description": "Optional Natural Earth II raster tiles from Terria public datasets. Disabled by default. Natural Earth is also available in Map Settings as a selectable basemap.",
+              "description": "Optional no-key Natural Earth II raster tiles. Disabled by default. Natural Earth is also available in Map Settings as a selectable basemap.",
               "maximumLevel": 7,
               "attribution": "Natural Earth II with Shaded Relief, Water, and Drainages",
               "tileErrorHandlingOptions": {
@@ -830,14 +830,14 @@
           "id": "demo-3d-local-examples",
           "type": "group",
           "name": "Munich 3D Dataset Footprints",
-          "description": "Munich-only official 3D dataset footprints from Bavaria OpenData. These layers show download coverage and metadata for real 3D source datasets without loading multi-gigabyte CityGML, SLPK, GeoTIFF, or LAZ files in the browser.",
+          "description": "Munich-only official 3D dataset footprints from Bavaria OpenData. These neutral technical layers show download coverage and metadata for real 3D source datasets without loading multi-gigabyte CityGML, SLPK, GeoTIFF, or LAZ files in the browser.",
           "members": [
             {
               "id": "munich-3d-lod2-buildings",
               "type": "geojson",
               "name": "Munich LoD2 3D Buildings (Official CityGML Footprint)",
               "url": "data/city-intelligence/munich-3d-lod2-buildings.geojson",
-              "description": "Official Bavaria OpenData LoD2 building-model download footprint for Munich. The source is published as weekly CityGML downloads, so this catalogue item shows the Munich coverage and download metadata rather than pretending to stream a live 3D Tiles mesh.",
+              "description": "Official Bavaria OpenData LoD2 building-model download footprint for Munich. Styled neutral purple-gray as a technical coverage layer. The source is published as weekly CityGML downloads, so this catalogue item shows the Munich coverage and download metadata rather than pretending to stream a live 3D Tiles mesh.",
               "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
               "metadataUrls": [
                 {
@@ -846,9 +846,9 @@
                 }
               ],
               "style": {
-                "stroke": "#7c3aed",
+                "stroke": "#475569",
                 "stroke-width": 2,
-                "fill": "#7c3aed",
+                "fill": "#64748b",
                 "fill-opacity": 0.12
               }
             },
@@ -857,7 +857,7 @@
               "type": "geojson",
               "name": "Munich DGM1 Terrain Model (Official GeoTIFF Footprint)",
               "url": "data/city-intelligence/munich-3d-dgm1-terrain.geojson",
-              "description": "Official Bavaria OpenData 1 m terrain-model download footprint for Munich. The source is distributed as GeoTIFF downloads and does not require a terrain token.",
+              "description": "Official Bavaria OpenData 1 m terrain-model download footprint for Munich. Styled neutral gray as a technical coverage layer. The source is distributed as GeoTIFF downloads and does not require a terrain token.",
               "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
               "metadataUrls": [
                 {
@@ -866,9 +866,9 @@
                 }
               ],
               "style": {
-                "stroke": "#15803d",
+                "stroke": "#475569",
                 "stroke-width": 2,
-                "fill": "#22c55e",
+                "fill": "#94a3b8",
                 "fill-opacity": 0.1
               }
             },
@@ -877,7 +877,7 @@
               "type": "geojson",
               "name": "Munich DOM20 Surface Model (Official GeoTIFF Footprint)",
               "url": "data/city-intelligence/munich-3d-dom20-surface.geojson",
-              "description": "Official Bavaria OpenData 20 cm surface-model download footprint for Munich, including terrain, buildings, and vegetation in raster surface-model form.",
+              "description": "Official Bavaria OpenData 20 cm surface-model download footprint for Munich, including terrain, buildings, and vegetation in raster surface-model form. Styled technical teal to separate surface-model coverage from building and terrain footprints.",
               "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
               "metadataUrls": [
                 {
@@ -897,7 +897,7 @@
               "type": "geojson",
               "name": "Munich Laser Point Cloud (Official LAZ Footprint)",
               "url": "data/city-intelligence/munich-3d-laser-point-cloud.geojson",
-              "description": "Official Bavaria OpenData laser point-cloud download footprint for Munich. The source is distributed as LAZ downloads for offline 3D processing.",
+              "description": "Official Bavaria OpenData laser point-cloud download footprint for Munich. Styled amber-brown as a technical point-cloud coverage layer. The source is distributed as LAZ downloads for offline 3D processing.",
               "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
               "metadataUrls": [
                 {
@@ -906,9 +906,9 @@
                 }
               ],
               "style": {
-                "stroke": "#b45309",
+                "stroke": "#92400e",
                 "stroke-width": 2,
-                "fill": "#f59e0b",
+                "fill": "#d97706",
                 "fill-opacity": 0.1
               }
             },
@@ -917,7 +917,7 @@
               "type": "geojson",
               "name": "Munich DOM Mesh Project Areas (Official SLPK Footprints)",
               "url": "data/city-intelligence/munich-3d-dom-mesh-project-areas.geojson",
-              "description": "Official Bavaria OpenData textured surface mesh project areas that intersect Munich. The source is distributed as large SLPK downloads and is shown as project coverage metadata in Terria.",
+              "description": "Official Bavaria OpenData textured surface mesh project areas that intersect Munich. Styled muted red as technical mesh coverage. The source is distributed as large SLPK downloads and is shown as project coverage metadata in Terria.",
               "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
               "metadataUrls": [
                 {
@@ -926,9 +926,9 @@
                 }
               ],
               "style": {
-                "stroke": "#be123c",
+                "stroke": "#9f1239",
                 "stroke-width": 2,
-                "fill": "#f43f5e",
+                "fill": "#be123c",
                 "fill-opacity": 0.08
               }
             }
