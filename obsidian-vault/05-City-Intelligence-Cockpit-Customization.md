@@ -4,8 +4,8 @@
 
 - Set the City Intelligence Cockpit local prototype to load only the focused `city-intelligence` init.
 - Disabled token-dependent Cesium ion terrain, Cesium ion Bing imagery, and Cesium ion search so the app opens without terrain 401 popups or API keys.
-- Added `Natural Earth` and `Satellite View` as selectable no-key basemaps in Map Settings while keeping `OpenStreetMap` as the default startup basemap. Natural Earth uses Terria's public raster tile template; Satellite View uses EOX Sentinel-2 cloudless WMTS tile imagery.
-- Removed the upstream `simple` demo init from default startup, hiding the old Australian demo catalog and brittle sample layers from the cockpit.
+- Added `Natural Earth` and `Satellite View` as selectable no-key basemaps in Map Settings while keeping `OpenStreetMap` as the default startup basemap. Natural Earth uses a public raster tile template; Satellite View uses EOX Sentinel-2 cloudless WMTS tile imagery.
+- Removed the default sample init from startup, hiding the old Australian sample catalog and brittle sample layers from the cockpit.
 - Added Munich default `homeCamera` and `initialCamera` bounds.
 - Set the initial viewer mode to `2d` for a stable Munich-first local prototype. 3D mode remains available through Map Settings.
 - Renamed visible app branding to `City Intelligence Cockpit`.
@@ -20,10 +20,10 @@
 - Added official Munich public live layers for city districts, traffic signals, construction sites, disabled parking, EV charging, mobility points, carsharing parking, cycling routes, shared-mobility parking/geofences, digital 3L zones, and drinking fountains.
 - Added official Germany public live layers for basemap.de raster context and BKG VG250 administrative boundaries.
 - Added official Europe public live layers for GISCO countries, GISCO NUTS 2024 levels 0-3, and Copernicus/EEA Corine Land Cover 2018.
-- Restored optional `Natural Earth II (Optional Visual Layer)`, `Satellite View (Optional Visual Layer)`, `Germany basemap.de Context (Optional WMS)`, and Munich-only official 3D dataset footprints under `Demo / Visual Examples`, disabled by default and without token-dependent terrain.
+- Restored optional `Natural Earth II (Optional Visual Layer)`, `Satellite View (Optional Visual Layer)`, `Germany basemap.de Context (Optional WMS)`, and Munich-only official 3D dataset footprints under `Visual Reference Layers`, disabled by default and without token-dependent terrain.
 - Added an offline AI opportunity scoring foundation with dry-run rule-based scoring.
 - Added a first in-app `Saved Leads` workflow backed by browser localStorage.
-- Connected selected Terria map features to the `Saved Leads` workflow with `Import Selected Feature`.
+- Connected selected map features to the `Saved Leads` workflow with `Import Selected Feature`.
 - Added in-app rule-based lead scoring with the `Score Lead` button.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-3d-datasets.py` to refresh Munich-only official 3D dataset footprints from Bavaria OpenData KML metadata.
@@ -100,7 +100,7 @@ The catalog has five top-level groups:
 - `Munich Public Datasets`
 - `Germany Public Datasets`
 - `Europe Public Datasets`
-- `Demo / Visual Examples`
+- `Visual Reference Layers`
 
 All business and lead-workflow layers remain grouped under `City Intelligence Cockpit`.
 
@@ -177,9 +177,9 @@ Europe public categories:
 - `Administrative / Statistical Boundaries`
 - `Environment`
 
-Optional demo visuals:
+Optional visual reference layers:
 
-- `Natural Earth II (Optional Visual Layer)` from Terria public Natural Earth raster tiles.
+- `Natural Earth II (Optional Visual Layer)` from public Natural Earth raster tiles.
 - `Satellite View (Optional Visual Layer)` from EOX Sentinel-2 cloudless tiles.
 - `Germany basemap.de Context (Optional WMS)` from BKG / basemap.de.
 - `Munich LoD2 3D Buildings (Official CityGML Footprint)` from Bavaria OpenData / LDBV.

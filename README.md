@@ -82,8 +82,8 @@ python3 scripts/split-munich-offices.py
 
 ## Terrain And Public Dataset Catalog
 
-The local app now loads only `init/city-intelligence.json`. The upstream `simple`
-demo init is no longer loaded by default, which removes the old Australian demo
+The local app now loads only `init/city-intelligence.json`. The default sample
+init is no longer loaded by default, which removes the old Australian sample
 catalog and other sample layers from the City Intelligence Cockpit startup.
 
 Cesium ion terrain, Cesium ion Bing imagery, and the Cesium ion search provider
@@ -93,8 +93,8 @@ smooth ellipsoid 3D rather than token-backed terrain.
 
 Map Settings includes `OpenStreetMap`, `Natural Earth`, and `Satellite View` as
 selectable base maps. OpenStreetMap remains the startup default; Natural Earth
-uses Terria's public no-key Natural Earth raster tile template, and Satellite
-View uses the no-key EOX Sentinel-2 cloudless WMTS tile template.
+uses a public no-key Natural Earth raster tile template, and Satellite View uses
+the no-key EOX Sentinel-2 cloudless WMTS tile template.
 
 The catalog now has five top-level groups:
 
@@ -102,7 +102,7 @@ The catalog now has five top-level groups:
 - `Munich Public Datasets`: verified official Munich Open Data / GeoPortal layers for districts, transport, mobility, charging, infrastructure, and environment.
 - `Germany Public Datasets`: verified official BKG/basemap.de WMS layers for German basemaps and administrative boundaries.
 - `Europe Public Datasets`: verified Eurostat/GISCO GeoJSON and Copernicus/EEA WMS layers for European boundaries and land cover.
-- `Demo / Visual Examples`: optional no-key Natural Earth, satellite, basemap.de, and local 3D examples, disabled by default.
+- `Visual Reference Layers`: optional no-key Natural Earth, satellite, basemap.de, and Munich 3D dataset footprint layers, disabled by default.
 
 Real public layers currently added:
 
@@ -125,7 +125,7 @@ Real public layers currently added:
 - `EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
 - `Corine Land Cover 2018 Raster (Copernicus/EEA WMS)` and `Corine Land Cover 2018 Vector (Copernicus/EEA WMS)`.
 
-Optional demo visuals restored safely:
+Optional visual reference layers restored safely:
 
 - `Natural Earth II (Optional Visual Layer)` as a no-key TMS imagery layer, disabled by default.
 - `Satellite View (Optional Visual Layer)` as no-key EOX Sentinel-2 cloudless imagery, disabled by default.

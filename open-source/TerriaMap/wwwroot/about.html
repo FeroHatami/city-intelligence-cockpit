@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About City Intelligence Cockpit</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.55;
+        color: #17202a;
+        background: #f6f8fb;
+      }
+
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 48px 24px;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        font-size: 34px;
+        line-height: 1.15;
+      }
+
+      h2 {
+        margin-top: 32px;
+        font-size: 20px;
+      }
+
+      a {
+        color: #1769aa;
+      }
+
+      .panel {
+        margin-top: 24px;
+        padding: 22px;
+        border: 1px solid #dde4ee;
+        border-radius: 8px;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>City Intelligence Cockpit</h1>
+      <p>
+        City Intelligence Cockpit is a local-first Munich map workspace for
+        exploring business locations, official public datasets, visual context
+        layers, and Munich 3D dataset footprints. It helps turn map features
+        into saved leads, local opportunity scores, outreach drafts, and JSON or
+        CSV exports.
+      </p>
+
+      <div class="panel">
+        <h2>Local-first by design</h2>
+        <p>
+          This prototype runs locally in the browser. Saved leads use browser
+          localStorage. There is no backend, database, authentication, OpenAI
+          API key, paid API, or deployment requirement.
+        </p>
+      </div>
+
+      <h2>Data sources</h2>
+      <p>
+        Business discovery layers are generated from OpenStreetMap through
+        Overpass and stored as local GeoJSON. Public dataset layers come from
+        official Munich, Germany, Bavaria, and Europe public-data sources where
+        stable no-key endpoints or metadata are available.
+      </p>
+      <p>
+        OpenStreetMap and public datasets are useful for discovery but are not
+        guaranteed to be complete, current, or commercially verified. Check
+        important leads manually before outreach.
+      </p>
+
+      <h2>Open geospatial foundation</h2>
+      <p>
+        The app is built on an open-source geospatial foundation and keeps
+        necessary source, license, and attribution metadata with the catalogue
+        layers.
+      </p>
+    </main>
+  </body>
+</html>

@@ -31,7 +31,7 @@ The public catalog is organized into:
 - `Munich Public Datasets`
 - `Germany Public Datasets`
 - `Europe Public Datasets`
-- `Demo / Visual Examples`
+- `Visual Reference Layers`
 
 Live catalog layers are added only when the endpoint is a stable no-key
 GeoJSON/WFS/WMS/TMS output. Broader portals, private data vendors, or uncertain
@@ -57,10 +57,10 @@ Europe public data is grouped into:
 - Administrative / Statistical Boundaries
 - Environment
 
-Optional no-key demo visuals are kept in:
+Optional no-key visual reference layers are kept in:
 
 - Basemaps & Visual References
-- 3D / Local Examples
+- Munich 3D Dataset Footprints
 
 ### Real Public Layers
 
@@ -101,7 +101,7 @@ Optional no-key demo visuals are kept in:
 
 | Catalog layer | Type | Source |
 | --- | --- | --- |
-| Natural Earth II (Optional Visual Layer) | TMS imagery | Terria public Natural Earth raster tiles |
+| Natural Earth II (Optional Visual Layer) | TMS imagery | Public Natural Earth raster tiles |
 | Satellite View (Optional Visual Layer) | URL template imagery | EOX Sentinel-2 cloudless 2025 |
 | Germany basemap.de Context (Optional WMS) | WMS | BKG / basemap.de |
 | Munich LoD2 3D Buildings (Official CityGML Footprint) | GeoJSON footprint | Bavaria OpenData / LDBV, LoD2 CityGML metadata |
@@ -127,9 +127,9 @@ layers yet because they need endpoint, licensing, key, or size checks:
 
 ## Terrain And Demo Init Policy
 
-The local app loads only `init/city-intelligence.json`. The upstream `simple`
-demo init is not loaded by default, so old sample datasets such as Australian
-demo groups do not appear in the City Intelligence Cockpit catalog.
+The local app loads only `init/city-intelligence.json`. The default sample init
+is not loaded by default, so old sample datasets such as Australian sample
+groups do not appear in the City Intelligence Cockpit catalog.
 
 Cesium ion terrain is disabled by setting `useCesiumIonTerrain` to `false` in
 `open-source/TerriaMap/wwwroot/config.json`. With no `cesiumTerrainUrl` or

@@ -121,7 +121,7 @@ expected_top_level_groups = [
     "Munich Public Datasets",
     "Germany Public Datasets",
     "Europe Public Datasets",
-    "Demo / Visual Examples",
+    "Visual Reference Layers",
 ]
 if top_level_groups != expected_top_level_groups:
     raise SystemExit(f"top-level catalog group mismatch: {top_level_groups}")
@@ -338,7 +338,7 @@ for item in walk(init["catalog"]):
     url = item.get("url", "")
     if name.startswith("Reference /") and item.get("members") != []:
         raise SystemExit(f"reference item should not contain loading children: {name}")
-    if any(blocked in name for blocked in ("National Datasets", "NSW Live Transport", "Geelong")):
+    if any(blocked in name for blocked in ("National Datasets", "NSW Live Transport", "Geelong", "Demo / Visual Examples")):
         raise SystemExit(f"old upstream demo catalog item leaked into custom init: {name}")
     if any(blocked in url for blocked in ("terrain.czml", "api.transport.nsw.gov.au", "lowpoly_bus", "test/3d/geelong")):
         raise SystemExit(f"blocked demo URL leaked into live catalog: {url}")

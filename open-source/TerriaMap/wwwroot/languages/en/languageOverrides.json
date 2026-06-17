@@ -1,7 +1,65 @@
 {
+  "emptyWorkbenchInfo": [
+    {
+      "heading": "Explore city intelligence datasets",
+      "body": "Open Data to add Munich business layers, official public datasets, basemaps, and Munich 3D dataset footprints."
+    },
+    {
+      "heading": "Build a local lead list",
+      "list": [
+        "Select a map feature and use Saved Leads to import it",
+        "Save leads with status, notes, and verification state",
+        "Score opportunities with local rule-based scoring",
+        "Generate local outreach messages without API calls",
+        "Export leads to JSON or CSV for backup and analysis"
+      ]
+    },
+    {
+      "heading": "Local-first workflow",
+      "body": "Leads are stored in this browser. Export backups regularly before clearing browser data."
+    }
+  ],
+  "helpPanel": {
+    "btnText": "Help",
+    "menuPaneTitle": "City Intelligence Cockpit Help",
+    "menuPaneBody": "Use the catalogue to explore Munich city datasets, then save useful map features as local leads. No API key, paid service, backend, database, or deployment is required.",
+    "promptMessage": "Find local workflow notes for datasets, leads, scoring, outreach, and export.",
+    "dismissText": "Got it",
+    "takeTour": "City workflow guide"
+  },
+  "tour": {
+    "preface": {
+      "title": "City Intelligence Cockpit",
+      "content": "A quick guide to the local dataset and lead workflow.",
+      "close": "Skip",
+      "start": "Start guide"
+    },
+    "locationSearchInput": {
+      "content": "Search for a Munich address or area, then inspect nearby business and public-data layers."
+    },
+    "exploreMapDataButton": {
+      "content": "Open Data to add business layers, official public datasets, visual reference layers, and Munich 3D dataset footprints."
+    },
+    "sidePanelUploadButton": {
+      "content": "Use Upload data only for local files you trust. For repeatable project layers, document the source and add it to the City Intelligence catalogue."
+    },
+    "menuBarMapSettingsButton": {
+      "content": "Use Map Settings to switch between OpenStreetMap, Natural Earth, and Satellite View without API keys."
+    },
+    "menuBarStoryButton": {
+      "content": "Share and story tools are optional. The main workflow is local dataset exploration, lead saving, scoring, outreach, and export."
+    },
+    "mapNavigationCompassOuterRing": {
+      "content": "Use the map controls to move between 2D and smooth 3D views. Token-backed terrain is intentionally disabled."
+    },
+    "mapNavigationSplitterIcon": {
+      "content": "Use comparison tools only when they help inspect layers. Heavy layers remain disabled until you add them manually."
+    },
+    "finish": "Finish"
+  },
   "gettingstarted": {
-    "title": "Getting started with the map",
-    "markdownText": "## Getting started with the map\n\nIf you're new to the map or using spatial data, our Getting Started video quickly covers the basic functionality you'll need to use to add and interrogate data sets.\n\nIf you don't have time to watch the video, we suggest exploring the following areas:\n\n1. Search for a location to quickly find an area of interest\n2. Use 'Explore map data' to view the catalogue of available data sets and add them to the map\n3. Interact with the data layer, including opacity and toggling on and off on the left in your workbench\n4. Click on the data on the map to view more detailed data, including the raw data\n5. Change your basemap using options in 'Map Settings' to help make some data sets more visible\n6. Zoom and change your view, including tilting the view angle using the controls on the right-hand side of the screen",
+    "title": "City Intelligence workflow",
+    "markdownText": "## City Intelligence workflow\n\n1. Open Data and enable the Munich layer you want to inspect.\n2. Click a business or public-data feature on the map.\n3. Open Saved Leads and import the selected feature.\n4. Add notes, choose a status, score the opportunity, and generate local outreach.\n5. Export JSON or CSV backups regularly.",
     "videoUrl": "https://www.youtube-nocookie.com/embed/FjSxaviSLhc",
     "placeholderImage": "https://img.youtube.com/vi/FjSxaviSLhc/maxresdefault.jpg"
   },

@@ -779,8 +779,8 @@
     {
       "id": "demo-visual-examples",
       "type": "group",
-      "name": "Demo / Visual Examples",
-      "description": "Optional no-key visual layers and local demos. They are disabled by default and do not re-enable token-dependent terrain or old Australian demo catalogs.",
+      "name": "Visual Reference Layers",
+      "description": "Optional no-key visual context layers and Munich 3D dataset footprints. They are disabled by default and do not re-enable token-dependent terrain, external feeds, or API keys.",
       "members": [
         {
           "id": "demo-basemaps-visual-references",
@@ -829,7 +829,7 @@
         {
           "id": "demo-3d-local-examples",
           "type": "group",
-          "name": "3D / Local Examples",
+          "name": "Munich 3D Dataset Footprints",
           "description": "Munich-only official 3D dataset footprints from Bavaria OpenData. These layers show download coverage and metadata for real 3D source datasets without loading multi-gigabyte CityGML, SLPK, GeoTIFF, or LAZ files in the browser.",
           "members": [
             {

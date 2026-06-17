@@ -79,153 +79,41 @@
     "searchProviders": [],
     "useCesiumIonTerrain": false,
     "useCesiumIonBingImagery": false,
+    "aboutButtonHrefUrl": "about.html",
     "helpContent": [
       {
-        "title": "translate#gettingstarted.title",
-        "itemName": "gettingstarted",
+        "title": "City Intelligence workflow",
+        "itemName": "city-intelligence-workflow",
         "paneMode": "videoAndContent",
-        "markdownText": "translate#gettingstarted.markdownText",
-        "icon": "video",
-        "videoUrl": "translate#gettingstarted.videoUrl",
-        "placeholderImage": "translate#gettingstarted.placeholderImage"
+        "markdownText": "## City Intelligence workflow\n\n1. Open Data and choose a Munich business, public, visual reference, or 3D footprint layer.\n2. Click a feature on the map to inspect its properties and source metadata.\n3. Open Saved Leads and import the selected feature.\n4. Add notes, choose a status, update verification, score the opportunity, and generate local outreach.\n5. Export JSON or CSV backups regularly because leads are stored in this browser."
       },
       {
-        "title": "translate#stepbystepguide.title",
-        "itemName": "stepbystepguide",
-        "paneMode": "trainer",
-        "markdownText": "translate#stepbystepguide.markdownText",
-        "icon": "oneTwoThree",
-        "trainerItems": [
-          {
-            "title": "translate#stepbystepguide.gettingstarted.title",
-            "footnote": "translate#stepbystepguide.gettingstarted.footnote",
-            "steps": [
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step1.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step1.markdownDescription"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step2.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step2.markdownDescription"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step3.title",
-                "markdownDescription": "translate#stepbystepguide.gettingstarted.step3.markdownDescription"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step4.title"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step5.title"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step6.title"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step7.title"
-              },
-              {
-                "title": "translate#stepbystepguide.gettingstarted.step8.title"
-              }
-            ]
-          }
-          // -- Uncomment to enable the following trainer guides --
-          // {
-          //   "title": "translate#stepbystepguide.satelliteimagery.title",
-          //   "footnote": "translate#stepbystepguide.satelliteimagery.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step1.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step2.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step3.title",
-          //     "markdownDescription": "translate#stepbystepguide.satelliteimagery.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.satelliteimagery.step4.title",
-          //       "markdownDescription": "translate#stepbystepguide.satelliteimagery.step4.markdownDescription"
-          //     }
-          //   ]
-          // },
-          // {
-          //   "title": "translate#stepbystepguide.comparetimeseries.title",
-          //   "footnote": "translate#stepbystepguide.comparetimeseries.footnote",
-          //   "steps": [
-          //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step1.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step1.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step2.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step2.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step3.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step3.markdownDescription"
-          //     },
-          //     {
-          //       "title": "translate#stepbystepguide.comparetimeseries.step4.title",
-          //       "markdownDescription": "translate#stepbystepguide.comparetimeseries.step4.markdownDescription"
-          //     }
-          //   ]
-          // }
-        ]
-      },
-      {
-        "icon": "story",
-        "itemName": "storymigration",
-        "markdownText": "## Share & Story Migration\n\n### Guide on updating share links, including stories\n\nIf you've received a warning telling you that a share link was based off an older version of City Intelligence Cockpit, you'll want to do a few things to recreate it in the latest version of the app.\n\n#### Creators\n\n1. Identify the share URL which causes a notification of share preservation effort when loading it into City Intelligence Cockpit. e.g. you may know where it is embedded, or come across it accidentally\n2. Open it in the newer (v8) based map application \n3. Check that everything is sharing as you expect, tweak the layers to fit if some are missing or not behaving correctly.\n4. Update the share link by clicking the Share/Print button and copy the new link\n5. If distribution of share link is known, update the url in your web page (if embedded), or send the new link to users \n\n#### Consumers\n1. Load the share URL\n2. If it doesn't quite look right, notify the provider so they can follow the above steps to recreate it in the latest version of City Intelligence Cockpit",
-        "title": "Share & Story migration"
+        "title": "Local-first data policy",
+        "itemName": "local-first-data-policy",
+        "paneMode": "videoAndContent",
+        "markdownText": "## Local-first data policy\n\nCity Intelligence Cockpit runs locally. It uses local GeoJSON, OpenStreetMap / Overpass-derived business layers, and no-key public geodata services. It does not require an OpenAI API key, paid APIs, authentication, a backend, a database, or deployment."
       }
-      // For maps with satellite imagery, also see `showInAppGuides`
-      // {
-      //     "itemName": "satelliteimagery",
-      //     "title": "Satellite Imagery",
-      //     "paneMode": "slider",
-      //     "icon": "satellite"
-      // }
     ],
     "helpContentTerms": [
       {
-        "term": "translate#helpContentTerm1.term",
-        "aliases": "translate#helpContentTerm1.aliases",
-        "content": "translate#helpContentTerm1.content"
+        "term": "lead",
+        "aliases": ["saved lead", "prospect"],
+        "content": "A locally saved business or organization record created from a map feature or manual entry."
       },
       {
-        "term": "translate#helpContentTerm2.term",
-        "aliases": "translate#helpContentTerm2.aliases",
-        "content": "translate#helpContentTerm1.content"
+        "term": "verification status",
+        "aliases": ["verification", "checked"],
+        "content": "A local field that tracks whether a lead still needs research, has been checked, or should be ignored."
       },
       {
-        "term": "translate#helpContentTerm3.term",
-        "content": "translate#helpContentTerm3.content"
+        "term": "catalog",
+        "aliases": ["catalogue", "data"],
+        "content": "The list of business, public, visual reference, and Munich 3D footprint layers available in the app."
       },
       {
-        "term": "translate#helpContentTerm4.term",
-        "content": "translate#helpContentTerm4.content"
-      },
-      {
-        "term": "translate#helpContentTerm5.term",
-        "aliases": ["catalogue"],
-        "content": "translate#helpContentTerm5.content"
-      },
-      {
-        "term": "translate#helpContentTerm6.term",
-        "aliases": "translate#helpContentTerm6.aliases",
-        "content": "translate#helpContentTerm6.content"
-      },
-      {
-        "term": "translate#helpContentTerm7.term",
-        "content": "translate#helpContentTerm7.content"
-      },
-      {
-        "term": "translate#helpContentTerm8.term",
-        "content": "translate#helpContentTerm8.content"
+        "term": "local storage",
+        "aliases": ["localStorage", "browser storage"],
+        "content": "Browser storage used for Saved Leads. Export JSON backups regularly because browser data can be cleared."
       }
     ]
     // Or direct strings
