@@ -22,6 +22,7 @@ Each lead record is a JSON object with these fields:
 | `longitude` | number or null | Feature longitude for point features. |
 | `osm_id` | string or number | OpenStreetMap element id when available. |
 | `osm_type` | string | OpenStreetMap element type such as `node`, `way`, or `relation`. |
+| `source` | string | Feature provenance, such as `OpenStreetMap / Overpass`. |
 | `source_layer` | string | City Intelligence Cockpit layer name the lead came from. |
 | `opportunity_score` | string or number | Empty until scored, then a 1-10 value. |
 | `score_reason` | string | Rule-based or future AI-generated score explanation. |
@@ -55,6 +56,7 @@ Each lead record is a JSON object with these fields:
   "longitude": 11.6001175,
   "osm_id": 318861629,
   "osm_type": "node",
+  "source": "OpenStreetMap / Overpass",
   "source_layer": "Munich Pharmacies",
   "opportunity_score": "",
   "score_reason": "",
@@ -73,6 +75,7 @@ Open `Saved Leads` in the City Intelligence Cockpit top menu.
 
 The v1 panel supports:
 
+- importing the currently selected map feature into the lead form
 - manual lead creation
 - localStorage persistence
 - lead list
@@ -84,6 +87,18 @@ The v1 panel supports:
 - rule-based `Score Lead`
 
 The v1 panel does not use authentication, a backend, or a database.
+
+To import a selected feature:
+
+1. Click a pharmacy, office, clinic, coworking space, or restaurant on the map.
+2. Open `Saved Leads`.
+3. Select `Import Selected Feature`.
+4. Review or edit the populated form.
+5. Select `Save Lead`.
+
+The import maps the selected Terria feature's properties into lead fields where available. It uses feature properties such as `name`, `category`, `address`, `phone`, `website`, `osm_id`, `osm_type`, and `source`, plus the selected catalog item name for `source_layer`.
+
+Duplicate protection is based on `osm_type` + `osm_id`. If a matching lead already exists, the panel loads the existing lead for review instead of creating a duplicate.
 
 ## Conversion Script
 

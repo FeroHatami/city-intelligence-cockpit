@@ -1,5 +1,7 @@
 import PropTypes from "prop-types";
 import { useEffect, useMemo, useState } from "react";
+import Ellipsoid from "terriajs-cesium/Source/Core/Ellipsoid";
+import CesiumMath from "terriajs-cesium/Source/Core/Math";
 import MenuPanel from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel";
 import {
   deleteLead,
@@ -47,6 +49,7 @@ const emptyForm = {
   longitude: "",
   osm_id: "",
   osm_type: "",
+  source: "",
   source_layer: "Munich Pharmacies",
   notes: "",
   status: "interesting"
@@ -199,6 +202,196 @@ function exportDataUri(format, content) {
   return `data:${type};charset=utf-8,${encodeURIComponent(content)}`;
 }
 
+function stringValue(value) {
+  if (value === undefined || value === null) return "";
+  if (typeof value === "string") return value;
+  if (typeof value === "number" || typeof value === "boolean") return String(value);
+  if (Array.isArray(value)) return value.map(stringValue).filter(Boolean).join(", ");
+  return "";
+}
+
+function normalizedKey(key) {
+  return String(key).toLowerCase().replace(/[\s_:-]+/g, "");
+}
+
+function getProperty(properties, aliases) {
+  const wanted = aliases.map(normalizedKey);
+  const match = Object.entries(properties).find(([key]) =>
+    wanted.includes(normalizedKey(key))
+  );
+  return match ? stringValue(match[1]) : "";
+}
+
+function getFeatureProperties(feature, currentTime) {
+  const properties = {};
+  const dataProperties = feature?.data?.properties;
+
+  if (dataProperties && typeof dataProperties === "object") {
+    Object.assign(properties, dataProperties);
+  }
+
+  const featureProperties = feature?.properties;
+  if (featureProperties) {
+    const value =
+      typeof featureProperties.getValue === "function"
+        ? featureProperties.getValue(currentTime)
+        : featureProperties;
+
+    if (value && typeof value === "object") {
+      Object.assign(properties, value);
+    }
+  }
+
+  return properties;
+}
+
+function getAddress(properties) {
+  const address = getProperty(properties, ["Address", "address", "full_address"]);
+  if (address) return address;
+
+  const street = getProperty(properties, ["addr:street", "addr_street"]);
+  const houseNumber = getProperty(properties, [
+    "addr:housenumber",
+    "addr_housenumber"
+  ]);
+  const postcode = getProperty(properties, ["addr:postcode", "addr_postcode"]);
+  const city = getProperty(properties, ["addr:city", "addr_city"]);
+  const streetLine = [street, houseNumber].filter(Boolean).join(" ");
+  const cityLine = [postcode, city].filter(Boolean).join(" ");
+  return [streetLine, cityLine].filter(Boolean).join(", ");
+}
+
+function inferCategory(category, sourceLayer) {
+  if (category) return category;
+
+  const text = sourceLayer.toLowerCase();
+  if (text.includes("pharmac")) return "Pharmacy";
+  if (text.includes("office")) return "Office";
+  if (text.includes("clinic") || text.includes("doctor") || text.includes("dentist")) {
+    return "Clinic";
+  }
+  if (text.includes("cowork")) return "Coworking";
+  if (text.includes("restaurant")) return "Restaurant";
+  return "Other";
+}
+
+function getSourceLayer(feature) {
+  return stringValue(
+    feature?._catalogItem?.name ||
+      feature?.entityCollection?.owner?.name ||
+      feature?.cesiumEntity?.entityCollection?.owner?.name
+  );
+}
+
+function cartesianToLatLon(position) {
+  if (!position) return {};
+
+  try {
+    const cartographic = Ellipsoid.WGS84.cartesianToCartographic(position);
+    if (!cartographic) return {};
+
+    return {
+      latitude: CesiumMath.toDegrees(cartographic.latitude),
+      longitude: CesiumMath.toDegrees(cartographic.longitude)
+    };
+  } catch {
+    return {};
+  }
+}
+
+function getFeatureCoordinates(feature, terria, currentTime, properties) {
+  const latitudeFromProperty = getProperty(properties, ["latitude", "lat"]);
+  const longitudeFromProperty = getProperty(properties, ["longitude", "lon", "lng"]);
+  if (latitudeFromProperty && longitudeFromProperty) {
+    return { latitude: latitudeFromProperty, longitude: longitudeFromProperty };
+  }
+
+  const featurePosition =
+    typeof feature?.position?.getValue === "function"
+      ? feature.position.getValue(currentTime)
+      : feature?.position;
+
+  return cartesianToLatLon(featurePosition || terria?.pickedFeatures?.pickPosition);
+}
+
+function selectedFeatureToLead(viewState) {
+  const terria = viewState?.terria;
+  const pickedFeatures = terria?.pickedFeatures;
+  const feature =
+    terria?.selectedFeature ||
+    pickedFeatures?.features?.find(
+      (candidate) => candidate?.properties || candidate?.description || candidate?.name
+    ) ||
+    pickedFeatures?.features?.[0];
+
+  if (!feature) return undefined;
+
+  const currentTime = terria?.timelineClock?.currentTime;
+  const properties = getFeatureProperties(feature, currentTime);
+  const sourceLayer = getSourceLayer(feature) || "Manual Lead";
+  const coordinates = getFeatureCoordinates(feature, terria, currentTime, properties);
+  const category = inferCategory(
+    getProperty(properties, ["Category", "category"]),
+    sourceLayer
+  );
+
+  return {
+    name:
+      getProperty(properties, ["Name", "name", "title"]) ||
+      stringValue(feature.name) ||
+      "Selected feature",
+    category,
+    address: getAddress(properties),
+    phone: getProperty(properties, [
+      "Phone",
+      "phone",
+      "contact:phone",
+      "contact_phone",
+      "contact:mobile",
+      "mobile"
+    ]),
+    website: getProperty(properties, [
+      "Website",
+      "website",
+      "contact:website",
+      "contact_website",
+      "url"
+    ]),
+    latitude: coordinates.latitude ?? "",
+    longitude: coordinates.longitude ?? "",
+    osm_id: getProperty(properties, ["Osm Id", "OSM ID", "osm_id", "osm:id"]) || feature.id || "",
+    osm_type: getProperty(properties, ["Osm Type", "OSM Type", "osm_type", "osm:type"]),
+    source: getProperty(properties, ["Source", "source"]),
+    source_layer: sourceLayer,
+    notes: getProperty(properties, ["notes", "Notes"]),
+    status: "interesting"
+  };
+}
+
+function sameOsmIdentity(left, right) {
+  return (
+    stringValue(left?.osm_id) !== "" &&
+    stringValue(left?.osm_type) !== "" &&
+    stringValue(left.osm_id) === stringValue(right?.osm_id) &&
+    stringValue(left.osm_type).toLowerCase() === stringValue(right?.osm_type).toLowerCase()
+  );
+}
+
+function findDuplicateLead(leads, lead) {
+  return leads.find((existingLead) => sameOsmIdentity(existingLead, lead));
+}
+
+function formFromLead(lead) {
+  return {
+    ...emptyForm,
+    ...lead,
+    latitude: stringValue(lead.latitude),
+    longitude: stringValue(lead.longitude),
+    osm_id: stringValue(lead.osm_id),
+    opportunity_score: lead.opportunity_score ?? ""
+  };
+}
+
 function Field({
   label,
   value,
@@ -267,8 +460,10 @@ export function CityIntelligenceLeadPanel({ viewState }) {
       return;
     }
 
+    const duplicateLead = findDuplicateLead(leads, form);
     const savedLead = saveLead({
       ...form,
+      id: form.id || duplicateLead?.id,
       latitude: form.latitude,
       longitude: form.longitude,
       source_layer: form.source_layer || "Manual Lead"
@@ -279,7 +474,46 @@ export function CityIntelligenceLeadPanel({ viewState }) {
       category: form.category,
       source_layer: form.source_layer
     });
-    setMessage(`Saved ${savedLead.name}.`);
+    setMessage(`${form.id || duplicateLead ? "Updated" : "Saved"} ${savedLead.name}.`);
+  };
+
+  const handleImportSelectedFeature = async () => {
+    const pickedFeatures = viewState.terria?.pickedFeatures;
+
+    if (pickedFeatures?.allFeaturesAvailablePromise) {
+      try {
+        await pickedFeatures.allFeaturesAvailablePromise;
+      } catch {
+        setMessage("Selected map feature details could not be loaded.");
+        return;
+      }
+    }
+
+    const importedLead = selectedFeatureToLead(viewState);
+
+    if (!importedLead) {
+      setMessage("Select a map feature first, then import it as a lead.");
+      return;
+    }
+
+    const currentLeads = loadLeads();
+    const duplicateLead = findDuplicateLead(currentLeads, importedLead);
+    const nextForm = duplicateLead
+      ? formFromLead({
+          ...importedLead,
+          ...duplicateLead,
+          id: duplicateLead.id,
+          updated_at: importedLead.updated_at
+        })
+      : formFromLead(importedLead);
+
+    setForm(nextForm);
+    setLeads(currentLeads);
+    setMessage(
+      duplicateLead
+        ? "Existing lead found for this OSM feature; loaded it for review instead of duplicating."
+        : `Imported ${importedLead.name}. Review and save it as a lead.`
+    );
   };
 
   const handleUpdate = (id, updates) => {
@@ -324,6 +558,16 @@ export function CityIntelligenceLeadPanel({ viewState }) {
           <h2 style={styles.header}>Saved Leads</h2>
 
           <div style={styles.sectionTitle}>New Lead</div>
+          <div style={styles.actions}>
+            <button
+              type="button"
+              style={styles.button}
+              onClick={handleImportSelectedFeature}
+              data-testid="import-selected-feature-button"
+            >
+              Import Selected Feature
+            </button>
+          </div>
           <div style={styles.grid}>
             <Field
               label="Name"
@@ -394,6 +638,11 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                 ))}
               </select>
             </Field>
+            <Field
+              label="Source"
+              value={form.source}
+              onChange={(value) => setFormValue("source", value)}
+            />
             <Field label="Status">
               <select
                 style={styles.input}

@@ -116,6 +116,7 @@ def create_lead(
         "longitude": longitude,
         "osm_id": properties.get("osm_id", ""),
         "osm_type": str(properties.get("osm_type") or ""),
+        "source": str(properties.get("source") or ""),
         "source_layer": source_layer,
         "opportunity_score": opportunity_score or str(properties.get("opportunity_score") or ""),
         "score_reason": str(properties.get("score_reason") or ""),

@@ -19,6 +19,7 @@ export interface CityIntelligenceLead {
   longitude: number | null;
   osm_id: string | number;
   osm_type: string;
+  source: string;
   source_layer: string;
   opportunity_score: string | number;
   score_reason: string;
@@ -148,6 +149,7 @@ function normalizeLead(lead: LeadInput): CityIntelligenceLead {
     longitude: cleanNumber(lead.longitude),
     osm_id: lead.osm_id ?? "",
     osm_type: cleanString(lead.osm_type),
+    source: cleanString(lead.source),
     source_layer: cleanString(lead.source_layer),
     opportunity_score: lead.opportunity_score ?? "",
     score_reason: cleanString(lead.score_reason),
@@ -250,6 +252,7 @@ export function exportLeads(format: "json" | "csv" = "json") {
     "longitude",
     "osm_id",
     "osm_type",
+    "source",
     "source_layer",
     "opportunity_score",
     "score_reason",

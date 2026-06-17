@@ -33,9 +33,15 @@ Lead schema and sample data:
 Use the app:
 
 1. Open `http://localhost:3001`.
-2. Open `Saved Leads`.
-3. Enter lead details manually.
-4. Select `Save Lead`.
+2. Click a map feature from one of the Munich layers.
+3. Open `Saved Leads`.
+4. Select `Import Selected Feature`.
+5. Review the populated lead form.
+6. Select `Save Lead`.
+
+The manual form remains available as a fallback when a feature has not been selected or needs extra analyst cleanup.
+
+Duplicate protection uses `osm_type` + `osm_id`; importing an already saved OSM feature loads the existing lead for review instead of blindly creating another lead.
 
 Saved leads persist in browser localStorage under:
 

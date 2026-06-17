@@ -14,6 +14,7 @@
 - Cleaned the `City Intelligence Cockpit` catalog group so all current layers use real-data descriptions and a consistent layer order.
 - Added an offline AI opportunity scoring foundation with dry-run rule-based scoring.
 - Added a first in-app `Saved Leads` workflow backed by browser localStorage.
+- Connected selected Terria map features to the `Saved Leads` workflow with `Import Selected Feature`.
 - Added in-app rule-based lead scoring with the `Score Lead` button.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
@@ -151,6 +152,7 @@ Files:
 
 The `Saved Leads` panel supports:
 
+- importing the currently selected map feature into the lead form
 - manual lead creation
 - saved lead list
 - status updates
@@ -167,7 +169,23 @@ The score button fills:
 - `suggested_offer`
 - `recommended_next_action`
 
-This first UI version intentionally keeps feature capture manual. Direct save from the Terria feature-info selection can be added later after the selected-feature state path is mapped safely.
+Selected-feature import reads the active `viewState.terria.selectedFeature`, falls back to `viewState.terria.pickedFeatures.features`, maps known OSM properties into the lead form, and keeps the manual form available as a fallback.
+
+Mapped fields include:
+
+- `name`
+- `category`
+- `address`
+- `phone`
+- `website`
+- `latitude`
+- `longitude`
+- `osm_id`
+- `osm_type`
+- `source`
+- `source_layer`
+
+Duplicate protection uses `osm_type` + `osm_id`. If an imported feature already exists in localStorage, the existing lead is loaded for review instead of blindly creating another saved record.
 
 ## Real OpenStreetMap Pharmacy Data
 

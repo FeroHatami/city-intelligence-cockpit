@@ -10,6 +10,7 @@
     "longitude": 11.6001175,
     "osm_id": 318861629,
     "osm_type": "node",
+    "source": "OpenStreetMap / Overpass",
     "source_layer": "Munich Pharmacies",
     "opportunity_score": "",
     "score_reason": "",
