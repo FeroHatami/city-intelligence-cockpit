@@ -24,6 +24,13 @@ const STATUSES = [
 const CATEGORIES = [
   "Pharmacy",
   "Office",
+  "Law Firm",
+  "Consultant",
+  "Real Estate",
+  "Insurance",
+  "Government",
+  "Company Office",
+  "Office Building",
   "Clinic",
   "Coworking",
   "Restaurant",
@@ -132,9 +139,39 @@ const styles = {
     background: "#2f80ed",
     borderColor: "#2f80ed"
   },
+  activeButton: {
+    background: "#fff",
+    borderColor: "#fff",
+    color: "#111"
+  },
   dangerButton: {
     borderColor: "rgba(255,120,120,0.62)",
     color: "#ffd7d7"
+  },
+  counterGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+    gap: 8,
+    marginTop: 8
+  },
+  counter: {
+    border: "1px solid rgba(255,255,255,0.18)",
+    borderRadius: 4,
+    padding: 8,
+    background: "rgba(255,255,255,0.06)"
+  },
+  counterValue: {
+    display: "block",
+    fontSize: 18,
+    fontWeight: 700,
+    lineHeight: 1.1
+  },
+  counterLabel: {
+    display: "block",
+    marginTop: 2,
+    color: "rgba(255,255,255,0.72)",
+    fontSize: 11,
+    lineHeight: 1.25
   },
   card: {
     border: "1px solid rgba(255,255,255,0.18)",
@@ -274,6 +311,13 @@ function inferCategory(category, sourceLayer) {
 
   const text = sourceLayer.toLowerCase();
   if (text.includes("pharmac")) return "Pharmacy";
+  if (text.includes("law firm")) return "Law Firm";
+  if (text.includes("consult")) return "Consultant";
+  if (text.includes("real estate")) return "Real Estate";
+  if (text.includes("insurance")) return "Insurance";
+  if (text.includes("government")) return "Government";
+  if (text.includes("company office")) return "Company Office";
+  if (text.includes("office building")) return "Office Building";
   if (text.includes("office")) return "Office";
   if (text.includes("clinic") || text.includes("doctor") || text.includes("dentist")) {
     return "Clinic";
@@ -400,6 +444,27 @@ function formFromLead(lead) {
   };
 }
 
+function leadSearchText(lead) {
+  return [
+    lead.name,
+    lead.category,
+    lead.source_layer,
+    lead.address,
+    lead.phone,
+    lead.website,
+    lead.notes,
+    lead.status
+  ]
+    .map(stringValue)
+    .join(" ")
+    .toLowerCase();
+}
+
+function numericScore(lead) {
+  const score = Number(lead.opportunity_score);
+  return Number.isFinite(score) ? score : undefined;
+}
+
 function Field({
   label,
   value,
@@ -444,8 +509,37 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   const [message, setMessage] = useState("");
   const [exportPreview, setExportPreview] = useState("");
   const [exportFormat, setExportFormat] = useState("json");
+  const [statusFilter, setStatusFilter] = useState("all");
+  const [searchFilter, setSearchFilter] = useState("");
+  const [categoryFilter, setCategoryFilter] = useState("all");
+  const [minimumScoreFilter, setMinimumScoreFilter] = useState("");
 
   const dropdownTheme = useMemo(() => ({ icon: "download" }), []);
+  const leadCounters = useMemo(
+    () => ({
+      total: leads.length,
+      contact_soon: leads.filter((lead) => lead.status === "contact_soon").length,
+      contacted: leads.filter((lead) => lead.status === "contacted").length,
+      meeting_booked: leads.filter((lead) => lead.status === "meeting_booked").length
+    }),
+    [leads]
+  );
+  const visibleLeads = useMemo(() => {
+    const query = searchFilter.trim().toLowerCase();
+    const minimumScore =
+      minimumScoreFilter === "" ? undefined : Number(minimumScoreFilter);
+
+    return leads.filter((lead) => {
+      if (statusFilter !== "all" && lead.status !== statusFilter) return false;
+      if (categoryFilter !== "all" && lead.category !== categoryFilter) return false;
+      if (query && !leadSearchText(lead).includes(query)) return false;
+      if (Number.isFinite(minimumScore)) {
+        const score = numericScore(lead);
+        if (score === undefined || score < minimumScore) return false;
+      }
+      return true;
+    });
+  }, [categoryFilter, leads, minimumScoreFilter, searchFilter, statusFilter]);
 
   useEffect(() => {
     const syncLeads = () => setLeads(loadLeads());
@@ -688,6 +782,78 @@ export function CityIntelligenceLeadPanel({ viewState }) {
           </div>
 
           <div style={styles.sectionTitle}>Lead List</div>
+          <div style={styles.counterGrid} data-testid="lead-status-counters">
+            <div style={styles.counter}>
+              <span style={styles.counterValue}>{leadCounters.total}</span>
+              <span style={styles.counterLabel}>Total leads</span>
+            </div>
+            <div style={styles.counter}>
+              <span style={styles.counterValue}>{leadCounters.contact_soon}</span>
+              <span style={styles.counterLabel}>Contact soon</span>
+            </div>
+            <div style={styles.counter}>
+              <span style={styles.counterValue}>{leadCounters.contacted}</span>
+              <span style={styles.counterLabel}>Contacted</span>
+            </div>
+            <div style={styles.counter}>
+              <span style={styles.counterValue}>{leadCounters.meeting_booked}</span>
+              <span style={styles.counterLabel}>Meeting booked</span>
+            </div>
+          </div>
+
+          <div style={styles.actions} data-testid="lead-status-tabs">
+            {["all", ...STATUSES].map((status) => (
+              <button
+                key={status}
+                type="button"
+                style={{
+                  ...styles.button,
+                  ...(statusFilter === status ? styles.activeButton : undefined)
+                }}
+                onClick={() => setStatusFilter(status)}
+              >
+                {status === "all" ? "All" : status.replace(/_/g, " ")}
+              </button>
+            ))}
+          </div>
+
+          <div style={styles.grid}>
+            <Field
+              label="Search Leads"
+              value={searchFilter}
+              onChange={setSearchFilter}
+              wrapperStyle={styles.full}
+              placeholder="Name, address, layer, notes"
+              data-testid="lead-search-input"
+            />
+            <Field label="Category Filter">
+              <select
+                style={styles.input}
+                value={categoryFilter}
+                onChange={(event) => setCategoryFilter(event.target.value)}
+                data-testid="lead-category-filter"
+              >
+                <option value="all">All categories</option>
+                {CATEGORIES.map((category) => (
+                  <option key={category} value={category}>
+                    {category}
+                  </option>
+                ))}
+              </select>
+            </Field>
+            <Field
+              label="Minimum Score"
+              value={minimumScoreFilter}
+              onChange={setMinimumScoreFilter}
+              type="number"
+              min="0"
+              max="10"
+              step="1"
+              placeholder="Any"
+              data-testid="lead-minimum-score-filter"
+            />
+          </div>
+
           <div style={styles.actions}>
             <button
               type="button"
@@ -723,8 +889,10 @@ export function CityIntelligenceLeadPanel({ viewState }) {
 
           {leads.length === 0 ? (
             <p style={styles.empty}>No saved leads.</p>
+          ) : visibleLeads.length === 0 ? (
+            <p style={styles.empty}>No leads match the current filters.</p>
           ) : (
-            leads.map((lead) => (
+            visibleLeads.map((lead) => (
               <div key={lead.id} style={styles.card} data-testid="saved-lead-card">
                 <div style={styles.cardHeader}>
                   <div>
