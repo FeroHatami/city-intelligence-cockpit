@@ -4,6 +4,7 @@ import { MenuLeft } from "terriajs/lib/ReactViews/StandardUserInterface/customiz
 import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface";
 import version from "../../version";
+import { CityIntelligenceLeadPanel } from "./CityIntelligenceLeadPanel";
 
 export const TerriaUserInterface = ({ terria, viewState, themeOverrides }) => {
   const relatedMaps = viewState.terria.configParameters.relatedMaps;
@@ -18,6 +19,7 @@ export const TerriaUserInterface = ({ terria, viewState, themeOverrides }) => {
       version={version}
     >
       <MenuLeft>
+        <CityIntelligenceLeadPanel viewState={viewState} />
         {aboutButtonHrefUrl ? (
           <MenuItem
             caption="About"

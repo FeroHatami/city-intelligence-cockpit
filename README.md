@@ -23,12 +23,25 @@ open http://localhost:3001
 
 ## Current Lead-Saving Status
 
-Save-as-lead is currently a data/script foundation, not yet a full in-app button.
+Save-as-lead is now available in-app as a localStorage v1 workflow. It does not require authentication, a backend, or a database.
 
 Lead schema and sample data:
 
 - `docs/lead-schema.md`
 - `data/processed/leads.sample.json`
+
+Use the app:
+
+1. Open `http://localhost:3001`.
+2. Open `Saved Leads`.
+3. Enter lead details manually.
+4. Select `Save Lead`.
+
+Saved leads persist in browser localStorage under:
+
+`city-intelligence-cockpit.leads`
+
+Export saved leads from the same panel with `Export JSON` or `Export CSV`.
 
 Create a lead JSON record from a GeoJSON feature:
 
@@ -41,7 +54,7 @@ python3 scripts/create-lead-from-feature.py \
 
 ## Current Opportunity Scoring Status
 
-AI opportunity scoring is currently an offline dry-run/script foundation. It does not require an API key, does not call paid APIs, and does not overwrite source GeoJSON files unless an explicit output path is provided.
+AI opportunity scoring is available in-app with the `Score Lead` button and remains available as an offline dry-run script. It does not require an API key, does not call paid APIs, and does not overwrite source GeoJSON files unless an explicit output path is provided.
 
 Scoring docs and prompt:
 

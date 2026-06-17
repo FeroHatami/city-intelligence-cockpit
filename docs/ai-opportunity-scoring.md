@@ -1,6 +1,26 @@
 # AI Opportunity Scoring
 
-City Intelligence Cockpit currently uses an offline, rule-based dry-run scorer. It does not require an API key, does not call paid APIs, and does not modify the source GeoJSON files unless an explicit output path is provided.
+City Intelligence Cockpit currently uses rule-based opportunity scoring in two places:
+
+- the in-app `Score Lead` button in the `Saved Leads` panel
+- the offline dry-run script `scripts/score-opportunity.py`
+
+Neither path requires an API key, calls paid APIs, or modifies source GeoJSON files unless an explicit output path is provided by the script.
+
+## In-App Scoring
+
+Open `Saved Leads`, save a lead, then select `Score Lead`.
+
+The button fills:
+
+- `opportunity_score`
+- `score_reason`
+- `suggested_offer`
+- `recommended_next_action`
+
+The current in-app rules are category based and live in:
+
+`open-source/TerriaMap/lib/CityIntelligence/leads.ts`
 
 ## Script
 
