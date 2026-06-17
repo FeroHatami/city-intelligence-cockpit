@@ -1,18 +1,51 @@
 # City Intelligence Cockpit
 
-A 2D/3D city intelligence platform for observing a city from above, filtering buildings and businesses, and identifying opportunities using geospatial data and AI.
+City Intelligence Cockpit is a local-first 2D/3D geospatial prototype for Munich
+city intelligence. It combines real OpenStreetMap business layers, official
+public geodata, selectable basemaps, and an in-browser lead workflow for saving,
+verifying, scoring, and exporting opportunities without a backend or paid API.
 
 Initial city focus: Munich, Germany.
 
-Core idea:
-- 3D city map
-- business/location filters
-- OpenStreetMap data
-- save places as leads
-- AI opportunity scoring
-- later: city events, traffic, construction, company intelligence
+## Screenshots
 
-## How to run local City Intelligence Cockpit prototype
+Screenshot placeholders and capture instructions live in
+[`docs/screenshots/README.md`](docs/screenshots/README.md).
+
+Recommended screenshots:
+
+- main map with OpenStreetMap
+- data catalog with City Intelligence Cockpit layers
+- Saved Leads panel
+- lead status board and filters
+- Natural Earth basemap
+- local outreach generator
+- public dataset catalog groups
+- Munich/Bavaria 3D local examples
+
+## Features
+
+- Local Munich map startup view.
+- OpenStreetMap, Natural Earth, and Satellite View basemaps.
+- Real OSM/Overpass business layers for pharmacies, offices, clinics,
+  coworking spaces, and restaurants.
+- Office sublayers for law firms, consultants, real estate, insurance,
+  government, company offices, office buildings, and other offices.
+- Official Munich, Germany, and Europe public dataset catalog groups.
+- Optional Munich/Bavaria 3D local example footprints.
+- Selected-feature import into Saved Leads.
+- Manual lead form fallback.
+- Duplicate protection using `osm_type` + `osm_id`.
+- Local lead status board, filters, counters, and sorting.
+- Verification workflow for OSM/public data quality.
+- Offline rule-based opportunity scoring.
+- Offline rule-based outreach message generation in German and English.
+- JSON/CSV export plus JSON backup and restore.
+- Project health check script.
+
+## Local Run
+
+Use Node 22.
 
 ```bash
 cd ~/Projects/city-intelligence-cockpit/open-source/TerriaMap
@@ -21,54 +54,45 @@ yarn gulp dev
 open http://localhost:3001
 ```
 
-## Current Lead-Saving Status
-
-Save-as-lead is now available in-app as a localStorage v1 workflow. It does not require authentication, a backend, or a database.
-
-Lead schema and sample data:
-
-- `docs/lead-schema.md`
-- `data/processed/leads.sample.json`
-
-Use the app:
-
-1. Open `http://localhost:3001`.
-2. Click a map feature from one of the Munich layers.
-3. Open `Saved Leads`.
-4. Select `Import Selected Feature`.
-5. Review the populated lead form.
-6. Select `Save Lead`.
-
-The manual form remains available as a fallback when a feature has not been selected or needs extra analyst cleanup.
-
-Duplicate protection uses `osm_type` + `osm_id`; importing an already saved OSM feature loads the existing lead for review instead of blindly creating another lead.
-
-Saved leads persist in browser localStorage under:
-
-`city-intelligence-cockpit.leads`
-
-Export saved leads from the same panel with `Export JSON` or `Export CSV`.
-Use `Backup Leads JSON` for a full local backup, and `Import Leads JSON` or
-`Import Pasted JSON` to restore a previous backup into the same browser. Import
-validates the JSON and merges duplicate leads by `id` or `osm_type` + `osm_id`
-instead of blindly duplicating them.
-
-Create a lead JSON record from a GeoJSON feature:
+Health check:
 
 ```bash
-python3 scripts/create-lead-from-feature.py \
-  --feature-file open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.geojson \
-  --feature-index 0 \
-  --source-layer "Munich Pharmacies"
+cd ~/Projects/city-intelligence-cockpit
+bash scripts/project-health-check.sh
 ```
 
-## Current Munich Layers
+No deployment is required.
 
-The local catalog keeps `Munich Pharmacies` enabled by default and leaves heavier layers disabled until selected manually.
+## No API Key Policy
 
-Office data is available as `Munich Offices — All` plus focused sublayers generated from `office_type` in the all-offices GeoJSON:
+The current prototype is intentionally local and free:
 
-- Munich Offices — All: 6,706
+- no OpenAI API
+- no paid APIs
+- no Cesium ion token
+- no backend
+- no database
+- no authentication
+- no deployment
+
+Scoring and outreach generation are local rule-based workflows. They do not call
+external AI services.
+
+## Data Layers
+
+The startup workbench enables `Munich Pharmacies` by default. Heavier layers are
+available in the catalog and disabled until selected.
+
+Business layers:
+
+- Munich Pharmacies: 414 real OSM/Overpass features
+- Munich Offices - All: 6,706 real OSM/Overpass features
+- Munich Clinics: 1,845 real OSM/Overpass features
+- Munich Coworking Spaces: 49 real OSM/Overpass features
+- Munich Restaurants: 5,406 real OSM/Overpass features
+
+Office sublayers generated from `office_type`:
+
 - Munich Law Firms: 184
 - Munich Consultants: 82
 - Munich Real Estate Offices: 182
@@ -78,82 +102,119 @@ Office data is available as `Munich Offices — All` plus focused sublayers gene
 - Munich Generic Office Buildings: 2,204
 - Munich Other Offices: 1,883
 
-Refresh the office sublayers after updating `munich-offices.geojson`:
+Public dataset catalog groups:
 
-```bash
-python3 scripts/split-munich-offices.py
-```
+- `Munich Public Datasets`
+- `Germany Public Datasets`
+- `Europe Public Datasets`
+- `Visual Reference Layers`
 
-## Terrain And Public Dataset Catalog
+Public catalog details are documented in
+[`docs/data-sources.md`](docs/data-sources.md).
 
-The local app now loads only `init/city-intelligence.json`. The default sample
-init is no longer loaded by default, which removes the old Australian sample
-catalog and other sample layers from the City Intelligence Cockpit startup.
+## Lead Workflow
 
-Cesium ion terrain, Cesium ion Bing imagery, and the Cesium ion search provider
-are disabled in `open-source/TerriaMap/wwwroot/config.json`. No Cesium ion token,
-API key, paid API, backend, or database is required. 3D mode remains available as
-smooth ellipsoid 3D rather than token-backed terrain.
+Open `Saved Leads` in the app.
 
-Map Settings includes `OpenStreetMap`, `Natural Earth`, and `Satellite View` as
-selectable base maps. OpenStreetMap remains the startup default; Natural Earth
-uses a public no-key Natural Earth raster tile template, and Satellite View uses
-the no-key EOX Sentinel-2 cloudless WMTS tile template.
+Typical selected-feature flow:
 
-The catalog now has five top-level groups:
+1. Click a map feature from a Munich layer.
+2. Open `Saved Leads`.
+3. Select `Import Selected Feature`.
+4. Review the populated form.
+5. Select `Save Lead`.
+6. Change status or verification status as research progresses.
+7. Select `Score Lead`.
+8. Select an outreach template and generate a local message.
+9. Export CSV/JSON or create a full JSON backup.
 
-- `City Intelligence Cockpit`: local OSM/Overpass business layers and lead workflow sources.
-- `Munich Public Datasets`: verified official Munich Open Data / GeoPortal layers for districts, transport, mobility, charging, infrastructure, and environment.
-- `Germany Public Datasets`: verified official BKG/basemap.de WMS layers for German basemaps and administrative boundaries.
-- `Europe Public Datasets`: verified Eurostat/GISCO GeoJSON and Copernicus/EEA WMS layers for European boundaries and land cover.
-- `Visual Reference Layers`: optional no-key Natural Earth, satellite, basemap.de, and Munich 3D dataset footprint layers, disabled by default.
+Leads persist in browser localStorage under:
 
-Real public layers currently added:
+`city-intelligence-cockpit.leads`
 
-- `Munich City Districts (Official GeoJSON)` from Munich GeoPortal WFS.
-- `Munich Traffic Signals (Official GeoJSON)` from Munich Open Data WFS.
-- `Munich Construction Sites - Next 4 Weeks (Official GeoJSON)` from Munich Open Data WFS.
-- `Munich Disabled Parking (Official GeoJSON)` from Munich Open Data WFS.
-- `Munich EV Charging Locations (Official GeoJSON)` and `Munich EV Charging Pillars (Official GeoJSON)` from Munich Open Data WFS.
-- `Munich Mobility Points (Official GeoJSON)` from Munich Open Data WFS.
-- `Munich Carsharing Parking (Official GeoJSON)` from Munich Open Data WFS.
-- `Munich Signed Cycling Network (Official GeoJSON)` and `Munich Old Town Cycling Ring (Official GeoJSON)` from Munich Open Data WFS.
-- `Munich Bike-Sharing Parking Areas`, `Munich E-Scooter Parking Areas`, `Munich E-Moped Parking Areas`, `Munich Cargo-Bike Sharing Parking Areas`, `Munich E-Scooter Geofences`, and `Munich Digital 3L Zones` from Munich Open Data WFS.
-- `Munich Drinking Fountains (Official GeoJSON)` from Munich Open Data WFS.
-- `Germany basemap.de Web Raster Color (Official WMS)` and `Germany basemap.de Web Raster Gray (Official WMS)` from BKG/basemap.de.
-- `Germany Federal States`, `Germany Districts`, `Germany Municipalities`, and `Germany Administrative Boundary Lines` from BKG VG250 WMS.
-- `Europe Countries 2024 (GISCO GeoJSON)` from Eurostat/GISCO.
-- `EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
-- `EU NUTS 2024 Level 1 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
-- `EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
-- `EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
-- `Corine Land Cover 2018 Raster (Copernicus/EEA WMS)` and `Corine Land Cover 2018 Vector (Copernicus/EEA WMS)`.
+Use `Backup Leads JSON` for a full local backup. Use `Import Leads JSON` or
+`Import Pasted JSON` to restore leads into the same browser. Import validates the
+JSON and merges duplicates by `id` or `osm_type` + `osm_id`.
 
-Optional visual reference layers restored safely:
+Lead schema:
 
-- `Natural Earth II (Optional Visual Layer)` as a no-key TMS imagery layer, disabled by default.
-- `Satellite View (Optional Visual Layer)` as no-key EOX Sentinel-2 cloudless imagery, disabled by default.
-- `Germany basemap.de Context (Optional WMS)` as a no-key BKG/basemap.de WMS context layer, disabled by default.
-- Munich-only official 3D dataset footprints for LoD2 buildings, DGM1 terrain, DOM20 surface data, laser point clouds, and DOM Mesh project areas from Bavaria OpenData, disabled by default.
+- [`docs/lead-schema.md`](docs/lead-schema.md)
+- [`data/processed/leads.sample.json`](data/processed/leads.sample.json)
 
-Unverified portals and private/commercial sources are documented in
-`docs/data-sources.md` rather than exposed as empty catalogue groups.
+## Scripts
 
-## Current Opportunity Scoring Status
+Fetch and prepare local OSM layers:
 
-AI opportunity scoring is available in-app with the `Score Lead` button and remains available as an offline dry-run script. It does not require an API key, does not call paid APIs, and does not overwrite source GeoJSON files unless an explicit output path is provided.
+- `scripts/fetch-munich-pharmacies.py`
+- `scripts/fetch-munich-offices.py`
+- `scripts/split-munich-offices.py`
+- `scripts/fetch-munich-clinics.py`
+- `scripts/fetch-munich-coworking.py`
+- `scripts/fetch-munich-restaurants.py`
 
-Scoring docs and prompt:
+Lead and scoring utilities:
 
-- `docs/ai-opportunity-scoring.md`
-- `prompts/opportunity-scoring-prompt.md`
-- `data/processed/opportunity-scores.sample.json`
+- `scripts/create-lead-from-feature.py`
+- `scripts/score-opportunity.py`
+- `scripts/add-verification-fields.py`
+- `scripts/project-health-check.sh`
 
-Run dry-run scoring:
+Manual dataset import workflow:
 
-```bash
-python3 scripts/score-opportunity.py \
-  --input open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.geojson \
-  --source-layer "Munich Pharmacies" \
-  --limit 5
-```
+- [`docs/import-datasets.md`](docs/import-datasets.md)
+- [`data/imports/dataset-metadata-template.json`](data/imports/dataset-metadata-template.json)
+
+## Architecture
+
+The prototype has four local layers:
+
+- App shell: customized geospatial frontend under `open-source/TerriaMap`.
+- Catalog config: `open-source/TerriaMap/wwwroot/init/city-intelligence.json`.
+- Static data: local GeoJSON files under
+  `open-source/TerriaMap/wwwroot/data/city-intelligence`.
+- Lead workflow: browser localStorage plus
+  `open-source/TerriaMap/lib/CityIntelligence/leads.ts` and the Saved Leads
+  panel.
+
+There is no server-side lead store. The Terria server only serves the local app
+and static assets during development.
+
+## Data Disclaimer
+
+OpenStreetMap, Overpass, Munich public data, BKG/basemap.de, Eurostat/GISCO,
+Copernicus/EEA, and Bavaria OpenData sources are useful for discovery and map
+context. They are not guaranteed to be current, complete, or business-ready.
+
+Treat `unverified_osm` and `needs_research` leads as research candidates until a
+human checks the website, phone, address, source, and operating status.
+
+## Limitations
+
+- Leads are stored in browser localStorage and can be lost if browser data is
+  cleared.
+- There is no multi-user sync, authentication, backend, or database.
+- Scoring and outreach are simple rule-based helpers, not automated sales advice.
+- OSM and public catalog data can be stale or incomplete.
+- Public WMS/WFS services can change or become temporarily unavailable.
+- Manual dataset imports require local validation before catalog changes.
+
+## Roadmap
+
+Short term:
+
+- finish manual QA docs
+- add representative screenshots
+- keep health checks current
+- improve layer descriptions and import templates as new data is added
+
+Medium term:
+
+- richer local lead qualification fields
+- optional local analytics summaries
+- stronger CSV/GeoJSON import helpers
+- improved public dataset review workflow
+
+Optional later work:
+
+- backend, authentication, deployment, hosted database, or API-based scoring only
+  if the project intentionally moves beyond local-first mode
