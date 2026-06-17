@@ -4,6 +4,7 @@
 
 - Set the City Intelligence Cockpit local prototype to load only the focused `city-intelligence` init.
 - Disabled token-dependent Cesium ion terrain, Cesium ion Bing imagery, and Cesium ion search so the app opens without terrain 401 popups or API keys.
+- Added `Natural Earth` as a selectable no-key basemap in Map Settings while keeping `OpenStreetMap` as the default startup basemap.
 - Removed the upstream `simple` demo init from default startup, hiding the old Australian demo catalog and brittle sample layers from the cockpit.
 - Added Munich default `homeCamera` and `initialCamera` bounds.
 - Set the initial viewer mode to `2d` for a stable Munich-first local prototype. 3D mode remains available through Map Settings.

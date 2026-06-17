@@ -91,6 +91,10 @@ are disabled in `open-source/TerriaMap/wwwroot/config.json`. No Cesium ion token
 API key, paid API, backend, or database is required. 3D mode remains available as
 smooth ellipsoid 3D rather than token-backed terrain.
 
+Map Settings includes `OpenStreetMap` and `Natural Earth` as selectable base
+maps. OpenStreetMap remains the startup default; Natural Earth uses Terria's
+public no-key Natural Earth raster tiles and can be selected manually.
+
 The catalog now has five top-level groups:
 
 - `City Intelligence Cockpit`: local OSM/Overpass business layers and lead workflow sources.
