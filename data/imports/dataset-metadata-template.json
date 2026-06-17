@@ -1,0 +1,21 @@
+{
+  "id": "munich-example-layer",
+  "title": "Munich Example Layer",
+  "description": "Short description of what the dataset contains.",
+  "geographic_scope": "Munich",
+  "format": "GeoJSON",
+  "source_name": "Source organization name",
+  "source_url": "https://example.org/dataset",
+  "license": "License name or URL",
+  "update_frequency": "unknown",
+  "downloaded_at": "YYYY-MM-DDTHH:MM:SSZ",
+  "local_file": "open-source/TerriaMap/wwwroot/data/imports/munich-example-layer.geojson",
+  "intended_catalog_group": "Munich Public Datasets",
+  "terria_item_type": "geojson",
+  "default_enabled": false,
+  "verification_status": "needs_review",
+  "contains_personal_data": false,
+  "api_key_required": false,
+  "paid_service": false,
+  "notes": "Document field meanings, caveats, and any manual cleanup here."
+}
