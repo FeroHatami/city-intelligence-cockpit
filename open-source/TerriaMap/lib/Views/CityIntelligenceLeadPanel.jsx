@@ -31,6 +31,15 @@ const STATUS_LABELS = {
   not_relevant: "Not relevant"
 };
 
+const VERIFICATION_STATUSES = [
+  "unverified_osm",
+  "needs_research",
+  "website_checked",
+  "manually_verified",
+  "duplicate",
+  "wrong_or_closed"
+];
+
 const CATEGORIES = [
   "Pharmacy",
   "Office",
@@ -168,7 +177,7 @@ const styles = {
   },
   counterGrid: {
     display: "grid",
-    gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
+    gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
     gap: 8,
     marginTop: 8
   },
@@ -285,6 +294,12 @@ const styles = {
   downloadLink: {
     color: "#b6e3ff",
     fontSize: 12
+  },
+  exportScopeText: {
+    margin: "6px 0 0",
+    color: "rgba(255,255,255,0.72)",
+    fontSize: 12,
+    lineHeight: 1.35
   },
   empty: {
     margin: "8px 0 0",
@@ -609,7 +624,11 @@ function leadSearchText(lead) {
     lead.phone,
     lead.website,
     lead.notes,
-    lead.status
+    lead.status,
+    lead.verification_status,
+    lead.data_source,
+    lead.score_reason,
+    lead.suggested_first_message
   ]
     .map(stringValue)
     .join(" ")
@@ -623,6 +642,20 @@ function numericScore(lead) {
 
 function statusLabel(status) {
   return STATUS_LABELS[status] || stringValue(status).replace(/_/g, " ");
+}
+
+function verificationLabel(status) {
+  return stringValue(status).replace(/_/g, " ") || "No verification status";
+}
+
+function statusSortIndex(status) {
+  const index = STATUSES.indexOf(status);
+  return index === -1 ? STATUSES.length : index;
+}
+
+function dateValue(value) {
+  const timestamp = Date.parse(stringValue(value));
+  return Number.isFinite(timestamp) ? timestamp : 0;
 }
 
 function normalizedWebsiteUrl(value) {
@@ -694,7 +727,12 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   const [statusFilter, setStatusFilter] = useState("all");
   const [searchFilter, setSearchFilter] = useState("");
   const [categoryFilter, setCategoryFilter] = useState("all");
+  const [verificationStatusFilter, setVerificationStatusFilter] =
+    useState("all");
+  const [sourceLayerFilter, setSourceLayerFilter] = useState("all");
   const [minimumScoreFilter, setMinimumScoreFilter] = useState("");
+  const [sortMode, setSortMode] = useState("newest");
+  const [exportScope, setExportScope] = useState("all");
 
   const dropdownTheme = useMemo(() => ({ icon: "download" }), []);
   const leadCounters = useMemo(
@@ -704,18 +742,55 @@ export function CityIntelligenceLeadPanel({ viewState }) {
         .length,
       contacted: leads.filter((lead) => lead.status === "contacted").length,
       meeting_booked: leads.filter((lead) => lead.status === "meeting_booked")
-        .length
+        .length,
+      manually_verified: leads.filter(
+        (lead) => lead.verification_status === "manually_verified"
+      ).length,
+      needs_research: leads.filter(
+        (lead) => lead.verification_status === "needs_research"
+      ).length
     }),
     [leads]
   );
+  const sourceLayerOptions = useMemo(() => {
+    const layerSet = new Set(SOURCE_LAYERS);
+    leads.forEach((lead) => {
+      if (lead.source_layer) layerSet.add(lead.source_layer);
+    });
+    return Array.from(layerSet).sort((left, right) =>
+      left.localeCompare(right)
+    );
+  }, [leads]);
+
+  const verificationStatusOptions = useMemo(() => {
+    const statusSet = new Set(VERIFICATION_STATUSES);
+    leads.forEach((lead) => {
+      if (lead.verification_status) statusSet.add(lead.verification_status);
+    });
+    return Array.from(statusSet).sort((left, right) =>
+      left.localeCompare(right)
+    );
+  }, [leads]);
+
   const visibleLeads = useMemo(() => {
     const query = searchFilter.trim().toLowerCase();
     const minimumScore =
       minimumScoreFilter === "" ? undefined : Number(minimumScoreFilter);
 
-    return leads.filter((lead) => {
+    const filteredLeads = leads.filter((lead) => {
       if (statusFilter !== "all" && lead.status !== statusFilter) return false;
       if (categoryFilter !== "all" && lead.category !== categoryFilter)
+        return false;
+      if (
+        verificationStatusFilter !== "all" &&
+        lead.verification_status !== verificationStatusFilter
+      ) {
+        return false;
+      }
+      if (
+        sourceLayerFilter !== "all" &&
+        lead.source_layer !== sourceLayerFilter
+      )
         return false;
       if (query && !leadSearchText(lead).includes(query)) return false;
       if (Number.isFinite(minimumScore)) {
@@ -724,7 +799,37 @@ export function CityIntelligenceLeadPanel({ viewState }) {
       }
       return true;
     });
-  }, [categoryFilter, leads, minimumScoreFilter, searchFilter, statusFilter]);
+
+    return [...filteredLeads].sort((left, right) => {
+      switch (sortMode) {
+        case "highest_score":
+          return (numericScore(right) ?? -1) - (numericScore(left) ?? -1);
+        case "category":
+          return stringValue(left.category).localeCompare(
+            stringValue(right.category)
+          );
+        case "status":
+          return (
+            statusSortIndex(left.status) - statusSortIndex(right.status) ||
+            stringValue(left.name).localeCompare(stringValue(right.name))
+          );
+        case "last_updated":
+          return dateValue(right.updated_at) - dateValue(left.updated_at);
+        case "newest":
+        default:
+          return dateValue(right.created_at) - dateValue(left.created_at);
+      }
+    });
+  }, [
+    categoryFilter,
+    leads,
+    minimumScoreFilter,
+    searchFilter,
+    sortMode,
+    sourceLayerFilter,
+    statusFilter,
+    verificationStatusFilter
+  ]);
 
   useEffect(() => {
     const syncLeads = () => setLeads(loadLeads());
@@ -883,10 +988,15 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   };
 
   const handleExport = (format) => {
-    const content = exportLeads(format);
+    const exportedLeads = exportScope === "filtered" ? visibleLeads : leads;
+    const content = exportLeads(format, exportedLeads);
     setExportFormat(format);
     setExportPreview(content);
-    setMessage(`Prepared ${format.toUpperCase()} export.`);
+    setMessage(
+      `Prepared ${format.toUpperCase()} export for ${
+        exportScope === "filtered" ? "filtered leads" : "all saved leads"
+      } (${exportedLeads.length}).`
+    );
   };
 
   return (
@@ -1072,6 +1182,18 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               </span>
               <span style={styles.counterLabel}>Meeting booked</span>
             </div>
+            <div style={styles.counter}>
+              <span style={styles.counterValue}>
+                {leadCounters.manually_verified}
+              </span>
+              <span style={styles.counterLabel}>Manually verified</span>
+            </div>
+            <div style={styles.counter}>
+              <span style={styles.counterValue}>
+                {leadCounters.needs_research}
+              </span>
+              <span style={styles.counterLabel}>Needs research</span>
+            </div>
           </div>
 
           <div style={styles.actions} data-testid="lead-status-tabs">
@@ -1114,6 +1236,38 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                 ))}
               </select>
             </Field>
+            <Field label="Verification Filter">
+              <select
+                style={styles.input}
+                value={verificationStatusFilter}
+                onChange={(event) =>
+                  setVerificationStatusFilter(event.target.value)
+                }
+                data-testid="lead-verification-filter"
+              >
+                <option value="all">All verification statuses</option>
+                {verificationStatusOptions.map((status) => (
+                  <option key={status} value={status}>
+                    {verificationLabel(status)}
+                  </option>
+                ))}
+              </select>
+            </Field>
+            <Field label="Source Layer Filter">
+              <select
+                style={styles.input}
+                value={sourceLayerFilter}
+                onChange={(event) => setSourceLayerFilter(event.target.value)}
+                data-testid="lead-source-layer-filter"
+              >
+                <option value="all">All source layers</option>
+                {sourceLayerOptions.map((layer) => (
+                  <option key={layer} value={layer}>
+                    {layer}
+                  </option>
+                ))}
+              </select>
+            </Field>
             <Field
               label="Minimum Score"
               value={minimumScoreFilter}
@@ -1125,6 +1279,43 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               placeholder="Any"
               data-testid="lead-minimum-score-filter"
             />
+            <Field label="Sort Leads">
+              <select
+                style={styles.input}
+                value={sortMode}
+                onChange={(event) => setSortMode(event.target.value)}
+                data-testid="lead-sort-select"
+              >
+                <option value="newest">Newest first</option>
+                <option value="highest_score">Highest score</option>
+                <option value="category">Category</option>
+                <option value="status">Status</option>
+                <option value="last_updated">Last updated</option>
+              </select>
+            </Field>
+          </div>
+
+          <div style={styles.grid}>
+            <Field label="Export Scope">
+              <select
+                style={styles.input}
+                value={exportScope}
+                onChange={(event) => setExportScope(event.target.value)}
+                data-testid="lead-export-scope-select"
+              >
+                <option value="all">All saved leads</option>
+                <option value="filtered">Current filtered leads</option>
+              </select>
+            </Field>
+            <p style={{ ...styles.exportScopeText, ...styles.full }}>
+              Export scope:{" "}
+              {exportScope === "filtered"
+                ? `${visibleLeads.length} filtered lead${
+                    visibleLeads.length === 1 ? "" : "s"
+                  }`
+                : `${leads.length} saved lead${leads.length === 1 ? "" : "s"}`}
+              .
+            </p>
           </div>
 
           <div style={styles.actions}>
@@ -1157,7 +1348,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               <a
                 style={styles.downloadLink}
                 href={exportDataUri(exportFormat, exportPreview)}
-                download={`city-intelligence-leads.${exportFormat}`}
+                download={`city-intelligence-leads-${exportScope}.${exportFormat}`}
               >
                 Download {exportFormat.toUpperCase()}
               </a>

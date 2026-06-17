@@ -368,8 +368,10 @@ function csvValue(value: unknown) {
   return /[",\n\r]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
 }
 
-export function exportLeads(format: "json" | "csv" = "json") {
-  const leads = getLeads();
+export function exportLeads(
+  format: "json" | "csv" = "json",
+  leads: CityIntelligenceLead[] = getLeads()
+) {
   if (format === "json") {
     return JSON.stringify(leads, null, 2);
   }
