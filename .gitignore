@@ -3,6 +3,7 @@
 *.backup
 *.backup-city-cockpit
 *.tmp
+.env*
 
 node_modules/
 **/node_modules/
