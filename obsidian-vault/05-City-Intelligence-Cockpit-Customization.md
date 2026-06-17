@@ -2,7 +2,9 @@
 
 ## What Changed
 
-- Set the City Intelligence Cockpit local prototype to load the original `simple` init first, then a focused `city-intelligence` init.
+- Set the City Intelligence Cockpit local prototype to load only the focused `city-intelligence` init.
+- Disabled token-dependent Cesium ion terrain, Cesium ion Bing imagery, and Cesium ion search so the app opens without terrain 401 popups or API keys.
+- Removed the upstream `simple` demo init from default startup, hiding the old Australian demo catalog, 3D train/demo assets, and Natural Earth preview basemap from the cockpit.
 - Added Munich default `homeCamera` and `initialCamera` bounds.
 - Set the initial viewer mode to `2d` for a stable Munich-first local prototype. 3D mode remains available through Map Settings.
 - Renamed visible app branding to `City Intelligence Cockpit`.
@@ -13,6 +15,9 @@
 - Added a real `Munich Clinics` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Restaurants` GeoJSON layer from OpenStreetMap.
 - Cleaned the `City Intelligence Cockpit` catalog group so all current layers use real-data descriptions and a consistent layer order.
+- Added top-level public dataset catalog groups for `Munich Public Datasets`, `Germany Public Datasets`, and `Europe Public Datasets`.
+- Added official public live layers for Munich traffic signals, Munich drinking fountains, and EU NUTS 2024 level 0 boundaries.
+- Added safe reference-only catalog entries for Munich Open Data, Munich GeoPortal, GovData, Destatis, basemap.de / BKG, the European Data Portal, and Eurostat/GISCO.
 - Added an offline AI opportunity scoring foundation with dry-run rule-based scoring.
 - Added a first in-app `Saved Leads` workflow backed by browser localStorage.
 - Connected selected Terria map features to the `Saved Leads` workflow with `Import Selected Feature`.
@@ -80,11 +85,19 @@ http://localhost:3001
 ## Known Warnings
 
 - Sass deprecation warnings may appear during development builds. They are non-fatal.
-- The previous map configuration error was caused by an invalid init structure. The custom init is now a plain application init source loaded after `simple`.
+- The previous map configuration error was caused by an invalid init structure. The custom init is now a plain application init source and the only default init loaded by the app.
+- The previous terrain server 401 popup was caused by token-dependent terrain behavior. The local prototype now uses no-token smooth ellipsoid 3D instead of Cesium ion terrain.
 
 ## Catalog Organization
 
-All City Intelligence Cockpit layers are grouped under one `City Intelligence Cockpit` catalog group.
+The catalog has four top-level groups:
+
+- `City Intelligence Cockpit`
+- `Munich Public Datasets`
+- `Germany Public Datasets`
+- `Europe Public Datasets`
+
+All business and lead-workflow layers remain grouped under `City Intelligence Cockpit`.
 
 Current layer order:
 
@@ -116,6 +129,34 @@ Verification notes:
 - Layer order appeared as `Munich Pharmacies`, `Munich Offices — All`, the office sublayers, `Munich Clinics`, `Munich Coworking Spaces`, and `Munich Restaurants`.
 - Startup workbench count was `1`, confirming only `Munich Pharmacies` was enabled by default.
 - `Munich Coworking Spaces` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
+
+## Public Dataset Catalog
+
+The public dataset catalog separates official public data from the OSM/Overpass business layers used for lead generation.
+
+Real public layers:
+
+- `Munich Traffic Signals (Official GeoJSON)` from Munich Open Data / GeoPortal WFS.
+- `Munich Drinking Fountains (Official GeoJSON)` from Munich Open Data / GeoPortal WFS.
+- `EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+
+Reference-only items use empty Terria groups with descriptions. They are visible in the catalog but do not try to load tiles or features:
+
+- Munich Open Data Portal
+- Munich GeoPortal OpenGeodata
+- Munich mobility datasets
+- Munich environment, green-zone, and charging resources
+- GovData
+- Destatis regional statistics
+- basemap.de / BKG
+- German administrative boundary references
+- European Data Portal
+- Eurostat/GISCO reference directory
+
+Promotion rule:
+
+- Add a public source as a real layer only after confirming the exact official endpoint, layer name, format, licensing, size, and no-key behavior.
+- Keep uncertain WMS/WFS/portal resources as reference-only entries to avoid broken catalog layers.
 
 ## AI Opportunity Scoring Foundation
 

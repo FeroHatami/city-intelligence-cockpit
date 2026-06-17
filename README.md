@@ -80,6 +80,35 @@ Refresh the office sublayers after updating `munich-offices.geojson`:
 python3 scripts/split-munich-offices.py
 ```
 
+## Terrain And Public Dataset Catalog
+
+The local app now loads only `init/city-intelligence.json`. The upstream `simple`
+demo init is no longer loaded by default, which removes the old Australian demo
+catalog, 3D train/demo assets, Natural Earth preview basemap, and other sample
+layers from the City Intelligence Cockpit startup.
+
+Cesium ion terrain, Cesium ion Bing imagery, and the Cesium ion search provider
+are disabled in `open-source/TerriaMap/wwwroot/config.json`. No Cesium ion token,
+API key, paid API, backend, or database is required. 3D mode remains available as
+smooth ellipsoid 3D rather than token-backed terrain.
+
+The catalog now has four top-level groups:
+
+- `City Intelligence Cockpit`: local OSM/Overpass business layers and lead workflow sources.
+- `Munich Public Datasets`: official Munich Open Data / GeoPortal layers and references.
+- `Germany Public Datasets`: official Germany-wide public data references.
+- `Europe Public Datasets`: official EU public data references and GISCO layers.
+
+Real public layers currently added:
+
+- `Munich Traffic Signals (Official GeoJSON)` from Munich Open Data WFS.
+- `Munich Drinking Fountains (Official GeoJSON)` from Munich Open Data WFS.
+- `EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+
+Reference-only catalog items use empty Terria groups with descriptions. They
+document official portals without attempting to load uncertain or unstable
+WMS/WFS URLs.
+
 ## Current Opportunity Scoring Status
 
 AI opportunity scoring is available in-app with the `Score Lead` button and remains available as an offline dry-run script. It does not require an API key, does not call paid APIs, and does not overwrite source GeoJSON files unless an explicit output path is provided.

@@ -1,6 +1,6 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["simple", "city-intelligence"],
+  "initializationUrls": ["city-intelligence"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
@@ -76,15 +76,9 @@
       "fallbackLanguage": "en"
     },
     "searchBarConfig": {},
-    "searchProviders": [
-      {
-        "id": "search-provider/cesium-ion",
-        "type": "cesium-ion-search-provider",
-        "name": "translate#viewModels.searchLocations",
-        "flightDurationSeconds": 1.5,
-        "minCharacters": 3
-      }
-    ],
+    "searchProviders": [],
+    "useCesiumIonTerrain": false,
+    "useCesiumIonBingImagery": false,
     "helpContent": [
       {
         "title": "translate#gettingstarted.title",
