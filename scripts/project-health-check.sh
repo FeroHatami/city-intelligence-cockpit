@@ -17,6 +17,9 @@ info() {
   printf 'INFO: %s\n' "$1"
 }
 
+git rev-parse --is-inside-work-tree >/dev/null 2>&1 || fail "not inside a git repository"
+pass "git repo exists"
+
 BRANCH="$(git rev-parse --abbrev-ref HEAD)"
 if [[ "$BRANCH" != "main" ]]; then
   fail "expected branch main, found $BRANCH"
@@ -28,9 +31,17 @@ git status --short --untracked-files=all
 
 KEY_FILES=(
   "README.md"
+  "data/imports/dataset-metadata-template.json"
+  "docs/architecture.md"
   "docs/ai-opportunity-scoring.md"
   "docs/data-sources.md"
+  "docs/import-datasets.md"
+  "docs/known-limitations.md"
   "docs/lead-schema.md"
+  "docs/manual-qa-checklist.md"
+  "docs/project-health-check.md"
+  "docs/roadmap.md"
+  "docs/screenshots/README.md"
   "open-source/TerriaMap/wwwroot/config.json"
   "open-source/TerriaMap/wwwroot/index.ejs"
   "open-source/TerriaMap/wwwroot/init/city-intelligence.json"
@@ -38,8 +49,15 @@ KEY_FILES=(
   "open-source/TerriaMap/lib/Views/CityIntelligenceLeadPanel.jsx"
   "scripts/add-verification-fields.py"
   "scripts/create-lead-from-feature.py"
+  "scripts/fetch-munich-3d-datasets.py"
+  "scripts/fetch-munich-clinics.py"
+  "scripts/fetch-munich-coworking.py"
+  "scripts/fetch-munich-offices.py"
+  "scripts/fetch-munich-pharmacies.py"
+  "scripts/fetch-munich-restaurants.py"
   "scripts/project-health-check.sh"
   "scripts/score-opportunity.py"
+  "scripts/split-munich-offices.py"
 )
 
 for file in "${KEY_FILES[@]}"; do
@@ -53,6 +71,7 @@ from pathlib import Path
 
 root = Path(".")
 data_dir = root / "open-source" / "TerriaMap" / "wwwroot" / "data" / "city-intelligence"
+app_data_dir = root / "open-source" / "TerriaMap" / "wwwroot" / "data"
 expected_counts = {
     "munich-pharmacies.geojson": 414,
     "munich-offices.geojson": 6706,
@@ -77,6 +96,13 @@ expected_counts = {
 
 counts = {}
 missing_fields = []
+for path in sorted(app_data_dir.rglob("*.geojson")):
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("type") != "FeatureCollection":
+        raise SystemExit(f"{path} is not a FeatureCollection")
+    if not isinstance(data.get("features"), list):
+        raise SystemExit(f"{path} has no features array")
+
 for filename, expected in expected_counts.items():
     path = data_dir / filename
     if not path.is_file():
@@ -343,7 +369,11 @@ for item in walk(init["catalog"]):
     if any(blocked in url for blocked in ("terrain.czml", "api.transport.nsw.gov.au", "lowpoly_bus", "test/3d/geelong")):
         raise SystemExit(f"blocked demo URL leaked into live catalog: {url}")
 
-print("PASS: GeoJSON files parse, counts match, verification fields exist")
+print("INFO: feature counts:")
+for filename in sorted(counts):
+    print(f"INFO:   {filename}: {counts[filename]}")
+print("PASS: all app GeoJSON files parse")
+print("PASS: expected feature counts match and verification fields exist")
 print(f"PASS: office sublayers sum to {office_sum}")
 print("PASS: catalog groups, workbench, basemap, public layers, and optional demos are valid")
 PY
@@ -370,11 +400,23 @@ if [[ -n "$RISKY_TRACKED" ]]; then
 fi
 pass "risky tracked files are absent"
 
+SECRET_LIKE="$(
+  git grep -nE '(sk-[A-Za-z0-9_-]{20,}|OPENAI_API_KEY[[:space:]]*=|CESIUM_ION_ACCESS_TOKEN[[:space:]]*=|cesiumIonAccessToken[[:space:]]*:[[:space:]]*"[^"]+")' -- . ':!scripts/project-health-check.sh' || true
+)"
+if [[ -n "$SECRET_LIKE" ]]; then
+  printf '%s\n' "$SECRET_LIKE" >&2
+  fail "possible tracked API key or token found"
+fi
+pass "no tracked API keys or token-looking secrets found"
+
 git check-ignore -q .env.local || fail ".env.local is not ignored"
 pass ".env.local is ignored"
 
 grep -q "nvm use 22" README.md || fail "README.md must mention nvm use 22"
+grep -q "yarn gulp dev" README.md || fail "README.md must mention yarn gulp dev"
+grep -q "http://localhost:3001" README.md || fail "README.md must mention localhost:3001"
 grep -q "nvm use 22" open-source/TerriaMap/README.md || fail "TerriaMap README must mention nvm use 22"
-pass "Node guidance says use Node 22"
+grep -q "yarn gulp dev" docs/manual-qa-checklist.md || fail "manual QA checklist must mention yarn gulp dev"
+pass "project run commands are documented with Node 22"
 
 pass "project health check complete"

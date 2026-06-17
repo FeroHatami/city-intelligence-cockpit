@@ -11,15 +11,17 @@ The script verifies:
 - current branch is `main`
 - git status is printed for review
 - key app, data, documentation, and script files exist
-- City Intelligence Cockpit GeoJSON files parse
+- all app GeoJSON files parse
 - expected feature counts match for all main layers and office sublayers
+- feature counts are printed for review
 - office sublayer counts sum to `6,706`
 - all GeoJSON features include local verification fields
 - catalog order, pharmacy-only workbench, Natural Earth/Satellite basemaps, public dataset groups, and optional visual layers are valid
 - public catalogue groups do not contain empty placeholder groups
 - risky tracked files such as `node_modules`, build output, logs, caches, and `.env*` are absent
+- token-looking API keys or secrets are absent from tracked files
 - `.env.local` is ignored
-- Node guidance says to use Node 22
+- documented run commands use Node 22 and `yarn gulp dev`
 
 The check is local-only. It does not call external APIs, does not require
 secrets, and does not modify project files.
