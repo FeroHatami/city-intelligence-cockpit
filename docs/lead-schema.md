@@ -100,11 +100,15 @@ The v1 panel supports:
 - delete
 - JSON export
 - CSV export
+- full JSON backup
+- JSON backup import from file or pasted JSON with duplicate-aware merge
 - rule-based `Score Lead`
 - local `Generate Outreach Message`
 - `Copy Message` for generated outreach text when browser clipboard access is available
 
 The v1 panel does not use authentication, a backend, or a database.
+Leads are stored locally in the current browser, so export JSON backups
+regularly before clearing browser data or changing machines.
 
 To import a selected feature:
 
@@ -117,6 +121,13 @@ To import a selected feature:
 The import maps the selected Terria feature's properties into lead fields where available. It uses feature properties such as `name`, `category`, `address`, `phone`, `website`, `osm_id`, `osm_type`, `source`, `data_source`, `verification_status`, `last_checked_at`, and `verified_by`, plus the selected catalog item name for `source_layer`.
 
 Duplicate protection is based on `osm_type` + `osm_id`. If a matching lead already exists, the panel loads the existing lead for review instead of creating a duplicate.
+
+Backup import accepts either a JSON array of lead records or an object with a
+`leads` array. Use `Import Leads JSON` for a local `.json` file or paste the
+backup text into `Lead JSON Import` and select `Import Pasted JSON`. During
+import, records with the same `id` or the same `osm_type` + `osm_id` update the
+existing lead instead of creating a duplicate. The import result reports how many
+records were imported, updated, or skipped.
 
 OpenStreetMap and public catalog data are useful for discovery, but they are not guaranteed to be current, complete, or business-ready. Treat `unverified_osm` and `needs_research` leads as research candidates until a human checks the website, phone, address, and business status.
 

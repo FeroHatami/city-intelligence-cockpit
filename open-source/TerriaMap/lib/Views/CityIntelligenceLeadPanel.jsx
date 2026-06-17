@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Ellipsoid from "terriajs-cesium/Source/Core/Ellipsoid";
 import CesiumMath from "terriajs-cesium/Source/Core/Math";
 import MenuPanel from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuPanel";
@@ -8,6 +8,7 @@ import {
   exportLeads,
   generateOutreach,
   getLeads,
+  importLeadsFromJson,
   saveLead,
   scoreLead,
   updateLead
@@ -309,6 +310,15 @@ const styles = {
     color: "rgba(255,255,255,0.72)",
     fontSize: 12,
     lineHeight: 1.35
+  },
+  warning: {
+    margin: "0 0 8px",
+    color: "#ffe3a3",
+    fontSize: 12,
+    lineHeight: 1.35
+  },
+  hiddenInput: {
+    display: "none"
   },
   empty: {
     margin: "8px 0 0",
@@ -779,6 +789,8 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   const [sortMode, setSortMode] = useState("newest");
   const [exportScope, setExportScope] = useState("all");
   const [outreachTemplateByLead, setOutreachTemplateByLead] = useState({});
+  const [importJsonText, setImportJsonText] = useState("");
+  const importFileInputRef = useRef(null);
 
   const dropdownTheme = useMemo(() => ({ icon: "download" }), []);
   const leadCounters = useMemo(
@@ -1051,6 +1063,50 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     );
   };
 
+  const handleBackupExport = () => {
+    const content = exportLeads("json", leads);
+    setExportFormat("json");
+    setExportPreview(content);
+    setMessage(`Prepared full JSON backup for ${leads.length} saved leads.`);
+  };
+
+  const handleImportJsonContent = (content) => {
+    const summary = importLeadsFromJson(content);
+    setLeads(loadLeads());
+    setExportPreview("");
+    setImportJsonText("");
+    setMessage(
+      `Imported leads JSON: ${summary.imported} imported, ${summary.updated} updated, ${summary.skipped} skipped.${
+        summary.errors[0] ? ` ${summary.errors[0]}` : ""
+      }`
+    );
+  };
+
+  const handleImportBackup = async (event) => {
+    const file = event.target.files?.[0];
+    event.target.value = "";
+    if (!file) return;
+
+    try {
+      const content = await file.text();
+      handleImportJsonContent(content);
+    } catch {
+      setMessage(
+        "Import failed. Choose a valid City Intelligence leads JSON file."
+      );
+    }
+  };
+
+  const handleImportPastedJson = () => {
+    const content = importJsonText.trim();
+    if (!content) {
+      setMessage("Paste a City Intelligence leads JSON backup first.");
+      return;
+    }
+
+    handleImportJsonContent(content);
+  };
+
   return (
     <MenuPanel
       theme={dropdownTheme}
@@ -1219,6 +1275,9 @@ export function CityIntelligenceLeadPanel({ viewState }) {
           </div>
 
           <div style={styles.sectionTitle}>Lead List</div>
+          <p style={styles.warning}>
+            Leads are stored locally in this browser. Export backups regularly.
+          </p>
           <div style={styles.counterGrid} data-testid="lead-status-counters">
             <div style={styles.counter}>
               <span style={styles.counterValue}>{leadCounters.total}</span>
@@ -1388,9 +1447,54 @@ export function CityIntelligenceLeadPanel({ viewState }) {
             <button
               type="button"
               style={styles.button}
+              onClick={handleBackupExport}
+              data-testid="backup-leads-json-button"
+            >
+              Backup Leads JSON
+            </button>
+            <button
+              type="button"
+              style={styles.button}
+              onClick={() => importFileInputRef.current?.click()}
+              data-testid="import-leads-json-button"
+            >
+              Import Leads JSON
+            </button>
+            <button
+              type="button"
+              style={styles.button}
               onClick={() => handleExport("csv")}
             >
               Export CSV
+            </button>
+            <input
+              ref={importFileInputRef}
+              type="file"
+              accept="application/json,.json"
+              style={styles.hiddenInput}
+              onChange={handleImportBackup}
+              data-testid="import-leads-json-input"
+            />
+          </div>
+          <div style={styles.grid}>
+            <Field
+              as="textarea"
+              label="Lead JSON Import"
+              value={importJsonText}
+              onChange={setImportJsonText}
+              wrapperStyle={styles.full}
+              placeholder="Paste a City Intelligence leads JSON backup here"
+              data-testid="lead-json-import-textarea"
+            />
+          </div>
+          <div style={styles.actions}>
+            <button
+              type="button"
+              style={styles.button}
+              onClick={handleImportPastedJson}
+              data-testid="import-pasted-leads-json-button"
+            >
+              Import Pasted JSON
             </button>
           </div>
 

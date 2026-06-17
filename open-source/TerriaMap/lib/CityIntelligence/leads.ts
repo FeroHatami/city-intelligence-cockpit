@@ -40,6 +40,14 @@ export interface CityIntelligenceLead {
 
 export type LeadInput = Partial<CityIntelligenceLead>;
 
+export interface LeadImportSummary {
+  total: number;
+  imported: number;
+  updated: number;
+  skipped: number;
+  errors: string[];
+}
+
 export type OutreachTemplate =
   | "german_email"
   | "english_email"
@@ -367,6 +375,103 @@ export function saveLead(lead: LeadInput): CityIntelligenceLead {
 
   writeStoredLeads(leads);
   return existingIndex >= 0 ? leads[existingIndex] : normalizedLead;
+}
+
+function osmDuplicateKey(lead: LeadInput) {
+  const osmType = cleanString(lead.osm_type);
+  const osmId = cleanString(lead.osm_id);
+  return osmType && osmId ? `${osmType}:${osmId}` : "";
+}
+
+function findLeadMergeIndex(
+  leads: CityIntelligenceLead[],
+  lead: CityIntelligenceLead
+) {
+  const idIndex = leads.findIndex((item) => item.id === lead.id);
+  if (idIndex >= 0) return idIndex;
+
+  const duplicateKey = osmDuplicateKey(lead);
+  if (!duplicateKey) return -1;
+
+  return leads.findIndex((item) => osmDuplicateKey(item) === duplicateKey);
+}
+
+function isLeadLikeRecord(value: unknown): value is LeadInput {
+  if (!value || typeof value !== "object" || Array.isArray(value)) {
+    return false;
+  }
+
+  const record = value as Record<string, unknown>;
+  return Boolean(
+    record.id || record.name || record.osm_id || record.source_layer
+  );
+}
+
+export function importLeadsFromJson(content: string): LeadImportSummary {
+  const summary: LeadImportSummary = {
+    total: 0,
+    imported: 0,
+    updated: 0,
+    skipped: 0,
+    errors: []
+  };
+
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(content);
+  } catch {
+    summary.errors.push("Invalid JSON file.");
+    return summary;
+  }
+
+  const parsedObject =
+    parsed && typeof parsed === "object" && !Array.isArray(parsed)
+      ? (parsed as { leads?: unknown })
+      : undefined;
+  const records = Array.isArray(parsed)
+    ? parsed
+    : Array.isArray(parsedObject?.leads)
+      ? parsedObject.leads
+      : undefined;
+
+  if (!records) {
+    summary.errors.push(
+      "Expected a JSON array or an object with a leads array."
+    );
+    return summary;
+  }
+
+  const leads = getLeads();
+  summary.total = records.length;
+
+  records.forEach((record, index) => {
+    if (!isLeadLikeRecord(record)) {
+      summary.skipped += 1;
+      summary.errors.push(`Skipped item ${index + 1}: not a lead record.`);
+      return;
+    }
+
+    const normalizedLead = normalizeLead(record);
+    const mergeIndex = findLeadMergeIndex(leads, normalizedLead);
+
+    if (mergeIndex >= 0) {
+      leads[mergeIndex] = normalizeLead({
+        ...leads[mergeIndex],
+        ...normalizedLead,
+        id: leads[mergeIndex].id,
+        created_at: leads[mergeIndex].created_at,
+        updated_at: nowIso()
+      });
+      summary.updated += 1;
+      return;
+    }
+
+    leads.unshift(normalizedLead);
+    summary.imported += 1;
+  });
+
+  writeStoredLeads(leads);
+  return summary;
 }
 
 export function updateLead(

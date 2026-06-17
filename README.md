@@ -48,6 +48,10 @@ Saved leads persist in browser localStorage under:
 `city-intelligence-cockpit.leads`
 
 Export saved leads from the same panel with `Export JSON` or `Export CSV`.
+Use `Backup Leads JSON` for a full local backup, and `Import Leads JSON` or
+`Import Pasted JSON` to restore a previous backup into the same browser. Import
+validates the JSON and merges duplicate leads by `id` or `osm_type` + `osm_id`
+instead of blindly duplicating them.
 
 Create a lead JSON record from a GeoJSON feature:
 
