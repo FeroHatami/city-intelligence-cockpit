@@ -24,6 +24,10 @@ They are sourced from OpenStreetMap / Overpass and include local verification
 metadata. They are useful for prospecting and city intelligence, but they are not
 official municipal records.
 
+Important: OSM and public-data records are useful discovery inputs, not guaranteed
+facts. A lead should remain `unverified_osm` or `needs_research` until a person
+checks the website, phone, address, and current business status.
+
 ## Public Dataset Catalog
 
 The public catalog is organized into:
@@ -149,6 +153,7 @@ Each GeoJSON feature should include:
 - `data_source`: existing `source` when available, otherwise `OpenStreetMap / Overpass`
 - `verification_status`: `unverified_osm`
 - `last_checked_at`: UTC timestamp from the last local verification-field script run
+- `verified_by`: optional local analyst name or placeholder on saved leads
 
 These fields are local metadata. They do not verify that a business is currently active; they mark the record as OSM-derived and not yet independently verified.
 
@@ -176,5 +181,6 @@ When a map feature is imported into `Saved Leads`, the lead form preserves:
 - `data_source`
 - `verification_status`
 - `last_checked_at`
+- `verified_by`
 
 JSON and CSV exports include those fields so exported lead files carry the same provenance and verification state.

@@ -88,6 +88,7 @@ const emptyForm = {
   data_source: "",
   verification_status: "",
   last_checked_at: "",
+  verified_by: "",
   notes: "",
   status: "interesting"
 };
@@ -585,6 +586,7 @@ function selectedFeatureToLead(viewState) {
       "Last Checked At",
       "last_checked_at"
     ]),
+    verified_by: getProperty(properties, ["Verified By", "verified_by"]),
     notes: getProperty(properties, ["notes", "Notes"]),
     status: "interesting"
   };
@@ -626,6 +628,7 @@ function leadSearchText(lead) {
     lead.notes,
     lead.status,
     lead.verification_status,
+    lead.verified_by,
     lead.data_source,
     lead.score_reason,
     lead.suggested_first_message
@@ -921,6 +924,15 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     setLeads(loadLeads());
   };
 
+  const handleVerificationStatusChange = (lead, verificationStatus) => {
+    updateLead(lead.id, {
+      verification_status: verificationStatus,
+      last_checked_at: new Date().toISOString()
+    });
+    setLeads(loadLeads());
+    setMessage(`Updated verification status for ${lead.name}.`);
+  };
+
   const handleDelete = (id) => {
     deleteLead(id);
     setLeads(loadLeads());
@@ -1119,6 +1131,12 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               label="Last Checked At"
               value={form.last_checked_at}
               onChange={(value) => setFormValue("last_checked_at", value)}
+            />
+            <Field
+              label="Verified By"
+              value={form.verified_by}
+              onChange={(value) => setFormValue("verified_by", value)}
+              placeholder="Local analyst"
             />
             <Field label="Status">
               <select
@@ -1385,7 +1403,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                       </span>
                       {lead.verification_status && (
                         <span style={styles.badge}>
-                          {lead.verification_status}
+                          {verificationLabel(lead.verification_status)}
                         </span>
                       )}
                       {lead.website && (
@@ -1415,7 +1433,30 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                       ))}
                     </select>
                   </Field>
-                  <div />
+                  <Field label="Verification">
+                    <select
+                      style={styles.input}
+                      value={lead.verification_status || ""}
+                      onChange={(event) =>
+                        handleVerificationStatusChange(lead, event.target.value)
+                      }
+                    >
+                      <option value="">No verification status</option>
+                      {verificationStatusOptions.map((status) => (
+                        <option key={status} value={status}>
+                          {verificationLabel(status)}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
+                  <Field
+                    label="Verified By"
+                    value={lead.verified_by}
+                    onChange={(value) =>
+                      handleUpdate(lead.id, { verified_by: value })
+                    }
+                    placeholder="Local analyst"
+                  />
                   <div style={styles.full}>
                     <Field
                       as="textarea"
@@ -1444,6 +1485,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                       label="Source"
                       value={lead.source || lead.data_source}
                     />
+                    <DetailRow label="Verified by" value={lead.verified_by} />
                     <DetailRow label="Checked" value={lead.last_checked_at} />
                     <DetailRow label="Updated" value={lead.updated_at} />
                   </div>

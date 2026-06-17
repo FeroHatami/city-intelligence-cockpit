@@ -24,6 +24,7 @@ export interface CityIntelligenceLead {
   data_source: string;
   verification_status: string;
   last_checked_at: string;
+  verified_by: string;
   opportunity_score: string | number;
   score_reason: string;
   suggested_offer: string;
@@ -281,6 +282,7 @@ function normalizeLead(lead: LeadInput): CityIntelligenceLead {
     data_source: cleanString(lead.data_source),
     verification_status: cleanString(lead.verification_status),
     last_checked_at: cleanString(lead.last_checked_at),
+    verified_by: cleanString((lead as { verified_by?: unknown }).verified_by),
     opportunity_score: lead.opportunity_score ?? "",
     score_reason: cleanString(lead.score_reason),
     suggested_offer: cleanString(lead.suggested_offer),
@@ -392,6 +394,7 @@ export function exportLeads(
     "data_source",
     "verification_status",
     "last_checked_at",
+    "verified_by",
     "opportunity_score",
     "score_reason",
     "suggested_offer",

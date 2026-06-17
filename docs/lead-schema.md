@@ -27,6 +27,7 @@ Each lead record is a JSON object with these fields:
 | `data_source` | string | Local data source metadata copied from the feature, usually `OpenStreetMap / Overpass`. |
 | `verification_status` | string | Local verification state such as `unverified_osm`. |
 | `last_checked_at` | string | UTC timestamp from the last local data verification-field update. |
+| `verified_by` | string | Optional local analyst name or placeholder for the person who checked the lead. |
 | `opportunity_score` | string or number | Empty until scored, then a 1-10 value. |
 | `score_reason` | string | Rule-based or future AI-generated score explanation. |
 | `suggested_offer` | string | Suggested outreach offer. |
@@ -67,6 +68,7 @@ Each lead record is a JSON object with these fields:
   "data_source": "OpenStreetMap / Overpass",
   "verification_status": "unverified_osm",
   "last_checked_at": "2026-06-17T00:00:00Z",
+  "verified_by": "",
   "opportunity_score": "",
   "score_reason": "",
   "suggested_offer": "",
@@ -92,6 +94,8 @@ The v1 panel supports:
 - localStorage persistence
 - lead list
 - status updates
+- verification status updates with automatic `last_checked_at` timestamps
+- optional `verified_by` text
 - notes
 - delete
 - JSON export
@@ -110,9 +114,11 @@ To import a selected feature:
 4. Review or edit the populated form.
 5. Select `Save Lead`.
 
-The import maps the selected Terria feature's properties into lead fields where available. It uses feature properties such as `name`, `category`, `address`, `phone`, `website`, `osm_id`, `osm_type`, `source`, `data_source`, `verification_status`, and `last_checked_at`, plus the selected catalog item name for `source_layer`.
+The import maps the selected Terria feature's properties into lead fields where available. It uses feature properties such as `name`, `category`, `address`, `phone`, `website`, `osm_id`, `osm_type`, `source`, `data_source`, `verification_status`, `last_checked_at`, and `verified_by`, plus the selected catalog item name for `source_layer`.
 
 Duplicate protection is based on `osm_type` + `osm_id`. If a matching lead already exists, the panel loads the existing lead for review instead of creating a duplicate.
+
+OpenStreetMap and public catalog data are useful for discovery, but they are not guaranteed to be current, complete, or business-ready. Treat `unverified_osm` and `needs_research` leads as research candidates until a human checks the website, phone, address, and business status.
 
 ## Conversion Script
 
