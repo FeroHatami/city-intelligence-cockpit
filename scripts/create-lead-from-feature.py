@@ -129,6 +129,7 @@ def create_lead(
         "score_reason": str(properties.get("score_reason") or ""),
         "suggested_offer": str(properties.get("suggested_offer") or ""),
         "suggested_first_message": str(properties.get("suggested_first_message") or ""),
+        "outreach_angle": str(properties.get("outreach_angle") or ""),
         "recommended_next_action": str(properties.get("recommended_next_action") or ""),
         "risk_notes": str(properties.get("risk_notes") or ""),
         "notes": notes or str(properties.get("notes") or ""),

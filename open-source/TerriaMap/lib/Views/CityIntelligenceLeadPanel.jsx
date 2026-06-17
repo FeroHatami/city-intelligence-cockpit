@@ -6,6 +6,7 @@ import MenuPanel from "terriajs/lib/ReactViews/StandardUserInterface/customizabl
 import {
   deleteLead,
   exportLeads,
+  generateOutreach,
   getLeads,
   saveLead,
   scoreLead,
@@ -698,6 +699,30 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     setMessage(`Scored ${lead.name}.`);
   };
 
+  const handleGenerateOutreach = (lead) => {
+    const outreach = generateOutreach(lead);
+    updateLead(lead.id, outreach);
+    setLeads(loadLeads());
+    setMessage(`Generated outreach for ${lead.name}.`);
+  };
+
+  const handleCopyMessage = async (lead) => {
+    if (!lead.suggested_first_message) {
+      setMessage("Generate an outreach message first.");
+      return;
+    }
+
+    try {
+      if (!navigator.clipboard?.writeText) {
+        throw new Error("Clipboard API unavailable.");
+      }
+      await navigator.clipboard.writeText(lead.suggested_first_message);
+      setMessage(`Copied outreach message for ${lead.name}.`);
+    } catch {
+      setMessage("Copy failed. The message remains visible for manual copy.");
+    }
+  };
+
   const handleExport = (format) => {
     const content = exportLeads(format);
     setExportFormat(format);
@@ -1008,19 +1033,42 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                   </div>
                 </div>
 
-                {lead.score_reason && (
+                {(lead.score_reason ||
+                  lead.suggested_offer ||
+                  lead.suggested_first_message ||
+                  lead.outreach_angle ||
+                  lead.recommended_next_action ||
+                  lead.risk_notes) && (
                   <div style={styles.detail}>
-                    <strong>Reason:</strong> {lead.score_reason}
-                    <br />
-                    <strong>Offer:</strong> {lead.suggested_offer}
-                    <br />
+                    {lead.score_reason && (
+                      <>
+                        <strong>Reason:</strong> {lead.score_reason}
+                        <br />
+                      </>
+                    )}
+                    {lead.suggested_offer && (
+                      <>
+                        <strong>Offer:</strong> {lead.suggested_offer}
+                        <br />
+                      </>
+                    )}
+                    {lead.outreach_angle && (
+                      <>
+                        <strong>Angle:</strong> {lead.outreach_angle}
+                        <br />
+                      </>
+                    )}
                     {lead.suggested_first_message && (
                       <>
                         <strong>First message:</strong> {lead.suggested_first_message}
                         <br />
                       </>
                     )}
-                    <strong>Next:</strong> {lead.recommended_next_action}
+                    {lead.recommended_next_action && (
+                      <>
+                        <strong>Next:</strong> {lead.recommended_next_action}
+                      </>
+                    )}
                     {lead.risk_notes && (
                       <>
                         <br />
@@ -1039,6 +1087,24 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                   >
                     Score Lead
                   </button>
+                  <button
+                    type="button"
+                    style={styles.button}
+                    onClick={() => handleGenerateOutreach(lead)}
+                    data-testid="generate-outreach-button"
+                  >
+                    Generate Outreach Message
+                  </button>
+                  {lead.suggested_first_message && (
+                    <button
+                      type="button"
+                      style={styles.button}
+                      onClick={() => handleCopyMessage(lead)}
+                      data-testid="copy-outreach-message-button"
+                    >
+                      Copy Message
+                    </button>
+                  )}
                   <button
                     type="button"
                     style={{ ...styles.button, ...styles.dangerButton }}

@@ -31,6 +31,7 @@ Each lead record is a JSON object with these fields:
 | `score_reason` | string | Rule-based or future AI-generated score explanation. |
 | `suggested_offer` | string | Suggested outreach offer. |
 | `suggested_first_message` | string | Locally generated first outreach message suggestion. |
+| `outreach_angle` | string | Local outreach angle used to frame the first message. |
 | `recommended_next_action` | string | Suggested next action for the lead. |
 | `risk_notes` | string | Local caution notes for qualification, privacy, compliance, or data-quality risk. |
 | `notes` | string | Analyst notes. |
@@ -70,6 +71,7 @@ Each lead record is a JSON object with these fields:
   "score_reason": "",
   "suggested_offer": "",
   "suggested_first_message": "",
+  "outreach_angle": "",
   "recommended_next_action": "",
   "risk_notes": "",
   "notes": "",
@@ -95,6 +97,8 @@ The v1 panel supports:
 - JSON export
 - CSV export
 - rule-based `Score Lead`
+- local `Generate Outreach Message`
+- `Copy Message` for generated outreach text when browser clipboard access is available
 
 The v1 panel does not use authentication, a backend, or a database.
 

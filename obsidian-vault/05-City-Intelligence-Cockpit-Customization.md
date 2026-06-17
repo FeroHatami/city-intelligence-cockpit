@@ -448,3 +448,15 @@ Defaults:
 - `last_checked_at`: UTC timestamp from the script run
 
 The in-app `Saved Leads` import/export flow preserves these fields so lead exports carry the same local source and verification state.
+
+## Local Outreach Message Generator
+
+The `Saved Leads` panel includes a per-lead `Generate Outreach Message` action. It is fully local and rule-based, with no API key and no network call.
+
+Generated fields:
+
+- `suggested_first_message`
+- `outreach_angle`
+- `recommended_next_action`
+
+The generator does not modify `notes`. `Copy Message` uses the browser clipboard when available, and the message remains visible in the lead card for manual copy if clipboard access fails.

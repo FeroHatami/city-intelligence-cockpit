@@ -28,6 +28,7 @@ export interface CityIntelligenceLead {
   score_reason: string;
   suggested_offer: string;
   suggested_first_message: string;
+  outreach_angle: string;
   recommended_next_action: string;
   risk_notes: string;
   notes: string;
@@ -48,6 +49,7 @@ const SCORE_RULES = {
     suggested_offer: "Inventory and supplier comparison workflow audit.",
     suggested_first_message:
       "I noticed your pharmacy may handle recurring inventory and supplier coordination. Would a short workflow audit be useful to find admin tasks that can be automated safely?",
+    outreach_angle: "Operations workflow audit for inventory, procurement, and supplier coordination.",
     recommended_next_action:
       "Review public contact details and prepare a pharmacy-specific operations note.",
     risk_notes:
@@ -60,6 +62,7 @@ const SCORE_RULES = {
     suggested_offer: "Confidential document intake and follow-up workflow review.",
     suggested_first_message:
       "I am mapping Munich law firms where document intake and follow-up workflows may be streamlined. Would a short non-confidential workflow review be useful?",
+    outreach_angle: "Non-confidential workflow review for intake, document status, and admin follow-up.",
     recommended_next_action:
       "Check practice focus and public contact path, then tailor outreach around intake, document status, or admin follow-up.",
     risk_notes:
@@ -72,6 +75,7 @@ const SCORE_RULES = {
     suggested_offer: "Proposal and client-reporting workflow review.",
     suggested_first_message:
       "I am mapping Munich consulting teams that may benefit from proposal or reporting workflow automation. Would a short process review be useful?",
+    outreach_angle: "Proposal, research, and client-reporting workflow improvement.",
     recommended_next_action:
       "Identify the firm's specialty and tailor outreach around proposal creation, research synthesis, or client reporting.",
     risk_notes:
@@ -84,6 +88,7 @@ const SCORE_RULES = {
     suggested_offer: "Listing inquiry and follow-up workflow audit.",
     suggested_first_message:
       "I noticed your Munich real estate office and am mapping teams that may benefit from faster listing inquiry and follow-up workflows. Would a short audit be useful?",
+    outreach_angle: "Listing inquiry, document packet, and follow-up workflow cleanup.",
     recommended_next_action:
       "Review public listings and contact channels, then frame outreach around inquiry handling and document preparation.",
     risk_notes:
@@ -96,6 +101,7 @@ const SCORE_RULES = {
     suggested_offer: "Renewal and document-collection workflow review.",
     suggested_first_message:
       "I am mapping Munich insurance offices where renewals and document collection may be made easier. Would a short workflow review be useful?",
+    outreach_angle: "Renewal reminder, document collection, and customer follow-up workflow review.",
     recommended_next_action:
       "Check public contact details and tailor outreach around renewal reminders, document collection, or customer communication.",
     risk_notes:
@@ -108,6 +114,7 @@ const SCORE_RULES = {
     suggested_offer: "Public-service form and document workflow discovery.",
     suggested_first_message:
       "I am mapping public-service offices in Munich and researching practical form or document workflow improvements. Is there a public contact for process-improvement discussions?",
+    outreach_angle: "Public-service form and document workflow discovery through official channels.",
     recommended_next_action:
       "Find the official department contact and procurement path before any outreach.",
     risk_notes:
@@ -120,6 +127,7 @@ const SCORE_RULES = {
     suggested_offer: "Admin and sales operations workflow review.",
     suggested_first_message:
       "I am mapping Munich company offices that may benefit from practical admin or sales workflow automation. Would a short workflow review be useful?",
+    outreach_angle: "Admin, sales operations, and document workflow review.",
     recommended_next_action:
       "Qualify the company type and tailor outreach around admin, sales operations, or document handling.",
     risk_notes:
@@ -132,6 +140,7 @@ const SCORE_RULES = {
     suggested_offer: "Tenant/operator qualification and operations discovery.",
     suggested_first_message:
       "I am mapping Munich office locations and trying to identify the right operator or tenant contact for workflow improvement opportunities. Is there a public business contact for this location?",
+    outreach_angle: "Operator or tenant qualification before business workflow outreach.",
     recommended_next_action:
       "Identify a tenant, building operator, or management company before treating the record as a lead.",
     risk_notes:
@@ -144,6 +153,7 @@ const SCORE_RULES = {
     suggested_offer: "Admin automation and document workflow review.",
     suggested_first_message:
       "I am mapping Munich offices that may benefit from practical admin or document workflow automation. Would a short process review be useful?",
+    outreach_angle: "Admin automation, document workflow, and sales operations qualification.",
     recommended_next_action:
       "Qualify the organization type and tailor outreach around admin or sales operations.",
     risk_notes:
@@ -156,6 +166,7 @@ const SCORE_RULES = {
     suggested_offer: "Appointment and communication workflow assessment.",
     suggested_first_message:
       "I am researching Munich clinics where appointment and communication workflows may be improved. Would a non-clinical operations review be useful for your team?",
+    outreach_angle: "Non-clinical appointment, communication, and procurement workflow review.",
     recommended_next_action:
       "Frame outreach around non-clinical operations and avoid patient-data assumptions.",
     risk_notes:
@@ -168,6 +179,7 @@ const SCORE_RULES = {
     suggested_offer: "Founder network and event partnership proposal.",
     suggested_first_message:
       "I am mapping Munich founder communities and coworking spaces. Would you be open to a lightweight event or member-benefit partnership idea?",
+    outreach_angle: "Founder community, member benefit, and event partnership.",
     recommended_next_action:
       "Look for community or events contacts and draft a partnership-oriented note.",
     risk_notes:
@@ -180,6 +192,7 @@ const SCORE_RULES = {
     suggested_offer: "Local marketing and operations quick audit.",
     suggested_first_message:
       "I noticed your restaurant in Munich and am mapping local businesses that may benefit from small improvements in reservations, reviews, or inventory workflows. Would a short audit be useful?",
+    outreach_angle: "Local marketing, reservations, reviews, and inventory quick audit.",
     recommended_next_action:
       "Check website, reservation path, and public review presence before outreach.",
     risk_notes:
@@ -192,6 +205,7 @@ const SCORE_RULES = {
     suggested_offer: "Operational workflow discovery call.",
     suggested_first_message:
       "I am mapping Munich organizations and looking for practical workflow improvement opportunities. Would a quick operations review be useful?",
+    outreach_angle: "Manual qualification for practical workflow improvement fit.",
     recommended_next_action:
       "Manually qualify the organization and choose a category-specific offer.",
     risk_notes:
@@ -271,6 +285,7 @@ function normalizeLead(lead: LeadInput): CityIntelligenceLead {
     score_reason: cleanString(lead.score_reason),
     suggested_offer: cleanString(lead.suggested_offer),
     suggested_first_message: cleanString(lead.suggested_first_message),
+    outreach_angle: cleanString(lead.outreach_angle),
     recommended_next_action: cleanString(lead.recommended_next_action),
     risk_notes: cleanString(lead.risk_notes),
     notes: cleanString(lead.notes),
@@ -379,6 +394,7 @@ export function exportLeads(format: "json" | "csv" = "json") {
     "score_reason",
     "suggested_offer",
     "suggested_first_message",
+    "outreach_angle",
     "recommended_next_action",
     "risk_notes",
     "notes",
@@ -442,4 +458,13 @@ function scoreRuleKey(lead: LeadInput): keyof typeof SCORE_RULES {
 
 export function scoreLead(lead: LeadInput) {
   return SCORE_RULES[scoreRuleKey(lead)];
+}
+
+export function generateOutreach(lead: LeadInput) {
+  const rule = SCORE_RULES[scoreRuleKey(lead)];
+  return {
+    suggested_first_message: rule.suggested_first_message,
+    outreach_angle: rule.outreach_angle,
+    recommended_next_action: rule.recommended_next_action
+  };
 }

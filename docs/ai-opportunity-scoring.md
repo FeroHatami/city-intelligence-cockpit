@@ -17,6 +17,7 @@ The button fills:
 - `score_reason`
 - `suggested_offer`
 - `suggested_first_message`
+- `outreach_angle`
 - `recommended_next_action`
 - `risk_notes`
 
@@ -62,6 +63,7 @@ Each scored record includes:
 - `score_reason`
 - `suggested_offer`
 - `suggested_first_message`
+- `outreach_angle`
 - `recommended_next_action`
 - `risk_notes`
 
@@ -92,6 +94,19 @@ The output also includes feature context:
 Office subtype rules run before the generic office rule. The scorer checks category,
 source layer, and available office-type context so `Munich Law Firms` and
 `office_type=lawyer` score as law firms instead of generic offices.
+
+## Local Outreach Generator
+
+The `Saved Leads` panel also has `Generate Outreach Message`. It is fully local
+and writes only:
+
+- `suggested_first_message`
+- `outreach_angle`
+- `recommended_next_action`
+
+It does not modify `notes`. `Copy Message` uses the browser clipboard when
+available; the generated message remains visible in the lead card for manual copy
+if clipboard access fails.
 
 ## API Key Policy
 
