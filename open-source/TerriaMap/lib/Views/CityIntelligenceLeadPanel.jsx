@@ -22,6 +22,15 @@ const STATUSES = [
   "not_relevant"
 ];
 
+const STATUS_LABELS = {
+  interesting: "Interesting",
+  research_later: "Research later",
+  contact_soon: "Contact soon",
+  contacted: "Contacted",
+  meeting_booked: "Meeting booked",
+  not_relevant: "Not relevant"
+};
+
 const CATEGORIES = [
   "Pharmacy",
   "Office",
@@ -139,6 +148,11 @@ const styles = {
     cursor: "pointer",
     font: "inherit"
   },
+  smallButton: {
+    minHeight: 28,
+    padding: "4px 8px",
+    fontSize: 12
+  },
   primaryButton: {
     background: "#2f80ed",
     borderColor: "#2f80ed"
@@ -180,8 +194,8 @@ const styles = {
   card: {
     border: "1px solid rgba(255,255,255,0.18)",
     borderRadius: 6,
-    padding: 10,
-    marginTop: 10,
+    padding: 12,
+    marginTop: 12,
     background: "rgba(255,255,255,0.06)"
   },
   cardHeader: {
@@ -189,6 +203,21 @@ const styles = {
     justifyContent: "space-between",
     gap: 8,
     alignItems: "flex-start"
+  },
+  badgeRow: {
+    display: "flex",
+    flexWrap: "wrap",
+    gap: 6,
+    marginTop: 6
+  },
+  badge: {
+    border: "1px solid rgba(255,255,255,0.18)",
+    borderRadius: 4,
+    padding: "2px 6px",
+    background: "rgba(255,255,255,0.08)",
+    color: "rgba(255,255,255,0.78)",
+    fontSize: 11,
+    lineHeight: 1.3
   },
   leadName: {
     margin: 0,
@@ -215,6 +244,28 @@ const styles = {
     fontSize: 12,
     lineHeight: 1.4
   },
+  detailsDisclosure: {
+    marginTop: 10,
+    borderTop: "1px solid rgba(255,255,255,0.12)",
+    paddingTop: 8,
+    color: "rgba(255,255,255,0.86)",
+    fontSize: 12,
+    lineHeight: 1.4
+  },
+  summary: {
+    cursor: "pointer",
+    fontWeight: 700,
+    marginBottom: 8
+  },
+  detailGrid: {
+    display: "grid",
+    gridTemplateColumns: "minmax(84px, 0.35fr) 1fr",
+    gap: "4px 8px",
+    wordBreak: "break-word"
+  },
+  detailLabel: {
+    color: "rgba(255,255,255,0.62)"
+  },
   message: {
     marginTop: 10,
     color: "#b6e3ff",
@@ -238,7 +289,8 @@ const styles = {
   empty: {
     margin: "8px 0 0",
     color: "rgba(255,255,255,0.72)",
-    fontSize: 13
+    fontSize: 13,
+    lineHeight: 1.45
   }
 };
 
@@ -254,13 +306,17 @@ function exportDataUri(format, content) {
 function stringValue(value) {
   if (value === undefined || value === null) return "";
   if (typeof value === "string") return value;
-  if (typeof value === "number" || typeof value === "boolean") return String(value);
-  if (Array.isArray(value)) return value.map(stringValue).filter(Boolean).join(", ");
+  if (typeof value === "number" || typeof value === "boolean")
+    return String(value);
+  if (Array.isArray(value))
+    return value.map(stringValue).filter(Boolean).join(", ");
   return "";
 }
 
 function normalizedKey(key) {
-  return String(key).toLowerCase().replace(/[\s_:-]+/g, "");
+  return String(key)
+    .toLowerCase()
+    .replace(/[\s_:-]+/g, "");
 }
 
 function getProperty(properties, aliases) {
@@ -295,7 +351,11 @@ function getFeatureProperties(feature, currentTime) {
 }
 
 function getAddress(properties) {
-  const address = getProperty(properties, ["Address", "address", "full_address"]);
+  const address = getProperty(properties, [
+    "Address",
+    "address",
+    "full_address"
+  ]);
   if (address) return address;
 
   const street = getProperty(properties, ["addr:street", "addr_street"]);
@@ -311,11 +371,16 @@ function getAddress(properties) {
 }
 
 function inferOfficeSubtypeCategory(text) {
-  if (text.includes("law firm") || text.includes("lawyer") || text.includes("rechtsanw")) {
+  if (
+    text.includes("law firm") ||
+    text.includes("lawyer") ||
+    text.includes("rechtsanw")
+  ) {
     return "Law Firm";
   }
   if (text.includes("consult")) return "Consultant";
-  if (text.includes("real estate") || text.includes("estate_agent")) return "Real Estate";
+  if (text.includes("real estate") || text.includes("estate_agent"))
+    return "Real Estate";
   if (text.includes("insurance")) return "Insurance";
   if (text.includes("government")) return "Government";
   if (
@@ -341,7 +406,11 @@ function inferCategory(category, sourceLayer, officeType) {
 
   if (text.includes("pharmac")) return "Pharmacy";
   if (text.includes("office")) return "Office";
-  if (text.includes("clinic") || text.includes("doctor") || text.includes("dentist")) {
+  if (
+    text.includes("clinic") ||
+    text.includes("doctor") ||
+    text.includes("dentist")
+  ) {
     return "Clinic";
   }
   if (text.includes("cowork")) return "Coworking";
@@ -406,7 +475,11 @@ function cartesianToLatLon(position) {
 
 function getFeatureCoordinates(feature, terria, currentTime, properties) {
   const latitudeFromProperty = getProperty(properties, ["latitude", "lat"]);
-  const longitudeFromProperty = getProperty(properties, ["longitude", "lon", "lng"]);
+  const longitudeFromProperty = getProperty(properties, [
+    "longitude",
+    "lon",
+    "lng"
+  ]);
   if (latitudeFromProperty && longitudeFromProperty) {
     return { latitude: latitudeFromProperty, longitude: longitudeFromProperty };
   }
@@ -416,7 +489,9 @@ function getFeatureCoordinates(feature, terria, currentTime, properties) {
       ? feature.position.getValue(currentTime)
       : feature?.position;
 
-  return cartesianToLatLon(featurePosition || terria?.pickedFeatures?.pickPosition);
+  return cartesianToLatLon(
+    featurePosition || terria?.pickedFeatures?.pickPosition
+  );
 }
 
 function selectedFeatureToLead(viewState) {
@@ -425,7 +500,8 @@ function selectedFeatureToLead(viewState) {
   const feature =
     terria?.selectedFeature ||
     pickedFeatures?.features?.find(
-      (candidate) => candidate?.properties || candidate?.description || candidate?.name
+      (candidate) =>
+        candidate?.properties || candidate?.description || candidate?.name
     ) ||
     pickedFeatures?.features?.[0];
 
@@ -434,7 +510,12 @@ function selectedFeatureToLead(viewState) {
   const currentTime = terria?.timelineClock?.currentTime;
   const properties = getFeatureProperties(feature, currentTime);
   const rawSourceLayer = getSourceLayer(feature);
-  const coordinates = getFeatureCoordinates(feature, terria, currentTime, properties);
+  const coordinates = getFeatureCoordinates(
+    feature,
+    terria,
+    currentTime,
+    properties
+  );
   const category = inferCategory(
     getProperty(properties, ["Category", "category"]),
     rawSourceLayer,
@@ -466,8 +547,16 @@ function selectedFeatureToLead(viewState) {
     ]),
     latitude: coordinates.latitude ?? "",
     longitude: coordinates.longitude ?? "",
-    osm_id: getProperty(properties, ["Osm Id", "OSM ID", "osm_id", "osm:id"]) || feature.id || "",
-    osm_type: getProperty(properties, ["Osm Type", "OSM Type", "osm_type", "osm:type"]),
+    osm_id:
+      getProperty(properties, ["Osm Id", "OSM ID", "osm_id", "osm:id"]) ||
+      feature.id ||
+      "",
+    osm_type: getProperty(properties, [
+      "Osm Type",
+      "OSM Type",
+      "osm_type",
+      "osm:type"
+    ]),
     source: getProperty(properties, ["Source", "source"]),
     source_layer: sourceLayer,
     data_source:
@@ -477,7 +566,10 @@ function selectedFeatureToLead(viewState) {
       "Verification Status",
       "verification_status"
     ]),
-    last_checked_at: getProperty(properties, ["Last Checked At", "last_checked_at"]),
+    last_checked_at: getProperty(properties, [
+      "Last Checked At",
+      "last_checked_at"
+    ]),
     notes: getProperty(properties, ["notes", "Notes"]),
     status: "interesting"
   };
@@ -488,7 +580,8 @@ function sameOsmIdentity(left, right) {
     stringValue(left?.osm_id) !== "" &&
     stringValue(left?.osm_type) !== "" &&
     stringValue(left.osm_id) === stringValue(right?.osm_id) &&
-    stringValue(left.osm_type).toLowerCase() === stringValue(right?.osm_type).toLowerCase()
+    stringValue(left.osm_type).toLowerCase() ===
+      stringValue(right?.osm_type).toLowerCase()
   );
 }
 
@@ -527,6 +620,32 @@ function numericScore(lead) {
   const score = Number(lead.opportunity_score);
   return Number.isFinite(score) ? score : undefined;
 }
+
+function statusLabel(status) {
+  return STATUS_LABELS[status] || stringValue(status).replace(/_/g, " ");
+}
+
+function normalizedWebsiteUrl(value) {
+  const website = stringValue(value).trim();
+  if (!website) return "";
+  if (/^https?:\/\//i.test(website)) return website;
+  return `https://${website}`;
+}
+
+function DetailRow({ label, value }) {
+  if (!stringValue(value)) return null;
+  return (
+    <>
+      <span style={styles.detailLabel}>{label}</span>
+      <span>{stringValue(value)}</span>
+    </>
+  );
+}
+
+DetailRow.propTypes = {
+  label: PropTypes.string.isRequired,
+  value: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+};
 
 function Field({
   label,
@@ -581,9 +700,11 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   const leadCounters = useMemo(
     () => ({
       total: leads.length,
-      contact_soon: leads.filter((lead) => lead.status === "contact_soon").length,
+      contact_soon: leads.filter((lead) => lead.status === "contact_soon")
+        .length,
       contacted: leads.filter((lead) => lead.status === "contacted").length,
-      meeting_booked: leads.filter((lead) => lead.status === "meeting_booked").length
+      meeting_booked: leads.filter((lead) => lead.status === "meeting_booked")
+        .length
     }),
     [leads]
   );
@@ -594,7 +715,8 @@ export function CityIntelligenceLeadPanel({ viewState }) {
 
     return leads.filter((lead) => {
       if (statusFilter !== "all" && lead.status !== statusFilter) return false;
-      if (categoryFilter !== "all" && lead.category !== categoryFilter) return false;
+      if (categoryFilter !== "all" && lead.category !== categoryFilter)
+        return false;
       if (query && !leadSearchText(lead).includes(query)) return false;
       if (Number.isFinite(minimumScore)) {
         const score = numericScore(lead);
@@ -608,10 +730,16 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     const syncLeads = () => setLeads(loadLeads());
     syncLeads();
     window.addEventListener("storage", syncLeads);
-    window.addEventListener("city-intelligence-cockpit.leads.changed", syncLeads);
+    window.addEventListener(
+      "city-intelligence-cockpit.leads.changed",
+      syncLeads
+    );
     return () => {
       window.removeEventListener("storage", syncLeads);
-      window.removeEventListener("city-intelligence-cockpit.leads.changed", syncLeads);
+      window.removeEventListener(
+        "city-intelligence-cockpit.leads.changed",
+        syncLeads
+      );
     };
   }, []);
 
@@ -639,7 +767,9 @@ export function CityIntelligenceLeadPanel({ viewState }) {
       category: form.category,
       source_layer: form.source_layer
     });
-    setMessage(`${form.id || duplicateLead ? "Updated" : "Saved"} ${savedLead.name}.`);
+    setMessage(
+      `${form.id || duplicateLead ? "Updated" : "Saved"} ${savedLead.name}.`
+    );
   };
 
   const handleImportSelectedFeature = async () => {
@@ -723,6 +853,35 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     }
   };
 
+  const handleCopyText = async (value, label) => {
+    const text = stringValue(value).trim();
+    if (!text) {
+      setMessage(`${label} is empty.`);
+      return;
+    }
+
+    try {
+      if (!navigator.clipboard?.writeText) {
+        throw new Error("Clipboard API unavailable.");
+      }
+      await navigator.clipboard.writeText(text);
+      setMessage(`Copied ${label.toLowerCase()}.`);
+    } catch {
+      setMessage(`Copy failed. ${label} remains visible for manual copy.`);
+    }
+  };
+
+  const handleOpenWebsite = (lead) => {
+    const website = normalizedWebsiteUrl(lead.website);
+    if (!website) {
+      setMessage("Website is empty.");
+      return;
+    }
+
+    window.open(website, "_blank", "noopener,noreferrer");
+    setMessage(`Opened website for ${lead.name}.`);
+  };
+
   const handleExport = (format) => {
     const content = exportLeads(format);
     setExportFormat(format);
@@ -768,7 +927,9 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               <select
                 style={styles.input}
                 value={form.category}
-                onChange={(event) => setFormValue("category", event.target.value)}
+                onChange={(event) =>
+                  setFormValue("category", event.target.value)
+                }
                 data-testid="lead-category-select"
               >
                 {CATEGORIES.map((category) => (
@@ -818,7 +979,9 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               <select
                 style={styles.input}
                 value={form.source_layer}
-                onChange={(event) => setFormValue("source_layer", event.target.value)}
+                onChange={(event) =>
+                  setFormValue("source_layer", event.target.value)
+                }
               >
                 {SOURCE_LAYERS.map((layer) => (
                   <option key={layer} value={layer}>
@@ -855,7 +1018,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               >
                 {STATUSES.map((status) => (
                   <option key={status} value={status}>
-                    {status}
+                    {statusLabel(status)}
                   </option>
                 ))}
               </select>
@@ -878,7 +1041,11 @@ export function CityIntelligenceLeadPanel({ viewState }) {
             >
               Save Lead
             </button>
-            <button type="button" style={styles.button} onClick={() => setForm(emptyForm)}>
+            <button
+              type="button"
+              style={styles.button}
+              onClick={() => setForm(emptyForm)}
+            >
               Reset
             </button>
           </div>
@@ -890,7 +1057,9 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               <span style={styles.counterLabel}>Total leads</span>
             </div>
             <div style={styles.counter}>
-              <span style={styles.counterValue}>{leadCounters.contact_soon}</span>
+              <span style={styles.counterValue}>
+                {leadCounters.contact_soon}
+              </span>
               <span style={styles.counterLabel}>Contact soon</span>
             </div>
             <div style={styles.counter}>
@@ -898,7 +1067,9 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               <span style={styles.counterLabel}>Contacted</span>
             </div>
             <div style={styles.counter}>
-              <span style={styles.counterValue}>{leadCounters.meeting_booked}</span>
+              <span style={styles.counterValue}>
+                {leadCounters.meeting_booked}
+              </span>
               <span style={styles.counterLabel}>Meeting booked</span>
             </div>
           </div>
@@ -914,7 +1085,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                 }}
                 onClick={() => setStatusFilter(status)}
               >
-                {status === "all" ? "All" : status.replace(/_/g, " ")}
+                {status === "all" ? "All" : statusLabel(status)}
               </button>
             ))}
           </div>
@@ -965,7 +1136,11 @@ export function CityIntelligenceLeadPanel({ viewState }) {
             >
               Export JSON
             </button>
-            <button type="button" style={styles.button} onClick={() => handleExport("csv")}>
+            <button
+              type="button"
+              style={styles.button}
+              onClick={() => handleExport("csv")}
+            >
               Export CSV
             </button>
           </div>
@@ -990,20 +1165,47 @@ export function CityIntelligenceLeadPanel({ viewState }) {
           )}
 
           {leads.length === 0 ? (
-            <p style={styles.empty}>No saved leads.</p>
+            <p style={styles.empty}>
+              Select a map feature, click Import Selected Feature, then save it
+              as a lead. You can also use the manual form above when a feature
+              does not expose enough map data.
+            </p>
           ) : visibleLeads.length === 0 ? (
             <p style={styles.empty}>No leads match the current filters.</p>
           ) : (
             visibleLeads.map((lead) => (
-              <div key={lead.id} style={styles.card} data-testid="saved-lead-card">
+              <div
+                key={lead.id}
+                style={styles.card}
+                data-testid="saved-lead-card"
+              >
                 <div style={styles.cardHeader}>
                   <div>
-                    <h3 style={styles.leadName}>{lead.name || "Untitled lead"}</h3>
+                    <h3 style={styles.leadName}>
+                      {lead.name || "Untitled lead"}
+                    </h3>
                     <p style={styles.meta}>
-                      {lead.category || "Uncategorized"} | {lead.source_layer || "Manual Lead"}
+                      {lead.category || "Uncategorized"} |{" "}
+                      {lead.source_layer || "Manual Lead"}
                     </p>
+                    <div style={styles.badgeRow}>
+                      <span style={styles.badge}>
+                        {statusLabel(lead.status)}
+                      </span>
+                      {lead.verification_status && (
+                        <span style={styles.badge}>
+                          {lead.verification_status}
+                        </span>
+                      )}
+                      {lead.website && (
+                        <span style={styles.badge}>Website</span>
+                      )}
+                      {lead.phone && <span style={styles.badge}>Phone</span>}
+                    </div>
                   </div>
-                  <div style={styles.score}>{lead.opportunity_score || "-"}</div>
+                  <div style={styles.score}>
+                    {lead.opportunity_score || "-"}
+                  </div>
                 </div>
 
                 <div style={styles.grid}>
@@ -1017,7 +1219,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                     >
                       {STATUSES.map((status) => (
                         <option key={status} value={status}>
-                          {status}
+                          {statusLabel(status)}
                         </option>
                       ))}
                     </select>
@@ -1028,10 +1230,33 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                       as="textarea"
                       label="Notes"
                       value={lead.notes}
-                      onChange={(value) => handleUpdate(lead.id, { notes: value })}
+                      onChange={(value) =>
+                        handleUpdate(lead.id, { notes: value })
+                      }
                     />
                   </div>
                 </div>
+
+                <details style={styles.detailsDisclosure}>
+                  <summary style={styles.summary}>Details</summary>
+                  <div style={styles.detailGrid}>
+                    <DetailRow label="Address" value={lead.address} />
+                    <DetailRow label="Phone" value={lead.phone} />
+                    <DetailRow label="Website" value={lead.website} />
+                    <DetailRow
+                      label="OSM"
+                      value={[lead.osm_type, lead.osm_id]
+                        .filter(Boolean)
+                        .join(" ")}
+                    />
+                    <DetailRow
+                      label="Source"
+                      value={lead.source || lead.data_source}
+                    />
+                    <DetailRow label="Checked" value={lead.last_checked_at} />
+                    <DetailRow label="Updated" value={lead.updated_at} />
+                  </div>
+                </details>
 
                 {(lead.score_reason ||
                   lead.suggested_offer ||
@@ -1060,7 +1285,8 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                     )}
                     {lead.suggested_first_message && (
                       <>
-                        <strong>First message:</strong> {lead.suggested_first_message}
+                        <strong>First message:</strong>{" "}
+                        {lead.suggested_first_message}
                         <br />
                       </>
                     )}
@@ -1079,9 +1305,36 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                 )}
 
                 <div style={styles.actions}>
+                  {lead.website && (
+                    <button
+                      type="button"
+                      style={{ ...styles.button, ...styles.smallButton }}
+                      onClick={() => handleOpenWebsite(lead)}
+                    >
+                      Open Website
+                    </button>
+                  )}
+                  {lead.phone && (
+                    <button
+                      type="button"
+                      style={{ ...styles.button, ...styles.smallButton }}
+                      onClick={() => handleCopyText(lead.phone, "Phone")}
+                    >
+                      Copy Phone
+                    </button>
+                  )}
+                  {lead.website && (
+                    <button
+                      type="button"
+                      style={{ ...styles.button, ...styles.smallButton }}
+                      onClick={() => handleCopyText(lead.website, "Website")}
+                    >
+                      Copy Website
+                    </button>
+                  )}
                   <button
                     type="button"
-                    style={styles.button}
+                    style={{ ...styles.button, ...styles.smallButton }}
                     onClick={() => handleScore(lead)}
                     data-testid="score-lead-button"
                   >
@@ -1089,7 +1342,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                   </button>
                   <button
                     type="button"
-                    style={styles.button}
+                    style={{ ...styles.button, ...styles.smallButton }}
                     onClick={() => handleGenerateOutreach(lead)}
                     data-testid="generate-outreach-button"
                   >
@@ -1098,7 +1351,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                   {lead.suggested_first_message && (
                     <button
                       type="button"
-                      style={styles.button}
+                      style={{ ...styles.button, ...styles.smallButton }}
                       onClick={() => handleCopyMessage(lead)}
                       data-testid="copy-outreach-message-button"
                     >
@@ -1107,7 +1360,11 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                   )}
                   <button
                     type="button"
-                    style={{ ...styles.button, ...styles.dangerButton }}
+                    style={{
+                      ...styles.button,
+                      ...styles.smallButton,
+                      ...styles.dangerButton
+                    }}
                     onClick={() => handleDelete(lead.id)}
                   >
                     Delete
