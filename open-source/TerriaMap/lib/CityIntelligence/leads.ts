@@ -40,6 +40,13 @@ export interface CityIntelligenceLead {
 
 export type LeadInput = Partial<CityIntelligenceLead>;
 
+export type OutreachTemplate =
+  | "german_email"
+  | "english_email"
+  | "german_linkedin"
+  | "english_linkedin"
+  | "phone_opener";
+
 const DEFAULT_STATUS: LeadStatus = "interesting";
 
 const SCORE_RULES = {
@@ -50,7 +57,8 @@ const SCORE_RULES = {
     suggested_offer: "Inventory and supplier comparison workflow audit.",
     suggested_first_message:
       "I noticed your pharmacy may handle recurring inventory and supplier coordination. Would a short workflow audit be useful to find admin tasks that can be automated safely?",
-    outreach_angle: "Operations workflow audit for inventory, procurement, and supplier coordination.",
+    outreach_angle:
+      "Operations workflow audit for inventory, procurement, and supplier coordination.",
     recommended_next_action:
       "Review public contact details and prepare a pharmacy-specific operations note.",
     risk_notes:
@@ -60,10 +68,12 @@ const SCORE_RULES = {
     opportunity_score: 8,
     score_reason:
       "Law firms often have document intake, drafting, client follow-up, and knowledge-management workflows where careful automation can save time.",
-    suggested_offer: "Confidential document intake and follow-up workflow review.",
+    suggested_offer:
+      "Confidential document intake and follow-up workflow review.",
     suggested_first_message:
       "I am mapping Munich law firms where document intake and follow-up workflows may be streamlined. Would a short non-confidential workflow review be useful?",
-    outreach_angle: "Non-confidential workflow review for intake, document status, and admin follow-up.",
+    outreach_angle:
+      "Non-confidential workflow review for intake, document status, and admin follow-up.",
     recommended_next_action:
       "Check practice focus and public contact path, then tailor outreach around intake, document status, or admin follow-up.",
     risk_notes:
@@ -76,7 +86,8 @@ const SCORE_RULES = {
     suggested_offer: "Proposal and client-reporting workflow review.",
     suggested_first_message:
       "I am mapping Munich consulting teams that may benefit from proposal or reporting workflow automation. Would a short process review be useful?",
-    outreach_angle: "Proposal, research, and client-reporting workflow improvement.",
+    outreach_angle:
+      "Proposal, research, and client-reporting workflow improvement.",
     recommended_next_action:
       "Identify the firm's specialty and tailor outreach around proposal creation, research synthesis, or client reporting.",
     risk_notes:
@@ -89,7 +100,8 @@ const SCORE_RULES = {
     suggested_offer: "Listing inquiry and follow-up workflow audit.",
     suggested_first_message:
       "I noticed your Munich real estate office and am mapping teams that may benefit from faster listing inquiry and follow-up workflows. Would a short audit be useful?",
-    outreach_angle: "Listing inquiry, document packet, and follow-up workflow cleanup.",
+    outreach_angle:
+      "Listing inquiry, document packet, and follow-up workflow cleanup.",
     recommended_next_action:
       "Review public listings and contact channels, then frame outreach around inquiry handling and document preparation.",
     risk_notes:
@@ -102,7 +114,8 @@ const SCORE_RULES = {
     suggested_offer: "Renewal and document-collection workflow review.",
     suggested_first_message:
       "I am mapping Munich insurance offices where renewals and document collection may be made easier. Would a short workflow review be useful?",
-    outreach_angle: "Renewal reminder, document collection, and customer follow-up workflow review.",
+    outreach_angle:
+      "Renewal reminder, document collection, and customer follow-up workflow review.",
     recommended_next_action:
       "Check public contact details and tailor outreach around renewal reminders, document collection, or customer communication.",
     risk_notes:
@@ -115,7 +128,8 @@ const SCORE_RULES = {
     suggested_offer: "Public-service form and document workflow discovery.",
     suggested_first_message:
       "I am mapping public-service offices in Munich and researching practical form or document workflow improvements. Is there a public contact for process-improvement discussions?",
-    outreach_angle: "Public-service form and document workflow discovery through official channels.",
+    outreach_angle:
+      "Public-service form and document workflow discovery through official channels.",
     recommended_next_action:
       "Find the official department contact and procurement path before any outreach.",
     risk_notes:
@@ -141,11 +155,11 @@ const SCORE_RULES = {
     suggested_offer: "Tenant/operator qualification and operations discovery.",
     suggested_first_message:
       "I am mapping Munich office locations and trying to identify the right operator or tenant contact for workflow improvement opportunities. Is there a public business contact for this location?",
-    outreach_angle: "Operator or tenant qualification before business workflow outreach.",
+    outreach_angle:
+      "Operator or tenant qualification before business workflow outreach.",
     recommended_next_action:
       "Identify a tenant, building operator, or management company before treating the record as a lead.",
-    risk_notes:
-      "Do not assume a building record is a reachable business lead."
+    risk_notes: "Do not assume a building record is a reachable business lead."
   },
   office: {
     opportunity_score: 6,
@@ -154,7 +168,8 @@ const SCORE_RULES = {
     suggested_offer: "Admin automation and document workflow review.",
     suggested_first_message:
       "I am mapping Munich offices that may benefit from practical admin or document workflow automation. Would a short process review be useful?",
-    outreach_angle: "Admin automation, document workflow, and sales operations qualification.",
+    outreach_angle:
+      "Admin automation, document workflow, and sales operations qualification.",
     recommended_next_action:
       "Qualify the organization type and tailor outreach around admin or sales operations.",
     risk_notes:
@@ -167,7 +182,8 @@ const SCORE_RULES = {
     suggested_offer: "Appointment and communication workflow assessment.",
     suggested_first_message:
       "I am researching Munich clinics where appointment and communication workflows may be improved. Would a non-clinical operations review be useful for your team?",
-    outreach_angle: "Non-clinical appointment, communication, and procurement workflow review.",
+    outreach_angle:
+      "Non-clinical appointment, communication, and procurement workflow review.",
     recommended_next_action:
       "Frame outreach around non-clinical operations and avoid patient-data assumptions.",
     risk_notes:
@@ -193,7 +209,8 @@ const SCORE_RULES = {
     suggested_offer: "Local marketing and operations quick audit.",
     suggested_first_message:
       "I noticed your restaurant in Munich and am mapping local businesses that may benefit from small improvements in reservations, reviews, or inventory workflows. Would a short audit be useful?",
-    outreach_angle: "Local marketing, reservations, reviews, and inventory quick audit.",
+    outreach_angle:
+      "Local marketing, reservations, reviews, and inventory quick audit.",
     recommended_next_action:
       "Check website, reservation path, and public review presence before outreach.",
     risk_notes:
@@ -206,16 +223,18 @@ const SCORE_RULES = {
     suggested_offer: "Operational workflow discovery call.",
     suggested_first_message:
       "I am mapping Munich organizations and looking for practical workflow improvement opportunities. Would a quick operations review be useful?",
-    outreach_angle: "Manual qualification for practical workflow improvement fit.",
+    outreach_angle:
+      "Manual qualification for practical workflow improvement fit.",
     recommended_next_action:
       "Manually qualify the organization and choose a category-specific offer.",
-    risk_notes:
-      "Insufficient category context; validate fit before outreach."
+    risk_notes: "Insufficient category context; validate fit before outreach."
   }
 };
 
 function storageAvailable() {
-  return typeof window !== "undefined" && typeof window.localStorage !== "undefined";
+  return (
+    typeof window !== "undefined" && typeof window.localStorage !== "undefined"
+  );
 }
 
 function nowIso() {
@@ -247,7 +266,12 @@ function cleanStatus(value: unknown): LeadStatus {
 }
 
 function slugify(value: string) {
-  return value.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") || "lead";
+  return (
+    value
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "") || "lead"
+  );
 }
 
 function createLeadId(lead: LeadInput) {
@@ -314,7 +338,9 @@ function readStoredLeads(): CityIntelligenceLead[] {
 function writeStoredLeads(leads: CityIntelligenceLead[]) {
   if (!storageAvailable()) return;
   window.localStorage.setItem(LEADS_STORAGE_KEY, JSON.stringify(leads));
-  window.dispatchEvent(new CustomEvent("city-intelligence-cockpit.leads.changed"));
+  window.dispatchEvent(
+    new CustomEvent("city-intelligence-cockpit.leads.changed")
+  );
 }
 
 export function getLeads(): CityIntelligenceLead[] {
@@ -324,7 +350,9 @@ export function getLeads(): CityIntelligenceLead[] {
 export function saveLead(lead: LeadInput): CityIntelligenceLead {
   const normalizedLead = normalizeLead(lead);
   const leads = getLeads();
-  const existingIndex = leads.findIndex((item) => item.id === normalizedLead.id);
+  const existingIndex = leads.findIndex(
+    (item) => item.id === normalizedLead.id
+  );
 
   if (existingIndex >= 0) {
     leads[existingIndex] = {
@@ -341,7 +369,10 @@ export function saveLead(lead: LeadInput): CityIntelligenceLead {
   return existingIndex >= 0 ? leads[existingIndex] : normalizedLead;
 }
 
-export function updateLead(id: string, updates: LeadInput): CityIntelligenceLead | undefined {
+export function updateLead(
+  id: string,
+  updates: LeadInput
+): CityIntelligenceLead | undefined {
   const leads = getLeads();
   const index = leads.findIndex((lead) => lead.id === id);
   if (index < 0) return undefined;
@@ -410,13 +441,18 @@ export function exportLeads(
 
   return [
     fields.join(","),
-    ...leads.map((lead) => fields.map((field) => csvValue(lead[field])).join(","))
+    ...leads.map((lead) =>
+      fields.map((field) => csvValue(lead[field])).join(",")
+    )
   ].join("\n");
 }
 
 function scoreRuleKey(lead: LeadInput): keyof typeof SCORE_RULES {
-  const officeType = cleanString((lead as { office_type?: unknown }).office_type);
-  const text = `${lead.category || ""} ${lead.source_layer || ""} ${officeType}`.toLowerCase();
+  const officeType = cleanString(
+    (lead as { office_type?: unknown }).office_type
+  );
+  const text =
+    `${lead.category || ""} ${lead.source_layer || ""} ${officeType}`.toLowerCase();
   if (
     text.includes("law firm") ||
     text.includes("lawyer") ||
@@ -426,7 +462,11 @@ function scoreRuleKey(lead: LeadInput): keyof typeof SCORE_RULES {
     return "law_firm";
   }
   if (text.includes("consult")) return "consultant";
-  if (text.includes("real estate") || text.includes("estate_agent") || text.includes("property")) {
+  if (
+    text.includes("real estate") ||
+    text.includes("estate_agent") ||
+    text.includes("property")
+  ) {
     return "real_estate";
   }
   if (text.includes("insurance")) return "insurance";
@@ -447,7 +487,12 @@ function scoreRuleKey(lead: LeadInput): keyof typeof SCORE_RULES {
   }
   if (text.includes("pharmacy")) return "pharmacy";
   if (text.includes("office")) return "office";
-  if (text.includes("clinic") || text.includes("doctor") || text.includes("dentist")) return "clinic";
+  if (
+    text.includes("clinic") ||
+    text.includes("doctor") ||
+    text.includes("dentist")
+  )
+    return "clinic";
   if (text.includes("cowork")) return "coworking";
   if (
     text.includes("restaurant") ||
@@ -465,11 +510,126 @@ export function scoreLead(lead: LeadInput) {
   return SCORE_RULES[scoreRuleKey(lead)];
 }
 
-export function generateOutreach(lead: LeadInput) {
-  const rule = SCORE_RULES[scoreRuleKey(lead)];
+function leadDisplayName(lead: LeadInput) {
+  return cleanString(lead.name) || "your team";
+}
+
+type ScoreRuleKey = keyof typeof SCORE_RULES;
+
+const GERMAN_OUTREACH_CONTEXT: Record<
+  ScoreRuleKey,
+  { angle: string; offer: string }
+> = {
+  pharmacy: {
+    angle: "Beschaffung, Lagerbestand und Lieferantenvergleiche",
+    offer: "einem kurzen Workflow-Check fuer Lagerbestand und Lieferanten"
+  },
+  law_firm: {
+    angle:
+      "Mandatsaufnahme, Dokumentenstatus und administrative Nachverfolgung",
+    offer: "einem vertraulichen Workflow-Check ohne Mandatsdetails"
+  },
+  consultant: {
+    angle: "Angebote, Recherche, Reporting und CRM-Ablaufe",
+    offer: "einem kurzen Review fuer Angebots- und Reporting-Prozesse"
+  },
+  real_estate: {
+    angle: "Exposes, Anfragen, Terminplanung und Follow-ups",
+    offer: "einem kurzen Check fuer Anfragen und Follow-ups"
+  },
+  insurance: {
+    angle: "Formulare, Dokumentensammlung, Schadenprozesse und Kundenservice",
+    offer: "einem kurzen Workflow-Review fuer Dokumente und Kundenservice"
+  },
+  government: {
+    angle: "Formulare, Dokumentenprozesse und offentliche Service-Ablaufe",
+    offer: "einer kurzen Prozess-Orientierung ueber offizielle Kanaele"
+  },
+  company_office: {
+    angle: "Administration, Dokumente, CRM und Vertriebsablaeufe",
+    offer: "einem kurzen Review fuer Admin- und Vertriebsablaeufe"
+  },
+  office_building: {
+    angle: "Mieterkommunikation, Service-Anfragen und Gebaeudeablaeufe",
+    offer: "einem kurzen Check fuer Gebaeude- und Serviceablaeufe"
+  },
+  office: {
+    angle: "Dokumente, Administration und CRM-Ablaufe",
+    offer: "einem kurzen Workflow-Review fuer Bueroablaeufe"
+  },
+  clinic: {
+    angle: "Termine, Patientenkommunikation, Formulare und Beschaffung",
+    offer: "einem kurzen Check fuer Termin- und Formularablaeufe"
+  },
+  coworking: {
+    angle: "Community, Events, Partnernetzwerk und Mitgliederkommunikation",
+    offer: "einem kurzen Review fuer Community- und Eventablaeufe"
+  },
+  restaurant: {
+    angle: "lokales Marketing, Bewertungen, Reservierungen und Lagerablaeufe",
+    offer: "einem kurzen Check fuer Marketing und Betriebsablaeufe"
+  },
+  default: {
+    angle: "offentliche Datenqualifizierung und lokale Betriebsablaeufe",
+    offer: "einem kurzen lokalen Workflow-Check"
+  }
+};
+
+function trimPeriod(text: string) {
+  return text.replace(/\.$/, "");
+}
+
+function outreachMessage(
+  lead: LeadInput,
+  ruleKey: ScoreRuleKey,
+  rule: typeof SCORE_RULES.default,
+  template: OutreachTemplate
+) {
+  const name = leadDisplayName(lead);
+  const offer = trimPeriod(rule.suggested_offer);
+  const angle = trimPeriod(rule.outreach_angle.toLowerCase());
+  const germanContext = GERMAN_OUTREACH_CONTEXT[ruleKey];
+
+  switch (template) {
+    case "german_email":
+      return `Guten Tag ${name},\n\nich arbeite lokal mit oeffentlichen Stadt- und OSM-Daten, um praktische Workflow-Potenziale in Muenchen zu finden. Bei ${name} koennte ein kurzer Blick auf ${germanContext.angle} sinnvoll sein.\n\nWaere ein unverbindlicher 15-Minuten-Austausch zu ${germanContext.offer} fuer Sie interessant?\n\nViele Gruesse`;
+    case "german_linkedin":
+      return `Guten Tag ${name}, ich recherchiere lokale Muenchner Organisationen mit Potenzial fuer ${germanContext.angle}. Waere ein kurzer Austausch zu ${germanContext.offer} interessant?`;
+    case "english_linkedin":
+      return `Hi ${name}, I am mapping Munich organizations where ${angle} may create practical value. Would a short chat about "${offer}" be useful?`;
+    case "phone_opener":
+      return `Hello, my name is [your name]. I am calling about ${name}. I am mapping Munich organizations where ${angle} may be improved. Who would be the right person to ask about a short "${offer}" conversation?`;
+    case "english_email":
+    default:
+      return `Hello ${name},\n\nI am using local public map data to identify Munich organizations where practical workflow improvements may help. ${rule.score_reason}\n\nWould a short 15-minute conversation about "${offer}" be useful for your team?\n\nBest regards`;
+  }
+}
+
+function outreachTemplateLabel(template: OutreachTemplate) {
+  switch (template) {
+    case "german_email":
+      return "German email";
+    case "german_linkedin":
+      return "German LinkedIn";
+    case "english_linkedin":
+      return "English LinkedIn";
+    case "phone_opener":
+      return "Phone-call opener";
+    case "english_email":
+    default:
+      return "English email";
+  }
+}
+
+export function generateOutreach(
+  lead: LeadInput,
+  template: OutreachTemplate = "english_email"
+) {
+  const ruleKey = scoreRuleKey(lead);
+  const rule = SCORE_RULES[ruleKey];
   return {
-    suggested_first_message: rule.suggested_first_message,
-    outreach_angle: rule.outreach_angle,
+    suggested_first_message: outreachMessage(lead, ruleKey, rule, template),
+    outreach_angle: `${rule.outreach_angle} Template: ${outreachTemplateLabel(template)}.`,
     recommended_next_action: rule.recommended_next_action
   };
 }

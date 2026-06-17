@@ -98,15 +98,27 @@ source layer, and available office-type context so `Munich Law Firms` and
 ## Local Outreach Generator
 
 The `Saved Leads` panel also has `Generate Outreach Message`. It is fully local
-and writes only:
+and uses rule-based templates only. No network request or API key is required.
+
+Available templates:
+
+- German email
+- English email
+- German LinkedIn short message
+- English LinkedIn short message
+- phone-call opener
+
+The selected template writes:
 
 - `suggested_first_message`
 - `outreach_angle`
 - `recommended_next_action`
 
-It does not modify `notes`. `Copy Message` uses the browser clipboard when
-available; the generated message remains visible in the lead card for manual copy
-if clipboard access fails.
+It does not modify `notes`. The generated `Outreach Message` field is editable
+inside the lead card and persists to localStorage. `Copy Message` uses the
+browser clipboard when available; the generated message remains visible in the
+lead card for manual copy if clipboard access fails. JSON and CSV exports include
+the outreach fields.
 
 ## API Key Policy
 

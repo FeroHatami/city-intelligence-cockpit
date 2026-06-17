@@ -40,6 +40,14 @@ const VERIFICATION_STATUSES = [
   "wrong_or_closed"
 ];
 
+const OUTREACH_TEMPLATES = [
+  ["english_email", "English email"],
+  ["german_email", "German email"],
+  ["english_linkedin", "English LinkedIn"],
+  ["german_linkedin", "German LinkedIn"],
+  ["phone_opener", "Phone-call opener"]
+];
+
 const CATEGORIES = [
   "Pharmacy",
   "Office",
@@ -651,6 +659,13 @@ function verificationLabel(status) {
   return stringValue(status).replace(/_/g, " ") || "No verification status";
 }
 
+function outreachTemplateLabel(template) {
+  return (
+    OUTREACH_TEMPLATES.find(([value]) => value === template)?.[1] ||
+    "English email"
+  );
+}
+
 function statusSortIndex(status) {
   const index = STATUSES.indexOf(status);
   return index === -1 ? STATUSES.length : index;
@@ -666,6 +681,33 @@ function normalizedWebsiteUrl(value) {
   if (!website) return "";
   if (/^https?:\/\//i.test(website)) return website;
   return `https://${website}`;
+}
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard?.writeText) {
+    try {
+      await navigator.clipboard.writeText(text);
+      return;
+    } catch {
+      // Fall through to the textarea fallback below.
+    }
+  }
+
+  const textarea = document.createElement("textarea");
+  textarea.value = text;
+  textarea.setAttribute("readonly", "");
+  textarea.style.position = "fixed";
+  textarea.style.left = "-9999px";
+  textarea.style.top = "0";
+  document.body.appendChild(textarea);
+  textarea.focus();
+  textarea.select();
+  const copied = document.execCommand("copy");
+  document.body.removeChild(textarea);
+
+  if (!copied) {
+    throw new Error("Clipboard copy failed.");
+  }
 }
 
 function DetailRow({ label, value }) {
@@ -736,6 +778,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   const [minimumScoreFilter, setMinimumScoreFilter] = useState("");
   const [sortMode, setSortMode] = useState("newest");
   const [exportScope, setExportScope] = useState("all");
+  const [outreachTemplateByLead, setOutreachTemplateByLead] = useState({});
 
   const dropdownTheme = useMemo(() => ({ icon: "download" }), []);
   const leadCounters = useMemo(
@@ -947,10 +990,13 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   };
 
   const handleGenerateOutreach = (lead) => {
-    const outreach = generateOutreach(lead);
+    const template = outreachTemplateByLead[lead.id] || "english_email";
+    const outreach = generateOutreach(lead, template);
     updateLead(lead.id, outreach);
     setLeads(loadLeads());
-    setMessage(`Generated outreach for ${lead.name}.`);
+    setMessage(
+      `Generated ${outreachTemplateLabel(template)} outreach for ${lead.name}.`
+    );
   };
 
   const handleCopyMessage = async (lead) => {
@@ -960,10 +1006,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     }
 
     try {
-      if (!navigator.clipboard?.writeText) {
-        throw new Error("Clipboard API unavailable.");
-      }
-      await navigator.clipboard.writeText(lead.suggested_first_message);
+      await copyTextToClipboard(lead.suggested_first_message);
       setMessage(`Copied outreach message for ${lead.name}.`);
     } catch {
       setMessage("Copy failed. The message remains visible for manual copy.");
@@ -978,10 +1021,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     }
 
     try {
-      if (!navigator.clipboard?.writeText) {
-        throw new Error("Clipboard API unavailable.");
-      }
-      await navigator.clipboard.writeText(text);
+      await copyTextToClipboard(text);
       setMessage(`Copied ${label.toLowerCase()}.`);
     } catch {
       setMessage(`Copy failed. ${label} remains visible for manual copy.`);
@@ -1536,6 +1576,41 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                     )}
                   </div>
                 )}
+
+                <div style={styles.grid}>
+                  <Field label="Outreach Template">
+                    <select
+                      style={styles.input}
+                      value={outreachTemplateByLead[lead.id] || "english_email"}
+                      onChange={(event) =>
+                        setOutreachTemplateByLead((current) => ({
+                          ...current,
+                          [lead.id]: event.target.value
+                        }))
+                      }
+                    >
+                      {OUTREACH_TEMPLATES.map(([value, label]) => (
+                        <option key={value} value={value}>
+                          {label}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
+                  {lead.suggested_first_message && (
+                    <div style={styles.full}>
+                      <Field
+                        as="textarea"
+                        label="Outreach Message"
+                        value={lead.suggested_first_message}
+                        onChange={(value) =>
+                          handleUpdate(lead.id, {
+                            suggested_first_message: value
+                          })
+                        }
+                      />
+                    </div>
+                  )}
+                </div>
 
                 <div style={styles.actions}>
                   {lead.website && (
