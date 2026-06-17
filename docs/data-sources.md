@@ -31,10 +31,46 @@ The public catalog is organized into:
 - `Munich Public Datasets`
 - `Germany Public Datasets`
 - `Europe Public Datasets`
+- `Demo / Visual Examples`
 
 Live catalog layers are added only when the endpoint is a stable no-key
 GeoJSON/WFS output. Broader portals or uncertain WMS/WFS URLs are added as
 empty non-loading reference groups so the catalog does not create broken layers.
+
+### Catalog Categories
+
+Munich public data is grouped into:
+
+- Boundaries & Administration
+- Transport & Mobility
+- Environment & Green Space
+- Infrastructure & Utilities
+- Health & Public Services
+- Buildings & Urban Planning
+- Open Data Portals / References
+
+Germany public data is grouped into:
+
+- Basemaps
+- Administrative Boundaries
+- Transport
+- Environment
+- Statistics
+- Infrastructure
+- Open Data Portals / References
+
+Europe public data is grouped into:
+
+- Administrative / Statistical Boundaries
+- Environment
+- Transport
+- Economy / Statistics
+- Open Data Portals / References
+
+Optional no-key demo visuals are kept in:
+
+- Basemaps & Visual References
+- 3D / Local Examples
 
 ### Real Public Layers
 
@@ -43,21 +79,38 @@ empty non-loading reference groups so the catalog does not create broken layers.
 | Munich Traffic Signals (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `Lichtsignalanlagen` |
 | Munich Drinking Fountains (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `Stadtplan der staedtischen Trinkbrunnen` |
 | EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
+| EU NUTS 2024 Level 1 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
+| EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
+| EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
+
+### Optional Demo Visuals
+
+| Catalog layer | Type | Source |
+| --- | --- | --- |
+| Natural Earth II (Optional Visual Layer) | URL template imagery | Terria public Natural Earth raster tiles |
+| Smooth Geelong Buildings glTF Mini Demo (Local) | CZML/glTF | Local upstream example assets in `wwwroot/test/3d/geelong/` |
+
+The Geelong terrain-aligned demo is intentionally not enabled as a live layer.
+The low-poly bus model is also kept as a reference only because the original
+live vehicle example depends on an external transport API feed.
 
 ### Reference-Only Items
 
 These items intentionally do not load map tiles or features:
 
-- Munich Open Data Portal
-- Munich GeoPortal OpenGeodata
+- Munich district boundaries and administration references
+- Munich Open Data Portal and GeoPortal OpenGeodata
 - Munich mobility datasets
-- Munich environment, green-zone, and charging resources
-- GovData
-- Destatis regional statistics
-- basemap.de / BKG
+- Munich environment, green-zone, and green-space resources
+- Munich charging infrastructure, public toilets, waste, and recycling resources
+- Munich health, schools, kitas, and public-service resources
+- Munich buildings and urban planning resources
+- GovData transport, environment, infrastructure, and portal references
+- Destatis regional/statistical references
+- basemap.de / BKG and BKG Open Data references
 - German administrative boundary references
-- European Data Portal
-- Eurostat/GISCO reference directory
+- European Data Portal references for environment and transport
+- Eurostat statistics and GISCO reference directory
 
 Reference items should be promoted to live layers only after the exact endpoint,
 layer name, licensing, expected size, and no-key behavior are verified.
@@ -66,14 +119,17 @@ layer name, licensing, expected size, and no-key behavior are verified.
 
 The local app loads only `init/city-intelligence.json`. The upstream `simple`
 demo init is not loaded by default, so old sample datasets such as Australian
-demo groups, 3D train/demo assets, and Natural Earth preview content do not
-appear in the City Intelligence Cockpit catalog.
+demo groups do not appear in the City Intelligence Cockpit catalog.
 
 Cesium ion terrain is disabled by setting `useCesiumIonTerrain` to `false` in
 `open-source/TerriaMap/wwwroot/config.json`. With no `cesiumTerrainUrl` or
 `cesiumTerrainAssetId`, Terria uses smooth ellipsoid 3D instead of token-backed
 terrain. Cesium ion Bing imagery and Cesium ion search are also disabled. No API
 key or paid service is required.
+
+The restored Natural Earth and 3D visual examples are optional catalog items,
+not startup defaults. They are disabled by default and do not re-enable Cesium
+ion terrain, Bing imagery, search, external transport feeds, or API keys.
 
 ## Verification Fields
 

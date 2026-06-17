@@ -84,26 +84,34 @@ python3 scripts/split-munich-offices.py
 
 The local app now loads only `init/city-intelligence.json`. The upstream `simple`
 demo init is no longer loaded by default, which removes the old Australian demo
-catalog, 3D train/demo assets, Natural Earth preview basemap, and other sample
-layers from the City Intelligence Cockpit startup.
+catalog and other sample layers from the City Intelligence Cockpit startup.
 
 Cesium ion terrain, Cesium ion Bing imagery, and the Cesium ion search provider
 are disabled in `open-source/TerriaMap/wwwroot/config.json`. No Cesium ion token,
 API key, paid API, backend, or database is required. 3D mode remains available as
 smooth ellipsoid 3D rather than token-backed terrain.
 
-The catalog now has four top-level groups:
+The catalog now has five top-level groups:
 
 - `City Intelligence Cockpit`: local OSM/Overpass business layers and lead workflow sources.
-- `Munich Public Datasets`: official Munich Open Data / GeoPortal layers and references.
-- `Germany Public Datasets`: official Germany-wide public data references.
-- `Europe Public Datasets`: official EU public data references and GISCO layers.
+- `Munich Public Datasets`: official Munich Open Data / GeoPortal layers and references, grouped into boundaries, transport, environment, infrastructure, health, buildings, and portals.
+- `Germany Public Datasets`: official Germany-wide public data references for basemaps, boundaries, transport, environment, statistics, infrastructure, and portals.
+- `Europe Public Datasets`: official EU public data references and GISCO layers for boundaries, environment, transport, economy/statistics, and portals.
+- `Demo / Visual Examples`: optional no-key visual examples, disabled by default.
 
 Real public layers currently added:
 
 - `Munich Traffic Signals (Official GeoJSON)` from Munich Open Data WFS.
 - `Munich Drinking Fountains (Official GeoJSON)` from Munich Open Data WFS.
 - `EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+- `EU NUTS 2024 Level 1 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+- `EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+- `EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+
+Optional demo visuals restored safely:
+
+- `Natural Earth II (Optional Visual Layer)` as a no-key raster imagery layer, disabled by default.
+- `Smooth Geelong Buildings glTF Mini Demo (Local)` as a local CZML/glTF 3D example, disabled by default.
 
 Reference-only catalog items use empty Terria groups with descriptions. They
 document official portals without attempting to load uncertain or unstable

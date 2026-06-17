@@ -4,7 +4,7 @@
 
 - Set the City Intelligence Cockpit local prototype to load only the focused `city-intelligence` init.
 - Disabled token-dependent Cesium ion terrain, Cesium ion Bing imagery, and Cesium ion search so the app opens without terrain 401 popups or API keys.
-- Removed the upstream `simple` demo init from default startup, hiding the old Australian demo catalog, 3D train/demo assets, and Natural Earth preview basemap from the cockpit.
+- Removed the upstream `simple` demo init from default startup, hiding the old Australian demo catalog and brittle sample layers from the cockpit.
 - Added Munich default `homeCamera` and `initialCamera` bounds.
 - Set the initial viewer mode to `2d` for a stable Munich-first local prototype. 3D mode remains available through Map Settings.
 - Renamed visible app branding to `City Intelligence Cockpit`.
@@ -15,9 +15,10 @@
 - Added a real `Munich Clinics` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Restaurants` GeoJSON layer from OpenStreetMap.
 - Cleaned the `City Intelligence Cockpit` catalog group so all current layers use real-data descriptions and a consistent layer order.
-- Added top-level public dataset catalog groups for `Munich Public Datasets`, `Germany Public Datasets`, and `Europe Public Datasets`.
-- Added official public live layers for Munich traffic signals, Munich drinking fountains, and EU NUTS 2024 level 0 boundaries.
-- Added safe reference-only catalog entries for Munich Open Data, Munich GeoPortal, GovData, Destatis, basemap.de / BKG, the European Data Portal, and Eurostat/GISCO.
+- Added top-level public dataset catalog groups for `Munich Public Datasets`, `Germany Public Datasets`, and `Europe Public Datasets`, with nested categories for boundaries, transport, environment, infrastructure, health, buildings, statistics, basemaps, and portals.
+- Added official public live layers for Munich traffic signals, Munich drinking fountains, and EU NUTS 2024 level 0, 1, 2, and 3 boundaries.
+- Added safe reference-only catalog entries for Munich Open Data, Munich GeoPortal, GovData, Destatis, basemap.de / BKG, BKG Open Data, the European Data Portal, Eurostat, and Eurostat/GISCO.
+- Restored optional `Natural Earth II (Optional Visual Layer)` and `Smooth Geelong Buildings glTF Mini Demo (Local)` under `Demo / Visual Examples`, disabled by default and without token-dependent terrain.
 - Added an offline AI opportunity scoring foundation with dry-run rule-based scoring.
 - Added a first in-app `Saved Leads` workflow backed by browser localStorage.
 - Connected selected Terria map features to the `Saved Leads` workflow with `Import Selected Feature`.
@@ -90,12 +91,13 @@ http://localhost:3001
 
 ## Catalog Organization
 
-The catalog has four top-level groups:
+The catalog has five top-level groups:
 
 - `City Intelligence Cockpit`
 - `Munich Public Datasets`
 - `Germany Public Datasets`
 - `Europe Public Datasets`
+- `Demo / Visual Examples`
 
 All business and lead-workflow layers remain grouped under `City Intelligence Cockpit`.
 
@@ -139,24 +141,65 @@ Real public layers:
 - `Munich Traffic Signals (Official GeoJSON)` from Munich Open Data / GeoPortal WFS.
 - `Munich Drinking Fountains (Official GeoJSON)` from Munich Open Data / GeoPortal WFS.
 - `EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+- `EU NUTS 2024 Level 1 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+- `EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+- `EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+
+Munich public categories:
+
+- `Boundaries & Administration`
+- `Transport & Mobility`
+- `Environment & Green Space`
+- `Infrastructure & Utilities`
+- `Health & Public Services`
+- `Buildings & Urban Planning`
+- `Open Data Portals / References`
+
+Germany public categories:
+
+- `Basemaps`
+- `Administrative Boundaries`
+- `Transport`
+- `Environment`
+- `Statistics`
+- `Infrastructure`
+- `Open Data Portals / References`
+
+Europe public categories:
+
+- `Administrative / Statistical Boundaries`
+- `Environment`
+- `Transport`
+- `Economy / Statistics`
+- `Open Data Portals / References`
+
+Optional demo visuals:
+
+- `Natural Earth II (Optional Visual Layer)` from Terria public Natural Earth raster tiles.
+- `Smooth Geelong Buildings glTF Mini Demo (Local)` from local upstream CZML/glTF assets.
 
 Reference-only items use empty Terria groups with descriptions. They are visible in the catalog but do not try to load tiles or features:
 
-- Munich Open Data Portal
-- Munich GeoPortal OpenGeodata
+- Munich district boundaries and administration references
+- Munich Open Data Portal and GeoPortal OpenGeodata
 - Munich mobility datasets
-- Munich environment, green-zone, and charging resources
-- GovData
-- Destatis regional statistics
-- basemap.de / BKG
+- Munich environment, green-zone, and green-space resources
+- Munich charging infrastructure, public toilets, waste, and recycling resources
+- Munich health, schools, kitas, and public-service resources
+- Munich buildings and urban planning resources
+- GovData transport, environment, infrastructure, and portal references
+- Destatis regional/statistical references
+- basemap.de / BKG and BKG Open Data references
 - German administrative boundary references
-- European Data Portal
-- Eurostat/GISCO reference directory
+- European Data Portal references
+- Eurostat statistics and GISCO reference directory
+- Geelong terrain and low-poly bus examples as intentionally non-loading references
 
 Promotion rule:
 
 - Add a public source as a real layer only after confirming the exact official endpoint, layer name, format, licensing, size, and no-key behavior.
 - Keep uncertain WMS/WFS/portal resources as reference-only entries to avoid broken catalog layers.
+- Keep optional demo visuals disabled by default and separate from the main public data catalog.
 
 ## AI Opportunity Scoring Foundation
 

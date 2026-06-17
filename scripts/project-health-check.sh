@@ -116,6 +116,7 @@ expected_top_level_groups = [
     "Munich Public Datasets",
     "Germany Public Datasets",
     "Europe Public Datasets",
+    "Demo / Visual Examples",
 ]
 if top_level_groups != expected_top_level_groups:
     raise SystemExit(f"top-level catalog group mismatch: {top_level_groups}")
@@ -150,49 +151,117 @@ for item in members:
     if set((item.get("style") or {}).keys()) != {"marker-color", "marker-size"}:
         raise SystemExit(f"{item['name']} has unexpected style {item.get('style')}")
 
-munich_public = {item["id"]: item for item in init["catalog"][1]["members"]}
-germany_public = {item["id"]: item for item in init["catalog"][2]["members"]}
-europe_public = {item["id"]: item for item in init["catalog"][3]["members"]}
-expected_public_ids = [
+def find_item(items, item_id):
+    for item in items:
+        if item.get("id") == item_id:
+            return item
+        found = find_item(item.get("members") or [], item_id)
+        if found:
+            return found
+    return None
+
+
+def walk(items):
+    for item in items:
+        yield item
+        yield from walk(item.get("members") or [])
+
+
+def require_group(item_id, min_members=1):
+    item = find_item(init["catalog"], item_id)
+    if not item:
+        raise SystemExit(f"missing catalog group: {item_id}")
+    if item.get("type") != "group":
+        raise SystemExit(f"{item_id} should be a group")
+    if len(item.get("members") or []) < min_members:
+        raise SystemExit(f"{item_id} should contain catalog entries")
+    return item
+
+
+def require_item(item_id, item_type):
+    item = find_item(init["catalog"], item_id)
+    if not item:
+        raise SystemExit(f"missing catalog item: {item_id}")
+    if item.get("type") != item_type:
+        raise SystemExit(f"{item_id} should be {item_type}, found {item.get('type')}")
+    return item
+
+
+for group_id in (
+    "munich-boundaries-administration",
+    "munich-transport-mobility",
+    "munich-environment-green-space",
+    "munich-infrastructure-utilities",
+    "munich-health-public-services",
+    "munich-buildings-urban-planning",
+    "munich-open-data-portals",
+    "germany-basemaps",
+    "germany-administrative-boundaries",
+    "germany-transport",
+    "germany-environment",
+    "germany-statistics",
+    "germany-infrastructure",
+    "germany-open-data-portals",
+    "europe-administrative-statistical-boundaries",
+    "europe-environment",
+    "europe-transport",
+    "europe-economy-statistics",
+    "europe-open-data-portals",
+    "demo-basemaps-visual-references",
+    "demo-3d-local-examples",
+):
+    require_group(group_id)
+
+traffic = require_item("munich-public-traffic-signals", "geojson")
+if "mor_wfs%3Alsa_opendata" not in traffic.get("url", ""):
+    raise SystemExit("Munich traffic signals URL does not point to the official WFS layer")
+drinking = require_item("munich-public-drinking-fountains", "geojson")
+if "baug_wfs%3Atrinkwasserbrunnen" not in drinking.get("url", ""):
+    raise SystemExit("Munich drinking fountains URL does not point to the official WFS layer")
+
+for level in range(4):
+    nuts = require_item(f"europe-gisco-nuts-2024-level-{level}", "geojson")
+    expected_part = f"NUTS_RG_20M_2024_4326_LEVL_{level}.geojson"
+    if expected_part not in nuts.get("url", ""):
+        raise SystemExit(f"NUTS level {level} URL mismatch")
+
+natural_earth = require_item("demo-natural-earth-ii", "url-template-imagery")
+if "natural-earth-tiles" not in natural_earth.get("url", ""):
+    raise SystemExit("Natural Earth optional layer URL mismatch")
+if natural_earth.get("maximumLevel") != 7:
+    raise SystemExit("Natural Earth optional layer should cap maximumLevel at 7")
+
+geelong = require_item("demo-geelong-buildings-smooth", "czml")
+if geelong.get("url") != "test/3d/geelong/smooth.czml":
+    raise SystemExit("Only the smooth local Geelong CZML demo should be live")
+
+workbench_ids = set(init.get("workbench") or [])
+for disabled_by_default in (
     "munich-public-traffic-signals",
     "munich-public-drinking-fountains",
-    "munich-open-data-portal-reference",
-    "munich-geodata-portal-reference",
-    "munich-mobility-datasets-reference",
-    "munich-environment-and-charging-reference",
-]
-for item_id in expected_public_ids:
-    if item_id not in munich_public:
-        raise SystemExit(f"missing Munich public catalog item: {item_id}")
-if munich_public["munich-public-traffic-signals"].get("type") != "geojson":
-    raise SystemExit("Munich traffic signals must be a real GeoJSON layer")
-if munich_public["munich-public-drinking-fountains"].get("type") != "geojson":
-    raise SystemExit("Munich drinking fountains must be a real GeoJSON layer")
-for item_id, item in munich_public.items():
-    if item_id.endswith("reference") and item.get("type") != "group":
-        raise SystemExit(f"{item_id} should be a non-loading reference group")
-    if item_id.endswith("reference") and item.get("members") != []:
-        raise SystemExit(f"{item_id} should not contain loading child layers")
-
-for item_id in (
-    "germany-govdata-reference",
-    "germany-destatis-reference",
-    "germany-basemap-reference",
-    "germany-boundaries-reference",
+    "europe-gisco-nuts-2024-level-0",
+    "europe-gisco-nuts-2024-level-1",
+    "europe-gisco-nuts-2024-level-2",
+    "europe-gisco-nuts-2024-level-3",
+    "demo-natural-earth-ii",
+    "demo-geelong-buildings-smooth",
 ):
-    item = germany_public.get(item_id, {})
-    if item.get("type") != "group" or item.get("members") != []:
-        raise SystemExit(f"{item_id} should be a non-loading reference group")
-if europe_public.get("europe-gisco-nuts-2024-level-0", {}).get("type") != "geojson":
-    raise SystemExit("Europe GISCO NUTS item must be a real GeoJSON layer")
-for item_id in ("europe-data-portal-reference", "europe-gisco-reference"):
-    item = europe_public.get(item_id, {})
-    if item.get("type") != "group" or item.get("members") != []:
-        raise SystemExit(f"{item_id} should be a non-loading reference group")
+    if disabled_by_default in workbench_ids:
+        raise SystemExit(f"{disabled_by_default} must be disabled by default")
+
+for item in walk(init["catalog"]):
+    name = item.get("name", "")
+    url = item.get("url", "")
+    if name.startswith("Reference /") and item.get("members") != []:
+        raise SystemExit(f"reference item should not contain loading children: {name}")
+    if any(blocked in name for blocked in ("National Datasets", "NSW Live Transport")):
+        raise SystemExit(f"old upstream demo catalog item leaked into custom init: {name}")
+    if any(blocked in url for blocked in ("terrain.czml", "api.transport.nsw.gov.au", "lowpoly_bus")):
+        raise SystemExit(f"blocked demo URL leaked into live catalog: {url}")
 
 print("PASS: GeoJSON files parse, counts match, verification fields exist")
 print(f"PASS: office sublayers sum to {office_sum}")
-print("PASS: catalog groups, workbench, basemap, and simple styles are valid")
+print("PASS: catalog groups, workbench, basemap, public layers, and optional demos are valid")
 PY
 
 CONFIG_FILE="open-source/TerriaMap/wwwroot/config.json"
