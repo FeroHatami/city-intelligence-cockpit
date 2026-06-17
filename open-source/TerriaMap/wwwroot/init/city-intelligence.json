@@ -168,27 +168,33 @@
       "id": "munich-public-datasets",
       "type": "group",
       "name": "Munich Public Datasets",
-      "description": "Official Munich public and open geodata organized by city-intelligence use case. Direct layers are included only when the endpoint is stable and does not require an API key.",
+      "description": "Verified no-key Munich public and open geodata layers from the official Munich Open Data and GeoPortal services. All layers are disabled by default.",
       "members": [
         {
           "id": "munich-boundaries-administration",
           "type": "group",
           "name": "Boundaries & Administration",
-          "description": "Official Munich administrative boundaries, districts, and city administration geodata references.",
+          "description": "Official Munich administrative geography.",
           "members": [
             {
-              "id": "munich-district-boundaries-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Munich District Boundaries",
-              "description": "Official district and administrative boundary layers should be promoted to live layers only after confirming the exact no-key WMS/WFS/GeoJSON endpoint in Munich GeoPortal OpenGeodata: [GeoPortal OpenGeodata](https://geoportal.muenchen.de/portal/opendata/).",
-              "members": []
-            },
-            {
-              "id": "munich-city-administration-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Munich Administration Datasets",
-              "description": "Administrative datasets from the Munich Open Data portal are kept as references until a specific stable map service is selected: [Munich Open Data](https://opendata.muenchen.de/).",
-              "members": []
+              "id": "munich-public-city-districts",
+              "type": "geojson",
+              "name": "Munich City Districts (Official GeoJSON)",
+              "url": "https://geoportal.muenchen.de/geoserver/gsm_wfs/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=gsm_wfs:vablock_stadtbezirk&outputFormat=application/json",
+              "description": "Official Munich city district polygons from the GeoPortal WFS. Disabled by default.",
+              "dataCustodian": "[Landeshauptstadt Munchen GeoPortal](https://geoportal.muenchen.de/portal/opendata/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/vablock_stadtbezirke_opendata"
+                }
+              ],
+              "style": {
+                "stroke": "#111827",
+                "stroke-width": 2,
+                "fill": "#fbbf24",
+                "fill-opacity": 0.12
+              }
             }
           ]
         },
@@ -196,7 +202,7 @@
           "id": "munich-transport-mobility",
           "type": "group",
           "name": "Transport & Mobility",
-          "description": "Official Munich transport, traffic, and mobility datasets.",
+          "description": "Official Munich transport, traffic, curb, charging, and shared-mobility datasets.",
           "members": [
             {
               "id": "munich-public-traffic-signals",
@@ -217,11 +223,210 @@
               }
             },
             {
-              "id": "munich-mobility-datasets-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Munich Mobility Datasets",
-              "description": "Munich mobility datasets include GTFS, counts, parking, and traffic resources. They are kept as references until each endpoint is selected and verified: [Munich traffic group](https://opendata.muenchen.de/group/tran).",
-              "members": []
+              "id": "munich-public-construction-sites",
+              "type": "geojson",
+              "name": "Munich Construction Sites - Next 4 Weeks (Official GeoJSON)",
+              "url": "https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=mor_wfs:baustellen_opendata&outputFormat=application/json",
+              "description": "Official temporary construction restrictions for walking, driving, and parking in Munich. This layer is larger and is disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/baustellen_4_weeks_opendata)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/baustellen_4_weeks_opendata"
+                }
+              ],
+              "style": {
+                "stroke": "#dc2626",
+                "stroke-width": 2,
+                "fill": "#f97316",
+                "fill-opacity": 0.18
+              }
+            },
+            {
+              "id": "munich-public-disabled-parking",
+              "type": "geojson",
+              "name": "Munich Disabled Parking (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Abehindertenparkplaetze&version=1.0.0",
+              "description": "Official disabled parking locations in Munich. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/behindertenparkplaetze)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/behindertenparkplaetze"
+                }
+              ],
+              "style": {
+                "marker-color": "#1d4ed8",
+                "marker-size": "small"
+              }
+            },
+            {
+              "id": "munich-public-charging-locations",
+              "type": "geojson",
+              "name": "Munich EV Charging Locations (Official GeoJSON)",
+              "url": "https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=mor_wfs:ruhver_els_standort_point&outputFormat=application/json",
+              "description": "Official public-ground charging infrastructure locations in Munich. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/opendata_ruhver_els_point)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/opendata_ruhver_els_point"
+                }
+              ],
+              "style": {
+                "marker-color": "#16a34a",
+                "marker-size": "small"
+              }
+            },
+            {
+              "id": "munich-public-mobility-points",
+              "type": "geojson",
+              "name": "Munich Mobility Points (Official GeoJSON)",
+              "url": "https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=mor_wfs:ruhver_mp_standort_point&outputFormat=application/json",
+              "description": "Official Munich mobility-point locations. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/opendata_ruhver_mp_standort_point)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/opendata_ruhver_mp_standort_point"
+                }
+              ],
+              "style": {
+                "marker-color": "#0f766e",
+                "marker-size": "small"
+              }
+            },
+            {
+              "id": "munich-public-carsharing-parking",
+              "type": "geojson",
+              "name": "Munich Carsharing Parking (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Aruhver_carsharing&version=1.0.0",
+              "description": "Official general carsharing parking areas in Munich. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/ruhver_carsharing)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/ruhver_carsharing"
+                }
+              ],
+              "style": {
+                "stroke": "#047857",
+                "stroke-width": 2,
+                "fill": "#34d399",
+                "fill-opacity": 0.2
+              }
+            },
+            {
+              "id": "munich-public-signed-cycling-network",
+              "type": "geojson",
+              "name": "Munich Signed Cycling Network (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Arad_rsp_route_line&version=1.0.0",
+              "description": "Official signed cycling network from the Munich cycling city map. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/rad_rsp_route_line)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/rad_rsp_route_line"
+                }
+              ],
+              "style": {
+                "stroke": "#22c55e",
+                "stroke-width": 3
+              }
+            },
+            {
+              "id": "munich-public-old-town-cycling-ring",
+              "type": "geojson",
+              "name": "Munich Old Town Cycling Ring (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Arad_altstadt_radlring_line&version=1.0.0",
+              "description": "Official Altstadt-Radlring line data. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/group/tran)",
+              "style": {
+                "stroke": "#84cc16",
+                "stroke-width": 4
+              }
+            },
+            {
+              "id": "munich-public-bike-sharing-parking",
+              "type": "geojson",
+              "name": "Munich Bike-Sharing Parking Areas (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Aruhver_mim_abstellfl_bs&version=1.0.0",
+              "description": "Official parking areas for bike sharing. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/ruhver_mim_abstellfl_bs)",
+              "style": {
+                "stroke": "#0284c7",
+                "stroke-width": 2,
+                "fill": "#38bdf8",
+                "fill-opacity": 0.18
+              }
+            },
+            {
+              "id": "munich-public-e-scooter-parking",
+              "type": "geojson",
+              "name": "Munich E-Scooter Parking Areas (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Aruhver_mim_abstellfl_ts&version=1.0.0",
+              "description": "Official parking areas for e-scooters. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/ruhver_mim_abstellfl_ts)",
+              "style": {
+                "stroke": "#7c3aed",
+                "stroke-width": 2,
+                "fill": "#a78bfa",
+                "fill-opacity": 0.18
+              }
+            },
+            {
+              "id": "munich-public-e-moped-parking",
+              "type": "geojson",
+              "name": "Munich E-Moped Parking Areas (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Aruhver_mim_abstellfl_ms&version=1.0.0",
+              "description": "Official parking areas for e-mopeds. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/ruhver_mim_abstellfl_ms)",
+              "style": {
+                "stroke": "#9333ea",
+                "stroke-width": 2,
+                "fill": "#c084fc",
+                "fill-opacity": 0.18
+              }
+            },
+            {
+              "id": "munich-public-cargo-bike-parking",
+              "type": "geojson",
+              "name": "Munich Cargo-Bike Sharing Parking Areas (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Aruhver_mim_abstellfl_ls&version=1.0.0",
+              "description": "Official parking areas for cargo-bike sharing. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/ruhver_mim_abstellfl_ls)",
+              "style": {
+                "stroke": "#0d9488",
+                "stroke-width": 2,
+                "fill": "#5eead4",
+                "fill-opacity": 0.18
+              }
+            },
+            {
+              "id": "munich-public-e-scooter-geofences",
+              "type": "geojson",
+              "name": "Munich E-Scooter Geofences (Official GeoJSON)",
+              "url": "https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=mor_wfs:ruhver_mim_geofences_poly&outputFormat=application/json",
+              "description": "Official shared-mobility geofence polygons. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/opendata_ruhver_mim_geofence_poly)",
+              "style": {
+                "stroke": "#be123c",
+                "stroke-width": 2,
+                "fill": "#fb7185",
+                "fill-opacity": 0.14
+              }
+            },
+            {
+              "id": "munich-public-digital-3l-zones",
+              "type": "geojson",
+              "name": "Munich Digital 3L Zones (Official GeoJSON)",
+              "url": "https://karten.muenchen.de/geoserver/mor_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=mor_wfs%3Adigitale_3l_zonen&version=1.0.0",
+              "description": "Official digital 3L curb/loading-zone line layer. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/g_sensor_3l_zonen)",
+              "style": {
+                "stroke": "#f59e0b",
+                "stroke-width": 4
+              }
             }
           ]
         },
@@ -229,14 +434,25 @@
           "id": "munich-environment-green-space",
           "type": "group",
           "name": "Environment & Green Space",
-          "description": "Official Munich environmental, green-space, climate, and green-zone dataset references.",
+          "description": "Official Munich environment-related public layers currently verified for this cockpit.",
           "members": [
             {
-              "id": "munich-green-space-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Munich Green Space and Environment",
-              "description": "Green-space, environmental, and green-zone resources should be added as live layers only after the exact official no-key endpoint is verified in the Munich Open Data or GeoPortal catalogs: [Munich environment group](https://opendata.muenchen.de/group/envi).",
-              "members": []
+              "id": "munich-public-drinking-fountains-environment",
+              "type": "geojson",
+              "name": "Munich Drinking Fountains (Official GeoJSON)",
+              "url": "https://geoportal.muenchen.de/geoserver/baug_wfs/ows?outputFormat=application%2Fjson&request=GetFeature&service=WFS&typeName=baug_wfs%3Atrinkwasserbrunnen&version=1.0.0",
+              "description": "Official municipal drinking fountains. Also listed under Infrastructure & Utilities for convenience. Disabled by default.",
+              "dataCustodian": "[Baureferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/opendata_trinkwasserbrunnen)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/opendata_trinkwasserbrunnen"
+                }
+              ],
+              "style": {
+                "marker-color": "#0891b2",
+                "marker-size": "small"
+              }
             }
           ]
         },
@@ -265,77 +481,22 @@
               }
             },
             {
-              "id": "munich-charging-infrastructure-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Munich Charging Infrastructure",
-              "description": "Charging-station resources are kept as references until the exact official no-key WMS/WFS/GeoJSON endpoint is confirmed in Munich Open Data or GeoPortal.",
-              "members": []
-            },
-            {
-              "id": "munich-public-toilets-waste-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Public Toilets, Waste, Recycling",
-              "description": "Public toilets, waste, and recycling datasets should be promoted only after a stable official service URL and layer name are verified.",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "munich-health-public-services",
-          "type": "group",
-          "name": "Health & Public Services",
-          "description": "Official Munich health, social, school, and public-service dataset references.",
-          "members": [
-            {
-              "id": "munich-health-services-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Munich Health Datasets",
-              "description": "Munich health datasets are available through the Open Data portal and should be added as live map layers only after a stable geospatial endpoint is selected: [Munich health group](https://opendata.muenchen.de/group/heal).",
-              "members": []
-            },
-            {
-              "id": "munich-schools-kitas-services-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Schools, Kitas, Public Services",
-              "description": "Education, culture, sport, and public-service resources are kept as references until a verified no-key map endpoint is chosen: [Munich education group](https://opendata.muenchen.de/group/educ).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "munich-buildings-urban-planning",
-          "type": "group",
-          "name": "Buildings & Urban Planning",
-          "description": "Official Munich urban planning, building, land-use, and digital-city dataset references.",
-          "members": [
-            {
-              "id": "munich-urban-planning-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Buildings and Urban Planning",
-              "description": "Urban planning, buildings, land-use, and digital-twin datasets should be added only after the precise official service URL is confirmed in Munich GeoPortal OpenGeodata: [GeoPortal OpenGeodata](https://geoportal.muenchen.de/portal/opendata/).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "munich-open-data-portals",
-          "type": "group",
-          "name": "Open Data Portals / References",
-          "description": "Official Munich portals used to promote reference items into verified live catalog layers.",
-          "members": [
-            {
-              "id": "munich-open-data-portal-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Munich Open Data Portal",
-              "description": "Official Open Data Portal Munchen. Use this reference to inspect city datasets before adding a live layer: [opendata.muenchen.de](https://opendata.muenchen.de/).",
-              "members": []
-            },
-            {
-              "id": "munich-geodata-portal-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Munich GeoPortal OpenGeodata",
-              "description": "Official Munich GeoPortal OpenGeodata reference. Add WMS/WFS/GeoJSON layers only after confirming the exact service URL and layer name: [GeoPortal OpenGeodata](https://geoportal.muenchen.de/portal/opendata/).",
-              "members": []
+              "id": "munich-public-charging-pillars",
+              "type": "geojson",
+              "name": "Munich EV Charging Pillars (Official GeoJSON)",
+              "url": "https://geoportal.muenchen.de/geoserver/mor_wfs/ows?service=WFS&version=1.1.0&request=GetFeature&typeName=mor_wfs:ruhver_els_saeule_point&outputFormat=application/json",
+              "description": "Official public-ground charging pillars in Munich. Disabled by default.",
+              "dataCustodian": "[Mobilitatsreferat der Landeshauptstadt Munchen](https://opendata.muenchen.de/dataset/opendata_ruhver_els_point)",
+              "metadataUrls": [
+                {
+                  "title": "Munich Open Data metadata",
+                  "url": "https://opendata.muenchen.de/dataset/opendata_ruhver_els_point"
+                }
+              ],
+              "style": {
+                "marker-color": "#22c55e",
+                "marker-size": "small"
+              }
             }
           ]
         }
@@ -345,27 +506,55 @@
       "id": "germany-public-datasets",
       "type": "group",
       "name": "Germany Public Datasets",
-      "description": "Official Germany-wide public dataset references, organized to mirror a national public data catalog without loading uncertain endpoints.",
+      "description": "Verified no-key Germany-wide public map layers from official BKG services. All layers are disabled by default.",
       "members": [
         {
           "id": "germany-basemaps",
           "type": "group",
           "name": "Basemaps",
-          "description": "Germany-wide official basemap and topographic reference sources.",
+          "description": "Official Germany basemap layers from basemap.de/BKG.",
           "members": [
             {
-              "id": "germany-basemap-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: basemap.de / BKG",
-              "description": "basemap.de provides official German base-map products and open-data references. Kept as a catalog reference rather than a live layer until a specific no-key WMS/WMTS endpoint is confirmed for this prototype: [basemap.de](https://basemap.de/).",
-              "members": []
+              "id": "germany-basemapde-web-raster-color",
+              "type": "wms",
+              "name": "Germany basemap.de Web Raster Color (Official WMS)",
+              "url": "https://sgx.geodatenzentrum.de/wms_basemapde",
+              "layers": "de_basemapde_web_raster_farbe",
+              "styles": "inspire_common:DEFAULT",
+              "description": "Official basemap.de color raster WMS for Germany from BKG. Disabled by default.",
+              "dataCustodian": "[basemap.de / Bundesamt fur Kartographie und Geodasie](https://basemap.de/)",
+              "metadataUrls": [
+                {
+                  "title": "basemap.de",
+                  "url": "https://basemap.de/"
+                },
+                {
+                  "title": "WMS GetCapabilities",
+                  "url": "https://sgx.geodatenzentrum.de/wms_basemapde?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.75
             },
             {
-              "id": "germany-bkg-open-data-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: BKG Open Data",
-              "description": "The Federal Agency for Cartography and Geodesy publishes Germany-wide open geodata. Add only exact verified services as live layers: [BKG Open Data](https://gdz.bkg.bund.de/index.php/default/open-data.html).",
-              "members": []
+              "id": "germany-basemapde-web-raster-gray",
+              "type": "wms",
+              "name": "Germany basemap.de Web Raster Gray (Official WMS)",
+              "url": "https://sgx.geodatenzentrum.de/wms_basemapde",
+              "layers": "de_basemapde_web_raster_grau",
+              "styles": "inspire_common:DEFAULT",
+              "description": "Official basemap.de gray raster WMS for Germany from BKG. Disabled by default.",
+              "dataCustodian": "[basemap.de / Bundesamt fur Kartographie und Geodasie](https://basemap.de/)",
+              "metadataUrls": [
+                {
+                  "title": "basemap.de",
+                  "url": "https://basemap.de/"
+                },
+                {
+                  "title": "WMS GetCapabilities",
+                  "url": "https://sgx.geodatenzentrum.de/wms_basemapde?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.75
             }
           ]
         },
@@ -373,96 +562,75 @@
           "id": "germany-administrative-boundaries",
           "type": "group",
           "name": "Administrative Boundaries",
-          "description": "Germany-wide administrative and statistical boundary dataset references.",
+          "description": "Official BKG VG250 administrative boundary WMS layers.",
           "members": [
             {
-              "id": "germany-boundaries-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: German Boundaries and Administrative Geodata",
-              "description": "Administrative and statistical boundary layers should be added only after confirming a stable official BKG/Destatis/GovData WMS, WFS, or GeoJSON endpoint with no API key requirement.",
-              "members": []
+              "id": "germany-bkg-vg250-states",
+              "type": "wms",
+              "name": "Germany Federal States - VG250 (Official WMS)",
+              "url": "https://sgx.geodatenzentrum.de/wms_vg250",
+              "layers": "vg250_lan",
+              "styles": "default_lan",
+              "description": "Official BKG VG250 federal-state boundaries. Disabled by default.",
+              "dataCustodian": "[Bundesamt fur Kartographie und Geodasie](https://www.bkg.bund.de/)",
+              "metadataUrls": [
+                {
+                  "title": "WMS GetCapabilities",
+                  "url": "https://sgx.geodatenzentrum.de/wms_vg250?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.7
             },
             {
-              "id": "germany-destatis-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Destatis Regional Statistics",
-              "description": "Destatis provides official German statistics, including regional data and maps. Kept as a reference until a specific no-key map endpoint is selected: [destatis.de](https://www.destatis.de/EN/Home/_node.html).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "germany-transport",
-          "type": "group",
-          "name": "Transport",
-          "description": "Germany-wide transport and mobility dataset references.",
-          "members": [
+              "id": "germany-bkg-vg250-districts",
+              "type": "wms",
+              "name": "Germany Districts - VG250 (Official WMS)",
+              "url": "https://sgx.geodatenzentrum.de/wms_vg250",
+              "layers": "vg250_krs",
+              "styles": "default_krs",
+              "description": "Official BKG VG250 district boundaries. Disabled by default.",
+              "dataCustodian": "[Bundesamt fur Kartographie und Geodasie](https://www.bkg.bund.de/)",
+              "metadataUrls": [
+                {
+                  "title": "WMS GetCapabilities",
+                  "url": "https://sgx.geodatenzentrum.de/wms_vg250?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.7
+            },
             {
-              "id": "germany-govdata-transport-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: GovData Transport",
-              "description": "Use GovData to select Germany-wide transport datasets before adding a verified no-key service endpoint: [GovData](https://www.govdata.de/).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "germany-environment",
-          "type": "group",
-          "name": "Environment",
-          "description": "Germany-wide environment and climate dataset references.",
-          "members": [
+              "id": "germany-bkg-vg250-municipalities",
+              "type": "wms",
+              "name": "Germany Municipalities - VG250 (Official WMS)",
+              "url": "https://sgx.geodatenzentrum.de/wms_vg250",
+              "layers": "vg250_gem",
+              "styles": "default_gem",
+              "description": "Official BKG VG250 municipality boundaries. This can be visually dense, so it is disabled by default.",
+              "dataCustodian": "[Bundesamt fur Kartographie und Geodasie](https://www.bkg.bund.de/)",
+              "metadataUrls": [
+                {
+                  "title": "WMS GetCapabilities",
+                  "url": "https://sgx.geodatenzentrum.de/wms_vg250?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.65
+            },
             {
-              "id": "germany-govdata-environment-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: GovData Environment",
-              "description": "National and state environment datasets are referenced through GovData until a specific stable no-key map service is selected: [GovData](https://www.govdata.de/).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "germany-statistics",
-          "type": "group",
-          "name": "Statistics",
-          "description": "Germany-wide statistical and regional dataset references.",
-          "members": [
-            {
-              "id": "germany-destatis-statistics-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Destatis Statistics",
-              "description": "Destatis regional and thematic statistics are kept as references until a stable map or file endpoint is selected for a specific analytical use case: [destatis.de](https://www.destatis.de/EN/Home/_node.html).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "germany-infrastructure",
-          "type": "group",
-          "name": "Infrastructure",
-          "description": "Germany-wide infrastructure and utility dataset references.",
-          "members": [
-            {
-              "id": "germany-govdata-infrastructure-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: GovData Infrastructure",
-              "description": "Infrastructure and utility datasets should be promoted from GovData references only after endpoint stability and no-key access are verified: [GovData](https://www.govdata.de/).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "germany-open-data-portals",
-          "type": "group",
-          "name": "Open Data Portals / References",
-          "description": "Official national portals used to discover live Germany-wide layers safely.",
-          "members": [
-            {
-              "id": "germany-govdata-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: GovData",
-              "description": "GovData is Germany's official open government data portal. Use it to find national, state, and municipal datasets before adding a verified live layer: [govdata.de](https://www.govdata.de/).",
-              "members": []
+              "id": "germany-bkg-vg250-boundary-lines",
+              "type": "wms",
+              "name": "Germany Administrative Boundary Lines - VG250 (Official WMS)",
+              "url": "https://sgx.geodatenzentrum.de/wms_vg250",
+              "layers": "vg250_li",
+              "styles": "default_li",
+              "description": "Official BKG VG250 administrative boundary lines. Disabled by default.",
+              "dataCustodian": "[Bundesamt fur Kartographie und Geodasie](https://www.bkg.bund.de/)",
+              "metadataUrls": [
+                {
+                  "title": "WMS GetCapabilities",
+                  "url": "https://sgx.geodatenzentrum.de/wms_vg250?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.7
             }
           ]
         }
@@ -472,7 +640,7 @@
       "id": "europe-public-datasets",
       "type": "group",
       "name": "Europe Public Datasets",
-      "description": "Official Europe-wide public dataset references and stable EU geodata layers that do not require an API key.",
+      "description": "Verified no-key Europe-wide public geodata from Eurostat/GISCO and Copernicus/EEA services. All layers are disabled by default.",
       "members": [
         {
           "id": "europe-administrative-statistical-boundaries",
@@ -480,6 +648,26 @@
           "name": "Administrative / Statistical Boundaries",
           "description": "Official EU statistical geography layers from Eurostat/GISCO.",
           "members": [
+            {
+              "id": "europe-gisco-countries-2024",
+              "type": "geojson",
+              "name": "Europe Countries 2024 (GISCO GeoJSON)",
+              "url": "https://gisco-services.ec.europa.eu/distribution/v2/countries/geojson/CNTR_RG_20M_2024_4326.geojson",
+              "description": "Official Eurostat/GISCO country boundaries as GeoJSON. Disabled by default.",
+              "dataCustodian": "[Eurostat GISCO](https://gisco-services.ec.europa.eu/distribution/v2/countries/geojson/)",
+              "metadataUrls": [
+                {
+                  "title": "GISCO countries GeoJSON directory",
+                  "url": "https://gisco-services.ec.europa.eu/distribution/v2/countries/geojson/"
+                }
+              ],
+              "style": {
+                "stroke": "#334155",
+                "stroke-width": 2,
+                "fill": "#94a3b8",
+                "fill-opacity": 0.1
+              }
+            },
             {
               "id": "europe-gisco-nuts-2024-level-0",
               "type": "geojson",
@@ -492,7 +680,13 @@
                   "title": "GISCO NUTS GeoJSON directory",
                   "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/"
                 }
-              ]
+              ],
+              "style": {
+                "stroke": "#1e40af",
+                "stroke-width": 2,
+                "fill": "#60a5fa",
+                "fill-opacity": 0.08
+              }
             },
             {
               "id": "europe-gisco-nuts-2024-level-1",
@@ -500,7 +694,13 @@
               "name": "EU NUTS 2024 Level 1 Boundaries (GISCO GeoJSON)",
               "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_4326_LEVL_1.geojson",
               "description": "Official Eurostat/GISCO NUTS 2024 level 1 boundaries as GeoJSON. Disabled by default.",
-              "dataCustodian": "[Eurostat GISCO](https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/)"
+              "dataCustodian": "[Eurostat GISCO](https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/)",
+              "style": {
+                "stroke": "#2563eb",
+                "stroke-width": 2,
+                "fill": "#93c5fd",
+                "fill-opacity": 0.08
+              }
             },
             {
               "id": "europe-gisco-nuts-2024-level-2",
@@ -508,7 +708,13 @@
               "name": "EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON)",
               "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_4326_LEVL_2.geojson",
               "description": "Official Eurostat/GISCO NUTS 2024 level 2 boundaries as GeoJSON. Disabled by default.",
-              "dataCustodian": "[Eurostat GISCO](https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/)"
+              "dataCustodian": "[Eurostat GISCO](https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/)",
+              "style": {
+                "stroke": "#3b82f6",
+                "stroke-width": 2,
+                "fill": "#bfdbfe",
+                "fill-opacity": 0.08
+              }
             },
             {
               "id": "europe-gisco-nuts-2024-level-3",
@@ -516,7 +722,13 @@
               "name": "EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON)",
               "url": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/NUTS_RG_20M_2024_4326_LEVL_3.geojson",
               "description": "Official Eurostat/GISCO NUTS 2024 level 3 boundaries as GeoJSON. Disabled by default. This can be heavier than level 0-2 and is not enabled at startup.",
-              "dataCustodian": "[Eurostat GISCO](https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/)"
+              "dataCustodian": "[Eurostat GISCO](https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/)",
+              "style": {
+                "stroke": "#60a5fa",
+                "stroke-width": 1,
+                "fill": "#dbeafe",
+                "fill-opacity": 0.08
+              }
             }
           ]
         },
@@ -524,66 +736,41 @@
           "id": "europe-environment",
           "type": "group",
           "name": "Environment",
-          "description": "Europe-wide environmental public data references.",
+          "description": "Europe-wide environmental public layers.",
           "members": [
             {
-              "id": "europe-environment-data-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: EU Environment Data",
-              "description": "Environment datasets from European public portals should be promoted only after a specific stable no-key endpoint is selected: [data.europa.eu](https://data.europa.eu/en).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "europe-transport",
-          "type": "group",
-          "name": "Transport",
-          "description": "Europe-wide transport public data references.",
-          "members": [
-            {
-              "id": "europe-transport-data-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: EU Transport Data",
-              "description": "EU transport datasets are kept as references until a stable no-key WMS/WFS/GeoJSON endpoint is chosen: [data.europa.eu](https://data.europa.eu/en).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "europe-economy-statistics",
-          "type": "group",
-          "name": "Economy / Statistics",
-          "description": "Europe-wide economy and statistical dataset references.",
-          "members": [
-            {
-              "id": "europe-eurostat-statistics-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Eurostat Statistics",
-              "description": "Eurostat statistical datasets are kept as references until a specific data product and stable delivery format are selected: [Eurostat](https://ec.europa.eu/eurostat).",
-              "members": []
-            }
-          ]
-        },
-        {
-          "id": "europe-open-data-portals",
-          "type": "group",
-          "name": "Open Data Portals / References",
-          "description": "Official EU portals used to discover and promote verified public layers.",
-          "members": [
-            {
-              "id": "europe-data-portal-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: European Data Portal",
-              "description": "data.europa.eu is the official portal for European data and includes search, geospatial search, API search, and high-value dataset discovery: [data.europa.eu](https://data.europa.eu/en).",
-              "members": []
+              "id": "europe-eea-corine-land-cover-2018-raster",
+              "type": "wms",
+              "name": "Corine Land Cover 2018 Raster (Copernicus/EEA WMS)",
+              "url": "https://image.discomap.eea.europa.eu/arcgis/services/Corine/CLC2018_WM/MapServer/WMSServer",
+              "layers": "12",
+              "styles": "default",
+              "description": "Copernicus Land Monitoring Service / EEA Corine Land Cover 2018 raster WMS. Disabled by default.",
+              "dataCustodian": "[European Environment Agency / Copernicus Land Monitoring Service](https://land.copernicus.eu/en/products/corine-land-cover)",
+              "metadataUrls": [
+                {
+                  "title": "WMS GetCapabilities",
+                  "url": "https://image.discomap.eea.europa.eu/arcgis/services/Corine/CLC2018_WM/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.65
             },
             {
-              "id": "europe-gisco-reference",
-              "type": "group",
-              "name": "Reference / Portal Link: Eurostat GISCO",
-              "description": "Eurostat/GISCO publishes EU geodata such as NUTS boundaries. Additional EU geography layers should be added only after confirming exact GeoJSON size and intended use: [GISCO NUTS GeoJSON](https://gisco-services.ec.europa.eu/distribution/v2/nuts/geojson/).",
-              "members": []
+              "id": "europe-eea-corine-land-cover-2018-vector",
+              "type": "wms",
+              "name": "Corine Land Cover 2018 Vector (Copernicus/EEA WMS)",
+              "url": "https://image.discomap.eea.europa.eu/arcgis/services/Corine/CLC2018_WM/MapServer/WMSServer",
+              "layers": "13",
+              "styles": "default",
+              "description": "Copernicus Land Monitoring Service / EEA Corine Land Cover 2018 vector WMS. Disabled by default.",
+              "dataCustodian": "[European Environment Agency / Copernicus Land Monitoring Service](https://land.copernicus.eu/en/products/corine-land-cover)",
+              "metadataUrls": [
+                {
+                  "title": "WMS GetCapabilities",
+                  "url": "https://image.discomap.eea.europa.eu/arcgis/services/Corine/CLC2018_WM/MapServer/WMSServer?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.7
             }
           ]
         }
@@ -593,7 +780,7 @@
       "id": "demo-visual-examples",
       "type": "group",
       "name": "Demo / Visual Examples",
-      "description": "Optional no-key visual examples restored as disabled catalog items. They are not part of startup and do not re-enable token-dependent terrain or old Australian demo catalogs.",
+      "description": "Optional no-key visual layers and local demos. They are disabled by default and do not re-enable token-dependent terrain or old Australian demo catalogs.",
       "members": [
         {
           "id": "demo-basemaps-visual-references",
@@ -603,12 +790,39 @@
           "members": [
             {
               "id": "demo-natural-earth-ii",
-              "type": "url-template-imagery",
+              "type": "tms",
               "name": "Natural Earth II (Optional Visual Layer)",
-              "url": "https://storage.googleapis.com/terria-datasets-public/basemaps/natural-earth-tiles/{z}/{x}/{reverseY}.png",
-              "description": "Optional Natural Earth II raster tiles from Terria public datasets. Disabled by default and not used as the startup basemap.",
+              "url": "https://storage.googleapis.com/terria-datasets-public/basemaps/natural-earth-tiles",
+              "description": "Optional Natural Earth II raster tiles from Terria public datasets. Disabled by default. Natural Earth is also available in Map Settings as a selectable basemap.",
               "maximumLevel": 7,
-              "attribution": "Natural Earth II with Shaded Relief, Water, and Drainages"
+              "attribution": "Natural Earth II with Shaded Relief, Water, and Drainages",
+              "tileErrorHandlingOptions": {
+                "treat404AsError": false,
+                "ignoreUnknownTileErrors": true
+              }
+            },
+            {
+              "id": "demo-sentinel-2-satellite",
+              "type": "url-template-imagery",
+              "name": "Satellite View (Optional Visual Layer)",
+              "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpg",
+              "description": "Optional no-key Sentinel-2 cloudless satellite imagery by EOX. Satellite View is also available in Map Settings as a selectable basemap.",
+              "attribution": "<a href='https://cloudless.eox.at/'>Sentinel-2 cloudless</a> by <a href='https://eox.at/'>EOX</a>. Contains modified Copernicus Sentinel data 2025. <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a>.",
+              "tileErrorHandlingOptions": {
+                "treat404AsError": false,
+                "ignoreUnknownTileErrors": true
+              }
+            },
+            {
+              "id": "demo-germany-basemapde-color",
+              "type": "wms",
+              "name": "Germany basemap.de Context (Optional WMS)",
+              "url": "https://sgx.geodatenzentrum.de/wms_basemapde",
+              "layers": "de_basemapde_web_raster_farbe",
+              "styles": "inspire_common:DEFAULT",
+              "description": "Optional official basemap.de WMS context layer for Germany. Disabled by default.",
+              "dataCustodian": "[basemap.de / Bundesamt fur Kartographie und Geodasie](https://basemap.de/)",
+              "opacity": 0.75
             }
           ]
         },
@@ -616,35 +830,107 @@
           "id": "demo-3d-local-examples",
           "type": "group",
           "name": "3D / Local Examples",
-          "description": "Local upstream 3D examples restored only when they do not require terrain services, tokens, live feeds, or external API keys.",
+          "description": "Munich-only official 3D dataset footprints from Bavaria OpenData. These layers show download coverage and metadata for real 3D source datasets without loading multi-gigabyte CityGML, SLPK, GeoTIFF, or LAZ files in the browser.",
           "members": [
             {
-              "id": "demo-geelong-buildings-smooth",
-              "type": "czml",
-              "name": "Smooth Geelong Buildings glTF Mini Demo (Local)",
-              "url": "test/3d/geelong/smooth.czml",
-              "description": "Local CZML/glTF mini demo from the upstream example assets. This restores an optional 3D visual without loading token-dependent terrain.",
-              "attribution": "geelong_mini_demo_bin_linux_v1.0-draft_x64.gltf was created using a dataset obtained from the City of Greater Geelong. The original dataset is licensed under the CC BY 3.0 AU.",
-              "rectangle": {
-                "west": 144.354,
-                "south": -38.147,
-                "east": 144.358,
-                "north": -38.15
+              "id": "munich-3d-lod2-buildings",
+              "type": "geojson",
+              "name": "Munich LoD2 3D Buildings (Official CityGML Footprint)",
+              "url": "data/city-intelligence/munich-3d-lod2-buildings.geojson",
+              "description": "Official Bavaria OpenData LoD2 building-model download footprint for Munich. The source is published as weekly CityGML downloads, so this catalogue item shows the Munich coverage and download metadata rather than pretending to stream a live 3D Tiles mesh.",
+              "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
+              "metadataUrls": [
+                {
+                  "title": "Bavaria OpenData - 3D-Gebaeudemodelle (LoD2)",
+                  "url": "https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=lod2"
+                }
+              ],
+              "style": {
+                "stroke": "#7c3aed",
+                "stroke-width": 2,
+                "fill": "#7c3aed",
+                "fill-opacity": 0.12
               }
             },
             {
-              "id": "demo-geelong-terrain-not-enabled-reference",
-              "type": "group",
-              "name": "Reference / Not Enabled: Geelong Terrain Demo",
-              "description": "The terrain-aligned Geelong CZML example is intentionally not restored as a live layer because this prototype avoids terrain-dependent demo behavior.",
-              "members": []
+              "id": "munich-3d-dgm1-terrain",
+              "type": "geojson",
+              "name": "Munich DGM1 Terrain Model (Official GeoTIFF Footprint)",
+              "url": "data/city-intelligence/munich-3d-dgm1-terrain.geojson",
+              "description": "Official Bavaria OpenData 1 m terrain-model download footprint for Munich. The source is distributed as GeoTIFF downloads and does not require a terrain token.",
+              "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
+              "metadataUrls": [
+                {
+                  "title": "Bavaria OpenData - DGM1",
+                  "url": "https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=dgm1"
+                }
+              ],
+              "style": {
+                "stroke": "#15803d",
+                "stroke-width": 2,
+                "fill": "#22c55e",
+                "fill-opacity": 0.1
+              }
             },
             {
-              "id": "demo-lowpoly-bus-not-enabled-reference",
-              "type": "group",
-              "name": "Reference / Not Enabled: Low-Poly Bus Live Feed Demo",
-              "description": "The local bus model asset exists, but the upstream live vehicle example depends on an external transport API feed and is intentionally not restored.",
-              "members": []
+              "id": "munich-3d-dom20-surface",
+              "type": "geojson",
+              "name": "Munich DOM20 Surface Model (Official GeoTIFF Footprint)",
+              "url": "data/city-intelligence/munich-3d-dom20-surface.geojson",
+              "description": "Official Bavaria OpenData 20 cm surface-model download footprint for Munich, including terrain, buildings, and vegetation in raster surface-model form.",
+              "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
+              "metadataUrls": [
+                {
+                  "title": "Bavaria OpenData - DOM20",
+                  "url": "https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=dom20"
+                }
+              ],
+              "style": {
+                "stroke": "#0f766e",
+                "stroke-width": 2,
+                "fill": "#14b8a6",
+                "fill-opacity": 0.1
+              }
+            },
+            {
+              "id": "munich-3d-laser-point-cloud",
+              "type": "geojson",
+              "name": "Munich Laser Point Cloud (Official LAZ Footprint)",
+              "url": "data/city-intelligence/munich-3d-laser-point-cloud.geojson",
+              "description": "Official Bavaria OpenData laser point-cloud download footprint for Munich. The source is distributed as LAZ downloads for offline 3D processing.",
+              "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
+              "metadataUrls": [
+                {
+                  "title": "Bavaria OpenData - Laserdaten",
+                  "url": "https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=laserdaten"
+                }
+              ],
+              "style": {
+                "stroke": "#b45309",
+                "stroke-width": 2,
+                "fill": "#f59e0b",
+                "fill-opacity": 0.1
+              }
+            },
+            {
+              "id": "munich-3d-dom-mesh-project-areas",
+              "type": "geojson",
+              "name": "Munich DOM Mesh Project Areas (Official SLPK Footprints)",
+              "url": "data/city-intelligence/munich-3d-dom-mesh-project-areas.geojson",
+              "description": "Official Bavaria OpenData textured surface mesh project areas that intersect Munich. The source is distributed as large SLPK downloads and is shown as project coverage metadata in Terria.",
+              "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
+              "metadataUrls": [
+                {
+                  "title": "Bavaria OpenData - DOM-Mesh",
+                  "url": "https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=dommesh"
+                }
+              ],
+              "style": {
+                "stroke": "#be123c",
+                "stroke-width": 2,
+                "fill": "#f43f5e",
+                "fill-opacity": 0.08
+              }
             }
           ]
         }
@@ -665,11 +951,27 @@
         },
         "image": "build/TerriaJS/images/natural-earth.png",
         "contrastColor": "#000000"
+      },
+      {
+        "item": {
+          "id": "basemap-sentinel-2-satellite",
+          "name": "Satellite View",
+          "type": "url-template-imagery",
+          "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpg",
+          "attribution": "<a href='https://cloudless.eox.at/'>Sentinel-2 cloudless</a> by <a href='https://eox.at/'>EOX</a>. Contains modified Copernicus Sentinel data 2025. <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a>.",
+          "opacity": 1.0
+        },
+        "image": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2025_3857/default/g/11/710/1089.jpg",
+        "contrastColor": "#ffffff"
       }
     ],
     "defaultBaseMapId": "basemap-openstreetmap",
     "previewBaseMapId": "basemap-openstreetmap",
-    "enabledBaseMaps": ["basemap-openstreetmap", "basemap-natural-earth-II"]
+    "enabledBaseMaps": [
+      "basemap-openstreetmap",
+      "basemap-natural-earth-II",
+      "basemap-sentinel-2-satellite"
+    ]
   },
   "workbench": ["city-intelligence-munich-pharmacies"]
 }

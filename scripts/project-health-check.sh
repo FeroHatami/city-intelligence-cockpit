@@ -68,6 +68,11 @@ expected_counts = {
     "munich-coworking.geojson": 49,
     "munich-restaurants.geojson": 5406,
     "munich-pharmacies.starter.backup.geojson": 3,
+    "munich-3d-lod2-buildings.geojson": 1,
+    "munich-3d-dgm1-terrain.geojson": 1,
+    "munich-3d-dom20-surface.geojson": 1,
+    "munich-3d-laser-point-cloud.geojson": 1,
+    "munich-3d-dom-mesh-project-areas.geojson": 5,
 }
 
 counts = {}
@@ -192,32 +197,70 @@ for group_id in (
     "munich-transport-mobility",
     "munich-environment-green-space",
     "munich-infrastructure-utilities",
-    "munich-health-public-services",
-    "munich-buildings-urban-planning",
-    "munich-open-data-portals",
     "germany-basemaps",
     "germany-administrative-boundaries",
-    "germany-transport",
-    "germany-environment",
-    "germany-statistics",
-    "germany-infrastructure",
-    "germany-open-data-portals",
     "europe-administrative-statistical-boundaries",
     "europe-environment",
-    "europe-transport",
-    "europe-economy-statistics",
-    "europe-open-data-portals",
     "demo-basemaps-visual-references",
     "demo-3d-local-examples",
 ):
     require_group(group_id)
 
+for item in walk(init["catalog"]):
+    if item.get("type") == "group" and item.get("members") == []:
+        raise SystemExit(f"empty catalog group found: {item.get('id') or item.get('name')}")
+
+districts = require_item("munich-public-city-districts", "geojson")
+if "gsm_wfs:vablock_stadtbezirk" not in districts.get("url", ""):
+    raise SystemExit("Munich city districts URL does not point to the official WFS layer")
 traffic = require_item("munich-public-traffic-signals", "geojson")
 if "mor_wfs%3Alsa_opendata" not in traffic.get("url", ""):
     raise SystemExit("Munich traffic signals URL does not point to the official WFS layer")
+for item_id, expected in (
+    ("munich-public-construction-sites", "mor_wfs:baustellen_opendata"),
+    ("munich-public-charging-locations", "mor_wfs:ruhver_els_standort_point"),
+    ("munich-public-mobility-points", "mor_wfs:ruhver_mp_standort_point"),
+    ("munich-public-e-scooter-geofences", "mor_wfs:ruhver_mim_geofences_poly"),
+):
+    item = require_item(item_id, "geojson")
+    if expected not in item.get("url", ""):
+        raise SystemExit(f"{item_id} URL mismatch")
+for item_id, expected in (
+    ("munich-public-disabled-parking", "mor_wfs%3Abehindertenparkplaetze"),
+    ("munich-public-carsharing-parking", "mor_wfs%3Aruhver_carsharing"),
+    ("munich-public-signed-cycling-network", "mor_wfs%3Arad_rsp_route_line"),
+    ("munich-public-old-town-cycling-ring", "mor_wfs%3Arad_altstadt_radlring_line"),
+    ("munich-public-bike-sharing-parking", "mor_wfs%3Aruhver_mim_abstellfl_bs"),
+    ("munich-public-e-scooter-parking", "mor_wfs%3Aruhver_mim_abstellfl_ts"),
+    ("munich-public-e-moped-parking", "mor_wfs%3Aruhver_mim_abstellfl_ms"),
+    ("munich-public-cargo-bike-parking", "mor_wfs%3Aruhver_mim_abstellfl_ls"),
+    ("munich-public-digital-3l-zones", "mor_wfs%3Adigitale_3l_zonen"),
+):
+    item = require_item(item_id, "geojson")
+    if expected not in item.get("url", ""):
+        raise SystemExit(f"{item_id} URL mismatch")
 drinking = require_item("munich-public-drinking-fountains", "geojson")
 if "baug_wfs%3Atrinkwasserbrunnen" not in drinking.get("url", ""):
     raise SystemExit("Munich drinking fountains URL does not point to the official WFS layer")
+charging_pillars = require_item("munich-public-charging-pillars", "geojson")
+if "mor_wfs:ruhver_els_saeule_point" not in charging_pillars.get("url", ""):
+    raise SystemExit("Munich charging pillars URL does not point to the official WFS layer")
+
+for item_id, item_type, expected_url, expected_layers in (
+    ("germany-basemapde-web-raster-color", "wms", "wms_basemapde", "de_basemapde_web_raster_farbe"),
+    ("germany-basemapde-web-raster-gray", "wms", "wms_basemapde", "de_basemapde_web_raster_grau"),
+    ("germany-bkg-vg250-states", "wms", "wms_vg250", "vg250_lan"),
+    ("germany-bkg-vg250-districts", "wms", "wms_vg250", "vg250_krs"),
+    ("germany-bkg-vg250-municipalities", "wms", "wms_vg250", "vg250_gem"),
+    ("germany-bkg-vg250-boundary-lines", "wms", "wms_vg250", "vg250_li"),
+):
+    item = require_item(item_id, item_type)
+    if expected_url not in item.get("url", "") or item.get("layers") != expected_layers:
+        raise SystemExit(f"{item_id} WMS configuration mismatch")
+
+countries = require_item("europe-gisco-countries-2024", "geojson")
+if "CNTR_RG_20M_2024_4326.geojson" not in countries.get("url", ""):
+    raise SystemExit("Europe countries GISCO URL mismatch")
 
 for level in range(4):
     nuts = require_item(f"europe-gisco-nuts-2024-level-{level}", "geojson")
@@ -225,26 +268,67 @@ for level in range(4):
     if expected_part not in nuts.get("url", ""):
         raise SystemExit(f"NUTS level {level} URL mismatch")
 
-natural_earth = require_item("demo-natural-earth-ii", "url-template-imagery")
+for item_id, layers in (
+    ("europe-eea-corine-land-cover-2018-raster", "12"),
+    ("europe-eea-corine-land-cover-2018-vector", "13"),
+):
+    item = require_item(item_id, "wms")
+    if "CLC2018_WM" not in item.get("url", "") or item.get("layers") != layers:
+        raise SystemExit(f"{item_id} WMS configuration mismatch")
+
+natural_earth = require_item("demo-natural-earth-ii", "tms")
 if "natural-earth-tiles" not in natural_earth.get("url", ""):
     raise SystemExit("Natural Earth optional layer URL mismatch")
 if natural_earth.get("maximumLevel") != 7:
     raise SystemExit("Natural Earth optional layer should cap maximumLevel at 7")
+satellite = require_item("demo-sentinel-2-satellite", "url-template-imagery")
+if "s2cloudless-2025_3857" not in satellite.get("url", ""):
+    raise SystemExit("Satellite optional visual layer URL mismatch")
+basemapde_demo = require_item("demo-germany-basemapde-color", "wms")
+if basemapde_demo.get("layers") != "de_basemapde_web_raster_farbe":
+    raise SystemExit("Demo basemap.de WMS layer mismatch")
 
-geelong = require_item("demo-geelong-buildings-smooth", "czml")
-if geelong.get("url") != "test/3d/geelong/smooth.czml":
-    raise SystemExit("Only the smooth local Geelong CZML demo should be live")
+for item_id, expected_url in (
+    ("munich-3d-lod2-buildings", "munich-3d-lod2-buildings.geojson"),
+    ("munich-3d-dgm1-terrain", "munich-3d-dgm1-terrain.geojson"),
+    ("munich-3d-dom20-surface", "munich-3d-dom20-surface.geojson"),
+    ("munich-3d-laser-point-cloud", "munich-3d-laser-point-cloud.geojson"),
+    ("munich-3d-dom-mesh-project-areas", "munich-3d-dom-mesh-project-areas.geojson"),
+):
+    item = require_item(item_id, "geojson")
+    if not item.get("url", "").endswith(expected_url):
+        raise SystemExit(f"{item_id} URL mismatch")
+    if "Bavaria OpenData" not in item.get("description", ""):
+        raise SystemExit(f"{item_id} should describe the official Bavaria OpenData source")
 
 workbench_ids = set(init.get("workbench") or [])
 for disabled_by_default in (
+    "munich-public-city-districts",
     "munich-public-traffic-signals",
+    "munich-public-construction-sites",
+    "munich-public-disabled-parking",
+    "munich-public-charging-locations",
+    "munich-public-mobility-points",
+    "munich-public-carsharing-parking",
+    "munich-public-signed-cycling-network",
+    "munich-public-bike-sharing-parking",
+    "munich-public-e-scooter-parking",
     "munich-public-drinking-fountains",
+    "germany-basemapde-web-raster-color",
+    "germany-bkg-vg250-states",
+    "europe-gisco-countries-2024",
     "europe-gisco-nuts-2024-level-0",
     "europe-gisco-nuts-2024-level-1",
     "europe-gisco-nuts-2024-level-2",
     "europe-gisco-nuts-2024-level-3",
+    "europe-eea-corine-land-cover-2018-raster",
     "demo-natural-earth-ii",
-    "demo-geelong-buildings-smooth",
+    "demo-sentinel-2-satellite",
+    "munich-3d-lod2-buildings",
+    "munich-3d-dgm1-terrain",
+    "munich-3d-dom20-surface",
+    "munich-3d-laser-point-cloud",
+    "munich-3d-dom-mesh-project-areas",
 ):
     if disabled_by_default in workbench_ids:
         raise SystemExit(f"{disabled_by_default} must be disabled by default")
@@ -254,9 +338,9 @@ for item in walk(init["catalog"]):
     url = item.get("url", "")
     if name.startswith("Reference /") and item.get("members") != []:
         raise SystemExit(f"reference item should not contain loading children: {name}")
-    if any(blocked in name for blocked in ("National Datasets", "NSW Live Transport")):
+    if any(blocked in name for blocked in ("National Datasets", "NSW Live Transport", "Geelong")):
         raise SystemExit(f"old upstream demo catalog item leaked into custom init: {name}")
-    if any(blocked in url for blocked in ("terrain.czml", "api.transport.nsw.gov.au", "lowpoly_bus")):
+    if any(blocked in url for blocked in ("terrain.czml", "api.transport.nsw.gov.au", "lowpoly_bus", "test/3d/geelong")):
         raise SystemExit(f"blocked demo URL leaked into live catalog: {url}")
 
 print("PASS: GeoJSON files parse, counts match, verification fields exist")

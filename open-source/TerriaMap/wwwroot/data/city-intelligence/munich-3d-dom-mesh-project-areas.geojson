@@ -1,0 +1,307 @@
+{
+  "type": "FeatureCollection",
+  "name": "munich-3d-dom-mesh-project-areas",
+  "generated_at": "2026-06-17T21:33:37Z",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.225123674104852,
+              47.993738044375824
+            ],
+            [
+              11.226672037684995,
+              48.02969952843654
+            ],
+            [
+              11.735846189632387,
+              48.01869568620759
+            ],
+            [
+              11.73157313819049,
+              47.93781296740242
+            ],
+            [
+              11.223192471187293,
+              47.94878581816583
+            ],
+            [
+              11.225123674104852,
+              47.993738044375824
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Official 3D Dataset",
+        "dataset_type": "textured surface mesh",
+        "format": "SLPK",
+        "official_product": "Digitales Oberflaechenmodell Mesh (DOM-Mesh)",
+        "update_frequency": "project-based",
+        "source": "Bavarian OpenData / LDBV",
+        "data_source": "Bavarian OpenData / LDBV",
+        "verification_status": "official_source_metadata",
+        "last_checked_at": "2026-06-17T21:33:37Z",
+        "source_kml": "https://geodaten.bayern.de/odd/m/3/daten/DOMMesh/DOM_Mesh_projektgebiete_2026.kml?service=kml",
+        "name": "Munich DOM Mesh Project Area 125046_1",
+        "description": "Official Bavarian DOM Mesh project areas that intersect the Munich prototype bounds.",
+        "official_area": "342 km²",
+        "file_count": "",
+        "download_size": "36 GB",
+        "data_currentness": "2025",
+        "download_url": "https://download1.bayernwolke.de/p/dom-mesh-slpk/125046_1/DSM_Mesh.slpk",
+        "notes": "Official DOM Mesh project area intersects Munich; footprint is not clipped to the city boundary.",
+        "project_area_id": "125046_1",
+        "intersects_munich_prototype_bounds": "true"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.237595888533027,
+              48.28142252133908
+            ],
+            [
+              11.244698020443343,
+              48.44323760381727
+            ],
+            [
+              11.7039678769446,
+              48.43335667383547
+            ],
+            [
+              11.694471075587195,
+              48.25362362742122
+            ],
+            [
+              11.479132062127327,
+              48.25847109036576
+            ],
+            [
+              11.477394372485401,
+              48.22251755810711
+            ],
+            [
+              11.235242427972292,
+              48.22748297012505
+            ],
+            [
+              11.237595888533027,
+              48.28142252133908
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Official 3D Dataset",
+        "dataset_type": "textured surface mesh",
+        "format": "SLPK",
+        "official_product": "Digitales Oberflaechenmodell Mesh (DOM-Mesh)",
+        "update_frequency": "project-based",
+        "source": "Bavarian OpenData / LDBV",
+        "data_source": "Bavarian OpenData / LDBV",
+        "verification_status": "official_source_metadata",
+        "last_checked_at": "2026-06-17T21:33:37Z",
+        "source_kml": "https://geodaten.bayern.de/odd/m/3/daten/DOMMesh/DOM_Mesh_projektgebiete_2026.kml?service=kml",
+        "name": "Munich DOM Mesh Project Area 124023_0",
+        "description": "Official Bavarian DOM Mesh project areas that intersect the Munich prototype bounds.",
+        "official_area": "752 km²",
+        "file_count": "",
+        "download_size": "53 GB",
+        "data_currentness": "2024",
+        "download_url": "https://download1.bayernwolke.de/p/dom-mesh-slpk/124023_0/DSM_Mesh.slpk",
+        "notes": "Official DOM Mesh project area intersects Munich; footprint is not clipped to the city boundary.",
+        "project_area_id": "124023_0",
+        "intersects_munich_prototype_bounds": "true"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.229777866819504,
+              48.10162170451816
+            ],
+            [
+              11.202933787144453,
+              48.1021396756422
+            ],
+            [
+              11.208332691967936,
+              48.22800322067959
+            ],
+            [
+              11.477394372485401,
+              48.22251755810711
+            ],
+            [
+              11.479132062127327,
+              48.25847109036576
+            ],
+            [
+              11.748296743437962,
+              48.252348820152065
+            ],
+            [
+              11.735846189632387,
+              48.01869568620759
+            ],
+            [
+              11.226672037684995,
+              48.02969952843654
+            ],
+            [
+              11.229777866819504,
+              48.10162170451816
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Official 3D Dataset",
+        "dataset_type": "textured surface mesh",
+        "format": "SLPK",
+        "official_product": "Digitales Oberflaechenmodell Mesh (DOM-Mesh)",
+        "update_frequency": "project-based",
+        "source": "Bavarian OpenData / LDBV",
+        "data_source": "Bavarian OpenData / LDBV",
+        "verification_status": "official_source_metadata",
+        "last_checked_at": "2026-06-17T21:33:37Z",
+        "source_kml": "https://geodaten.bayern.de/odd/m/3/daten/DOMMesh/DOM_Mesh_projektgebiete_2026.kml?service=kml",
+        "name": "Munich DOM Mesh Project Area 124028_0",
+        "description": "Official Bavarian DOM Mesh project areas that intersect the Munich prototype bounds.",
+        "official_area": "944 km²",
+        "file_count": "",
+        "download_size": "110 GB",
+        "data_currentness": "2024",
+        "download_url": "https://download1.bayernwolke.de/p/dom-mesh-slpk/124028_0/DSM_Mesh.slpk",
+        "notes": "Official DOM Mesh project area intersects Munich; footprint is not clipped to the city boundary.",
+        "project_area_id": "124028_0",
+        "intersects_munich_prototype_bounds": "true"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.695416565186573,
+              48.27159724908102
+            ],
+            [
+              11.7039678769446,
+              48.43335667383547
+            ],
+            [
+              12.29790779052024,
+              48.41785336448854
+            ],
+            [
+              12.286333313924704,
+              48.23821726727013
+            ],
+            [
+              11.694471075587195,
+              48.25362362742122
+            ],
+            [
+              11.695416565186573,
+              48.27159724908102
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Official 3D Dataset",
+        "dataset_type": "textured surface mesh",
+        "format": "SLPK",
+        "official_product": "Digitales Oberflaechenmodell Mesh (DOM-Mesh)",
+        "update_frequency": "project-based",
+        "source": "Bavarian OpenData / LDBV",
+        "data_source": "Bavarian OpenData / LDBV",
+        "verification_status": "official_source_metadata",
+        "last_checked_at": "2026-06-17T21:33:37Z",
+        "source_kml": "https://geodaten.bayern.de/odd/m/3/daten/DOMMesh/DOM_Mesh_projektgebiete_2026.kml?service=kml",
+        "name": "Munich DOM Mesh Project Area 124024_0",
+        "description": "Official Bavarian DOM Mesh project areas that intersect the Munich prototype bounds.",
+        "official_area": "880 km²",
+        "file_count": "",
+        "download_size": "58 GB",
+        "data_currentness": "2024",
+        "download_url": "https://download1.bayernwolke.de/p/dom-mesh-slpk/124024_0/DSM_Mesh.slpk",
+        "notes": "Official DOM Mesh project area intersects Munich; footprint is not clipped to the city boundary.",
+        "project_area_id": "124024_0",
+        "intersects_munich_prototype_bounds": "true"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              11.737274720750984,
+              48.0456562741229
+            ],
+            [
+              11.748296743437962,
+              48.252348820152065
+            ],
+            [
+              12.286333313924704,
+              48.23821726727013
+            ],
+            [
+              12.271455057934848,
+              48.0046788157756
+            ],
+            [
+              11.735846189632387,
+              48.01869568620759
+            ],
+            [
+              11.737274720750984,
+              48.0456562741229
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "category": "Official 3D Dataset",
+        "dataset_type": "textured surface mesh",
+        "format": "SLPK",
+        "official_product": "Digitales Oberflaechenmodell Mesh (DOM-Mesh)",
+        "update_frequency": "project-based",
+        "source": "Bavarian OpenData / LDBV",
+        "data_source": "Bavarian OpenData / LDBV",
+        "verification_status": "official_source_metadata",
+        "last_checked_at": "2026-06-17T21:33:37Z",
+        "source_kml": "https://geodaten.bayern.de/odd/m/3/daten/DOMMesh/DOM_Mesh_projektgebiete_2026.kml?service=kml",
+        "name": "Munich DOM Mesh Project Area 124029_0",
+        "description": "Official Bavarian DOM Mesh project areas that intersect the Munich prototype bounds.",
+        "official_area": "1040 km²",
+        "file_count": "",
+        "download_size": "101 GB",
+        "data_currentness": "2024",
+        "download_url": "https://download1.bayernwolke.de/p/dom-mesh-slpk/124029_0/DSM_Mesh.slpk",
+        "notes": "Official DOM Mesh project area intersects Munich; footprint is not clipped to the city boundary.",
+        "project_area_id": "124029_0",
+        "intersects_munich_prototype_bounds": "true"
+      }
+    }
+  ]
+}

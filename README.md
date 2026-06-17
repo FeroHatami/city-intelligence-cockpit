@@ -91,35 +91,49 @@ are disabled in `open-source/TerriaMap/wwwroot/config.json`. No Cesium ion token
 API key, paid API, backend, or database is required. 3D mode remains available as
 smooth ellipsoid 3D rather than token-backed terrain.
 
-Map Settings includes `OpenStreetMap` and `Natural Earth` as selectable base
-maps. OpenStreetMap remains the startup default; Natural Earth uses Terria's
-public no-key Natural Earth raster tiles and can be selected manually.
+Map Settings includes `OpenStreetMap`, `Natural Earth`, and `Satellite View` as
+selectable base maps. OpenStreetMap remains the startup default; Natural Earth
+uses Terria's public no-key Natural Earth raster tile template, and Satellite
+View uses the no-key EOX Sentinel-2 cloudless WMTS tile template.
 
 The catalog now has five top-level groups:
 
 - `City Intelligence Cockpit`: local OSM/Overpass business layers and lead workflow sources.
-- `Munich Public Datasets`: official Munich Open Data / GeoPortal layers and references, grouped into boundaries, transport, environment, infrastructure, health, buildings, and portals.
-- `Germany Public Datasets`: official Germany-wide public data references for basemaps, boundaries, transport, environment, statistics, infrastructure, and portals.
-- `Europe Public Datasets`: official EU public data references and GISCO layers for boundaries, environment, transport, economy/statistics, and portals.
-- `Demo / Visual Examples`: optional no-key visual examples, disabled by default.
+- `Munich Public Datasets`: verified official Munich Open Data / GeoPortal layers for districts, transport, mobility, charging, infrastructure, and environment.
+- `Germany Public Datasets`: verified official BKG/basemap.de WMS layers for German basemaps and administrative boundaries.
+- `Europe Public Datasets`: verified Eurostat/GISCO GeoJSON and Copernicus/EEA WMS layers for European boundaries and land cover.
+- `Demo / Visual Examples`: optional no-key Natural Earth, satellite, basemap.de, and local 3D examples, disabled by default.
 
 Real public layers currently added:
 
+- `Munich City Districts (Official GeoJSON)` from Munich GeoPortal WFS.
 - `Munich Traffic Signals (Official GeoJSON)` from Munich Open Data WFS.
+- `Munich Construction Sites - Next 4 Weeks (Official GeoJSON)` from Munich Open Data WFS.
+- `Munich Disabled Parking (Official GeoJSON)` from Munich Open Data WFS.
+- `Munich EV Charging Locations (Official GeoJSON)` and `Munich EV Charging Pillars (Official GeoJSON)` from Munich Open Data WFS.
+- `Munich Mobility Points (Official GeoJSON)` from Munich Open Data WFS.
+- `Munich Carsharing Parking (Official GeoJSON)` from Munich Open Data WFS.
+- `Munich Signed Cycling Network (Official GeoJSON)` and `Munich Old Town Cycling Ring (Official GeoJSON)` from Munich Open Data WFS.
+- `Munich Bike-Sharing Parking Areas`, `Munich E-Scooter Parking Areas`, `Munich E-Moped Parking Areas`, `Munich Cargo-Bike Sharing Parking Areas`, `Munich E-Scooter Geofences`, and `Munich Digital 3L Zones` from Munich Open Data WFS.
 - `Munich Drinking Fountains (Official GeoJSON)` from Munich Open Data WFS.
+- `Germany basemap.de Web Raster Color (Official WMS)` and `Germany basemap.de Web Raster Gray (Official WMS)` from BKG/basemap.de.
+- `Germany Federal States`, `Germany Districts`, `Germany Municipalities`, and `Germany Administrative Boundary Lines` from BKG VG250 WMS.
+- `Europe Countries 2024 (GISCO GeoJSON)` from Eurostat/GISCO.
 - `EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
 - `EU NUTS 2024 Level 1 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
 - `EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
 - `EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
+- `Corine Land Cover 2018 Raster (Copernicus/EEA WMS)` and `Corine Land Cover 2018 Vector (Copernicus/EEA WMS)`.
 
 Optional demo visuals restored safely:
 
-- `Natural Earth II (Optional Visual Layer)` as a no-key raster imagery layer, disabled by default.
-- `Smooth Geelong Buildings glTF Mini Demo (Local)` as a local CZML/glTF 3D example, disabled by default.
+- `Natural Earth II (Optional Visual Layer)` as a no-key TMS imagery layer, disabled by default.
+- `Satellite View (Optional Visual Layer)` as no-key EOX Sentinel-2 cloudless imagery, disabled by default.
+- `Germany basemap.de Context (Optional WMS)` as a no-key BKG/basemap.de WMS context layer, disabled by default.
+- Munich-only official 3D dataset footprints for LoD2 buildings, DGM1 terrain, DOM20 surface data, laser point clouds, and DOM Mesh project areas from Bavaria OpenData, disabled by default.
 
-Reference-only catalog items use empty Terria groups with descriptions. They
-document official portals without attempting to load uncertain or unstable
-WMS/WFS URLs.
+Unverified portals and private/commercial sources are documented in
+`docs/data-sources.md` rather than exposed as empty catalogue groups.
 
 ## Current Opportunity Scoring Status
 

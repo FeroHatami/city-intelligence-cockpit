@@ -15,7 +15,8 @@ The script verifies:
 - expected feature counts match for all main layers and office sublayers
 - office sublayer counts sum to `6,706`
 - all GeoJSON features include local verification fields
-- catalog order, pharmacy-only workbench, and simple GeoJSON styles are valid
+- catalog order, pharmacy-only workbench, Natural Earth/Satellite basemaps, public dataset groups, and optional visual layers are valid
+- public catalogue groups do not contain empty placeholder groups
 - risky tracked files such as `node_modules`, build output, logs, caches, and `.env*` are absent
 - `.env.local` is ignored
 - Node guidance says to use Node 22
