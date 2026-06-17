@@ -24,7 +24,9 @@ export interface CityIntelligenceLead {
   opportunity_score: string | number;
   score_reason: string;
   suggested_offer: string;
+  suggested_first_message: string;
   recommended_next_action: string;
+  risk_notes: string;
   notes: string;
   status: LeadStatus;
   created_at: string;
@@ -41,48 +43,156 @@ const SCORE_RULES = {
     score_reason:
       "Pharmacies often have procurement, inventory, and supplier comparison workflows that can benefit from practical automation.",
     suggested_offer: "Inventory and supplier comparison workflow audit.",
+    suggested_first_message:
+      "I noticed your pharmacy may handle recurring inventory and supplier coordination. Would a short workflow audit be useful to find admin tasks that can be automated safely?",
     recommended_next_action:
-      "Review public contact details and prepare a pharmacy-specific operations note."
+      "Review public contact details and prepare a pharmacy-specific operations note.",
+    risk_notes:
+      "Keep outreach focused on operations, procurement, and public business information. Do not reference or request patient data."
+  },
+  law_firm: {
+    opportunity_score: 8,
+    score_reason:
+      "Law firms often have document intake, drafting, client follow-up, and knowledge-management workflows where careful automation can save time.",
+    suggested_offer: "Confidential document intake and follow-up workflow review.",
+    suggested_first_message:
+      "I am mapping Munich law firms where document intake and follow-up workflows may be streamlined. Would a short non-confidential workflow review be useful?",
+    recommended_next_action:
+      "Check practice focus and public contact path, then tailor outreach around intake, document status, or admin follow-up.",
+    risk_notes:
+      "Avoid legal advice claims and never request confidential matter details in initial outreach."
+  },
+  consultant: {
+    opportunity_score: 7,
+    score_reason:
+      "Consulting firms often rely on proposal, research, reporting, and CRM workflows that can benefit from repeatable automation.",
+    suggested_offer: "Proposal and client-reporting workflow review.",
+    suggested_first_message:
+      "I am mapping Munich consulting teams that may benefit from proposal or reporting workflow automation. Would a short process review be useful?",
+    recommended_next_action:
+      "Identify the firm's specialty and tailor outreach around proposal creation, research synthesis, or client reporting.",
+    risk_notes:
+      "Validate that the office record represents an active consulting business before outreach."
+  },
+  real_estate: {
+    opportunity_score: 7,
+    score_reason:
+      "Real estate offices often manage listings, inquiries, document packets, and follow-up sequences with clear automation potential.",
+    suggested_offer: "Listing inquiry and follow-up workflow audit.",
+    suggested_first_message:
+      "I noticed your Munich real estate office and am mapping teams that may benefit from faster listing inquiry and follow-up workflows. Would a short audit be useful?",
+    recommended_next_action:
+      "Review public listings and contact channels, then frame outreach around inquiry handling and document preparation.",
+    risk_notes:
+      "Real estate records change frequently; verify the office is active and avoid financial-advice claims."
+  },
+  insurance: {
+    opportunity_score: 7,
+    score_reason:
+      "Insurance offices often handle renewals, document collection, comparison, and customer follow-up workflows.",
+    suggested_offer: "Renewal and document-collection workflow review.",
+    suggested_first_message:
+      "I am mapping Munich insurance offices where renewals and document collection may be made easier. Would a short workflow review be useful?",
+    recommended_next_action:
+      "Check public contact details and tailor outreach around renewal reminders, document collection, or customer communication.",
+    risk_notes:
+      "Avoid claims about regulated advice or customer data processing before a proper compliance review."
+  },
+  government: {
+    opportunity_score: 5,
+    score_reason:
+      "Government offices can have form, document, and public-service workflows, but procurement and compliance constraints make qualification important.",
+    suggested_offer: "Public-service form and document workflow discovery.",
+    suggested_first_message:
+      "I am mapping public-service offices in Munich and researching practical form or document workflow improvements. Is there a public contact for process-improvement discussions?",
+    recommended_next_action:
+      "Find the official department contact and procurement path before any outreach.",
+    risk_notes:
+      "Government outreach requires extra care around procurement rules, public records, and official contact channels."
+  },
+  company_office: {
+    opportunity_score: 7,
+    score_reason:
+      "Company offices commonly have admin, sales, document, and internal operations workflows suitable for local automation offers.",
+    suggested_offer: "Admin and sales operations workflow review.",
+    suggested_first_message:
+      "I am mapping Munich company offices that may benefit from practical admin or sales workflow automation. Would a short workflow review be useful?",
+    recommended_next_action:
+      "Qualify the company type and tailor outreach around admin, sales operations, or document handling.",
+    risk_notes:
+      "Company office records may represent headquarters, branches, or generic office locations; validate the decision-maker."
+  },
+  office_building: {
+    opportunity_score: 4,
+    score_reason:
+      "Office-building records may identify a place rather than an operating organization, so they are lower-confidence leads until manually qualified.",
+    suggested_offer: "Tenant/operator qualification and operations discovery.",
+    suggested_first_message:
+      "I am mapping Munich office locations and trying to identify the right operator or tenant contact for workflow improvement opportunities. Is there a public business contact for this location?",
+    recommended_next_action:
+      "Identify a tenant, building operator, or management company before treating the record as a lead.",
+    risk_notes:
+      "Do not assume a building record is a reachable business lead."
   },
   office: {
-    opportunity_score: 7,
+    opportunity_score: 6,
     score_reason:
       "Office organizations often have admin automation, document workflow, and lead generation opportunities.",
     suggested_offer: "Admin automation and document workflow review.",
+    suggested_first_message:
+      "I am mapping Munich offices that may benefit from practical admin or document workflow automation. Would a short process review be useful?",
     recommended_next_action:
-      "Qualify the organization type and tailor outreach around admin or sales operations."
+      "Qualify the organization type and tailor outreach around admin or sales operations.",
+    risk_notes:
+      "Generic office records need manual qualification before outreach."
   },
   clinic: {
     opportunity_score: 8,
     score_reason:
       "Clinics often have appointment workflow, communication, and procurement needs with clear operational value.",
     suggested_offer: "Appointment and communication workflow assessment.",
+    suggested_first_message:
+      "I am researching Munich clinics where appointment and communication workflows may be improved. Would a non-clinical operations review be useful for your team?",
     recommended_next_action:
-      "Frame outreach around non-clinical operations and avoid patient-data assumptions."
+      "Frame outreach around non-clinical operations and avoid patient-data assumptions.",
+    risk_notes:
+      "Medical privacy is sensitive. Do not request or process patient data without a compliant system and explicit authorization."
   },
   coworking: {
     opportunity_score: 6,
     score_reason:
       "Coworking spaces can be useful partnership channels for founder networks, events, and community programming.",
     suggested_offer: "Founder network and event partnership proposal.",
+    suggested_first_message:
+      "I am mapping Munich founder communities and coworking spaces. Would you be open to a lightweight event or member-benefit partnership idea?",
     recommended_next_action:
-      "Look for community or events contacts and draft a partnership-oriented note."
+      "Look for community or events contacts and draft a partnership-oriented note.",
+    risk_notes:
+      "Some coworking records are locations rather than decision makers; confirm the operator and community activity first."
   },
   restaurant: {
     opportunity_score: 6,
     score_reason:
       "Restaurants often benefit from local marketing, reviews, reservations, and inventory workflow improvements.",
     suggested_offer: "Local marketing and operations quick audit.",
+    suggested_first_message:
+      "I noticed your restaurant in Munich and am mapping local businesses that may benefit from small improvements in reservations, reviews, or inventory workflows. Would a short audit be useful?",
     recommended_next_action:
-      "Check website, reservation path, and public review presence before outreach."
+      "Check website, reservation path, and public review presence before outreach.",
+    risk_notes:
+      "Restaurant data can change often; verify the business is still active before contacting."
   },
   default: {
     opportunity_score: 5,
     score_reason:
       "This lead has basic public business data but needs manual qualification before outreach.",
     suggested_offer: "Operational workflow discovery call.",
+    suggested_first_message:
+      "I am mapping Munich organizations and looking for practical workflow improvement opportunities. Would a quick operations review be useful?",
     recommended_next_action:
-      "Manually qualify the organization and choose a category-specific offer."
+      "Manually qualify the organization and choose a category-specific offer.",
+    risk_notes:
+      "Insufficient category context; validate fit before outreach."
   }
 };
 
@@ -154,7 +264,9 @@ function normalizeLead(lead: LeadInput): CityIntelligenceLead {
     opportunity_score: lead.opportunity_score ?? "",
     score_reason: cleanString(lead.score_reason),
     suggested_offer: cleanString(lead.suggested_offer),
+    suggested_first_message: cleanString(lead.suggested_first_message),
     recommended_next_action: cleanString(lead.recommended_next_action),
+    risk_notes: cleanString(lead.risk_notes),
     notes: cleanString(lead.notes),
     status: cleanStatus(lead.status),
     created_at: createdAt,
@@ -257,7 +369,9 @@ export function exportLeads(format: "json" | "csv" = "json") {
     "opportunity_score",
     "score_reason",
     "suggested_offer",
+    "suggested_first_message",
     "recommended_next_action",
+    "risk_notes",
     "notes",
     "status",
     "created_at",
@@ -271,7 +385,36 @@ export function exportLeads(format: "json" | "csv" = "json") {
 }
 
 function scoreRuleKey(lead: LeadInput): keyof typeof SCORE_RULES {
-  const text = `${lead.category || ""} ${lead.source_layer || ""}`.toLowerCase();
+  const officeType = cleanString((lead as { office_type?: unknown }).office_type);
+  const text = `${lead.category || ""} ${lead.source_layer || ""} ${officeType}`.toLowerCase();
+  if (
+    text.includes("law firm") ||
+    text.includes("lawyer") ||
+    text.includes("attorney") ||
+    text.includes("rechtsanw")
+  ) {
+    return "law_firm";
+  }
+  if (text.includes("consult")) return "consultant";
+  if (text.includes("real estate") || text.includes("estate_agent") || text.includes("property")) {
+    return "real_estate";
+  }
+  if (text.includes("insurance")) return "insurance";
+  if (text.includes("government")) return "government";
+  if (
+    text.includes("company office") ||
+    text.includes("company offices") ||
+    text.endsWith(" company")
+  ) {
+    return "company_office";
+  }
+  if (
+    text.includes("office building") ||
+    text.includes("office_building") ||
+    text.includes("generic office building")
+  ) {
+    return "office_building";
+  }
   if (text.includes("pharmacy")) return "pharmacy";
   if (text.includes("office")) return "office";
   if (text.includes("clinic") || text.includes("doctor") || text.includes("dentist")) return "clinic";

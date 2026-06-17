@@ -14,7 +14,7 @@ Each lead record is a JSON object with these fields:
 | --- | --- | --- |
 | `id` | string | Stable lead id, preferably derived from source layer and OSM id. |
 | `name` | string | Feature or business name. |
-| `category` | string | High-level category such as `Pharmacy`, `Office`, `Clinic`, `Coworking`, or `Restaurant`. |
+| `category` | string | Lead category such as `Pharmacy`, `Office`, `Law Firm`, `Consultant`, `Real Estate`, `Insurance`, `Government`, `Company Office`, `Office Building`, `Clinic`, `Coworking`, or `Restaurant`. |
 | `address` | string | Human-readable address when available. |
 | `phone` | string | Phone number when available. |
 | `website` | string | Website URL when available. |
@@ -27,7 +27,9 @@ Each lead record is a JSON object with these fields:
 | `opportunity_score` | string or number | Empty until scored, then a 1-10 value. |
 | `score_reason` | string | Rule-based or future AI-generated score explanation. |
 | `suggested_offer` | string | Suggested outreach offer. |
+| `suggested_first_message` | string | Locally generated first outreach message suggestion. |
 | `recommended_next_action` | string | Suggested next action for the lead. |
+| `risk_notes` | string | Local caution notes for qualification, privacy, compliance, or data-quality risk. |
 | `notes` | string | Analyst notes. |
 | `status` | string | One of the status values below. |
 | `created_at` | string | ISO 8601 UTC timestamp. |
@@ -61,7 +63,9 @@ Each lead record is a JSON object with these fields:
   "opportunity_score": "",
   "score_reason": "",
   "suggested_offer": "",
+  "suggested_first_message": "",
   "recommended_next_action": "",
+  "risk_notes": "",
   "notes": "",
   "status": "interesting",
   "created_at": "2026-06-17T00:00:00Z",

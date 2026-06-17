@@ -16,7 +16,9 @@ The button fills:
 - `opportunity_score`
 - `score_reason`
 - `suggested_offer`
+- `suggested_first_message`
 - `recommended_next_action`
+- `risk_notes`
 
 The current in-app rules are category based and live in:
 
@@ -75,10 +77,21 @@ The output also includes feature context:
 ## Current Rule-Based Logic
 
 - Pharmacies: procurement, inventory, and supplier communication.
-- Offices: admin automation, lead generation, and document processing.
+- Law firms: confidential document intake, drafting support, and client follow-up.
+- Consultants: proposals, research synthesis, CRM, and client reporting.
+- Real estate offices: listing inquiries, follow-up, and document preparation.
+- Insurance offices: renewals, document collection, comparison, and customer follow-up.
+- Government offices: public-service forms and document workflows, with procurement caution.
+- Company offices: admin, sales operations, and document workflows.
+- Office buildings: lower-confidence leads until a tenant or operator is qualified.
+- Generic offices: admin automation, lead generation, and document processing.
 - Clinics: appointment workflow, patient communication, and procurement.
 - Coworking spaces: founder network, event, and community partnerships.
 - Restaurants: local marketing, reservations, reviews, and inventory.
+
+Office subtype rules run before the generic office rule. The scorer checks category,
+source layer, and available office-type context so `Munich Law Firms` and
+`office_type=lawyer` score as law firms instead of generic offices.
 
 ## API Key Policy
 

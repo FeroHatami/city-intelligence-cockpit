@@ -42,8 +42,64 @@ RULES = {
         "action": "Research current website/contact path, then prepare a pharmacy-specific workflow audit note.",
         "risk": "Healthcare-adjacent outreach should avoid patient data claims and stay focused on operations, procurement, and public business information.",
     },
-    "office": {
+    "law_firm": {
+        "score": 8,
+        "reason": "Law firms often have document intake, drafting, client follow-up, and knowledge-management workflows where careful automation can save time.",
+        "offer": "Confidential document intake and follow-up workflow review.",
+        "message": "I am mapping Munich law firms where document intake and follow-up workflows may be streamlined. Would a short non-confidential workflow review be useful?",
+        "action": "Check practice focus and public contact path, then tailor outreach around intake, document status, or admin follow-up.",
+        "risk": "Avoid legal advice claims and never request confidential matter details in initial outreach.",
+    },
+    "consultant": {
         "score": 7,
+        "reason": "Consulting firms often rely on proposal, research, reporting, and CRM workflows that can benefit from repeatable automation.",
+        "offer": "Proposal and client-reporting workflow review.",
+        "message": "I am mapping Munich consulting teams that may benefit from proposal or reporting workflow automation. Would a short process review be useful?",
+        "action": "Identify the firm's specialty and tailor outreach around proposal creation, research synthesis, or client reporting.",
+        "risk": "Validate that the office record represents an active consulting business before outreach.",
+    },
+    "real_estate": {
+        "score": 7,
+        "reason": "Real estate offices often manage listings, inquiries, document packets, and follow-up sequences with clear automation potential.",
+        "offer": "Listing inquiry and follow-up workflow audit.",
+        "message": "I noticed your Munich real estate office and am mapping teams that may benefit from faster listing inquiry and follow-up workflows. Would a short audit be useful?",
+        "action": "Review public listings and contact channels, then frame outreach around inquiry handling and document preparation.",
+        "risk": "Real estate records change frequently; verify the office is active and avoid financial-advice claims.",
+    },
+    "insurance": {
+        "score": 7,
+        "reason": "Insurance offices often handle renewals, document collection, comparison, and customer follow-up workflows.",
+        "offer": "Renewal and document-collection workflow review.",
+        "message": "I am mapping Munich insurance offices where renewals and document collection may be made easier. Would a short workflow review be useful?",
+        "action": "Check public contact details and tailor outreach around renewal reminders, document collection, or customer communication.",
+        "risk": "Avoid claims about regulated advice or customer data processing before a proper compliance review.",
+    },
+    "government": {
+        "score": 5,
+        "reason": "Government offices can have form, document, and public-service workflows, but procurement and compliance constraints make qualification important.",
+        "offer": "Public-service form and document workflow discovery.",
+        "message": "I am mapping public-service offices in Munich and researching practical form or document workflow improvements. Is there a public contact for process-improvement discussions?",
+        "action": "Find the official department contact and procurement path before any outreach.",
+        "risk": "Government outreach requires extra care around procurement rules, public records, and official contact channels.",
+    },
+    "company_office": {
+        "score": 7,
+        "reason": "Company offices commonly have admin, sales, document, and internal operations workflows suitable for local automation offers.",
+        "offer": "Admin and sales operations workflow review.",
+        "message": "I am mapping Munich company offices that may benefit from practical admin or sales workflow automation. Would a short workflow review be useful?",
+        "action": "Qualify the company type and tailor outreach around admin, sales operations, or document handling.",
+        "risk": "Company office records may represent headquarters, branches, or generic office locations; validate the decision-maker.",
+    },
+    "office_building": {
+        "score": 4,
+        "reason": "Office-building records may identify a place rather than an operating organization, so they are lower-confidence leads until manually qualified.",
+        "offer": "Tenant/operator qualification and operations discovery.",
+        "message": "I am mapping Munich office locations and trying to identify the right operator or tenant contact for workflow improvement opportunities. Is there a public business contact for this location?",
+        "action": "Identify a tenant, building operator, or management company before treating the record as a lead.",
+        "risk": "Do not assume a building record is a reachable business lead.",
+    },
+    "office": {
+        "score": 6,
         "reason": "Office-related organizations commonly need admin automation, document processing, and lead generation support.",
         "offer": "Admin automation and lead generation process review.",
         "message": "I am mapping Munich organizations that could benefit from practical admin automation. Would it be useful to compare a few document or lead workflows that might save time?",
@@ -97,8 +153,31 @@ def load_geojson(path: Path) -> tuple[list[dict[str, Any]], str]:
     return [feature for feature in features if isinstance(feature, dict)], str(data.get("name") or path.stem)
 
 
+def office_subtype_category(text: str) -> str:
+    if any(value in text for value in ["law firm", "lawyer", "attorney", "rechtsanw"]):
+        return "Law Firm"
+    if "consult" in text:
+        return "Consultant"
+    if any(value in text for value in ["real estate", "estate_agent", "property"]):
+        return "Real Estate"
+    if "insurance" in text:
+        return "Insurance"
+    if "government" in text:
+        return "Government"
+    if "company office" in text or "company offices" in text or text.endswith(" company"):
+        return "Company Office"
+    if "office building" in text or "office_building" in text or "generic office building" in text:
+        return "Office Building"
+    return ""
+
+
 def infer_category(properties: dict[str, Any], source_layer: str) -> str:
     category = str(properties.get("category") or "").strip()
+    subtype = office_subtype_category(
+        f"{category} {source_layer} {properties.get('office_type') or ''} {properties.get('office') or ''}".lower()
+    )
+    if subtype:
+        return subtype
     if category:
         return category
 
@@ -111,6 +190,20 @@ def infer_category(properties: dict[str, Any], source_layer: str) -> str:
 
 def rule_key(category: str, source_layer: str) -> str:
     text = f"{category} {source_layer}".lower()
+    if any(value in text for value in ["law firm", "lawyer", "attorney", "rechtsanw"]):
+        return "law_firm"
+    if "consult" in text:
+        return "consultant"
+    if any(value in text for value in ["real estate", "estate_agent", "property"]):
+        return "real_estate"
+    if "insurance" in text:
+        return "insurance"
+    if "government" in text:
+        return "government"
+    if "company office" in text or "company offices" in text or text.endswith(" company"):
+        return "company_office"
+    if "office building" in text or "office_building" in text or "generic office building" in text:
+        return "office_building"
     if "pharmacy" in text:
         return "pharmacy"
     if "office" in text:

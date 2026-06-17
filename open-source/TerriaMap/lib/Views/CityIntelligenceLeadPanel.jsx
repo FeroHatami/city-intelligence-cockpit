@@ -306,18 +306,36 @@ function getAddress(properties) {
   return [streetLine, cityLine].filter(Boolean).join(", ");
 }
 
-function inferCategory(category, sourceLayer) {
-  if (category) return category;
-
-  const text = sourceLayer.toLowerCase();
-  if (text.includes("pharmac")) return "Pharmacy";
-  if (text.includes("law firm")) return "Law Firm";
+function inferOfficeSubtypeCategory(text) {
+  if (text.includes("law firm") || text.includes("lawyer") || text.includes("rechtsanw")) {
+    return "Law Firm";
+  }
   if (text.includes("consult")) return "Consultant";
-  if (text.includes("real estate")) return "Real Estate";
+  if (text.includes("real estate") || text.includes("estate_agent")) return "Real Estate";
   if (text.includes("insurance")) return "Insurance";
   if (text.includes("government")) return "Government";
-  if (text.includes("company office")) return "Company Office";
-  if (text.includes("office building")) return "Office Building";
+  if (
+    text.includes("company office") ||
+    text.includes("company offices") ||
+    text.trim() === "company" ||
+    text.endsWith(" company")
+  ) {
+    return "Company Office";
+  }
+  if (text.includes("office building") || text.includes("office_building")) {
+    return "Office Building";
+  }
+  return "";
+}
+
+function inferCategory(category, sourceLayer, officeType) {
+  const categoryText = stringValue(category).trim();
+  const text = `${sourceLayer} ${officeType}`.toLowerCase();
+  const officeSubtype = inferOfficeSubtypeCategory(text);
+  if (officeSubtype) return officeSubtype;
+  if (categoryText) return categoryText;
+
+  if (text.includes("pharmac")) return "Pharmacy";
   if (text.includes("office")) return "Office";
   if (text.includes("clinic") || text.includes("doctor") || text.includes("dentist")) {
     return "Clinic";
@@ -384,7 +402,8 @@ function selectedFeatureToLead(viewState) {
   const coordinates = getFeatureCoordinates(feature, terria, currentTime, properties);
   const category = inferCategory(
     getProperty(properties, ["Category", "category"]),
-    sourceLayer
+    sourceLayer,
+    getProperty(properties, ["Office Type", "office_type", "office"])
   );
 
   return {
@@ -937,7 +956,19 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                     <br />
                     <strong>Offer:</strong> {lead.suggested_offer}
                     <br />
+                    {lead.suggested_first_message && (
+                      <>
+                        <strong>First message:</strong> {lead.suggested_first_message}
+                        <br />
+                      </>
+                    )}
                     <strong>Next:</strong> {lead.recommended_next_action}
+                    {lead.risk_notes && (
+                      <>
+                        <br />
+                        <strong>Risk:</strong> {lead.risk_notes}
+                      </>
+                    )}
                   </div>
                 )}
 
