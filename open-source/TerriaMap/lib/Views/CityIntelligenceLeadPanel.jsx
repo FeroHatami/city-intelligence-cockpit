@@ -66,6 +66,9 @@ const emptyForm = {
   osm_type: "",
   source: "",
   source_layer: "Munich Pharmacies",
+  data_source: "",
+  verification_status: "",
+  last_checked_at: "",
   notes: "",
   status: "interesting"
 };
@@ -353,6 +356,37 @@ function getSourceLayer(feature) {
   );
 }
 
+function sourceLayerForCategory(category) {
+  switch (category) {
+    case "Pharmacy":
+      return "Munich Pharmacies";
+    case "Law Firm":
+      return "Munich Law Firms";
+    case "Consultant":
+      return "Munich Consultants";
+    case "Real Estate":
+      return "Munich Real Estate Offices";
+    case "Insurance":
+      return "Munich Insurance Offices";
+    case "Government":
+      return "Munich Government Offices";
+    case "Company Office":
+      return "Munich Company Offices";
+    case "Office Building":
+      return "Munich Generic Office Buildings";
+    case "Office":
+      return "Munich Offices — All";
+    case "Clinic":
+      return "Munich Clinics";
+    case "Coworking":
+      return "Munich Coworking Spaces";
+    case "Restaurant":
+      return "Munich Restaurants";
+    default:
+      return "Manual Lead";
+  }
+}
+
 function cartesianToLatLon(position) {
   if (!position) return {};
 
@@ -398,13 +432,14 @@ function selectedFeatureToLead(viewState) {
 
   const currentTime = terria?.timelineClock?.currentTime;
   const properties = getFeatureProperties(feature, currentTime);
-  const sourceLayer = getSourceLayer(feature) || "Manual Lead";
+  const rawSourceLayer = getSourceLayer(feature);
   const coordinates = getFeatureCoordinates(feature, terria, currentTime, properties);
   const category = inferCategory(
     getProperty(properties, ["Category", "category"]),
-    sourceLayer,
+    rawSourceLayer,
     getProperty(properties, ["Office Type", "office_type", "office"])
   );
+  const sourceLayer = rawSourceLayer || sourceLayerForCategory(category);
 
   return {
     name:
@@ -434,6 +469,14 @@ function selectedFeatureToLead(viewState) {
     osm_type: getProperty(properties, ["Osm Type", "OSM Type", "osm_type", "osm:type"]),
     source: getProperty(properties, ["Source", "source"]),
     source_layer: sourceLayer,
+    data_source:
+      getProperty(properties, ["Data Source", "data_source"]) ||
+      getProperty(properties, ["Source", "source"]),
+    verification_status: getProperty(properties, [
+      "Verification Status",
+      "verification_status"
+    ]),
+    last_checked_at: getProperty(properties, ["Last Checked At", "last_checked_at"]),
     notes: getProperty(properties, ["notes", "Notes"]),
     status: "interesting"
   };
@@ -763,6 +806,21 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               label="Source"
               value={form.source}
               onChange={(value) => setFormValue("source", value)}
+            />
+            <Field
+              label="Data Source"
+              value={form.data_source}
+              onChange={(value) => setFormValue("data_source", value)}
+            />
+            <Field
+              label="Verification Status"
+              value={form.verification_status}
+              onChange={(value) => setFormValue("verification_status", value)}
+            />
+            <Field
+              label="Last Checked At"
+              value={form.last_checked_at}
+              onChange={(value) => setFormValue("last_checked_at", value)}
             />
             <Field label="Status">
               <select

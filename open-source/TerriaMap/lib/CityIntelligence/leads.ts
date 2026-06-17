@@ -21,6 +21,9 @@ export interface CityIntelligenceLead {
   osm_type: string;
   source: string;
   source_layer: string;
+  data_source: string;
+  verification_status: string;
+  last_checked_at: string;
   opportunity_score: string | number;
   score_reason: string;
   suggested_offer: string;
@@ -261,6 +264,9 @@ function normalizeLead(lead: LeadInput): CityIntelligenceLead {
     osm_type: cleanString(lead.osm_type),
     source: cleanString(lead.source),
     source_layer: cleanString(lead.source_layer),
+    data_source: cleanString(lead.data_source),
+    verification_status: cleanString(lead.verification_status),
+    last_checked_at: cleanString(lead.last_checked_at),
     opportunity_score: lead.opportunity_score ?? "",
     score_reason: cleanString(lead.score_reason),
     suggested_offer: cleanString(lead.suggested_offer),
@@ -366,6 +372,9 @@ export function exportLeads(format: "json" | "csv" = "json") {
     "osm_type",
     "source",
     "source_layer",
+    "data_source",
+    "verification_status",
+    "last_checked_at",
     "opportunity_score",
     "score_reason",
     "suggested_offer",

@@ -118,10 +118,19 @@ def create_lead(
         "osm_type": str(properties.get("osm_type") or ""),
         "source": str(properties.get("source") or ""),
         "source_layer": source_layer,
+        "data_source": str(
+            properties.get("data_source")
+            or properties.get("source")
+            or "OpenStreetMap / Overpass"
+        ),
+        "verification_status": str(properties.get("verification_status") or ""),
+        "last_checked_at": str(properties.get("last_checked_at") or ""),
         "opportunity_score": opportunity_score or str(properties.get("opportunity_score") or ""),
         "score_reason": str(properties.get("score_reason") or ""),
         "suggested_offer": str(properties.get("suggested_offer") or ""),
+        "suggested_first_message": str(properties.get("suggested_first_message") or ""),
         "recommended_next_action": str(properties.get("recommended_next_action") or ""),
+        "risk_notes": str(properties.get("risk_notes") or ""),
         "notes": notes or str(properties.get("notes") or ""),
         "status": status,
         "created_at": timestamp,

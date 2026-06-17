@@ -425,3 +425,26 @@ Verification notes:
 - `Munich Restaurants` appeared in the `City Intelligence Cockpit` catalog group.
 - `Munich Restaurants` was enabled manually from the catalog and increased the workbench count from `1` to `2`.
 - Clicking the map opened Feature Information with restaurant records; expanding `Munich Restaurants - Site Data` showed fields including `Name`, `Category`, `Food Type`, `Cuisine`, `Address`, `Phone`, `Website`, `Opening Hours`, `Osm Id`, `Osm Type`, and `Source`.
+
+## Local Data Verification Fields
+
+All city-intelligence GeoJSON files are locally marked with verification metadata using:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+python3 scripts/add-verification-fields.py
+```
+
+The script preserves existing feature properties and adds missing:
+
+- `data_source`
+- `verification_status`
+- `last_checked_at`
+
+Defaults:
+
+- `data_source`: existing `source`, otherwise `OpenStreetMap / Overpass`
+- `verification_status`: `unverified_osm`
+- `last_checked_at`: UTC timestamp from the script run
+
+The in-app `Saved Leads` import/export flow preserves these fields so lead exports carry the same local source and verification state.

@@ -17,7 +17,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -41,7 +44,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -65,7 +71,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -89,7 +98,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -113,7 +125,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -137,7 +152,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -161,7 +179,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -185,7 +206,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -209,7 +233,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -233,7 +260,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -257,7 +287,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -281,7 +314,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -305,7 +341,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -329,7 +368,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -353,7 +395,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -377,7 +422,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -401,7 +449,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -425,7 +476,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -449,7 +503,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -473,7 +530,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -497,7 +557,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -521,7 +584,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -545,7 +611,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -569,7 +638,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -593,7 +665,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -617,7 +692,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -641,7 +719,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -665,7 +746,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -689,7 +773,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -713,7 +800,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -737,7 +827,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -761,7 +854,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -785,7 +881,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -809,7 +908,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -833,7 +935,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -857,7 +962,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -881,7 +989,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -905,7 +1016,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -929,7 +1043,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -953,7 +1070,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -977,7 +1097,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1001,7 +1124,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1025,7 +1151,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1049,7 +1178,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1073,7 +1205,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1097,7 +1232,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1121,7 +1259,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1145,7 +1286,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1169,7 +1313,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1193,7 +1340,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1217,7 +1367,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1241,7 +1394,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1265,7 +1421,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1289,7 +1448,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1313,7 +1475,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1337,7 +1502,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1361,7 +1529,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1385,7 +1556,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1409,7 +1583,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1433,7 +1610,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1457,7 +1637,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1481,7 +1664,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1505,7 +1691,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1529,7 +1718,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1553,7 +1745,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1577,7 +1772,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1601,7 +1799,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1625,7 +1826,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1649,7 +1853,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1673,7 +1880,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1697,7 +1907,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1721,7 +1934,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1745,7 +1961,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1769,7 +1988,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1793,7 +2015,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1817,7 +2042,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1841,7 +2069,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1865,7 +2096,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1889,7 +2123,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1913,7 +2150,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1937,7 +2177,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",
@@ -1961,7 +2204,10 @@
         "osm_type": "node",
         "source": "OpenStreetMap / Overpass",
         "opportunity_score": "",
-        "notes": ""
+        "notes": "",
+        "data_source": "OpenStreetMap / Overpass",
+        "verification_status": "unverified_osm",
+        "last_checked_at": "2026-06-17T01:02:21Z"
       },
       "geometry": {
         "type": "Point",

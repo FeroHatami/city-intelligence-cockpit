@@ -24,6 +24,9 @@ Each lead record is a JSON object with these fields:
 | `osm_type` | string | OpenStreetMap element type such as `node`, `way`, or `relation`. |
 | `source` | string | Feature provenance, such as `OpenStreetMap / Overpass`. |
 | `source_layer` | string | City Intelligence Cockpit layer name the lead came from. |
+| `data_source` | string | Local data source metadata copied from the feature, usually `OpenStreetMap / Overpass`. |
+| `verification_status` | string | Local verification state such as `unverified_osm`. |
+| `last_checked_at` | string | UTC timestamp from the last local data verification-field update. |
 | `opportunity_score` | string or number | Empty until scored, then a 1-10 value. |
 | `score_reason` | string | Rule-based or future AI-generated score explanation. |
 | `suggested_offer` | string | Suggested outreach offer. |
@@ -60,6 +63,9 @@ Each lead record is a JSON object with these fields:
   "osm_type": "node",
   "source": "OpenStreetMap / Overpass",
   "source_layer": "Munich Pharmacies",
+  "data_source": "OpenStreetMap / Overpass",
+  "verification_status": "unverified_osm",
+  "last_checked_at": "2026-06-17T00:00:00Z",
   "opportunity_score": "",
   "score_reason": "",
   "suggested_offer": "",
@@ -100,7 +106,7 @@ To import a selected feature:
 4. Review or edit the populated form.
 5. Select `Save Lead`.
 
-The import maps the selected Terria feature's properties into lead fields where available. It uses feature properties such as `name`, `category`, `address`, `phone`, `website`, `osm_id`, `osm_type`, and `source`, plus the selected catalog item name for `source_layer`.
+The import maps the selected Terria feature's properties into lead fields where available. It uses feature properties such as `name`, `category`, `address`, `phone`, `website`, `osm_id`, `osm_type`, `source`, `data_source`, `verification_status`, and `last_checked_at`, plus the selected catalog item name for `source_layer`.
 
 Duplicate protection is based on `osm_type` + `osm_id`. If a matching lead already exists, the panel loads the existing lead for review instead of creating a duplicate.
 
