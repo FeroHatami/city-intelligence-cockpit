@@ -1,6 +1,6 @@
 # Final Verification Report
 
-Verification timestamp: 2026-06-18T22:45:00Z
+Verification timestamp: 2026-06-18T22:57:58Z
 
 ## Scope
 
@@ -24,12 +24,24 @@ The optional SQLite backend is a localhost-only manual sync path.
 - Page title was `City Intelligence Cockpit`.
 - No map configuration error was visible.
 - No `Terrain Server Not Responding` popup was visible.
+- Map Settings showed the currently configured basemaps:
+  OpenStreetMap, Esri World Topographic, Satellite View, and CARTO Voyager.
+- Satellite View, CARTO Voyager, Esri World Topographic, and OpenStreetMap were
+  selected successfully.
+- Natural Earth is intentionally not enabled in the current verified setup
+  because it was replaced by the newer working basemap set.
 - Data catalog opened and showed the expected City Intelligence Cockpit, Munich,
   Germany, Europe, and Visual Reference catalog groups.
+- City Intelligence Cockpit business layers and office sublayers appeared in the
+  catalog.
+- Munich Pharmacies stayed default-enabled.
+- Selected-feature import from a visible Munich pharmacy feature created a lead.
+- Re-importing the same OSM feature triggered duplicate protection instead of
+  creating a second lead.
 - Saved Leads panel opened.
 - Optional local backend controls were present.
-- Backend-off mode showed the friendly browser-storage message in earlier
-  verification.
+- Backend-off mode showed the friendly browser-storage message:
+  `Local backend is not running. Browser storage still works.`
 - Local outreach templates generated English and German messages.
 - Outreach queue status and channel controls appeared.
 - Outreach queue CSV export produced the required columns.
@@ -40,6 +52,7 @@ The optional SQLite backend is a localhost-only manual sync path.
 - Duplicate JSON import updated the existing lead instead of duplicating it.
 - Invalid JSON import produced a clear validation message.
 - Temporary QA leads were deleted and remained gone after refresh.
+- Manual lead creation was verified and the temporary manual QA lead was deleted.
 
 ## Catalog And Data Checks
 
@@ -51,7 +64,9 @@ The health check verified:
 - verification fields exist on GeoJSON features
 - catalog top-level groups are ordered correctly
 - only Munich Pharmacies is in the default workbench
-- OpenStreetMap, Esri World Topographic, Satellite View, and CARTO Voyager basemap configuration remains present
+- OpenStreetMap, Esri World Topographic, Satellite View, and CARTO Voyager
+  basemap configuration remains present
+- Natural Earth is not enabled in the custom init
 - public dataset groups are not empty placeholder groups
 - old upstream demo/catalog entries are absent
 - Cesium ion terrain, Bing imagery, and search provider remain disabled

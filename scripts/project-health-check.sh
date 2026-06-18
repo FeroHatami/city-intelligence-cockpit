@@ -40,10 +40,20 @@ KEY_FILES=(
   "docs/import-datasets.md"
   "docs/known-limitations.md"
   "docs/lead-schema.md"
+  "docs/lead-storage.md"
+  "docs/local-backend.md"
+  "docs/local-data-refresh.md"
   "docs/manual-qa-checklist.md"
+  "docs/outreach-workflow.md"
   "docs/project-health-check.md"
   "docs/roadmap.md"
   "docs/screenshots/README.md"
+  "backend/README.md"
+  "backend/__init__.py"
+  "backend/app.py"
+  "backend/db.py"
+  "backend/models.py"
+  "backend/requirements.txt"
   "open-source/TerriaMap/wwwroot/config.json"
   "open-source/TerriaMap/wwwroot/data/city-intelligence/europe-gics-company-data-sources.geojson"
   "open-source/TerriaMap/wwwroot/index.ejs"
@@ -52,15 +62,20 @@ KEY_FILES=(
   "open-source/TerriaMap/lib/Views/CityIntelligenceLeadPanel.jsx"
   "scripts/add-verification-fields.py"
   "scripts/create-lead-from-feature.py"
+  "scripts/export-leads-from-sqlite.py"
   "scripts/fetch-munich-3d-datasets.py"
   "scripts/fetch-munich-clinics.py"
   "scripts/fetch-munich-coworking.py"
   "scripts/fetch-munich-offices.py"
   "scripts/fetch-munich-pharmacies.py"
   "scripts/fetch-munich-restaurants.py"
+  "scripts/import-leads-to-sqlite.py"
+  "scripts/init-local-db.py"
   "scripts/project-health-check.sh"
+  "scripts/refresh-all-datasets.sh"
   "scripts/score-opportunity.py"
   "scripts/split-munich-offices.py"
+  "scripts/com.city-intelligence.refresh.example.plist"
 )
 
 for file in "${KEY_FILES[@]}"; do
@@ -430,13 +445,22 @@ fi
 pass "config avoids demo init and required private terrain tokens"
 
 RISKY_TRACKED="$(
-  git ls-files | grep -E '(^|/)node_modules/|^open-source/TerriaMap/wwwroot/build/|^open-source/TerriaMap/build/|^open-source/TerriaMap/\\.cache/|^open-source/TerriaMap/\\.parcel-cache/|^open-source/TerriaMap/\\.turbo/|^open-source/TerriaMap/coverage/|(^|/).*\\.log$|(^|/)\\.env(\\.|$)' || true
+  git ls-files | grep -E '(^|/)node_modules/|^open-source/TerriaMap/wwwroot/build/|^open-source/TerriaMap/build/|^open-source/TerriaMap/\\.cache/|^open-source/TerriaMap/\\.parcel-cache/|^open-source/TerriaMap/\\.turbo/|^open-source/TerriaMap/coverage/|(^|/)logs/|(^|/)backend/data/|(^|/)__pycache__/|(^|/).*\\.pyc$|(^|/).*\\.sqlite$|(^|/).*\\.db$|(^|/).*\\.log$|(^|/)\\.env(\\.|$)' || true
 )"
 if [[ -n "$RISKY_TRACKED" ]]; then
   printf '%s\n' "$RISKY_TRACKED" >&2
   fail "risky tracked files found"
 fi
 pass "risky tracked files are absent"
+
+LOCAL_ONLY_TRACKED="$(
+  git ls-files '*.sqlite' '*.db' 'backend/data/*' 'logs/*' '**/__pycache__/*' '*.pyc' || true
+)"
+if [[ -n "$LOCAL_ONLY_TRACKED" ]]; then
+  printf '%s\n' "$LOCAL_ONLY_TRACKED" >&2
+  fail "local-only generated files are tracked"
+fi
+pass "local DB, log, and Python cache files are not tracked"
 
 SECRET_LIKE="$(
   git grep -nE '(sk-[A-Za-z0-9_-]{20,}|OPENAI_API_KEY[[:space:]]*=|CESIUM_ION_ACCESS_TOKEN[[:space:]]*=|cesiumIonAccessToken[[:space:]]*:[[:space:]]*"[^"]+")' -- . ':!scripts/project-health-check.sh' || true
@@ -449,12 +473,20 @@ pass "no tracked API keys or token-looking secrets found"
 
 git check-ignore -q .env.local || fail ".env.local is not ignored"
 pass ".env.local is ignored"
+git check-ignore -q backend/data/city-intelligence.sqlite || fail "local SQLite DB is not ignored"
+git check-ignore -q logs/dataset-refresh.log || fail "refresh logs are not ignored"
+git check-ignore -q backend/__pycache__/db.cpython-314.pyc || fail "backend Python cache is not ignored"
+git check-ignore -q scripts/__pycache__/score-opportunity.cpython-314.pyc || fail "script Python cache is not ignored"
+pass "local DB, logs, and Python caches are ignored"
 
 grep -q "nvm use 22" README.md || fail "README.md must mention nvm use 22"
 grep -q "yarn gulp dev" README.md || fail "README.md must mention yarn gulp dev"
 grep -q "http://localhost:3001" README.md || fail "README.md must mention localhost:3001"
 grep -q "nvm use 22" open-source/TerriaMap/README.md || fail "TerriaMap README must mention nvm use 22"
 grep -q "yarn gulp dev" docs/manual-qa-checklist.md || fail "manual QA checklist must mention yarn gulp dev"
-pass "project run commands are documented with Node 22"
+grep -q "python3 backend/app.py --host 127.0.0.1 --port 8000" docs/local-backend.md || fail "local backend docs must include run command"
+grep -q "bash scripts/refresh-all-datasets.sh --dry-run" docs/local-data-refresh.md || fail "local refresh docs must include dry-run command"
+grep -q "Export Outreach Queue CSV" docs/outreach-workflow.md || fail "outreach docs must mention queue CSV export"
+pass "project run commands and local workflows are documented"
 
 pass "project health check complete"
