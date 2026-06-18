@@ -82,6 +82,8 @@ const SOURCE_LAYERS = [
   "Manual Lead"
 ];
 
+const LOCAL_BACKEND_URL = "http://localhost:8000";
+
 const emptyForm = {
   name: "",
   category: "Pharmacy",
@@ -210,6 +212,20 @@ const styles = {
     fontSize: 11,
     lineHeight: 1.25
   },
+  backendBox: {
+    border: "1px solid rgba(182,227,255,0.24)",
+    borderRadius: 4,
+    padding: 10,
+    marginTop: 12,
+    marginBottom: 12,
+    background: "rgba(47,128,237,0.08)"
+  },
+  backendMessage: {
+    margin: "8px 0 0",
+    color: "#b6e3ff",
+    fontSize: 12,
+    lineHeight: 1.35
+  },
   card: {
     border: "1px solid rgba(255,255,255,0.18)",
     borderRadius: 6,
@@ -330,6 +346,27 @@ const styles = {
 
 function loadLeads() {
   return getLeads();
+}
+
+async function localBackendRequest(path, options = {}) {
+  const response = await fetch(`${LOCAL_BACKEND_URL}${path}`, {
+    ...options,
+    headers: {
+      "Content-Type": "application/json",
+      ...(options.headers || {})
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`Local backend returned ${response.status}`);
+  }
+
+  const contentType = response.headers.get("content-type") || "";
+  if (contentType.includes("application/json")) {
+    return response.json();
+  }
+
+  return response.text();
 }
 
 function exportDataUri(format, content) {
@@ -790,6 +827,8 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   const [exportScope, setExportScope] = useState("all");
   const [outreachTemplateByLead, setOutreachTemplateByLead] = useState({});
   const [importJsonText, setImportJsonText] = useState("");
+  const [backendMessage, setBackendMessage] = useState("");
+  const [backendBusy, setBackendBusy] = useState(false);
   const importFileInputRef = useRef(null);
 
   const dropdownTheme = useMemo(() => ({ icon: "download" }), []);
@@ -1107,6 +1146,57 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     handleImportJsonContent(content);
   };
 
+  const runBackendAction = async (action) => {
+    setBackendBusy(true);
+    setBackendMessage("");
+    try {
+      await action();
+    } catch {
+      const offlineMessage =
+        "Local backend is not running. Browser storage still works.";
+      setBackendMessage(offlineMessage);
+      setMessage(offlineMessage);
+    } finally {
+      setBackendBusy(false);
+    }
+  };
+
+  const handleCheckBackend = () => {
+    runBackendAction(async () => {
+      const health = await localBackendRequest("/health");
+      const backendOkMessage = `Local backend is running with ${
+        health.lead_count ?? 0
+      } lead${health.lead_count === 1 ? "" : "s"}.`;
+      setBackendMessage(backendOkMessage);
+      setMessage(backendOkMessage);
+    });
+  };
+
+  const handleSyncToBackend = () => {
+    runBackendAction(async () => {
+      const result = await localBackendRequest("/leads/import", {
+        method: "POST",
+        body: JSON.stringify({ leads })
+      });
+      const syncMessage = `Synced ${result.imported ?? 0} new and ${
+        result.updated ?? 0
+      } existing lead${(result.imported ?? 0) + (result.updated ?? 0) === 1 ? "" : "s"} to the local backend.`;
+      setBackendMessage(syncMessage);
+      setMessage(syncMessage);
+    });
+  };
+
+  const handleLoadFromBackend = () => {
+    runBackendAction(async () => {
+      const backendLeads = await localBackendRequest("/leads");
+      const summary = importLeadsFromJson(JSON.stringify(backendLeads));
+      setLeads(loadLeads());
+      const loadMessage = `Loaded backend leads into browser storage: ${summary.imported} imported, ${summary.updated} updated, ${summary.skipped} skipped.`;
+      setBackendMessage(loadMessage);
+      setMessage(loadMessage);
+    });
+  };
+
   return (
     <MenuPanel
       theme={dropdownTheme}
@@ -1278,6 +1368,45 @@ export function CityIntelligenceLeadPanel({ viewState }) {
           <p style={styles.warning}>
             Leads are stored locally in this browser. Export backups regularly.
           </p>
+          <div style={styles.backendBox} data-testid="local-backend-controls">
+            <div style={styles.sectionTitle}>Local Backend</div>
+            <p style={styles.warning}>
+              Optional SQLite sync. Browser storage remains the default and
+              keeps working when the backend is off.
+            </p>
+            <div style={styles.actions}>
+              <button
+                type="button"
+                style={styles.button}
+                onClick={handleCheckBackend}
+                disabled={backendBusy}
+                data-testid="check-local-backend-button"
+              >
+                Check Local Backend
+              </button>
+              <button
+                type="button"
+                style={styles.button}
+                onClick={handleSyncToBackend}
+                disabled={backendBusy}
+                data-testid="sync-leads-to-backend-button"
+              >
+                Sync Leads to Local Backend
+              </button>
+              <button
+                type="button"
+                style={styles.button}
+                onClick={handleLoadFromBackend}
+                disabled={backendBusy}
+                data-testid="load-leads-from-backend-button"
+              >
+                Load Leads from Local Backend
+              </button>
+            </div>
+            {backendMessage && (
+              <p style={styles.backendMessage}>{backendMessage}</p>
+            )}
+          </div>
           <div style={styles.counterGrid} data-testid="lead-status-counters">
             <div style={styles.counter}>
               <span style={styles.counterValue}>{leadCounters.total}</span>

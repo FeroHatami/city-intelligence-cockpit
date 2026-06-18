@@ -83,3 +83,19 @@ uvicorn backend.app:app --host 127.0.0.1 --port 8000 --reload
 ```
 
 The frontend must continue to work even when this backend is not running.
+
+## In-App Backend Sync Controls
+
+Open `Saved Leads`, then use the optional `Local Backend` controls:
+
+- `Check Local Backend`: verifies `http://localhost:8000/health`.
+- `Sync Leads to Local Backend`: sends all current browser leads to SQLite.
+- `Load Leads from Local Backend`: imports SQLite leads back into browser
+  localStorage.
+
+Sync is manual only. The app does not auto-sync, does not require login, and
+does not send data to any cloud service.
+
+When the backend is off, the app shows:
+
+`Local backend is not running. Browser storage still works.`

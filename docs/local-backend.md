@@ -100,3 +100,20 @@ The SQLite schema mirrors the current local lead workflow:
 
 The frontend does not require this backend. If it is not running, leads still
 save, edit, score, export, import, and persist in browser localStorage.
+
+## Saved Leads Panel Controls
+
+The `Saved Leads` panel includes optional `Local Backend` controls:
+
+- `Check Local Backend`
+- `Sync Leads to Local Backend`
+- `Load Leads from Local Backend`
+
+These buttons only run when the user selects them. There is no automatic sync.
+
+If the backend is not running, the app shows:
+
+`Local backend is not running. Browser storage still works.`
+
+This is expected and safe. Browser localStorage remains the primary in-app lead
+storage path.
