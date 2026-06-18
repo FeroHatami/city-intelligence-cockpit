@@ -244,7 +244,7 @@ def leads_to_json(leads: list[dict[str, Any]]) -> str:
 
 def leads_to_csv(leads: list[dict[str, Any]]) -> str:
     output = io.StringIO()
-    writer = csv.DictWriter(output, fieldnames=LEAD_FIELDS)
+    writer = csv.DictWriter(output, fieldnames=LEAD_FIELDS, lineterminator="\n")
     writer.writeheader()
     writer.writerows(leads)
     return output.getvalue()
