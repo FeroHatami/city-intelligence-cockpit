@@ -86,6 +86,11 @@ The SQLite schema mirrors the current local lead workflow:
 - `suggested_offer`
 - `suggested_first_message`
 - `outreach_angle`
+- `outreach_status`
+- `outreach_channel`
+- `outreach_message`
+- `outreach_last_generated_at`
+- `outreach_last_copied_at`
 - `recommended_next_action`
 - `risk_notes`
 - `notes`

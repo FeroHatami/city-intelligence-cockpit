@@ -130,6 +130,13 @@ def create_lead(
         "suggested_offer": str(properties.get("suggested_offer") or ""),
         "suggested_first_message": str(properties.get("suggested_first_message") or ""),
         "outreach_angle": str(properties.get("outreach_angle") or ""),
+        "outreach_status": str(properties.get("outreach_status") or ""),
+        "outreach_channel": str(properties.get("outreach_channel") or ""),
+        "outreach_message": str(properties.get("outreach_message") or ""),
+        "outreach_last_generated_at": str(
+            properties.get("outreach_last_generated_at") or ""
+        ),
+        "outreach_last_copied_at": str(properties.get("outreach_last_copied_at") or ""),
         "recommended_next_action": str(properties.get("recommended_next_action") or ""),
         "risk_notes": str(properties.get("risk_notes") or ""),
         "notes": notes or str(properties.get("notes") or ""),

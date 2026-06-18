@@ -8,6 +8,15 @@ export type LeadStatus =
   | "meeting_booked"
   | "not_relevant";
 
+export type OutreachStatus =
+  | ""
+  | "draft"
+  | "ready_to_review"
+  | "copied"
+  | "sent_manually"
+  | "replied"
+  | "not_interested";
+
 export interface CityIntelligenceLead {
   id: string;
   name: string;
@@ -30,6 +39,11 @@ export interface CityIntelligenceLead {
   suggested_offer: string;
   suggested_first_message: string;
   outreach_angle: string;
+  outreach_status: OutreachStatus;
+  outreach_channel: string;
+  outreach_message: string;
+  outreach_last_generated_at: string;
+  outreach_last_copied_at: string;
   recommended_next_action: string;
   risk_notes: string;
   notes: string;
@@ -273,6 +287,21 @@ function cleanStatus(value: unknown): LeadStatus {
     : DEFAULT_STATUS;
 }
 
+function cleanOutreachStatus(value: unknown): OutreachStatus {
+  const status = cleanString(value) as OutreachStatus;
+  return [
+    "",
+    "draft",
+    "ready_to_review",
+    "copied",
+    "sent_manually",
+    "replied",
+    "not_interested"
+  ].includes(status)
+    ? status
+    : "";
+}
+
 function slugify(value: string) {
   return (
     value
@@ -320,6 +349,22 @@ function normalizeLead(lead: LeadInput): CityIntelligenceLead {
     suggested_offer: cleanString(lead.suggested_offer),
     suggested_first_message: cleanString(lead.suggested_first_message),
     outreach_angle: cleanString(lead.outreach_angle),
+    outreach_status: cleanOutreachStatus(
+      (lead as { outreach_status?: unknown }).outreach_status
+    ),
+    outreach_channel: cleanString(
+      (lead as { outreach_channel?: unknown }).outreach_channel
+    ),
+    outreach_message: cleanString(
+      (lead as { outreach_message?: unknown }).outreach_message
+    ),
+    outreach_last_generated_at: cleanString(
+      (lead as { outreach_last_generated_at?: unknown })
+        .outreach_last_generated_at
+    ),
+    outreach_last_copied_at: cleanString(
+      (lead as { outreach_last_copied_at?: unknown }).outreach_last_copied_at
+    ),
     recommended_next_action: cleanString(lead.recommended_next_action),
     risk_notes: cleanString(lead.risk_notes),
     notes: cleanString(lead.notes),
@@ -536,6 +581,11 @@ export function exportLeads(
     "suggested_offer",
     "suggested_first_message",
     "outreach_angle",
+    "outreach_status",
+    "outreach_channel",
+    "outreach_message",
+    "outreach_last_generated_at",
+    "outreach_last_copied_at",
     "recommended_next_action",
     "risk_notes",
     "notes",
@@ -732,9 +782,12 @@ export function generateOutreach(
 ) {
   const ruleKey = scoreRuleKey(lead);
   const rule = SCORE_RULES[ruleKey];
+  const message = outreachMessage(lead, ruleKey, rule, template);
   return {
-    suggested_first_message: outreachMessage(lead, ruleKey, rule, template),
+    suggested_first_message: message,
+    outreach_message: message,
     outreach_angle: `${rule.outreach_angle} Template: ${outreachTemplateLabel(template)}.`,
-    recommended_next_action: rule.recommended_next_action
+    recommended_next_action: rule.recommended_next_action,
+    outreach_last_generated_at: nowIso()
   };
 }

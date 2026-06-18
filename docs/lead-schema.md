@@ -33,6 +33,11 @@ Each lead record is a JSON object with these fields:
 | `suggested_offer` | string | Suggested outreach offer. |
 | `suggested_first_message` | string | Locally generated first outreach message suggestion. |
 | `outreach_angle` | string | Local outreach angle used to frame the first message. |
+| `outreach_status` | string | Local review-queue status such as `draft`, `ready_to_review`, `copied`, `sent_manually`, `replied`, or `not_interested`. Empty means not queued. |
+| `outreach_channel` | string | Local review channel such as `email`, `linkedin`, `phone`, `website`, or `other`. |
+| `outreach_message` | string | Editable outreach message used by the review queue. |
+| `outreach_last_generated_at` | string | ISO 8601 UTC timestamp from the last local message generation. |
+| `outreach_last_copied_at` | string | ISO 8601 UTC timestamp from the last browser copy action. |
 | `recommended_next_action` | string | Suggested next action for the lead. |
 | `risk_notes` | string | Local caution notes for qualification, privacy, compliance, or data-quality risk. |
 | `notes` | string | Analyst notes. |
@@ -48,6 +53,16 @@ Each lead record is a JSON object with these fields:
 - `contacted`
 - `meeting_booked`
 - `not_relevant`
+
+## Outreach Status Values
+
+- empty string: not queued
+- `draft`
+- `ready_to_review`
+- `copied`
+- `sent_manually`
+- `replied`
+- `not_interested`
 
 ## Example
 
@@ -74,6 +89,11 @@ Each lead record is a JSON object with these fields:
   "suggested_offer": "",
   "suggested_first_message": "",
   "outreach_angle": "",
+  "outreach_status": "",
+  "outreach_channel": "",
+  "outreach_message": "",
+  "outreach_last_generated_at": "",
+  "outreach_last_copied_at": "",
   "recommended_next_action": "",
   "risk_notes": "",
   "notes": "",
@@ -104,9 +124,13 @@ The v1 panel supports:
 - JSON backup import from file or pasted JSON with duplicate-aware merge
 - rule-based `Score Lead`
 - local `Generate Outreach Message`
+- local `Add to Outreach Queue`
+- outreach status and channel filters
+- `Export Outreach Queue CSV` for manually reviewed follow-up work
 - `Copy Message` for generated outreach text when browser clipboard access is available
 
-The v1 panel does not use authentication, a backend, or a database.
+The v1 panel does not send email, use Gmail, use SMTP, use authentication, or
+require a database.
 Leads are stored locally in the current browser, so export JSON backups
 regularly before clearing browser data or changing machines.
 

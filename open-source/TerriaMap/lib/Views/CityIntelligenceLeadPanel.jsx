@@ -49,6 +49,26 @@ const OUTREACH_TEMPLATES = [
   ["phone_opener", "Phone-call opener"]
 ];
 
+const OUTREACH_STATUSES = [
+  "draft",
+  "ready_to_review",
+  "copied",
+  "sent_manually",
+  "replied",
+  "not_interested"
+];
+
+const OUTREACH_STATUS_LABELS = {
+  draft: "Draft",
+  ready_to_review: "Ready to review",
+  copied: "Copied",
+  sent_manually: "Sent manually",
+  replied: "Replied",
+  not_interested: "Not interested"
+};
+
+const OUTREACH_CHANNELS = ["email", "linkedin", "phone", "website", "other"];
+
 const CATEGORIES = [
   "Pharmacy",
   "Office",
@@ -384,6 +404,47 @@ function stringValue(value) {
   return "";
 }
 
+function csvValue(value) {
+  const text = stringValue(value);
+  return /[",\n\r]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+}
+
+function outreachStatusLabel(status) {
+  return OUTREACH_STATUS_LABELS[status] || "Not queued";
+}
+
+function defaultOutreachChannel(lead) {
+  if (lead.website) return "email";
+  if (lead.phone) return "phone";
+  return "other";
+}
+
+function activeOutreachMessage(lead) {
+  return lead.outreach_message || lead.suggested_first_message || "";
+}
+
+function exportOutreachQueueCsv(leads) {
+  const fields = [
+    "name",
+    "category",
+    "website",
+    "phone",
+    "address",
+    "outreach_channel",
+    "outreach_message",
+    "outreach_status",
+    "status",
+    "notes"
+  ];
+  const queuedLeads = leads.filter((lead) => lead.outreach_status);
+  return [
+    fields.join(","),
+    ...queuedLeads.map((lead) =>
+      fields.map((field) => csvValue(lead[field])).join(",")
+    )
+  ].join("\n");
+}
+
 function normalizedKey(key) {
   return String(key)
     .toLowerCase()
@@ -686,7 +747,10 @@ function leadSearchText(lead) {
     lead.verified_by,
     lead.data_source,
     lead.score_reason,
-    lead.suggested_first_message
+    lead.suggested_first_message,
+    lead.outreach_status,
+    lead.outreach_channel,
+    lead.outreach_message
   ]
     .map(stringValue)
     .join(" ")
@@ -822,6 +886,8 @@ export function CityIntelligenceLeadPanel({ viewState }) {
   const [verificationStatusFilter, setVerificationStatusFilter] =
     useState("all");
   const [sourceLayerFilter, setSourceLayerFilter] = useState("all");
+  const [outreachStatusFilter, setOutreachStatusFilter] = useState("all");
+  const [outreachChannelFilter, setOutreachChannelFilter] = useState("all");
   const [minimumScoreFilter, setMinimumScoreFilter] = useState("");
   const [sortMode, setSortMode] = useState("newest");
   const [exportScope, setExportScope] = useState("all");
@@ -889,6 +955,16 @@ export function CityIntelligenceLeadPanel({ viewState }) {
         lead.source_layer !== sourceLayerFilter
       )
         return false;
+      if (
+        outreachStatusFilter !== "all" &&
+        (lead.outreach_status || "") !== outreachStatusFilter
+      )
+        return false;
+      if (
+        outreachChannelFilter !== "all" &&
+        (lead.outreach_channel || "") !== outreachChannelFilter
+      )
+        return false;
       if (query && !leadSearchText(lead).includes(query)) return false;
       if (Number.isFinite(minimumScore)) {
         const score = numericScore(lead);
@@ -925,7 +1001,9 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     sortMode,
     sourceLayerFilter,
     statusFilter,
-    verificationStatusFilter
+    verificationStatusFilter,
+    outreachStatusFilter,
+    outreachChannelFilter
   ]);
 
   useEffect(() => {
@@ -1050,14 +1128,56 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     );
   };
 
+  const handleAddToOutreachQueue = (lead) => {
+    const template = outreachTemplateByLead[lead.id] || "english_email";
+    const generated = activeOutreachMessage(lead)
+      ? {}
+      : generateOutreach(lead, template);
+    const outreachMessage =
+      activeOutreachMessage(lead) ||
+      generated.outreach_message ||
+      generated.suggested_first_message ||
+      "";
+
+    updateLead(lead.id, {
+      ...generated,
+      outreach_status: lead.outreach_status || "draft",
+      outreach_channel: lead.outreach_channel || defaultOutreachChannel(lead),
+      outreach_message: outreachMessage
+    });
+    setLeads(loadLeads());
+    setMessage(`Added ${lead.name} to the outreach queue.`);
+  };
+
+  const handleOutreachStatus = (lead, outreachStatus) => {
+    updateLead(lead.id, { outreach_status: outreachStatus });
+    setLeads(loadLeads());
+    setMessage(
+      `Marked ${lead.name} as ${outreachStatusLabel(outreachStatus)}.`
+    );
+  };
+
+  const handleOutreachChannel = (lead, outreachChannel) => {
+    updateLead(lead.id, { outreach_channel: outreachChannel });
+    setLeads(loadLeads());
+    setMessage(`Updated outreach channel for ${lead.name}.`);
+  };
+
   const handleCopyMessage = async (lead) => {
-    if (!lead.suggested_first_message) {
+    const outreachMessage = activeOutreachMessage(lead);
+    if (!outreachMessage) {
       setMessage("Generate an outreach message first.");
       return;
     }
 
     try {
-      await copyTextToClipboard(lead.suggested_first_message);
+      await copyTextToClipboard(outreachMessage);
+      updateLead(lead.id, {
+        outreach_status: "copied",
+        outreach_message: outreachMessage,
+        outreach_last_copied_at: new Date().toISOString()
+      });
+      setLeads(loadLeads());
       setMessage(`Copied outreach message for ${lead.name}.`);
     } catch {
       setMessage("Copy failed. The message remains visible for manual copy.");
@@ -1100,6 +1220,14 @@ export function CityIntelligenceLeadPanel({ viewState }) {
         exportScope === "filtered" ? "filtered leads" : "all saved leads"
       } (${exportedLeads.length}).`
     );
+  };
+
+  const handleExportOutreachQueue = () => {
+    const content = exportOutreachQueueCsv(leads);
+    const queuedCount = leads.filter((lead) => lead.outreach_status).length;
+    setExportFormat("csv");
+    setExportPreview(content);
+    setMessage(`Prepared outreach queue CSV export (${queuedCount}).`);
   };
 
   const handleBackupExport = () => {
@@ -1514,6 +1642,42 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                 ))}
               </select>
             </Field>
+            <Field label="Outreach Status Filter">
+              <select
+                style={styles.input}
+                value={outreachStatusFilter}
+                onChange={(event) =>
+                  setOutreachStatusFilter(event.target.value)
+                }
+                data-testid="lead-outreach-status-filter"
+              >
+                <option value="all">All outreach statuses</option>
+                <option value="">Not queued</option>
+                {OUTREACH_STATUSES.map((status) => (
+                  <option key={status} value={status}>
+                    {outreachStatusLabel(status)}
+                  </option>
+                ))}
+              </select>
+            </Field>
+            <Field label="Outreach Channel Filter">
+              <select
+                style={styles.input}
+                value={outreachChannelFilter}
+                onChange={(event) =>
+                  setOutreachChannelFilter(event.target.value)
+                }
+                data-testid="lead-outreach-channel-filter"
+              >
+                <option value="all">All outreach channels</option>
+                <option value="">No channel</option>
+                {OUTREACH_CHANNELS.map((channel) => (
+                  <option key={channel} value={channel}>
+                    {channel}
+                  </option>
+                ))}
+              </select>
+            </Field>
             <Field
               label="Minimum Score"
               value={minimumScoreFilter}
@@ -1595,6 +1759,14 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               onClick={() => handleExport("csv")}
             >
               Export CSV
+            </button>
+            <button
+              type="button"
+              style={styles.button}
+              onClick={handleExportOutreachQueue}
+              data-testid="export-outreach-queue-csv-button"
+            >
+              Export Outreach Queue CSV
             </button>
             <input
               ref={importFileInputRef}
@@ -1683,6 +1855,11 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                         <span style={styles.badge}>Website</span>
                       )}
                       {lead.phone && <span style={styles.badge}>Phone</span>}
+                      {lead.outreach_status && (
+                        <span style={styles.badge}>
+                          Outreach: {outreachStatusLabel(lead.outreach_status)}
+                        </span>
+                      )}
                     </div>
                   </div>
                   <div style={styles.score}>
@@ -1730,6 +1907,38 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                     }
                     placeholder="Local analyst"
                   />
+                  <Field label="Outreach Status">
+                    <select
+                      style={styles.input}
+                      value={lead.outreach_status || ""}
+                      onChange={(event) =>
+                        handleOutreachStatus(lead, event.target.value)
+                      }
+                    >
+                      <option value="">Not queued</option>
+                      {OUTREACH_STATUSES.map((status) => (
+                        <option key={status} value={status}>
+                          {outreachStatusLabel(status)}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
+                  <Field label="Outreach Channel">
+                    <select
+                      style={styles.input}
+                      value={lead.outreach_channel || ""}
+                      onChange={(event) =>
+                        handleOutreachChannel(lead, event.target.value)
+                      }
+                    >
+                      <option value="">No channel</option>
+                      {OUTREACH_CHANNELS.map((channel) => (
+                        <option key={channel} value={channel}>
+                          {channel}
+                        </option>
+                      ))}
+                    </select>
+                  </Field>
                   <div style={styles.full}>
                     <Field
                       as="textarea"
@@ -1760,6 +1969,19 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                     />
                     <DetailRow label="Verified by" value={lead.verified_by} />
                     <DetailRow label="Checked" value={lead.last_checked_at} />
+                    <DetailRow
+                      label="Outreach"
+                      value={outreachStatusLabel(lead.outreach_status)}
+                    />
+                    <DetailRow label="Channel" value={lead.outreach_channel} />
+                    <DetailRow
+                      label="Generated"
+                      value={lead.outreach_last_generated_at}
+                    />
+                    <DetailRow
+                      label="Copied"
+                      value={lead.outreach_last_copied_at}
+                    />
                     <DetailRow label="Updated" value={lead.updated_at} />
                   </div>
                 </details>
@@ -1829,15 +2051,16 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                       ))}
                     </select>
                   </Field>
-                  {lead.suggested_first_message && (
+                  {activeOutreachMessage(lead) && (
                     <div style={styles.full}>
                       <Field
                         as="textarea"
                         label="Outreach Message"
-                        value={lead.suggested_first_message}
+                        value={activeOutreachMessage(lead)}
                         onChange={(value) =>
                           handleUpdate(lead.id, {
-                            suggested_first_message: value
+                            suggested_first_message: value,
+                            outreach_message: value
                           })
                         }
                       />
@@ -1889,7 +2112,52 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                   >
                     Generate Outreach Message
                   </button>
-                  {lead.suggested_first_message && (
+                  <button
+                    type="button"
+                    style={{ ...styles.button, ...styles.smallButton }}
+                    onClick={() => handleAddToOutreachQueue(lead)}
+                    data-testid="add-to-outreach-queue-button"
+                  >
+                    Add to Outreach Queue
+                  </button>
+                  <button
+                    type="button"
+                    style={{ ...styles.button, ...styles.smallButton }}
+                    onClick={() =>
+                      handleOutreachStatus(lead, "ready_to_review")
+                    }
+                  >
+                    Mark Ready to Review
+                  </button>
+                  <button
+                    type="button"
+                    style={{ ...styles.button, ...styles.smallButton }}
+                    onClick={() => handleOutreachStatus(lead, "copied")}
+                  >
+                    Mark Copied
+                  </button>
+                  <button
+                    type="button"
+                    style={{ ...styles.button, ...styles.smallButton }}
+                    onClick={() => handleOutreachStatus(lead, "sent_manually")}
+                  >
+                    Mark Sent Manually
+                  </button>
+                  <button
+                    type="button"
+                    style={{ ...styles.button, ...styles.smallButton }}
+                    onClick={() => handleOutreachStatus(lead, "replied")}
+                  >
+                    Mark Replied
+                  </button>
+                  <button
+                    type="button"
+                    style={{ ...styles.button, ...styles.smallButton }}
+                    onClick={() => handleOutreachStatus(lead, "not_interested")}
+                  >
+                    Mark Not Interested
+                  </button>
+                  {activeOutreachMessage(lead) && (
                     <button
                       type="button"
                       style={{ ...styles.button, ...styles.smallButton }}

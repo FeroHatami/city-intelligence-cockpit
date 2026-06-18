@@ -18,6 +18,15 @@ The app stores browser leads under:
 Use the in-app `Backup Leads JSON`, `Import Leads JSON`, JSON export, and CSV
 export controls for browser-only backups.
 
+The outreach queue fields are stored with the lead record. They are local review
+metadata only and do not send messages:
+
+- `outreach_status`
+- `outreach_channel`
+- `outreach_message`
+- `outreach_last_generated_at`
+- `outreach_last_copied_at`
+
 ## SQLite Database
 
 Default path:

@@ -53,6 +53,11 @@ def init_db(db_path: str | Path | None = None) -> Path:
                 suggested_offer TEXT NOT NULL DEFAULT '',
                 suggested_first_message TEXT NOT NULL DEFAULT '',
                 outreach_angle TEXT NOT NULL DEFAULT '',
+                outreach_status TEXT NOT NULL DEFAULT '',
+                outreach_channel TEXT NOT NULL DEFAULT '',
+                outreach_message TEXT NOT NULL DEFAULT '',
+                outreach_last_generated_at TEXT NOT NULL DEFAULT '',
+                outreach_last_copied_at TEXT NOT NULL DEFAULT '',
                 recommended_next_action TEXT NOT NULL DEFAULT '',
                 risk_notes TEXT NOT NULL DEFAULT '',
                 notes TEXT NOT NULL DEFAULT '',
@@ -65,6 +70,16 @@ def init_db(db_path: str | Path | None = None) -> Path:
             )
             """
         )
+        existing_columns = {
+            row["name"]
+            for row in connection.execute("PRAGMA table_info(leads)").fetchall()
+        }
+        for field in TEXT_FIELDS:
+            if field not in existing_columns:
+                connection.execute(
+                    f"ALTER TABLE leads ADD COLUMN {field} TEXT NOT NULL DEFAULT ''"
+                )
+                existing_columns.add(field)
         connection.execute(
             """
             CREATE UNIQUE INDEX IF NOT EXISTS idx_leads_osm_identity
