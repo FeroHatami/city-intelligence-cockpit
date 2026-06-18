@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.city-intelligence.refresh</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/bash</string>
+    <string>/Users/farbod/Projects/city-intelligence-cockpit/scripts/refresh-all-datasets.sh</string>
+  </array>
+
+  <key>WorkingDirectory</key>
+  <string>/Users/farbod/Projects/city-intelligence-cockpit</string>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>7</integer>
+    <key>Minute</key>
+    <integer>30</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/farbod/Projects/city-intelligence-cockpit/logs/dataset-refresh.launchd.out.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/farbod/Projects/city-intelligence-cockpit/logs/dataset-refresh.launchd.err.log</string>
+</dict>
+</plist>
