@@ -209,7 +209,7 @@ const styles = {
   },
   counterGrid: {
     display: "grid",
-    gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+    gridTemplateColumns: "repeat(auto-fit, minmax(120px, 1fr))",
     gap: 8,
     marginTop: 8
   },
@@ -911,6 +911,10 @@ export function CityIntelligenceLeadPanel({ viewState }) {
       ).length,
       needs_research: leads.filter(
         (lead) => lead.verification_status === "needs_research"
+      ).length,
+      outreach_queue: leads.filter((lead) => lead.outreach_status).length,
+      ready_to_review: leads.filter(
+        (lead) => lead.outreach_status === "ready_to_review"
       ).length
     }),
     [leads]
@@ -1227,7 +1231,11 @@ export function CityIntelligenceLeadPanel({ viewState }) {
     const queuedCount = leads.filter((lead) => lead.outreach_status).length;
     setExportFormat("csv");
     setExportPreview(content);
-    setMessage(`Prepared outreach queue CSV export (${queuedCount}).`);
+    setMessage(
+      queuedCount
+        ? `Prepared outreach queue CSV export (${queuedCount}).`
+        : "No leads are in the outreach queue yet."
+    );
   };
 
   const handleBackupExport = () => {
@@ -1494,13 +1502,14 @@ export function CityIntelligenceLeadPanel({ viewState }) {
 
           <div style={styles.sectionTitle}>Lead List</div>
           <p style={styles.warning}>
-            Leads are stored locally in this browser. Export backups regularly.
+            Browser storage is local. Use Backup Leads before clearing browser
+            data or switching machines.
           </p>
           <div style={styles.backendBox} data-testid="local-backend-controls">
             <div style={styles.sectionTitle}>Local Backend</div>
             <p style={styles.warning}>
-              Optional SQLite sync. Browser storage remains the default and
-              keeps working when the backend is off.
+              Optional SQLite sync. Browser storage keeps working when the
+              backend is off.
             </p>
             <div style={styles.actions}>
               <button
@@ -1567,6 +1576,18 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                 {leadCounters.needs_research}
               </span>
               <span style={styles.counterLabel}>Needs research</span>
+            </div>
+            <div style={styles.counter}>
+              <span style={styles.counterValue}>
+                {leadCounters.outreach_queue}
+              </span>
+              <span style={styles.counterLabel}>Outreach queue</span>
+            </div>
+            <div style={styles.counter}>
+              <span style={styles.counterValue}>
+                {leadCounters.ready_to_review}
+              </span>
+              <span style={styles.counterLabel}>Ready to review</span>
             </div>
           </div>
 
@@ -1743,7 +1764,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               onClick={handleBackupExport}
               data-testid="backup-leads-json-button"
             >
-              Backup Leads JSON
+              Backup Leads
             </button>
             <button
               type="button"
@@ -1751,7 +1772,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               onClick={() => importFileInputRef.current?.click()}
               data-testid="import-leads-json-button"
             >
-              Import Leads JSON
+              Restore Leads
             </button>
             <button
               type="button"
@@ -1795,9 +1816,12 @@ export function CityIntelligenceLeadPanel({ viewState }) {
               onClick={handleImportPastedJson}
               data-testid="import-pasted-leads-json-button"
             >
-              Import Pasted JSON
+              Restore Pasted JSON
             </button>
           </div>
+          <p style={styles.warning}>
+            Outreach queue drafts stay local and are never sent automatically.
+          </p>
 
           {exportPreview && (
             <div>
@@ -1820,12 +1844,14 @@ export function CityIntelligenceLeadPanel({ viewState }) {
 
           {leads.length === 0 ? (
             <p style={styles.empty}>
-              Select a map feature, click Import Selected Feature, then save it
-              as a lead. You can also use the manual form above when a feature
-              does not expose enough map data.
+              No saved leads yet. Import a selected feature or use the manual
+              form above.
             </p>
           ) : visibleLeads.length === 0 ? (
-            <p style={styles.empty}>No leads match the current filters.</p>
+            <p style={styles.empty}>
+              No leads match the current filters. Clear filters or broaden the
+              search.
+            </p>
           ) : (
             visibleLeads.map((lead) => (
               <div
@@ -2110,7 +2136,7 @@ export function CityIntelligenceLeadPanel({ viewState }) {
                     onClick={() => handleGenerateOutreach(lead)}
                     data-testid="generate-outreach-button"
                   >
-                    Generate Outreach Message
+                    Generate Outreach
                   </button>
                   <button
                     type="button"

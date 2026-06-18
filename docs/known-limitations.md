@@ -17,6 +17,7 @@ city data platform yet.
 
 - Leads are stored in browser localStorage.
 - Browser data clearing can delete saved leads.
+- Optional SQLite sync is local and manual.
 - Leads do not sync across devices or browsers.
 - There is no authentication, access control, shared workspace, or audit log.
 - Backup/restore is manual JSON import/export.
@@ -25,6 +26,8 @@ city data platform yet.
 
 - Opportunity scoring is rule-based and approximate.
 - Outreach templates are local helper drafts, not automated sales advice.
+- Outreach queue statuses are manual review states; the app does not send
+  messages.
 - No API-based enrichment or AI scoring is used.
 - A human should verify business status, contact details, and fit before
   outreach.
@@ -38,5 +41,6 @@ city data platform yet.
 
 ## Future Optional Work
 
-Backend, database, authentication, deployment, and API-based enrichment are
-possible later, but they are intentionally outside the current local-first scope.
+Hosted databases, authentication, deployment, cloud sync, and API-based
+enrichment are possible later, but they are intentionally outside the current
+local-first scope.

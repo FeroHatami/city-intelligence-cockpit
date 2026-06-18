@@ -3,7 +3,7 @@
 City Intelligence Cockpit is a local-first 2D/3D geospatial prototype for Munich
 city intelligence. It combines real OpenStreetMap business layers, official
 public geodata, selectable basemaps, and an in-browser lead workflow for saving,
-verifying, scoring, and exporting opportunities without a backend or paid API.
+verifying, scoring, and exporting opportunities without deployment or paid APIs.
 
 Initial city focus: Munich, Germany.
 
@@ -42,6 +42,8 @@ Recommended screenshots:
 - Verification workflow for OSM/public data quality.
 - Offline rule-based opportunity scoring.
 - Offline rule-based outreach message generation in German and English.
+- Semi-automated local outreach queue for review, copy, and CSV export.
+- Optional local SQLite backend for manual backup/restore sync.
 - JSON/CSV export plus JSON backup and restore.
 - Project health check script.
 
@@ -72,13 +74,13 @@ The current prototype is intentionally local and free:
 - no OpenAI API
 - no paid APIs
 - no Cesium ion token
-- no backend
-- no database
+- optional local backend only
+- optional local SQLite only
 - no authentication
 - no deployment
 
 Scoring and outreach generation are local rule-based workflows. They do not call
-external AI services.
+external AI services. The outreach queue does not send email or messages.
 
 ## Data Layers
 
@@ -128,7 +130,8 @@ Typical selected-feature flow:
 6. Change status or verification status as research progresses.
 7. Select `Score Lead`.
 8. Select an outreach template and generate a local message.
-9. Export CSV/JSON or create a full JSON backup.
+9. Add reviewed drafts to the outreach queue if useful.
+10. Export CSV/JSON or create a full JSON backup.
 
 Leads persist in browser localStorage under:
 
@@ -137,6 +140,11 @@ Leads persist in browser localStorage under:
 Use `Backup Leads JSON` for a full local backup. Use `Import Leads JSON` or
 `Import Pasted JSON` to restore leads into the same browser. Import validates the
 JSON and merges duplicates by `id` or `osm_type` + `osm_id`.
+
+Optional local SQLite storage is documented in
+[`docs/local-backend.md`](docs/local-backend.md) and
+[`docs/lead-storage.md`](docs/lead-storage.md). Browser storage remains the
+default and the app keeps working when the backend is off.
 
 Lead schema:
 
@@ -179,9 +187,11 @@ The prototype has four local layers:
 - Lead workflow: browser localStorage plus
   `open-source/TerriaMap/lib/CityIntelligence/leads.ts` and the Saved Leads
   panel.
+- Optional local backend: `backend/app.py` and SQLite helpers for manual sync.
 
-There is no server-side lead store. The Terria server only serves the local app
-and static assets during development.
+The Terria server serves the local app and static assets during development.
+The optional backend runs separately on `localhost:8000` only when started by
+the user.
 
 ## Data Disclaimer
 
@@ -197,8 +207,10 @@ human checks the website, phone, address, source, and operating status.
 
 - Leads are stored in browser localStorage and can be lost if browser data is
   cleared.
-- There is no multi-user sync, authentication, backend, or database.
+- Optional SQLite sync is local-only and manual.
+- There is no multi-user sync, authentication, deployment, or cloud database.
 - Scoring and outreach are simple rule-based helpers, not automated sales advice.
+- Outreach drafts are never sent automatically.
 - OSM and public catalog data can be stale or incomplete.
 - Public WMS/WFS services can change or become temporarily unavailable.
 - Manual dataset imports require local validation before catalog changes.
@@ -223,5 +235,5 @@ Medium term:
 
 Optional later work:
 
-- backend, authentication, deployment, hosted database, or API-based scoring only
-  if the project intentionally moves beyond local-first mode
+- real deployment, authentication, hosted database, cloud sync, or API-based
+  enrichment only if the project intentionally moves beyond local-first mode
