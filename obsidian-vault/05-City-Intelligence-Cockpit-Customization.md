@@ -4,10 +4,10 @@
 
 - Set the City Intelligence Cockpit local prototype to load only the focused `city-intelligence` init.
 - Disabled token-dependent Cesium ion terrain, Cesium ion Bing imagery, and Cesium ion search so the app opens without terrain 401 popups or API keys.
-- Added `Natural Earth` and `Satellite View` as selectable no-key basemaps in Map Settings while keeping `OpenStreetMap` as the default startup basemap. Natural Earth uses a public raster tile template; Satellite View uses EOX Sentinel-2 cloudless WMTS tile imagery.
+- Removed the broken `Natural Earth` basemap and added no-key selectable basemaps: `Esri World Topographic`, `Satellite View`, and `CARTO Voyager`, while keeping `OpenStreetMap` as the default startup basemap.
 - Removed the default sample init from startup, hiding the old Australian sample catalog and brittle sample layers from the cockpit.
 - Added Munich default `homeCamera` and `initialCamera` bounds.
-- Set the initial viewer mode to `2d` for a stable Munich-first local prototype. 3D mode remains available through Map Settings.
+- Set the initial viewer mode to `3dSmooth` so Cesium compass/gyroscope tilt and rotation controls work without enabling token-dependent terrain.
 - Renamed visible app branding to `City Intelligence Cockpit`.
 - Added a `City Intelligence Cockpit` catalog group with a real `Munich Pharmacies` GeoJSON layer from OpenStreetMap.
 - Added a real `Munich Offices` GeoJSON layer from OpenStreetMap.
@@ -20,7 +20,8 @@
 - Added official Munich public live layers for city districts, traffic signals, construction sites, disabled parking, EV charging, mobility points, carsharing parking, cycling routes, shared-mobility parking/geofences, digital 3L zones, and drinking fountains.
 - Added official Germany public live layers for basemap.de raster context and BKG VG250 administrative boundaries.
 - Added official Europe public live layers for GISCO countries, GISCO NUTS 2024 levels 0-3, and Copernicus/EEA Corine Land Cover 2018.
-- Restored optional `Natural Earth II (Optional Visual Layer)`, `Satellite View (Optional Visual Layer)`, `Germany basemap.de Context (Optional WMS)`, and Munich-only official 3D dataset footprints under `Visual Reference Layers`, disabled by default and without token-dependent terrain.
+- Kept optional `Satellite View (Optional Visual Layer)`, `Germany basemap.de Context (Optional WMS)`, and Munich-only official 3D dataset footprints under `Visual Reference Layers`, disabled by default and without token-dependent terrain.
+- Added research-only Europe GICS company-data references, a visible local reference-anchor layer, and a local import template at `data/imports/europe-gics-company-dataset-template.json` instead of adding a fake Europe company map layer.
 - Added an offline AI opportunity scoring foundation with dry-run rule-based scoring.
 - Added a first in-app `Saved Leads` workflow backed by browser localStorage.
 - Connected selected map features to the `Saved Leads` workflow with `Import Selected Feature`.
@@ -159,6 +160,7 @@ Real public layers:
 - `EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
 - `EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON)` from Eurostat/GISCO.
 - `Corine Land Cover 2018 Raster (Copernicus/EEA WMS)` and `Corine Land Cover 2018 Vector (Copernicus/EEA WMS)`.
+- `Europe GICS Company Data Source References` as a local GeoJSON reference-anchor layer for licensed GICS, GLEIF, OpenFIGI, and import-template source paths.
 
 Munich public categories:
 
@@ -176,10 +178,10 @@ Europe public categories:
 
 - `Administrative / Statistical Boundaries`
 - `Environment`
+- `Company / GICS Sector Data Sources`
 
 Optional visual reference layers:
 
-- `Natural Earth II (Optional Visual Layer)` from public Natural Earth raster tiles.
 - `Satellite View (Optional Visual Layer)` from EOX Sentinel-2 cloudless tiles.
 - `Germany basemap.de Context (Optional WMS)` from BKG / basemap.de.
 - `Munich LoD2 3D Buildings (Official CityGML Footprint)` from Bavaria OpenData / LDBV.
@@ -188,10 +190,19 @@ Optional visual reference layers:
 - `Munich Laser Point Cloud (Official LAZ Footprint)` from Bavaria OpenData / LDBV.
 - `Munich DOM Mesh Project Areas (Official SLPK Footprints)` from Bavaria OpenData / LDBV.
 
+Selectable basemaps:
+
+- `OpenStreetMap` remains the default startup basemap.
+- `Esri World Topographic` is the primary high-detail alternate basemap.
+- `Satellite View` uses Esri World Imagery as the selectable satellite basemap.
+- `CARTO Voyager` provides a clean OSM-compatible cartographic basemap.
+- `Natural Earth` is intentionally not enabled because it did not load reliably in the local app.
+
 Research-only sources are documented in `docs/data-sources.md` instead of being
 shown as empty catalogue groups. This includes private/commercial candidates
 such as Google Places, Foursquare, HERE, TomTom, commercial footfall datasets,
-company registry data, and real-estate market data.
+company registry data, real-estate market data, and Europe-wide company-level
+GICS sector data that requires explicit licensing from an authoritative source.
 
 Promotion rule:
 

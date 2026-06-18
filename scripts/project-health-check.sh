@@ -32,9 +32,11 @@ git status --short --untracked-files=all
 KEY_FILES=(
   "README.md"
   "data/imports/dataset-metadata-template.json"
+  "data/imports/europe-gics-company-dataset-template.json"
   "docs/architecture.md"
   "docs/ai-opportunity-scoring.md"
   "docs/data-sources.md"
+  "docs/europe-gics-company-data.md"
   "docs/import-datasets.md"
   "docs/known-limitations.md"
   "docs/lead-schema.md"
@@ -43,6 +45,7 @@ KEY_FILES=(
   "docs/roadmap.md"
   "docs/screenshots/README.md"
   "open-source/TerriaMap/wwwroot/config.json"
+  "open-source/TerriaMap/wwwroot/data/city-intelligence/europe-gics-company-data-sources.geojson"
   "open-source/TerriaMap/wwwroot/index.ejs"
   "open-source/TerriaMap/wwwroot/init/city-intelligence.json"
   "open-source/TerriaMap/lib/CityIntelligence/leads.ts"
@@ -178,6 +181,31 @@ if base_maps.get("defaultBaseMapId") != "basemap-openstreetmap":
     raise SystemExit(f"default basemap mismatch: {base_maps}")
 if base_maps.get("previewBaseMapId") != "basemap-openstreetmap":
     raise SystemExit(f"preview basemap mismatch: {base_maps}")
+if (init.get("viewerMode") or "").lower() != "3dsmooth":
+    raise SystemExit(f"viewerMode should be 3dSmooth for compass controls: {init.get('viewerMode')}")
+expected_enabled_base_maps = [
+    "basemap-openstreetmap",
+    "basemap-esri-world-topo",
+    "basemap-esri-world-imagery",
+    "basemap-carto-voyager",
+]
+if base_maps.get("enabledBaseMaps") != expected_enabled_base_maps:
+    raise SystemExit(f"enabled basemap order mismatch: {base_maps.get('enabledBaseMaps')}")
+base_map_items = {
+    (entry.get("item") or {}).get("id"): entry.get("item") or {}
+    for entry in base_maps.get("items") or []
+}
+if "basemap-natural-earth-II" in base_map_items or "basemap-natural-earth-II" in base_maps.get("enabledBaseMaps", []):
+    raise SystemExit("Natural Earth basemap should not be enabled in the custom init")
+esri_topo = base_map_items.get("basemap-esri-world-topo")
+if not esri_topo or esri_topo.get("type") != "esri-mapServer" or "World_Topo_Map" not in esri_topo.get("url", ""):
+    raise SystemExit(f"Esri World Topographic basemap mismatch: {esri_topo}")
+esri_imagery = base_map_items.get("basemap-esri-world-imagery")
+if not esri_imagery or esri_imagery.get("type") != "esri-mapServer" or "World_Imagery" not in esri_imagery.get("url", ""):
+    raise SystemExit(f"Satellite View basemap mismatch: {esri_imagery}")
+carto_voyager = base_map_items.get("basemap-carto-voyager")
+if not carto_voyager or carto_voyager.get("type") != "open-street-map" or "basemaps.cartocdn.com" not in carto_voyager.get("url", ""):
+    raise SystemExit(f"CARTO Voyager basemap mismatch: {carto_voyager}")
 for item in members:
     if set((item.get("style") or {}).keys()) != {"marker-color", "marker-size"}:
         raise SystemExit(f"{item['name']} has unexpected style {item.get('style')}")
@@ -227,10 +255,25 @@ for group_id in (
     "germany-administrative-boundaries",
     "europe-administrative-statistical-boundaries",
     "europe-environment",
+    "europe-company-gics-sector-data-sources",
     "demo-basemaps-visual-references",
     "demo-3d-local-examples",
 ):
     require_group(group_id)
+
+for reference_id in (
+    "reference-gics-official-standard",
+    "reference-gleif-lei-company-identity",
+    "reference-openfigi-identifier-mapping",
+    "reference-europe-gics-import-template",
+):
+    reference = require_item(reference_id, "stub")
+    if reference.get("isExperiencingIssues") is not False:
+        raise SystemExit(f"{reference_id} should be a non-broken reference stub")
+
+gics_reference_layer = require_item("europe-gics-company-data-source-references", "geojson")
+if "europe-gics-company-data-sources.geojson" not in gics_reference_layer.get("url", ""):
+    raise SystemExit("Europe GICS reference layer URL mismatch")
 
 for item in walk(init["catalog"]):
     if item.get("type") == "group" and item.get("members") == []:
@@ -302,11 +345,6 @@ for item_id, layers in (
     if "CLC2018_WM" not in item.get("url", "") or item.get("layers") != layers:
         raise SystemExit(f"{item_id} WMS configuration mismatch")
 
-natural_earth = require_item("demo-natural-earth-ii", "tms")
-if "natural-earth-tiles" not in natural_earth.get("url", ""):
-    raise SystemExit("Natural Earth optional layer URL mismatch")
-if natural_earth.get("maximumLevel") != 7:
-    raise SystemExit("Natural Earth optional layer should cap maximumLevel at 7")
 satellite = require_item("demo-sentinel-2-satellite", "url-template-imagery")
 if "s2cloudless-2025_3857" not in satellite.get("url", ""):
     raise SystemExit("Satellite optional visual layer URL mismatch")
@@ -348,7 +386,6 @@ for disabled_by_default in (
     "europe-gisco-nuts-2024-level-2",
     "europe-gisco-nuts-2024-level-3",
     "europe-eea-corine-land-cover-2018-raster",
-    "demo-natural-earth-ii",
     "demo-sentinel-2-satellite",
     "munich-3d-lod2-buildings",
     "munich-3d-dgm1-terrain",
@@ -362,11 +399,11 @@ for disabled_by_default in (
 for item in walk(init["catalog"]):
     name = item.get("name", "")
     url = item.get("url", "")
-    if name.startswith("Reference /") and item.get("members") != []:
+    if name.startswith("Reference /") and (item.get("members") or []) != []:
         raise SystemExit(f"reference item should not contain loading children: {name}")
-    if any(blocked in name for blocked in ("National Datasets", "NSW Live Transport", "Geelong", "Demo / Visual Examples")):
+    if any(blocked in name for blocked in ("National Datasets", "NSW Live Transport", "Geelong", "Demo / Visual Examples", "Natural Earth")):
         raise SystemExit(f"old upstream demo catalog item leaked into custom init: {name}")
-    if any(blocked in url for blocked in ("terrain.czml", "api.transport.nsw.gov.au", "lowpoly_bus", "test/3d/geelong")):
+    if any(blocked in url for blocked in ("terrain.czml", "api.transport.nsw.gov.au", "lowpoly_bus", "test/3d/geelong", "natural-earth-tiles")):
         raise SystemExit(f"blocked demo URL leaked into live catalog: {url}")
 
 print("INFO: feature counts:")
@@ -383,6 +420,7 @@ grep -q '"initializationUrls": \["city-intelligence"\]' "$CONFIG_FILE" || fail "
 if grep -q '"initializationUrls": .*simple' "$CONFIG_FILE"; then
   fail "config must not load the demo simple init"
 fi
+grep -q '"mobileDefaultViewerMode": "3DSmooth"' "$CONFIG_FILE" || fail "mobile viewer mode should use 3DSmooth"
 grep -q '"useCesiumIonTerrain": false' "$CONFIG_FILE" || fail "Cesium ion terrain must be disabled"
 grep -q '"useCesiumIonBingImagery": false' "$CONFIG_FILE" || fail "Cesium ion Bing imagery must be disabled"
 grep -q '"searchProviders": \[\]' "$CONFIG_FILE" || fail "Cesium ion search provider must remain disabled unless a key is intentionally added"

@@ -1,5 +1,5 @@
 {
-  "viewerMode": "2d",
+  "viewerMode": "3dSmooth",
   "homeCamera": {
     "west": 11.35,
     "south": 48.02,
@@ -640,7 +640,7 @@
       "id": "europe-public-datasets",
       "type": "group",
       "name": "Europe Public Datasets",
-      "description": "Verified no-key Europe-wide public geodata from Eurostat/GISCO and Copernicus/EEA services. These large context layers use simple civic styling and remain disabled by default.",
+      "description": "Verified no-key Europe-wide public geodata from Eurostat/GISCO and Copernicus/EEA services, plus research-only references for licensed company-sector datasets. Large context layers remain disabled by default.",
       "members": [
         {
           "id": "europe-administrative-statistical-boundaries",
@@ -773,6 +773,90 @@
               "opacity": 0.7
             }
           ]
+        },
+        {
+          "id": "europe-company-gics-sector-data-sources",
+          "type": "group",
+          "name": "Company / GICS Sector Data Sources",
+          "description": "Research-only references for a future Europe-wide company dataset by GICS sector. A complete current company-level GICS dataset is a licensed market-data product, so these entries document approved source paths and an import template instead of exposing an empty or broken map layer.",
+          "members": [
+            {
+              "id": "europe-gics-company-data-source-references",
+              "type": "geojson",
+              "name": "Europe GICS Company Data Source References",
+              "url": "data/city-intelligence/europe-gics-company-data-sources.geojson",
+              "description": "Local reference-anchor layer for source paths toward a future Europe-wide company dataset by GICS sector. These are not company locations; they document official/licensed source paths, open identity data, identifier matching, and the local import template.",
+              "dataCustodian": "City Intelligence Cockpit research notes",
+              "style": {
+                "marker-color": "#6d28d9",
+                "marker-size": "medium"
+              }
+            },
+            {
+              "id": "reference-gics-official-standard",
+              "type": "stub",
+              "name": "Reference / GICS Official Standard and Licensing",
+              "description": "Official S&P Dow Jones Indices / MSCI Global Industry Classification Standard reference. Use this to confirm sector definitions and licensing before importing company-level GICS classifications.",
+              "dataCustodian": "[S&P Dow Jones Indices](https://www.spglobal.com/spdji/en/landing/topic/gics/) and [MSCI](https://www.msci.com/indexes/index-resources/gics)",
+              "metadataUrls": [
+                {
+                  "title": "S&P DJI GICS",
+                  "url": "https://www.spglobal.com/spdji/en/landing/topic/gics/"
+                },
+                {
+                  "title": "MSCI GICS",
+                  "url": "https://www.msci.com/indexes/index-resources/gics"
+                }
+              ],
+              "isExperiencingIssues": false
+            },
+            {
+              "id": "reference-gleif-lei-company-identity",
+              "type": "stub",
+              "name": "Reference / GLEIF LEI Company Identity Data",
+              "description": "Open legal-entity identity data with names, identifiers, and registered addresses. GLEIF is useful for company identity matching but does not provide authoritative GICS sectors.",
+              "dataCustodian": "[GLEIF](https://www.gleif.org/en/lei-data/access-and-use-lei-data)",
+              "metadataUrls": [
+                {
+                  "title": "GLEIF LEI Data Access and Use",
+                  "url": "https://www.gleif.org/en/lei-data/access-and-use-lei-data"
+                },
+                {
+                  "title": "GLEIF Golden Copy Downloads",
+                  "url": "https://www.gleif.org/en/lei-data/gleif-golden-copy/download-the-golden-copy"
+                }
+              ],
+              "isExperiencingIssues": false
+            },
+            {
+              "id": "reference-openfigi-identifier-mapping",
+              "type": "stub",
+              "name": "Reference / OpenFIGI Identifier Mapping",
+              "description": "Free identifier-mapping API that can help reconcile securities to market identifiers. It is not a complete Europe company/GICS dataset and high-volume use may require an API key.",
+              "dataCustodian": "[OpenFIGI](https://www.openfigi.com/api/overview)",
+              "metadataUrls": [
+                {
+                  "title": "OpenFIGI API Overview",
+                  "url": "https://www.openfigi.com/api/overview"
+                }
+              ],
+              "isExperiencingIssues": false
+            },
+            {
+              "id": "reference-europe-gics-import-template",
+              "type": "stub",
+              "name": "Reference / Europe GICS Company Import Template",
+              "description": "Local import template for a future licensed or user-provided Europe company dataset with latitude, longitude, GICS sector, company identifiers, and provenance fields.",
+              "dataCustodian": "[City Intelligence Cockpit local import template](../../../../data/imports/europe-gics-company-dataset-template.json)",
+              "metadataUrls": [
+                {
+                  "title": "Local GICS import documentation",
+                  "url": "docs/europe-gics-company-data.md"
+                }
+              ],
+              "isExperiencingIssues": false
+            }
+          ]
         }
       ]
     },
@@ -788,19 +872,6 @@
           "name": "Basemaps & Visual References",
           "description": "Optional public visual layers that can be manually enabled for context. These are visual references, not lead sources.",
           "members": [
-            {
-              "id": "demo-natural-earth-ii",
-              "type": "tms",
-              "name": "Natural Earth II (Optional Visual Layer)",
-              "url": "https://storage.googleapis.com/terria-datasets-public/basemaps/natural-earth-tiles",
-              "description": "Optional no-key Natural Earth II raster tiles. Disabled by default. Natural Earth is also available in Map Settings as a selectable basemap.",
-              "maximumLevel": 7,
-              "attribution": "Natural Earth II with Shaded Relief, Water, and Drainages",
-              "tileErrorHandlingOptions": {
-                "treat404AsError": false,
-                "ignoreUnknownTileErrors": true
-              }
-            },
             {
               "id": "demo-sentinel-2-satellite",
               "type": "url-template-imagery",
@@ -941,36 +1012,49 @@
     "items": [
       {
         "item": {
-          "id": "basemap-natural-earth-II",
-          "name": "Natural Earth",
-          "type": "url-template-imagery",
-          "url": "https://storage.googleapis.com/terria-datasets-public/basemaps/natural-earth-tiles/{z}/{x}/{reverseY}.png",
-          "attribution": "<a href='https://www.naturalearthdata.com/downloads/10m-raster-data/10m-natural-earth-2/'>Natural Earth II</a> - From Natural Earth. <a href='https://www.naturalearthdata.com/about/terms-of-use/'>Public Domain</a>.",
-          "maximumLevel": 7,
+          "id": "basemap-esri-world-topo",
+          "name": "Esri World Topographic",
+          "type": "esri-mapServer",
+          "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer",
+          "attribution": "Tiles (C) Esri and data providers.",
           "opacity": 1.0
         },
-        "image": "build/TerriaJS/images/natural-earth.png",
+        "image": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/11/710/1089",
         "contrastColor": "#000000"
       },
       {
         "item": {
-          "id": "basemap-sentinel-2-satellite",
+          "id": "basemap-esri-world-imagery",
           "name": "Satellite View",
-          "type": "url-template-imagery",
-          "url": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2025_3857/default/g/{z}/{y}/{x}.jpg",
-          "attribution": "<a href='https://cloudless.eox.at/'>Sentinel-2 cloudless</a> by <a href='https://eox.at/'>EOX</a>. Contains modified Copernicus Sentinel data 2025. <a href='https://creativecommons.org/licenses/by-nc-sa/4.0/'>CC BY-NC-SA 4.0</a>.",
+          "type": "esri-mapServer",
+          "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+          "attribution": "Tiles (C) Esri and data providers.",
           "opacity": 1.0
         },
-        "image": "https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2025_3857/default/g/11/710/1089.jpg",
+        "image": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/11/710/1089",
         "contrastColor": "#ffffff"
+      },
+      {
+        "item": {
+          "id": "basemap-carto-voyager",
+          "name": "CARTO Voyager",
+          "type": "open-street-map",
+          "url": "https://basemaps.cartocdn.com/rastertiles/voyager/",
+          "subdomains": ["a", "b", "c", "d"],
+          "attribution": "(C) OpenStreetMap contributors, (C) CARTO.",
+          "opacity": 1.0
+        },
+        "image": "https://a.basemaps.cartocdn.com/rastertiles/voyager/11/1089/710.png",
+        "contrastColor": "#000000"
       }
     ],
     "defaultBaseMapId": "basemap-openstreetmap",
     "previewBaseMapId": "basemap-openstreetmap",
     "enabledBaseMaps": [
       "basemap-openstreetmap",
-      "basemap-natural-earth-II",
-      "basemap-sentinel-2-satellite"
+      "basemap-esri-world-topo",
+      "basemap-esri-world-imagery",
+      "basemap-carto-voyager"
     ]
   },
   "workbench": ["city-intelligence-munich-pharmacies"]

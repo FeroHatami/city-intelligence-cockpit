@@ -21,11 +21,13 @@ and delete them after testing.
 7. Confirm no terrain 401 popup appears.
 8. Confirm City Intelligence Cockpit branding is visible.
 9. Switch to OpenStreetMap basemap.
-10. Switch to Natural Earth basemap.
-11. Switch back to OpenStreetMap.
-12. Open the data catalog.
-13. Confirm `City Intelligence Cockpit` business layers appear.
-14. Confirm `Munich Public Datasets` appears.
+10. Switch to Esri World Topographic basemap.
+11. Switch to Satellite View basemap.
+12. Switch to CARTO Voyager basemap.
+13. Switch back to OpenStreetMap.
+14. Open the data catalog.
+15. Confirm `City Intelligence Cockpit` business layers appear.
+16. Confirm `Munich Public Datasets` appears.
 15. Confirm `Germany Public Datasets` appears.
 16. Confirm `Europe Public Datasets` appears.
 17. Confirm `Visual Reference Layers` appears.

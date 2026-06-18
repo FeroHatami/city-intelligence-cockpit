@@ -60,6 +60,7 @@ Europe public data is grouped into:
 
 - Administrative / Statistical Boundaries
 - Environment
+- Company / GICS Sector Data Sources
 
 Optional no-key visual reference layers are kept in:
 
@@ -100,12 +101,21 @@ Optional no-key visual reference layers are kept in:
 | EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
 | Corine Land Cover 2018 Raster (Copernicus/EEA WMS) | WMS | EEA / Copernicus Land Monitoring Service |
 | Corine Land Cover 2018 Vector (Copernicus/EEA WMS) | WMS | EEA / Copernicus Land Monitoring Service |
+| Europe GICS Company Data Source References | GeoJSON | Local reference anchors for official/licensed GICS source paths |
+
+### Selectable Basemaps
+
+| Basemap | Type | Source |
+| --- | --- | --- |
+| OpenStreetMap | OSM tiles | OpenStreetMap contributors |
+| Esri World Topographic | ArcGIS MapServer | Esri and data providers |
+| Satellite View | ArcGIS MapServer | Esri World Imagery and data providers |
+| CARTO Voyager | OSM-compatible raster tiles | OpenStreetMap contributors / CARTO |
 
 ### Optional Demo Visuals
 
 | Catalog layer | Type | Source |
 | --- | --- | --- |
-| Natural Earth II (Optional Visual Layer) | TMS imagery | Public Natural Earth raster tiles |
 | Satellite View (Optional Visual Layer) | URL template imagery | EOX Sentinel-2 cloudless 2025 |
 | Germany basemap.de Context (Optional WMS) | WMS | BKG / basemap.de |
 | Munich LoD2 3D Buildings (Official CityGML Footprint) | GeoJSON footprint | Bavaria OpenData / LDBV, LoD2 CityGML metadata |
@@ -127,6 +137,11 @@ layers yet because they need endpoint, licensing, key, or size checks:
 - Munich Open Data and GeoPortal datasets for schools, kitas, public toilets, recycling, green space, noise, planning, demographics, and service facilities.
 - GovData and Destatis datasets for national transport, economy, demographics, and public-service statistics.
 - data.europa.eu and Eurostat statistical APIs for EU economy, population, business, mobility, and procurement indicators.
+- Europe-wide company data by GICS sector. Authoritative GICS classifications
+  are maintained by S&P Dow Jones Indices and MSCI; complete company-level
+  coverage should be imported only from an explicitly licensed source. GLEIF LEI
+  and OpenFIGI can help with identifiers and matching, but they are not a
+  complete authoritative GICS dataset.
 - Private/commercial candidates such as Google Places, Foursquare Places, HERE, TomTom, commercial footfall/location-intelligence vendors, company registry datasets, and real-estate market datasets. These should stay out of the app until licensing, cost, API-key, and privacy terms are explicitly approved.
 
 ## Terrain And Demo Init Policy
@@ -141,10 +156,11 @@ Cesium ion terrain is disabled by setting `useCesiumIonTerrain` to `false` in
 terrain. Cesium ion Bing imagery and Cesium ion search are also disabled. No API
 key or paid service is required.
 
-The restored Natural Earth visual layer and Munich official 3D dataset
-footprints are optional catalog items, not startup defaults. They are disabled
-by default and do not re-enable Cesium ion terrain, Bing imagery, search,
-external transport feeds, or API keys.
+The restored satellite visual layer, basemap.de visual context layer, and Munich
+official 3D dataset footprints are optional catalog items, not startup defaults.
+The selectable Esri and CARTO basemaps are no-key basemap options. These choices
+do not re-enable Cesium ion terrain, Bing imagery, search, external transport
+feeds, or API keys.
 
 ## Verification Fields
 

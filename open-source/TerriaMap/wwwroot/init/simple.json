@@ -722,6 +722,6 @@
   "viewerMode": "3dSmooth",
   "baseMaps": {
     "defaultBaseMapId": "basemap-openstreetmap",
-    "previewBaseMapId": "basemap-natural-earth-II"
+    "previewBaseMapId": "basemap-openstreetmap"
   }
 }

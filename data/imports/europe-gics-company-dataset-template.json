@@ -1,0 +1,103 @@
+{
+  "name": "Europe GICS Company Dataset Import Template",
+  "status": "template_only",
+  "purpose": "Import a licensed or user-provided Europe-wide company dataset with authoritative GICS sectors and map-ready headquarters or operating-location coordinates.",
+  "required_fields": [
+    "company_name",
+    "gics_sector",
+    "latitude",
+    "longitude",
+    "source_name",
+    "source_url",
+    "license_status",
+    "last_checked_at"
+  ],
+  "recommended_fields": [
+    "lei",
+    "isin",
+    "ticker",
+    "exchange",
+    "country",
+    "city",
+    "address",
+    "website",
+    "employee_count",
+    "revenue",
+    "market_cap",
+    "gics_industry_group",
+    "gics_industry",
+    "gics_sub_industry",
+    "data_provider",
+    "provider_record_id",
+    "verification_status",
+    "notes"
+  ],
+  "gics_sectors": [
+    "Information Technology",
+    "Health Care",
+    "Financials",
+    "Consumer Discretionary",
+    "Communication Services",
+    "Industrials",
+    "Consumer Staples",
+    "Energy",
+    "Utilities",
+    "Materials",
+    "Real Estate"
+  ],
+  "accepted_source_paths": [
+    {
+      "name": "Licensed GICS/company dataset",
+      "examples": [
+        "S&P Global Market Intelligence / Compustat",
+        "MSCI data products",
+        "FactSet",
+        "LSEG / Refinitiv",
+        "Bloomberg",
+        "Bureau van Dijk Orbis"
+      ],
+      "notes": "Use when the project has explicit licensing for company-level sector classifications and redistribution/display rights."
+    },
+    {
+      "name": "Open company identity plus non-authoritative sector enrichment",
+      "examples": [
+        "GLEIF LEI Golden Copy",
+        "OpenFIGI identifier mapping",
+        "Wikidata company records"
+      ],
+      "notes": "Useful for matching names, identifiers, and addresses. Do not label this as authoritative GICS without a licensed GICS source."
+    }
+  ],
+  "geojson_feature_template": {
+    "type": "Feature",
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        11.5761,
+        48.1372
+      ]
+    },
+    "properties": {
+      "company_name": "Example AG",
+      "gics_sector": "Information Technology",
+      "gics_industry_group": "",
+      "gics_industry": "",
+      "gics_sub_industry": "",
+      "lei": "",
+      "isin": "",
+      "ticker": "",
+      "exchange": "",
+      "country": "Germany",
+      "city": "Munich",
+      "address": "",
+      "website": "",
+      "source_name": "",
+      "source_url": "",
+      "license_status": "requires_review",
+      "data_source": "",
+      "verification_status": "needs_research",
+      "last_checked_at": "",
+      "notes": ""
+    }
+  }
+}

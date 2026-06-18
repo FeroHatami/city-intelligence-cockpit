@@ -44,7 +44,7 @@
       "content": "Use Upload data only for local files you trust. For repeatable project layers, document the source and add it to the City Intelligence catalogue."
     },
     "menuBarMapSettingsButton": {
-      "content": "Use Map Settings to switch between OpenStreetMap, Natural Earth, and Satellite View without API keys."
+      "content": "Use Map Settings to switch between OpenStreetMap, Esri World Topographic, Satellite View, and CARTO Voyager without API keys."
     },
     "menuBarStoryButton": {
       "content": "Share and story tools are optional. The main workflow is local dataset exploration, lead saving, scoring, outreach, and export."

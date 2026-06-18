@@ -18,7 +18,7 @@ Recommended screenshots:
 - data catalog with City Intelligence Cockpit layers
 - Saved Leads panel
 - lead status board and filters
-- Natural Earth basemap
+- Esri World Topographic or Satellite View basemap
 - local outreach generator
 - public dataset catalog groups
 - Munich/Bavaria 3D local examples
@@ -26,12 +26,14 @@ Recommended screenshots:
 ## Features
 
 - Local Munich map startup view.
-- OpenStreetMap, Natural Earth, and Satellite View basemaps.
+- OpenStreetMap, Esri World Topographic, Satellite View, and CARTO Voyager basemaps.
 - Real OSM/Overpass business layers for pharmacies, offices, clinics,
   coworking spaces, and restaurants.
 - Office sublayers for law firms, consultants, real estate, insurance,
   government, company offices, office buildings, and other offices.
 - Official Munich, Germany, and Europe public dataset catalog groups.
+- Research-only Europe GICS company-data source references, a visible local
+  reference layer, and an import template.
 - Optional Munich/Bavaria 3D local example footprints.
 - Selected-feature import into Saved Leads.
 - Manual lead form fallback.
@@ -163,6 +165,8 @@ Manual dataset import workflow:
 
 - [`docs/import-datasets.md`](docs/import-datasets.md)
 - [`data/imports/dataset-metadata-template.json`](data/imports/dataset-metadata-template.json)
+- [`docs/europe-gics-company-data.md`](docs/europe-gics-company-data.md)
+- [`data/imports/europe-gics-company-dataset-template.json`](data/imports/europe-gics-company-dataset-template.json)
 
 ## Architecture
 
@@ -181,9 +185,10 @@ and static assets during development.
 
 ## Data Disclaimer
 
-OpenStreetMap, Overpass, Munich public data, BKG/basemap.de, Eurostat/GISCO,
-Copernicus/EEA, and Bavaria OpenData sources are useful for discovery and map
-context. They are not guaranteed to be current, complete, or business-ready.
+OpenStreetMap, Overpass, Munich public data, BKG/basemap.de, Esri basemap
+services, CARTO tiles, Eurostat/GISCO, Copernicus/EEA, Bavaria OpenData, and
+research-only market-data references are useful for discovery and map context.
+They are not guaranteed to be current, complete, or business-ready.
 
 Treat `unverified_osm` and `needs_research` leads as research candidates until a
 human checks the website, phone, address, source, and operating status.
@@ -197,6 +202,8 @@ human checks the website, phone, address, source, and operating status.
 - OSM and public catalog data can be stale or incomplete.
 - Public WMS/WFS services can change or become temporarily unavailable.
 - Manual dataset imports require local validation before catalog changes.
+- Complete Europe company-level GICS data requires a licensed source before it
+  can be promoted from reference/template status to a real map layer.
 
 ## Roadmap
 

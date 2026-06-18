@@ -19,7 +19,7 @@ Recommended filenames:
 2. `02-data-catalog-city-intelligence.png` - City Intelligence Cockpit catalog group.
 3. `03-saved-leads-panel.png` - Saved Leads panel with an empty or test lead state.
 4. `04-lead-status-board.png` - lead counters, filters, and sorting controls.
-5. `05-natural-earth-basemap.png` - Natural Earth selected in Map Settings.
+5. `05-esri-world-topographic-basemap.png` - Esri World Topographic selected in Map Settings.
 6. `06-outreach-generator.png` - generated local outreach message on a test lead.
 7. `07-public-datasets-catalog.png` - Munich/Germany/Europe public dataset groups.
 8. `08-3d-local-examples.png` - Munich/Bavaria 3D local example layers.

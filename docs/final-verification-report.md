@@ -45,7 +45,7 @@ The health check verified:
 - verification fields exist on GeoJSON features
 - catalog top-level groups are ordered correctly
 - only Munich Pharmacies is in the default workbench
-- Natural Earth and Satellite basemap configuration remains present
+- OpenStreetMap, Esri World Topographic, Satellite View, and CARTO Voyager basemap configuration remains present
 - public dataset groups are not empty placeholder groups
 - old upstream demo/catalog entries are absent
 - Cesium ion terrain, Bing imagery, and search provider remain disabled

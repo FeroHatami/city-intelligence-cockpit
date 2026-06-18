@@ -1,0 +1,90 @@
+{
+  "type": "FeatureCollection",
+  "name": "Europe GICS company data source references",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.6821, 50.1109]
+      },
+      "properties": {
+        "name": "GICS official sector taxonomy and licensing",
+        "category": "Company / GICS Data Source",
+        "reference_type": "licensed_sector_classification",
+        "coverage": "Global taxonomy; company-level coverage depends on licensed vendor package",
+        "access_model": "Licensed market-data source",
+        "gics_sectors_covered": "Information Technology; Health Care; Financials; Consumer Discretionary; Communication Services; Industrials; Consumer Staples; Energy; Utilities; Materials; Real Estate",
+        "url": "https://www.spglobal.com/spdji/en/landing/topic/gics/",
+        "notes": "Use S&P DJI / MSCI GICS definitions and licensing before importing company-level sector classifications.",
+        "source": "S&P Dow Jones Indices / MSCI",
+        "data_source": "S&P Dow Jones Indices / MSCI",
+        "verification_status": "reference_only",
+        "last_checked_at": "2026-06-18T00:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.5417, 47.3769]
+      },
+      "properties": {
+        "name": "GLEIF LEI company identity data",
+        "category": "Company / GICS Data Source",
+        "reference_type": "open_legal_entity_identity",
+        "coverage": "Global legal entities with LEIs, including Europe",
+        "access_model": "Open data download",
+        "gics_sectors_covered": "Not provided directly; use for company identity, addresses, and identifier matching",
+        "url": "https://www.gleif.org/en/lei-data/access-and-use-lei-data",
+        "notes": "Useful for legal entity names, addresses, and identifiers. It is not an authoritative GICS sector source.",
+        "source": "GLEIF",
+        "data_source": "GLEIF",
+        "verification_status": "reference_only",
+        "last_checked_at": "2026-06-18T00:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2.3522, 48.8566]
+      },
+      "properties": {
+        "name": "OpenFIGI identifier mapping",
+        "category": "Company / GICS Data Source",
+        "reference_type": "identifier_mapping",
+        "coverage": "Global securities identifiers, including European listed instruments",
+        "access_model": "Free API with limits; high-volume use may require an API key",
+        "gics_sectors_covered": "Not a complete GICS dataset; useful for joining securities identifiers to licensed sector data",
+        "url": "https://www.openfigi.com/api/overview",
+        "notes": "Use only as an identifier reconciliation step, not as a complete company/GICS source.",
+        "source": "OpenFIGI",
+        "data_source": "OpenFIGI",
+        "verification_status": "reference_only",
+        "last_checked_at": "2026-06-18T00:00:00Z"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.582, 48.1351]
+      },
+      "properties": {
+        "name": "City Intelligence Cockpit Europe GICS import template",
+        "category": "Company / GICS Data Source",
+        "reference_type": "local_import_template",
+        "coverage": "Europe-ready template for user-provided or licensed company records",
+        "access_model": "Local file template",
+        "gics_sectors_covered": "Information Technology; Health Care; Financials; Consumer Discretionary; Communication Services; Industrials; Consumer Staples; Energy; Utilities; Materials; Real Estate",
+        "url": "data/imports/europe-gics-company-dataset-template.json",
+        "notes": "Use this schema for future company-level imports with latitude, longitude, GICS sector, provenance, and licensing metadata.",
+        "source": "City Intelligence Cockpit",
+        "data_source": "City Intelligence Cockpit",
+        "verification_status": "reference_only",
+        "last_checked_at": "2026-06-18T00:00:00Z"
+      }
+    }
+  ]
+}
