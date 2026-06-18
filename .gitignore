@@ -3,6 +3,8 @@
 *.backup
 *.backup-city-cockpit
 *.tmp
+*.sqlite
+*.db
 .env*
 
 node_modules/
@@ -10,6 +12,9 @@ node_modules/
 
 .venv/
 venv/
+backend/.venv/
+backend/data/*.sqlite
+backend/data/*.db
 __pycache__/
 **/__pycache__/
 *.pyc
