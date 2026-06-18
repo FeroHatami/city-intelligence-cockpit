@@ -137,9 +137,9 @@ Leads persist in browser localStorage under:
 
 `city-intelligence-cockpit.leads`
 
-Use `Backup Leads JSON` for a full local backup. Use `Import Leads JSON` or
-`Import Pasted JSON` to restore leads into the same browser. Import validates the
-JSON and merges duplicates by `id` or `osm_type` + `osm_id`.
+Use `Backup Leads` for a full local JSON backup. Use `Restore Leads` or
+`Restore Pasted JSON` to restore leads into the same browser. Import validates
+the JSON and merges duplicates by `id` or `osm_type` + `osm_id`.
 
 Optional local SQLite storage is documented in
 [`docs/local-backend.md`](docs/local-backend.md) and
@@ -167,7 +167,18 @@ Lead and scoring utilities:
 - `scripts/create-lead-from-feature.py`
 - `scripts/score-opportunity.py`
 - `scripts/add-verification-fields.py`
+- `scripts/init-local-db.py`
+- `scripts/import-leads-to-sqlite.py`
+- `scripts/export-leads-from-sqlite.py`
+- `scripts/refresh-all-datasets.sh`
 - `scripts/project-health-check.sh`
+
+Local workflow docs:
+
+- [`docs/local-backend.md`](docs/local-backend.md)
+- [`docs/lead-storage.md`](docs/lead-storage.md)
+- [`docs/local-data-refresh.md`](docs/local-data-refresh.md)
+- [`docs/outreach-workflow.md`](docs/outreach-workflow.md)
 
 Manual dataset import workflow:
 

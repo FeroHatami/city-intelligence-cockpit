@@ -26,6 +26,9 @@
 - Added a first in-app `Saved Leads` workflow backed by browser localStorage.
 - Connected selected map features to the `Saved Leads` workflow with `Import Selected Feature`.
 - Added in-app rule-based lead scoring with the `Score Lead` button.
+- Added optional local SQLite backend files and manual `Saved Leads` sync controls while keeping browser storage as the default workflow.
+- Added a local semi-automated outreach queue with review statuses, channel filters, and queue CSV export. It never sends messages automatically.
+- Added local dataset refresh tooling with a dry-run mode and optional macOS LaunchAgent template.
 - Backed up the original starter pharmacy file to `open-source/TerriaMap/wwwroot/data/city-intelligence/munich-pharmacies.starter.backup.geojson`.
 - Added `scripts/fetch-munich-3d-datasets.py` to refresh Munich-only official 3D dataset footprints from Bavaria OpenData KML metadata.
 - Added `scripts/fetch-munich-pharmacies.py` to refresh the Munich pharmacy layer from Overpass.
@@ -37,6 +40,9 @@
 - Added `scripts/score-opportunity.py` to generate dry-run opportunity scores from GeoJSON features.
 - Added `open-source/TerriaMap/lib/CityIntelligence/leads.ts` for local lead storage, export, and scoring.
 - Added `open-source/TerriaMap/lib/Views/CityIntelligenceLeadPanel.jsx` for the in-app `Saved Leads` panel.
+- Added `backend/app.py`, `backend/db.py`, and `backend/models.py` for optional local SQLite sync.
+- Added `scripts/init-local-db.py`, `scripts/import-leads-to-sqlite.py`, and `scripts/export-leads-from-sqlite.py`.
+- Added `scripts/refresh-all-datasets.sh` and `scripts/com.city-intelligence.refresh.example.plist`.
 
 ## Files Changed
 
@@ -68,7 +74,15 @@
 - `scripts/fetch-munich-clinics.py`
 - `scripts/fetch-munich-restaurants.py`
 - `scripts/score-opportunity.py`
+- `scripts/init-local-db.py`
+- `scripts/import-leads-to-sqlite.py`
+- `scripts/export-leads-from-sqlite.py`
+- `scripts/refresh-all-datasets.sh`
 - `docs/ai-opportunity-scoring.md`
+- `docs/local-backend.md`
+- `docs/lead-storage.md`
+- `docs/local-data-refresh.md`
+- `docs/outreach-workflow.md`
 - `prompts/opportunity-scoring-prompt.md`
 - `data/processed/opportunity-scores.sample.json`
 - `README.md`
@@ -250,7 +264,7 @@ Verification notes:
 
 ## In-App Local Lead Workflow
 
-The current in-app lead workflow is a localStorage v1 implementation. It does not use authentication, a backend, a database, API keys, or paid API calls.
+The current in-app lead workflow is browser-first. Browser localStorage remains the default, and an optional localhost SQLite backend can be started manually for local file-based sync. The app does not use authentication, cloud databases, API keys, paid API calls, or deployment.
 
 Storage key:
 
@@ -268,11 +282,16 @@ The `Saved Leads` panel supports:
 - manual lead creation
 - saved lead list
 - status updates
+- verification status updates
 - notes
 - delete
 - JSON export
 - CSV export
+- full JSON backup and restore
+- optional local backend check/sync/load controls
 - category-based `Score Lead`
+- local `Generate Outreach`
+- outreach queue statuses, channels, and queue CSV export
 
 The score button fills:
 
@@ -298,6 +317,16 @@ Mapped fields include:
 - `source_layer`
 
 Duplicate protection uses `osm_type` + `osm_id`. If an imported feature already exists in localStorage, the existing lead is loaded for review instead of blindly creating another saved record.
+
+Optional local backend:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+python3 scripts/init-local-db.py
+python3 backend/app.py --host 127.0.0.1 --port 8000
+```
+
+The backend is optional. If it is off, the panel shows `Local backend is not running. Browser storage still works.`
 
 ## Real OpenStreetMap Pharmacy Data
 
@@ -542,14 +571,45 @@ Defaults:
 
 The in-app `Saved Leads` import/export flow preserves these fields so lead exports carry the same local source and verification state.
 
-## Local Outreach Message Generator
+## Local Outreach Message Generator And Queue
 
-The `Saved Leads` panel includes a per-lead `Generate Outreach Message` action. It is fully local and rule-based, with no API key and no network call.
+The `Saved Leads` panel includes a per-lead `Generate Outreach` action. It is fully local and rule-based, with no API key and no network call.
 
 Generated fields:
 
 - `suggested_first_message`
 - `outreach_angle`
 - `recommended_next_action`
+- `outreach_message`
+- `outreach_last_generated_at`
 
-The generator does not modify `notes`. `Copy Message` uses the browser clipboard when available, and the message remains visible in the lead card for manual copy if clipboard access fails.
+Outreach queue fields:
+
+- `outreach_status`
+- `outreach_channel`
+- `outreach_message`
+- `outreach_last_generated_at`
+- `outreach_last_copied_at`
+
+Valid queue statuses:
+
+- `draft`
+- `ready_to_review`
+- `copied`
+- `sent_manually`
+- `replied`
+- `not_interested`
+
+The generator does not modify `notes`. `Copy Message` uses the browser clipboard when available, and the message remains visible in the lead card for manual copy if clipboard access fails. The app never sends email, never uses Gmail or SMTP, and never performs bulk outreach.
+
+## Local Dataset Refresh
+
+Refresh data locally with:
+
+```bash
+cd ~/Projects/city-intelligence-cockpit
+bash scripts/refresh-all-datasets.sh --dry-run
+bash scripts/refresh-all-datasets.sh
+```
+
+The refresh workflow is local scheduled/manual refresh, not true streaming. Logs are written under `logs/`, which is ignored by git. The LaunchAgent plist is a template only and is not installed automatically.

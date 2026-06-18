@@ -1,12 +1,13 @@
 # Final Verification Report
 
-Verification timestamp: 2026-06-17T23:09:16Z
+Verification timestamp: 2026-06-18T22:45:00Z
 
 ## Scope
 
 This report covers the local City Intelligence Cockpit cleanup stages completed
-in this session. The project remains local-only: no deployment, no backend, no
-database, no authentication, no API keys, and no paid services.
+in this session. The project remains local-only: no deployment, no required
+backend, no cloud database, no authentication, no API keys, and no paid services.
+The optional SQLite backend is a localhost-only manual sync path.
 
 ## Automated Checks
 
@@ -26,7 +27,12 @@ database, no authentication, no API keys, and no paid services.
 - Data catalog opened and showed the expected City Intelligence Cockpit, Munich,
   Germany, Europe, and Visual Reference catalog groups.
 - Saved Leads panel opened.
+- Optional local backend controls were present.
+- Backend-off mode showed the friendly browser-storage message in earlier
+  verification.
 - Local outreach templates generated English and German messages.
+- Outreach queue status and channel controls appeared.
+- Outreach queue CSV export produced the required columns.
 - Edited outreach message persisted after refresh.
 - JSON export included outreach fields.
 - Backup JSON export worked.
@@ -56,8 +62,10 @@ Verified in this session:
 
 - manual lead creation
 - localStorage persistence
+- optional SQLite sync controls
 - status and verification workflows from prior stages
 - scoring and outreach generation
+- outreach queue review statuses
 - editable outreach text
 - JSON export
 - CSV export retained
@@ -73,9 +81,12 @@ programmatic copy.
 ## Remaining Limitations
 
 - Leads are local to the current browser localStorage.
+- Optional SQLite sync is local and manual.
 - OSM/public data must be treated as discovery data until manually verified.
-- No backend, authentication, multi-user sync, or deployment exists.
+- No authentication, multi-user sync, hosted backend, cloud database, or
+  deployment exists.
 - Scoring and outreach are local rule-based helpers, not API-based enrichment.
+- Outreach drafts are not sent automatically.
 - Public WMS/WFS services may change or become temporarily unavailable.
 - Screenshots are represented by a checklist; binary screenshots were not
   committed in this cleanup pass.

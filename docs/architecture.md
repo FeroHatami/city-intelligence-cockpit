@@ -2,7 +2,8 @@
 
 City Intelligence Cockpit is a local-first geospatial prototype. The current
 system is intentionally simple: a customized frontend, static local/public data,
-browser localStorage for leads, and offline rule-based scoring/outreach.
+browser localStorage for default lead storage, an optional local SQLite backend,
+and offline rule-based scoring/outreach.
 
 ## App Structure
 
@@ -25,6 +26,8 @@ Important app files:
   panel and mini CRM controls.
 - `open-source/TerriaMap/lib/CityIntelligence/leads.ts`: local lead storage,
   import/export, scoring, and outreach helpers.
+- `backend/app.py`: optional localhost lead API for manual SQLite sync.
+- `backend/db.py`: SQLite persistence helpers used by the backend and scripts.
 
 ## Data Layer
 
@@ -62,12 +65,15 @@ Storage key:
 
 `city-intelligence-cockpit.leads`
 
-There is no server-side lead storage.
+Browser localStorage remains the default storage path. Optional SQLite storage
+is available through manual sync controls and scripts, but the frontend keeps
+working when the backend is off.
 
 ## Scoring And Outreach
 
 Scoring and outreach are local rule-based helpers. They do not call OpenAI, paid
-APIs, or external services.
+APIs, or external services. The outreach queue creates local review drafts only;
+it does not send email, use Gmail, or use SMTP.
 
 The rules live in:
 
@@ -83,10 +89,11 @@ Current non-goals:
 
 - no deployment
 - no authentication
-- no backend
-- no database
+- no required backend
+- no cloud database
 - no paid APIs
 - no API-key requirement
+- no automatic outreach sending
 
 The only server in local development is the static app server started by:
 
@@ -96,6 +103,16 @@ nvm use 22
 yarn gulp dev
 ```
 
+Optional local backend:
+
+```bash
+python3 backend/app.py --host 127.0.0.1 --port 8000
+```
+
+Dataset refresh is local/manual or user-installed scheduling through
+`scripts/refresh-all-datasets.sh`; it is not true streaming or a hosted live
+data service.
+
 ## Extension Points
 
 - Add or refresh local datasets with scripts in `scripts/`.
@@ -103,3 +120,5 @@ yarn gulp dev
 - Add manual imports using `docs/import-datasets.md`.
 - Extend lead fields in `leads.ts` and document them in `docs/lead-schema.md`.
 - Extend scoring/outreach rules in `leads.ts` and `scripts/score-opportunity.py`.
+- Promote the optional backend only if cloud sync or multi-user access becomes
+  an explicit product decision later.

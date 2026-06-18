@@ -97,7 +97,7 @@ source layer, and available office-type context so `Munich Law Firms` and
 
 ## Local Outreach Generator
 
-The `Saved Leads` panel also has `Generate Outreach Message`. It is fully local
+The `Saved Leads` panel also has `Generate Outreach`. It is fully local
 and uses rule-based templates only. No network request or API key is required.
 
 Available templates:

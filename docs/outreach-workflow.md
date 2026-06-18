@@ -39,7 +39,7 @@ An empty `outreach_status` means the lead is not in the outreach queue.
 
 1. Open `Saved Leads`.
 2. Create or import a lead.
-3. Select `Generate Outreach Message` to create a local rule-based draft.
+3. Select `Generate Outreach` to create a local rule-based draft.
 4. Select `Add to Outreach Queue`.
 5. Choose an outreach channel such as `email`, `linkedin`, `phone`, `website`,
    or `other`.
@@ -68,3 +68,14 @@ the backend.
 
 The queue is intentionally a review list, not an email sender. It is suitable
 for local research, drafting, and manual follow-up tracking.
+
+## Current UI Controls
+
+- `Generate Outreach`
+- `Add to Outreach Queue`
+- `Mark Ready to Review`
+- `Mark Copied`
+- `Mark Sent Manually`
+- `Mark Replied`
+- `Mark Not Interested`
+- `Export Outreach Queue CSV`

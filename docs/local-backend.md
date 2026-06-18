@@ -114,7 +114,8 @@ The `Saved Leads` panel includes optional `Local Backend` controls:
 - `Sync Leads to Local Backend`
 - `Load Leads from Local Backend`
 
-These buttons only run when the user selects them. There is no automatic sync.
+These buttons only run when the user selects them. There is no automatic sync,
+cloud upload, login, or deployment.
 
 If the backend is not running, the app shows:
 
@@ -122,3 +123,10 @@ If the backend is not running, the app shows:
 
 This is expected and safe. Browser localStorage remains the primary in-app lead
 storage path.
+
+## Safety Notes
+
+- The SQLite file is local and ignored by git.
+- Do not commit personal lead databases.
+- The backend does not send outreach messages.
+- The backend is optional; do not make app startup depend on it.

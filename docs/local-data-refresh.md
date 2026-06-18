@@ -3,6 +3,10 @@
 City Intelligence Cockpit uses local/manual refresh scripts rather than an
 always-on server. This keeps the project local, free, and API-key-free.
 
+This is the current "live data" strategy: local scheduled refresh, not true
+streaming. The user chooses when to run it or whether to install the optional
+macOS LaunchAgent template.
+
 ## Refresh Script
 
 Run a dry run first:
@@ -66,3 +70,4 @@ does not install background services on its own.
 - No automatic background install.
 - No backend required.
 - Manual run remains the default.
+- No true streaming service.

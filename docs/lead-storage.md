@@ -15,8 +15,8 @@ The app stores browser leads under:
 
 `city-intelligence-cockpit.leads`
 
-Use the in-app `Backup Leads JSON`, `Import Leads JSON`, JSON export, and CSV
-export controls for browser-only backups.
+Use the in-app `Backup Leads`, `Restore Leads`, JSON export, and CSV export
+controls for browser-only backups.
 
 The outreach queue fields are stored with the lead record. They are local review
 metadata only and do not send messages:
@@ -108,3 +108,10 @@ does not send data to any cloud service.
 When the backend is off, the app shows:
 
 `Local backend is not running. Browser storage still works.`
+
+## Practical Guidance
+
+- Use browser storage for quick local research.
+- Use `Backup Leads` before clearing browser data.
+- Use SQLite when you want a local file-based backup or migration path.
+- Keep personal lead exports and SQLite files out of git.

@@ -123,7 +123,7 @@ The v1 panel supports:
 - full JSON backup
 - JSON backup import from file or pasted JSON with duplicate-aware merge
 - rule-based `Score Lead`
-- local `Generate Outreach Message`
+- local `Generate Outreach`
 - local `Add to Outreach Queue`
 - outreach status and channel filters
 - `Export Outreach Queue CSV` for manually reviewed follow-up work
@@ -147,8 +147,8 @@ The import maps the selected Terria feature's properties into lead fields where 
 Duplicate protection is based on `osm_type` + `osm_id`. If a matching lead already exists, the panel loads the existing lead for review instead of creating a duplicate.
 
 Backup import accepts either a JSON array of lead records or an object with a
-`leads` array. Use `Import Leads JSON` for a local `.json` file or paste the
-backup text into `Lead JSON Import` and select `Import Pasted JSON`. During
+`leads` array. Use `Restore Leads` for a local `.json` file or paste the
+backup text into `Lead JSON Import` and select `Restore Pasted JSON`. During
 import, records with the same `id` or the same `osm_type` + `osm_id` update the
 existing lead instead of creating a duplicate. The import result reports how many
 records were imported, updated, or skipped.
