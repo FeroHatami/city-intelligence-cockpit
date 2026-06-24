@@ -32,9 +32,13 @@ Recommended screenshots:
 - Office sublayers for law firms, consultants, real estate, insurance,
   government, company offices, office buildings, and other offices.
 - Official Munich, Germany, and Europe public dataset catalog groups.
-- Real Estate Intelligence catalog group with official Munich/Bavaria planning,
-  zoning, land-value, and risk-context WMS layers.
-- Investor Intelligence panel with local rule-based investment-signal scoring.
+- Real Estate Intelligence catalog group with official Munich/Bavaria
+  market/value, legal-planning, residential-quality, restriction, building,
+  demand-driver, and strategic land-use sources.
+- Investor Intelligence panel with local rule-based investment-signal scoring
+  that weights land-value and legal-planning context above broad FNP context,
+  shows a real-estate legend, reads selected-feature facts when available, and
+  exports local area reports.
 - Research-only Europe GICS company-data source references, a visible local
   reference layer, and an import template.
 - Optional Munich/Bavaria 3D local example footprints.

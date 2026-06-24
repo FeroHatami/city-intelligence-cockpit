@@ -105,3 +105,52 @@ programmatic copy.
 - Public WMS/WFS services may change or become temporarily unavailable.
 - Screenshots are represented by a checklist; binary screenshots were not
   committed in this cleanup pass.
+
+## Real Estate Intelligence Finish Addendum
+
+Verification timestamp: 2026-06-24T22:07:25Z
+
+Additional local checks completed:
+
+- `python3 -m json.tool open-source/TerriaMap/wwwroot/init/city-intelligence.json`:
+  passed.
+- `bash -n scripts/project-health-check.sh`: passed.
+- `git diff --check`: passed.
+- `bash scripts/project-health-check.sh`: passed.
+- `source /Users/farbod/.nvm/nvm.sh && nvm use 22 && yarn gulp build-app`:
+  passed with the existing non-fatal Sass deprecation warnings from upstream
+  dependencies.
+- `yarn gulp dev`: started on Node 22 and reported `No typescript errors found`.
+- `curl -I http://localhost:3001/`: returned `HTTP/1.1 200 OK`.
+
+Additional real-estate behavior covered by code/build/static verification:
+
+- Investor Intelligence includes a readable Real Estate Legend translating
+  German planning terms into English with practical investor interpretation.
+- Investor Intelligence includes layer explanation cards for Bodenrichtwerte,
+  Bebauungspläne, Bebauungspläne in Aufstellung, FNP,
+  Mietspiegel/Wohnlagenkarte, Erhaltungssatzung, and Buildings & Parcels
+  references.
+- Investor Intelligence reuses Terria selected-feature context and
+  GetFeatureInfo/GeoJSON properties when Terria exposes them; otherwise it
+  shows a clear fallback and continues with manual observations plus local
+  demand-driver counts.
+- Investor scoring includes sub-scores for Market Context, Legal Planning,
+  Demand Drivers, Residential Quality, Risk / Restrictions, and Strategic
+  Context.
+- Generate Area Report creates local Markdown report text with factual context
+  when available, demand-driver counts, risk flags, thesis, next steps, and a
+  disclaimer.
+- Copy Report uses browser clipboard when available and keeps the report visible
+  for manual copy if clipboard access is blocked.
+- Export Markdown downloads the generated area report locally.
+- Ollama remains optional. If unavailable, the panel falls back to:
+  `Using rule-based explanation. Local AI unavailable.`
+
+Browser automation note:
+
+- The in-app browser automation refused navigation from its current
+  `localhost refused to connect` error page because of its URL policy. The dev
+  server itself was then started successfully and verified with local HTTP, but
+  full interactive browser clicks could not be completed from automation in this
+  pass.

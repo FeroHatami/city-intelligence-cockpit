@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.57549, 48.13743]
+      },
+      "properties": {
+        "name": "Mietspiegel 2025 Wohnlagenkarte reference",
+        "category": "Real Estate Reference Source",
+        "reference_type": "residential_quality_reference",
+        "coverage": "Munich",
+        "access_model": "Official reference page; no stable no-key WMS/GeoJSON Wohnlagenkarte endpoint confirmed",
+        "url": "https://stadt.muenchen.de/infos/mietspiegel-2025.html",
+        "related_url": "https://stadt.muenchen.de/infos/mietspiegel.html",
+        "notes": "Reference-only anchor. Marker is not a rent zone, property, parcel, or Wohnlagenkarte feature location.",
+        "source": "Landeshauptstadt Muenchen Mietspiegel",
+        "data_source": "Landeshauptstadt Muenchen Mietspiegel",
+        "verification_status": "reference_only",
+        "last_checked_at": "2026-06-24T00:00:00Z"
+      }
+    }
+  ]
+}

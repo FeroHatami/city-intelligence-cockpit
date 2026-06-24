@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.57549, 48.13743]
+      },
+      "properties": {
+        "name": "ALKIS Tatsächliche Nutzung reference",
+        "category": "Real Estate Reference Source",
+        "reference_type": "cadastral_actual_use_reference",
+        "coverage": "Bavaria; practical access depends on official product availability",
+        "access_model": "Official GeodatenOnline reference path; not embedded as a no-key map layer",
+        "url": "https://geodatenonline.bayern.de/geodatenonline/",
+        "notes": "Reference-only anchor. Marker is not a parcel, ownership record, or cadastral actual-use feature.",
+        "source": "Bayerische Vermessungsverwaltung / GeodatenOnline",
+        "data_source": "Bayerische Vermessungsverwaltung / GeodatenOnline",
+        "verification_status": "reference_only",
+        "last_checked_at": "2026-06-24T00:00:00Z"
+      }
+    }
+  ]
+}

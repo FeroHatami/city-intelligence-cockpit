@@ -27,7 +27,9 @@ Important app files:
 - `open-source/TerriaMap/lib/CityIntelligence/leads.ts`: local lead storage,
   import/export, scoring, and outreach helpers.
 - `open-source/TerriaMap/lib/Views/InvestorIntelligencePanel.jsx`: local
-  investor-signal panel for Munich planning-zone / land-use research.
+  investor-signal panel for Munich market/value, legal-planning,
+  residential-quality, restriction, strategic land-use, and demand-driver
+  research.
 - `open-source/TerriaMap/lib/CityIntelligence/investorIntelligence.ts`:
   rule-based real-estate demand-driver scoring helpers.
 - `backend/app.py`: optional localhost lead API for manual SQLite sync.
@@ -55,10 +57,11 @@ Public data layers are configured in `city-intelligence.json` when they are
 stable, no-key, and useful in the app. Unstable sources are documented instead
 of exposed as broken catalog items.
 
-Real Estate Intelligence WMS layers are configured as raw official planning,
-land-value, and constraint visualizations. The Investor Intelligence panel uses
-those layers only as factual context; its score is derived local analysis and is
-not an official rating.
+Real Estate Intelligence layers are configured as raw official WMS
+visualizations where reliable, and as reference stubs where a stable no-key map
+endpoint was not confirmed. The Investor Intelligence panel uses those layers
+only as factual context; its score is derived local analysis and is not an
+official rating.
 
 ## Lead Workflow
 

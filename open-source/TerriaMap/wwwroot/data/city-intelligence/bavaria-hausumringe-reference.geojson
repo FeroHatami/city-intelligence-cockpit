@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.57549, 48.13743]
+      },
+      "properties": {
+        "name": "Bavaria Hausumringe OpenData reference",
+        "category": "Real Estate Reference Source",
+        "reference_type": "building_footprint_download_reference",
+        "coverage": "Bavaria; relevant to Munich through official product coverage",
+        "access_model": "Official OpenData product page; download-oriented statewide product",
+        "url": "https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=hausumringe",
+        "notes": "Reference-only anchor. Marker is not a building footprint or parcel.",
+        "source": "Bayerische Vermessungsverwaltung / LDBV",
+        "data_source": "Bayerische Vermessungsverwaltung / LDBV",
+        "verification_status": "reference_only",
+        "last_checked_at": "2026-06-24T00:00:00Z"
+      }
+    }
+  ]
+}

@@ -169,53 +169,13 @@
       "type": "group",
       "name": "Real Estate Intelligence",
       "isOpen": false,
-      "description": "Official Munich/Bavaria planning, land-use, land-value, and risk-context layers plus derived local investor-signal tools. Official WMS layers are raw factual data. Investor scoring is derived analysis, not an official city rating.",
+      "description": "Official Munich/Bavaria market, legal-planning, residential-quality, restriction, building, and demand-driver context for real-estate research. Official WMS layers are raw factual data. Reference entries document official sources that are not exposed here as stable no-key map layers. Investor scoring is derived analysis, not an official city rating.",
       "members": [
         {
-          "id": "real-estate-planning-zoning",
+          "id": "real-estate-market-land-value",
           "type": "group",
-          "name": "Planning & Zoning",
-          "description": "Official Munich planning WMS layers for land-use and building-plan context. These are factual visual layers; interpretation must be checked against official planning documents.",
-          "members": [
-            {
-              "id": "real-estate-munich-fnp",
-              "type": "wms",
-              "name": "Munich Flächennutzungsplan / FNP (Official WMS)",
-              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
-              "layers": "g_fnp",
-              "description": "Raw factual planning visualization from the official Munich GeoPortal WMS. Shows the digital Flächennutzungsplan / long-term land-use planning context for Munich. Source: Landeshauptstadt Muenchen GeoPortal, WMS, official planning data.",
-              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
-              "metadataUrls": [
-                {
-                  "title": "Munich planning WMS GetCapabilities",
-                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
-                }
-              ],
-              "opacity": 0.7
-            },
-            {
-              "id": "real-estate-munich-bebauungsplaene",
-              "type": "wms",
-              "name": "Munich Bebauungspläne (Official WMS)",
-              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
-              "layers": "baug_umgriff_veredelt_in_kraft_und_aufstellung",
-              "description": "Raw factual planning visualization from the official Munich GeoPortal WMS. Shows legally binding building plans and building plans in preparation where available. Source: Landeshauptstadt Muenchen GeoPortal, WMS, official planning data.",
-              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
-              "metadataUrls": [
-                {
-                  "title": "Munich planning WMS GetCapabilities",
-                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
-                }
-              ],
-              "opacity": 0.75
-            }
-          ]
-        },
-        {
-          "id": "real-estate-land-values",
-          "type": "group",
-          "name": "Land Values",
-          "description": "Official Bavaria land-value WMS context. This is raw official visualization data; fee/legal conditions for official land-value extracts may apply outside this map view.",
+          "name": "Market & Land Value",
+          "description": "Official market and land-value context. These layers are useful for investment overview, but exact property value still requires further valuation and official documents.",
           "members": [
             {
               "id": "real-estate-bavaria-bodenrichtwerte-2026",
@@ -223,7 +183,7 @@
               "name": "Bodenrichtwerte Bayern / Munich 2026 (Official WMS)",
               "url": "https://gdi.bayern.de/services/bodenrichtwerte/2026/vboris",
               "layers": "bodenrichtwerte_2026",
-              "description": "Raw factual official land-value-zone visualization from the Bavaria VBORIS / GDI Bayern WMS. Source: Landesamt fuer Digitalisierung, Breitband und Vermessung / GDI Bayern, WMS, official state land-value data.",
+              "description": "Bodenrichtwerte are official land-value zones, but exact property value requires further valuation. Raw factual official land-value-zone visualization from the Bavaria VBORIS / GDI Bayern WMS. Source: Landesamt fuer Digitalisierung, Breitband und Vermessung / GDI Bayern, WMS, official state land-value data.",
               "dataCustodian": "[GDI Bayern / LDBV](https://geodaten.bayern.de/)",
               "metadataUrls": [
                 {
@@ -236,15 +196,147 @@
                 }
               ],
               "opacity": 0.72
+            },
+            {
+              "id": "reference-munich-gutachterausschuss-lagekarte",
+              "type": "geojson",
+              "name": "Reference / Gutachterausschuss München Lagekarte",
+              "url": "data/city-intelligence/munich-gutachterausschuss-reference.geojson",
+              "description": "Official Gutachterausschuss / Munich market-reference source. Added as a reference because a stable no-key WMS/GeoJSON Lagekarte endpoint was not confirmed. Use it alongside Bodenrichtwerte and official market reports before making investment decisions.",
+              "dataCustodian": "[Gutachterausschuss Muenchen](https://stadt.muenchen.de/infos/gutachterausschuss.html)",
+              "metadataUrls": [
+                {
+                  "title": "Gutachterausschuss Muenchen",
+                  "url": "https://stadt.muenchen.de/infos/gutachterausschuss.html"
+                },
+                {
+                  "title": "Bodenrichtwerte Muenchen",
+                  "url": "https://stadt.muenchen.de/infos/bodenrichtwerte.html"
+                }
+              ],
+              "style": {
+                "marker-color": "#0f766e",
+                "marker-size": "small"
+              }
             }
           ]
         },
         {
-          "id": "real-estate-risk-constraints",
+          "id": "real-estate-legal-planning",
           "type": "group",
-          "name": "Risk & Constraints",
-          "description": "Official Munich planning/environment context layers. These layers identify possible constraints for deeper research but do not replace legal or technical due diligence.",
+          "name": "Legal Planning",
+          "description": "Official Munich Bebauungsplan WMS layers. Bebauungsplaene are more legally specific than the FNP and should be checked before investment or development decisions.",
           "members": [
+            {
+              "id": "real-estate-munich-bebauungsplaene-in-kraft",
+              "type": "wms",
+              "name": "Munich Bebauungspläne in Kraft (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "vagrund_baug_umgriff_veredelt_in_kraft",
+              "description": "Bebauungsplaene are more legally specific and should be checked before investment or development decisions. Raw factual visualization of legally binding Munich Bebauungsplan areas from the official Munich GeoPortal WMS.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.75
+            },
+            {
+              "id": "real-estate-munich-bebauungsplaene-in-aufstellung",
+              "type": "wms",
+              "name": "Munich Bebauungspläne in Aufstellung (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "vagrund_baug_umgriff_veredelt_in_aufstellung",
+              "description": "Official Munich WMS layer for Bebauungsplaene in preparation. This is legal-planning context and should be checked together with plan documents before investment or development decisions.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.72
+            }
+          ]
+        },
+        {
+          "id": "real-estate-residential-quality",
+          "type": "group",
+          "name": "Residential Quality",
+          "description": "Official residential rent/location-quality references. These help understand residential rent and location quality, not purchase price.",
+          "members": [
+            {
+              "id": "reference-munich-mietspiegel-2025-wohnlagenkarte",
+              "type": "geojson",
+              "name": "Reference / Mietspiegel 2025 Wohnlagenkarte",
+              "url": "data/city-intelligence/munich-mietspiegel-wohnlagenkarte-reference.geojson",
+              "description": "This helps understand residential rent/location quality, not purchase price. Added as a reference because a stable no-key WMS/GeoJSON Wohnlagenkarte endpoint was not confirmed for embedding.",
+              "dataCustodian": "[Landeshauptstadt Muenchen Mietspiegel](https://stadt.muenchen.de/infos/mietspiegel-2025.html)",
+              "metadataUrls": [
+                {
+                  "title": "Mietspiegel Muenchen 2025",
+                  "url": "https://stadt.muenchen.de/infos/mietspiegel-2025.html"
+                },
+                {
+                  "title": "Mietspiegel Muenchen",
+                  "url": "https://stadt.muenchen.de/infos/mietspiegel.html"
+                }
+              ],
+              "style": {
+                "marker-color": "#0891b2",
+                "marker-size": "small"
+              }
+            }
+          ]
+        },
+        {
+          "id": "real-estate-strategic-land-use",
+          "type": "group",
+          "name": "Strategic Land Use",
+          "description": "Strategic citywide land-use context. The Flachennutzungsplan is useful for long-term context, but not exact parcel-level permission.",
+          "members": [
+            {
+              "id": "real-estate-munich-fnp",
+              "type": "wms",
+              "name": "Munich Flächennutzungsplan / FNP (Strategic Land Use)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "g_fnp",
+              "description": "The Flächennutzungsplan is a strategic citywide land-use plan. It is useful for long-term context, but not exact parcel-level permission. Raw factual planning visualization from the official Munich GeoPortal WMS.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.6
+            }
+          ]
+        },
+        {
+          "id": "real-estate-restrictions-risk",
+          "type": "group",
+          "name": "Restrictions & Risk",
+          "description": "Official Munich restrictions and risk-context layers. These identify possible constraints for deeper research but do not replace legal or technical due diligence.",
+          "members": [
+            {
+              "id": "real-estate-munich-preservation-areas",
+              "type": "wms",
+              "name": "Munich Erhaltungssatzungen / Preservation Areas (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "satz_erhalt_poly",
+              "description": "Official Munich WMS layer for areas with Erhaltungssatzung / preservation statutes. This is a strong restriction flag for derived investor scoring and must be verified in the official statute documents.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.75
+            },
             {
               "id": "real-estate-munich-flood-areas",
               "type": "wms",
@@ -308,6 +400,70 @@
                 }
               ],
               "opacity": 0.7
+            }
+          ]
+        },
+        {
+          "id": "real-estate-buildings-parcels",
+          "type": "group",
+          "name": "Buildings & Parcels",
+          "description": "Official/open building and parcel-adjacent references. Large Bavaria products are kept as footprints or reference entries unless they are practical to stream in-browser.",
+          "members": [
+            {
+              "id": "real-estate-buildings-lod2-footprint",
+              "type": "geojson",
+              "name": "Bavaria LoD2 3D Buildings - Munich Footprint (Official OpenData)",
+              "url": "data/city-intelligence/munich-3d-lod2-buildings.geojson",
+              "description": "Official Bavaria OpenData LoD2 building-model download footprint for Munich. This is a practical footprint and metadata layer, not an in-browser 3D Tiles stream or parcel model.",
+              "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/)",
+              "metadataUrls": [
+                {
+                  "title": "Bavaria OpenData - 3D-Gebaeudemodelle LoD2",
+                  "url": "https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=lod2"
+                }
+              ],
+              "style": {
+                "stroke": "#475569",
+                "stroke-width": 2,
+                "fill": "#64748b",
+                "fill-opacity": 0.12
+              }
+            },
+            {
+              "id": "reference-bavaria-hausumringe",
+              "type": "geojson",
+              "name": "Reference / Bavaria Hausumringe",
+              "url": "data/city-intelligence/bavaria-hausumringe-reference.geojson",
+              "description": "Official/open Bavaria building-footprint product. Added as a reference because the statewide product is download-oriented and was not confirmed as a practical stable no-key WMS/GeoJSON stream for this cockpit.",
+              "dataCustodian": "[Bayerische Vermessungsverwaltung / LDBV](https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=hausumringe)",
+              "metadataUrls": [
+                {
+                  "title": "Bavaria OpenData - Hausumringe",
+                  "url": "https://geodaten.bayern.de/opengeodata/OpenDataDetail.html?pn=hausumringe"
+                }
+              ],
+              "style": {
+                "marker-color": "#475569",
+                "marker-size": "small"
+              }
+            },
+            {
+              "id": "reference-alkis-tatsaechliche-nutzung",
+              "type": "geojson",
+              "name": "Reference / ALKIS Tatsächliche Nutzung",
+              "url": "data/city-intelligence/bavaria-alkis-tatsaechliche-nutzung-reference.geojson",
+              "description": "Official cadastral actual-use reference path. Not embedded as a map layer here because a practical stable no-key Munich/Bavaria WMS/GeoJSON endpoint was not confirmed. Do not treat this cockpit as parcel ownership or cadastral proof.",
+              "dataCustodian": "[Bayerische Vermessungsverwaltung / GeodatenOnline](https://geodatenonline.bayern.de/geodatenonline/)",
+              "metadataUrls": [
+                {
+                  "title": "GeodatenOnline Bayern",
+                  "url": "https://geodatenonline.bayern.de/geodatenonline/"
+                }
+              ],
+              "style": {
+                "marker-color": "#64748b",
+                "marker-size": "small"
+              }
             }
           ]
         },
@@ -376,6 +532,22 @@
                 "marker-color": "#7c3aed",
                 "marker-size": "small"
               }
+            },
+            {
+              "id": "real-estate-demand-transit-rail",
+              "type": "wms",
+              "name": "Demand Driver - Munich Rail Transit Context (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "step_2024_oev_haltestellen_c2",
+              "description": "Official Munich STEP 2024 public-transport / rail-stop context layer. Used as optional demand-driver context; current scoring treats transit as a manual observation rather than inferring exact accessibility from WMS pixels.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.7
             }
           ]
         }

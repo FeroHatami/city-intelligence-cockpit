@@ -113,6 +113,10 @@ expected_counts = {
     "munich-3d-dom20-surface.geojson": 1,
     "munich-3d-laser-point-cloud.geojson": 1,
     "munich-3d-dom-mesh-project-areas.geojson": 5,
+    "munich-gutachterausschuss-reference.geojson": 1,
+    "munich-mietspiegel-wohnlagenkarte-reference.geojson": 1,
+    "bavaria-hausumringe-reference.geojson": 1,
+    "bavaria-alkis-tatsaechliche-nutzung-reference.geojson": 1,
 }
 
 counts = {}
@@ -266,9 +270,12 @@ def require_item(item_id, item_type):
 
 
 for group_id in (
-    "real-estate-planning-zoning",
-    "real-estate-land-values",
-    "real-estate-risk-constraints",
+    "real-estate-market-land-value",
+    "real-estate-legal-planning",
+    "real-estate-residential-quality",
+    "real-estate-strategic-land-use",
+    "real-estate-restrictions-risk",
+    "real-estate-buildings-parcels",
     "real-estate-demand-drivers",
     "munich-boundaries-administration",
     "munich-transport-mobility",
@@ -303,16 +310,26 @@ for item in walk(init["catalog"]):
         raise SystemExit(f"empty catalog group found: {item.get('id') or item.get('name')}")
 
 for item_id, expected_url, expected_layers in (
-    ("real-estate-munich-fnp", "geoportal.muenchen.de/geoserver/plan/wms", "g_fnp"),
-    (
-        "real-estate-munich-bebauungsplaene",
-        "geoportal.muenchen.de/geoserver/plan/wms",
-        "baug_umgriff_veredelt_in_kraft_und_aufstellung",
-    ),
     (
         "real-estate-bavaria-bodenrichtwerte-2026",
         "gdi.bayern.de/services/bodenrichtwerte/2026/vboris",
         "bodenrichtwerte_2026",
+    ),
+    (
+        "real-estate-munich-bebauungsplaene-in-kraft",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "vagrund_baug_umgriff_veredelt_in_kraft",
+    ),
+    (
+        "real-estate-munich-bebauungsplaene-in-aufstellung",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "vagrund_baug_umgriff_veredelt_in_aufstellung",
+    ),
+    ("real-estate-munich-fnp", "geoportal.muenchen.de/geoserver/plan/wms", "g_fnp"),
+    (
+        "real-estate-munich-preservation-areas",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "satz_erhalt_poly",
     ),
     (
         "real-estate-munich-flood-areas",
@@ -334,12 +351,24 @@ for item_id, expected_url, expected_layers in (
         "geoportal.muenchen.de/geoserver/plan/wms",
         "inko_02_laermminderungsplan",
     ),
+    (
+        "real-estate-demand-transit-rail",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "step_2024_oev_haltestellen_c2",
+    ),
 ):
     item = require_item(item_id, "wms")
     if expected_url not in item.get("url", "") or item.get("layers") != expected_layers:
         raise SystemExit(f"{item_id} WMS configuration mismatch")
     if "official" not in (item.get("description") or "").lower():
         raise SystemExit(f"{item_id} must describe official source data")
+
+fnp_item = require_item("real-estate-munich-fnp", "wms")
+if "strategic" not in (fnp_item.get("description") or "").lower() or "parcel-level" not in (fnp_item.get("description") or "").lower():
+    raise SystemExit("FNP layer must be described as strategic context, not parcel-level permission")
+market_group = require_group("real-estate-market-land-value")
+if market_group["members"][0].get("id") != "real-estate-bavaria-bodenrichtwerte-2026":
+    raise SystemExit("Bodenrichtwerte must be the first real-estate market/value layer")
 
 for item_id, expected_url in (
     ("real-estate-demand-offices", "munich-offices.geojson"),
@@ -353,6 +382,24 @@ for item_id, expected_url in (
         raise SystemExit(f"{item_id} URL mismatch")
     if "OSM-derived" not in (item.get("description") or ""):
         raise SystemExit(f"{item_id} must describe open/community OSM source data")
+
+lod2_re = require_item("real-estate-buildings-lod2-footprint", "geojson")
+if not lod2_re.get("url", "").endswith("munich-3d-lod2-buildings.geojson"):
+    raise SystemExit("Real estate LoD2 footprint URL mismatch")
+if "Official Bavaria OpenData" not in lod2_re.get("description", ""):
+    raise SystemExit("Real estate LoD2 footprint must describe the official Bavaria OpenData source")
+
+for item_id, expected_url in (
+    ("reference-munich-gutachterausschuss-lagekarte", "munich-gutachterausschuss-reference.geojson"),
+    ("reference-munich-mietspiegel-2025-wohnlagenkarte", "munich-mietspiegel-wohnlagenkarte-reference.geojson"),
+    ("reference-bavaria-hausumringe", "bavaria-hausumringe-reference.geojson"),
+    ("reference-alkis-tatsaechliche-nutzung", "bavaria-alkis-tatsaechliche-nutzung-reference.geojson"),
+):
+    item = require_item(item_id, "geojson")
+    if not item.get("url", "").endswith(expected_url):
+        raise SystemExit(f"{item_id} reference URL mismatch")
+    if "reference" not in (item.get("description") or "").lower():
+        raise SystemExit(f"{item_id} must be described as reference-only context")
 
 districts = require_item("munich-public-city-districts", "geojson")
 if "gsm_wfs:vablock_stadtbezirk" not in districts.get("url", ""):
@@ -444,17 +491,25 @@ workbench_ids = set(init.get("workbench") or [])
 for disabled_by_default in (
     "city-intelligence-munich-pharmacies",
     "real-estate-munich-fnp",
-    "real-estate-munich-bebauungsplaene",
+    "real-estate-munich-bebauungsplaene-in-kraft",
+    "real-estate-munich-bebauungsplaene-in-aufstellung",
     "real-estate-bavaria-bodenrichtwerte-2026",
+    "reference-munich-gutachterausschuss-lagekarte",
+    "reference-munich-mietspiegel-2025-wohnlagenkarte",
+    "real-estate-munich-preservation-areas",
     "real-estate-munich-flood-areas",
     "real-estate-munich-landscape-protection",
     "real-estate-munich-nature-protection",
     "real-estate-munich-noise-mitigation",
+    "real-estate-buildings-lod2-footprint",
+    "reference-bavaria-hausumringe",
+    "reference-alkis-tatsaechliche-nutzung",
     "real-estate-demand-offices",
     "real-estate-demand-restaurants",
     "real-estate-demand-clinics",
     "real-estate-demand-pharmacies",
     "real-estate-demand-coworking",
+    "real-estate-demand-transit-rail",
     "munich-public-city-districts",
     "munich-public-traffic-signals",
     "munich-public-construction-sites",
@@ -560,6 +615,10 @@ grep -q "yarn gulp dev" docs/manual-qa-checklist.md || fail "manual QA checklist
 grep -q "python3 backend/app.py --host 127.0.0.1 --port 8000" docs/local-backend.md || fail "local backend docs must include run command"
 grep -q "bash scripts/refresh-all-datasets.sh --dry-run" docs/local-data-refresh.md || fail "local refresh docs must include dry-run command"
 grep -q "Export Outreach Queue CSV" docs/outreach-workflow.md || fail "outreach docs must mention queue CSV export"
+grep -q "Real Estate Legend" open-source/TerriaMap/lib/Views/InvestorIntelligencePanel.jsx || fail "Investor panel must include the real-estate legend"
+grep -q "Generate Area Report" open-source/TerriaMap/lib/Views/InvestorIntelligencePanel.jsx || fail "Investor panel must include area report generation"
+grep -q "Market Context" docs/real-estate-intelligence.md || fail "real-estate docs must explain investor sub-scores"
+grep -q "GetFeatureInfo" docs/real-estate-intelligence.md || fail "real-estate docs must explain selected-feature factual attributes"
 pass "project run commands and local workflows are documented"
 
 pass "project health check complete"

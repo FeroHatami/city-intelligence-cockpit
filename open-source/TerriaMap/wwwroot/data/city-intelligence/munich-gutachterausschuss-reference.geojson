@@ -1,0 +1,26 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.57549, 48.13743]
+      },
+      "properties": {
+        "name": "Gutachterausschuss Muenchen Lagekarte reference",
+        "category": "Real Estate Reference Source",
+        "reference_type": "market_context_reference",
+        "coverage": "Munich",
+        "access_model": "Official reference page; no stable no-key WMS/GeoJSON Lagekarte endpoint confirmed",
+        "url": "https://stadt.muenchen.de/infos/gutachterausschuss.html",
+        "related_url": "https://stadt.muenchen.de/infos/bodenrichtwerte.html",
+        "notes": "Reference-only anchor. Marker is not a property, transaction, parcel, or Lagekarte feature location.",
+        "source": "Gutachterausschuss Muenchen / Landeshauptstadt Muenchen",
+        "data_source": "Gutachterausschuss Muenchen / Landeshauptstadt Muenchen",
+        "verification_status": "reference_only",
+        "last_checked_at": "2026-06-24T00:00:00Z"
+      }
+    }
+  ]
+}
