@@ -16,7 +16,9 @@ The script verifies:
 - feature counts are printed for review
 - office sublayer counts sum to `6,706`
 - all GeoJSON features include local verification fields
-- catalog order, pharmacy-only workbench, OpenStreetMap/Esri/CARTO basemaps, public dataset groups, and optional visual layers are valid
+- catalog order, empty startup workbench, OpenStreetMap/Esri/CARTO basemaps, public dataset groups, and optional visual layers are valid
+- Real Estate Intelligence catalog groups, official WMS layer names, and
+  OSM-derived demand-driver references are valid
 - public catalogue groups do not contain empty placeholder groups
 - risky tracked files such as `node_modules`, build output, logs, caches, and `.env*` are absent
 - local SQLite DBs, generated logs, Python caches, `.sqlite`, `.db`, and `.pyc`

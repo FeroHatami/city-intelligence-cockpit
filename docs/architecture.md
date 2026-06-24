@@ -26,6 +26,10 @@ Important app files:
   panel and mini CRM controls.
 - `open-source/TerriaMap/lib/CityIntelligence/leads.ts`: local lead storage,
   import/export, scoring, and outreach helpers.
+- `open-source/TerriaMap/lib/Views/InvestorIntelligencePanel.jsx`: local
+  investor-signal panel for Munich planning-zone / land-use research.
+- `open-source/TerriaMap/lib/CityIntelligence/investorIntelligence.ts`:
+  rule-based real-estate demand-driver scoring helpers.
 - `backend/app.py`: optional localhost lead API for manual SQLite sync.
 - `backend/db.py`: SQLite persistence helpers used by the backend and scripts.
 
@@ -50,6 +54,11 @@ Business data is generated from OSM/Overpass scripts in `scripts/`:
 Public data layers are configured in `city-intelligence.json` when they are
 stable, no-key, and useful in the app. Unstable sources are documented instead
 of exposed as broken catalog items.
+
+Real Estate Intelligence WMS layers are configured as raw official planning,
+land-value, and constraint visualizations. The Investor Intelligence panel uses
+those layers only as factual context; its score is derived local analysis and is
+not an official rating.
 
 ## Lead Workflow
 

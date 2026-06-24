@@ -10,6 +10,9 @@ city data platform yet.
 - Overpass results depend on the tags present in OSM at fetch time.
 - Public WMS/WFS services can change URLs, layer names, schemas, or uptime.
 - Official public datasets can still have update delays or field caveats.
+- Real Estate Intelligence scores are derived planning-zone / land-use signals,
+  not official ratings and not legal, tax, or investment advice.
+- The app does not provide private parcel ownership data.
 - Munich 3D local examples are official dataset footprints and metadata, not a
   live streamed 3D city model.
 

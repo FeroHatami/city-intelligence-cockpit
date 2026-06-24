@@ -32,6 +32,9 @@ Recommended screenshots:
 - Office sublayers for law firms, consultants, real estate, insurance,
   government, company offices, office buildings, and other offices.
 - Official Munich, Germany, and Europe public dataset catalog groups.
+- Real Estate Intelligence catalog group with official Munich/Bavaria planning,
+  zoning, land-value, and risk-context WMS layers.
+- Investor Intelligence panel with local rule-based investment-signal scoring.
 - Research-only Europe GICS company-data source references, a visible local
   reference layer, and an import template.
 - Optional Munich/Bavaria 3D local example footprints.
@@ -82,10 +85,15 @@ The current prototype is intentionally local and free:
 Scoring and outreach generation are local rule-based workflows. They do not call
 external AI services. The outreach queue does not send email or messages.
 
+The Investor Intelligence panel uses local rule-based scoring by default. It can
+optionally try a local Ollama rewrite if Ollama is already running, but the app
+does not require Ollama.
+
 ## Data Layers
 
-The startup workbench enables `Munich Pharmacies` by default. Heavier layers are
-available in the catalog and disabled until selected.
+The startup workbench starts empty. All business layers, including
+`Munich Pharmacies`, are available in the catalog and stay disabled until
+selected.
 
 Business layers:
 
@@ -115,6 +123,9 @@ Public dataset catalog groups:
 
 Public catalog details are documented in
 [`docs/data-sources.md`](docs/data-sources.md).
+
+Real Estate Intelligence details are documented in
+[`docs/real-estate-intelligence.md`](docs/real-estate-intelligence.md).
 
 ## Lead Workflow
 

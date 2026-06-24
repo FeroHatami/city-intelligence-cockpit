@@ -34,7 +34,7 @@ The optional SQLite backend is a localhost-only manual sync path.
   Germany, Europe, and Visual Reference catalog groups.
 - City Intelligence Cockpit business layers and office sublayers appeared in the
   catalog.
-- Munich Pharmacies stayed default-enabled.
+- Startup workbench was changed to stay empty so no dataset loads until selected.
 - Selected-feature import from a visible Munich pharmacy feature created a lead.
 - Re-importing the same OSM feature triggered duplicate protection instead of
   creating a second lead.
@@ -63,7 +63,7 @@ The health check verified:
 - office sublayers sum to `6,706`
 - verification fields exist on GeoJSON features
 - catalog top-level groups are ordered correctly
-- only Munich Pharmacies is in the default workbench
+- the startup workbench is empty
 - OpenStreetMap, Esri World Topographic, Satellite View, and CARTO Voyager
   basemap configuration remains present
 - Natural Earth is not enabled in the custom init

@@ -4,6 +4,8 @@ City Intelligence Cockpit uses two kinds of sources:
 
 - local business intelligence GeoJSON generated from OpenStreetMap via Overpass API
 - official public dataset catalog entries for Munich, Germany, and Europe
+- official Munich/Bavaria planning and land-value WMS layers for Real Estate
+  Intelligence
 
 The business source files live in:
 
@@ -33,6 +35,7 @@ checks the website, phone, address, and current business status.
 The public catalog is organized into:
 
 - `Munich Public Datasets`
+- `Real Estate Intelligence`
 - `Germany Public Datasets`
 - `Europe Public Datasets`
 - `Visual Reference Layers`
@@ -67,62 +70,76 @@ Optional no-key visual reference layers are kept in:
 - Basemaps & Visual References
 - Munich 3D Dataset Footprints
 
+Real Estate Intelligence is grouped into:
+
+- Planning & Zoning
+- Land Values
+- Risk & Constraints
+- Demand Drivers
+
 ### Real Public Layers
 
-| Catalog layer | Type | Source |
-| --- | --- | --- |
-| Munich City Districts (Official GeoJSON) | GeoJSON/WFS | Munich GeoPortal, `vablock_stadtbezirk` |
-| Munich Traffic Signals (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `Lichtsignalanlagen` |
-| Munich Construction Sites - Next 4 Weeks (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `baustellen_opendata` |
-| Munich Disabled Parking (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `behindertenparkplaetze` |
-| Munich EV Charging Locations (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_els_standort_point` |
-| Munich EV Charging Pillars (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_els_saeule_point` |
-| Munich Mobility Points (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mp_standort_point` |
-| Munich Carsharing Parking (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_carsharing` |
-| Munich Signed Cycling Network (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `rad_rsp_route_line` |
-| Munich Old Town Cycling Ring (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `rad_altstadt_radlring_line` |
-| Munich Bike-Sharing Parking Areas (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_abstellfl_bs` |
-| Munich E-Scooter Parking Areas (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_abstellfl_ts` |
-| Munich E-Moped Parking Areas (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_abstellfl_ms` |
-| Munich Cargo-Bike Sharing Parking Areas (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_abstellfl_ls` |
-| Munich E-Scooter Geofences (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_geofences_poly` |
-| Munich Digital 3L Zones (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `digitale_3l_zonen` |
-| Munich Drinking Fountains (Official GeoJSON) | GeoJSON/WFS | Munich Open Data / GeoPortal, `Stadtplan der staedtischen Trinkbrunnen` |
-| Germany basemap.de Web Raster Color (Official WMS) | WMS | BKG / basemap.de, `de_basemapde_web_raster_farbe` |
-| Germany basemap.de Web Raster Gray (Official WMS) | WMS | BKG / basemap.de, `de_basemapde_web_raster_grau` |
-| Germany Federal States - VG250 (Official WMS) | WMS | BKG VG250, `vg250_lan` |
-| Germany Districts - VG250 (Official WMS) | WMS | BKG VG250, `vg250_krs` |
-| Germany Municipalities - VG250 (Official WMS) | WMS | BKG VG250, `vg250_gem` |
-| Germany Administrative Boundary Lines - VG250 (Official WMS) | WMS | BKG VG250, `vg250_li` |
-| Europe Countries 2024 (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO countries 2024 |
-| EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
-| EU NUTS 2024 Level 1 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
-| EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
-| EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON) | GeoJSON | Eurostat/GISCO NUTS 2024 |
-| Corine Land Cover 2018 Raster (Copernicus/EEA WMS) | WMS | EEA / Copernicus Land Monitoring Service |
-| Corine Land Cover 2018 Vector (Copernicus/EEA WMS) | WMS | EEA / Copernicus Land Monitoring Service |
-| Europe GICS Company Data Source References | GeoJSON | Local reference anchors for official/licensed GICS source paths |
+| Catalog layer                                                | Type        | Source                                                                          |
+| ------------------------------------------------------------ | ----------- | ------------------------------------------------------------------------------- |
+| Munich City Districts (Official GeoJSON)                     | GeoJSON/WFS | Munich GeoPortal, `vablock_stadtbezirk`                                         |
+| Munich Traffic Signals (Official GeoJSON)                    | GeoJSON/WFS | Munich Open Data / GeoPortal, `Lichtsignalanlagen`                              |
+| Munich Construction Sites - Next 4 Weeks (Official GeoJSON)  | GeoJSON/WFS | Munich Open Data / GeoPortal, `baustellen_opendata`                             |
+| Munich Disabled Parking (Official GeoJSON)                   | GeoJSON/WFS | Munich Open Data / GeoPortal, `behindertenparkplaetze`                          |
+| Munich EV Charging Locations (Official GeoJSON)              | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_els_standort_point`                       |
+| Munich EV Charging Pillars (Official GeoJSON)                | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_els_saeule_point`                         |
+| Munich Mobility Points (Official GeoJSON)                    | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mp_standort_point`                        |
+| Munich Carsharing Parking (Official GeoJSON)                 | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_carsharing`                               |
+| Munich Signed Cycling Network (Official GeoJSON)             | GeoJSON/WFS | Munich Open Data / GeoPortal, `rad_rsp_route_line`                              |
+| Munich Old Town Cycling Ring (Official GeoJSON)              | GeoJSON/WFS | Munich Open Data / GeoPortal, `rad_altstadt_radlring_line`                      |
+| Munich Bike-Sharing Parking Areas (Official GeoJSON)         | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_abstellfl_bs`                         |
+| Munich E-Scooter Parking Areas (Official GeoJSON)            | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_abstellfl_ts`                         |
+| Munich E-Moped Parking Areas (Official GeoJSON)              | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_abstellfl_ms`                         |
+| Munich Cargo-Bike Sharing Parking Areas (Official GeoJSON)   | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_abstellfl_ls`                         |
+| Munich E-Scooter Geofences (Official GeoJSON)                | GeoJSON/WFS | Munich Open Data / GeoPortal, `ruhver_mim_geofences_poly`                       |
+| Munich Digital 3L Zones (Official GeoJSON)                   | GeoJSON/WFS | Munich Open Data / GeoPortal, `digitale_3l_zonen`                               |
+| Munich Drinking Fountains (Official GeoJSON)                 | GeoJSON/WFS | Munich Open Data / GeoPortal, `Stadtplan der staedtischen Trinkbrunnen`         |
+| Munich Flächennutzungsplan / FNP (Official WMS)              | WMS         | Munich GeoPortal planning WMS, `g_fnp`                                          |
+| Munich Bebauungspläne (Official WMS)                         | WMS         | Munich GeoPortal planning WMS, `baug_umgriff_veredelt_in_kraft_und_aufstellung` |
+| Bodenrichtwerte Bayern / Munich 2026 (Official WMS)          | WMS         | GDI Bayern / LDBV VBORIS, `bodenrichtwerte_2026`                                |
+| Munich Flood / Water Constraint Areas (Official WMS)         | WMS         | Munich GeoPortal planning WMS, `step_2024_ueberschwemmungsgebiete_c4`           |
+| Munich Landscape Protection Areas (Official WMS)             | WMS         | Munich GeoPortal planning WMS, `schutz_unb_lsg_poly`                            |
+| Munich Nature Protection Areas (Official WMS)                | WMS         | Munich GeoPortal planning WMS, `naturschutzgebiet`                              |
+| Munich Noise Mitigation Planning 2024 (Official WMS)         | WMS         | Munich GeoPortal planning WMS, `inko_02_laermminderungsplan`                    |
+| Germany basemap.de Web Raster Color (Official WMS)           | WMS         | BKG / basemap.de, `de_basemapde_web_raster_farbe`                               |
+| Germany basemap.de Web Raster Gray (Official WMS)            | WMS         | BKG / basemap.de, `de_basemapde_web_raster_grau`                                |
+| Germany Federal States - VG250 (Official WMS)                | WMS         | BKG VG250, `vg250_lan`                                                          |
+| Germany Districts - VG250 (Official WMS)                     | WMS         | BKG VG250, `vg250_krs`                                                          |
+| Germany Municipalities - VG250 (Official WMS)                | WMS         | BKG VG250, `vg250_gem`                                                          |
+| Germany Administrative Boundary Lines - VG250 (Official WMS) | WMS         | BKG VG250, `vg250_li`                                                           |
+| Europe Countries 2024 (GISCO GeoJSON)                        | GeoJSON     | Eurostat/GISCO countries 2024                                                   |
+| EU NUTS 2024 Level 0 Boundaries (GISCO GeoJSON)              | GeoJSON     | Eurostat/GISCO NUTS 2024                                                        |
+| EU NUTS 2024 Level 1 Boundaries (GISCO GeoJSON)              | GeoJSON     | Eurostat/GISCO NUTS 2024                                                        |
+| EU NUTS 2024 Level 2 Boundaries (GISCO GeoJSON)              | GeoJSON     | Eurostat/GISCO NUTS 2024                                                        |
+| EU NUTS 2024 Level 3 Boundaries (GISCO GeoJSON)              | GeoJSON     | Eurostat/GISCO NUTS 2024                                                        |
+| Corine Land Cover 2018 Raster (Copernicus/EEA WMS)           | WMS         | EEA / Copernicus Land Monitoring Service                                        |
+| Corine Land Cover 2018 Vector (Copernicus/EEA WMS)           | WMS         | EEA / Copernicus Land Monitoring Service                                        |
+| Europe GICS Company Data Source References                   | GeoJSON     | Local reference anchors for official/licensed GICS source paths                 |
 
 ### Selectable Basemaps
 
-| Basemap | Type | Source |
-| --- | --- | --- |
-| OpenStreetMap | OSM tiles | OpenStreetMap contributors |
-| Esri World Topographic | ArcGIS MapServer | Esri and data providers |
-| Satellite View | ArcGIS MapServer | Esri World Imagery and data providers |
-| CARTO Voyager | OSM-compatible raster tiles | OpenStreetMap contributors / CARTO |
+| Basemap                | Type                        | Source                                |
+| ---------------------- | --------------------------- | ------------------------------------- |
+| OpenStreetMap          | OSM tiles                   | OpenStreetMap contributors            |
+| Esri World Topographic | ArcGIS MapServer            | Esri and data providers               |
+| Satellite View         | ArcGIS MapServer            | Esri World Imagery and data providers |
+| CARTO Voyager          | OSM-compatible raster tiles | OpenStreetMap contributors / CARTO    |
 
 ### Optional Demo Visuals
 
-| Catalog layer | Type | Source |
-| --- | --- | --- |
-| Satellite View (Optional Visual Layer) | URL template imagery | EOX Sentinel-2 cloudless 2025 |
-| Germany basemap.de Context (Optional WMS) | WMS | BKG / basemap.de |
-| Munich LoD2 3D Buildings (Official CityGML Footprint) | GeoJSON footprint | Bavaria OpenData / LDBV, LoD2 CityGML metadata |
-| Munich DGM1 Terrain Model (Official GeoTIFF Footprint) | GeoJSON footprint | Bavaria OpenData / LDBV, DGM1 metadata |
-| Munich DOM20 Surface Model (Official GeoTIFF Footprint) | GeoJSON footprint | Bavaria OpenData / LDBV, DOM20 metadata |
-| Munich Laser Point Cloud (Official LAZ Footprint) | GeoJSON footprint | Bavaria OpenData / LDBV, laser data metadata |
-| Munich DOM Mesh Project Areas (Official SLPK Footprints) | GeoJSON footprint | Bavaria OpenData / LDBV, DOM Mesh project metadata |
+| Catalog layer                                            | Type                 | Source                                             |
+| -------------------------------------------------------- | -------------------- | -------------------------------------------------- |
+| Satellite View (Optional Visual Layer)                   | URL template imagery | EOX Sentinel-2 cloudless 2025                      |
+| Germany basemap.de Context (Optional WMS)                | WMS                  | BKG / basemap.de                                   |
+| Munich LoD2 3D Buildings (Official CityGML Footprint)    | GeoJSON footprint    | Bavaria OpenData / LDBV, LoD2 CityGML metadata     |
+| Munich DGM1 Terrain Model (Official GeoTIFF Footprint)   | GeoJSON footprint    | Bavaria OpenData / LDBV, DGM1 metadata             |
+| Munich DOM20 Surface Model (Official GeoTIFF Footprint)  | GeoJSON footprint    | Bavaria OpenData / LDBV, DOM20 metadata            |
+| Munich Laser Point Cloud (Official LAZ Footprint)        | GeoJSON footprint    | Bavaria OpenData / LDBV, laser data metadata       |
+| Munich DOM Mesh Project Areas (Official SLPK Footprints) | GeoJSON footprint    | Bavaria OpenData / LDBV, DOM Mesh project metadata |
 
 The old non-Munich local CZML/glTF demo is removed from the custom catalogue.
 The Munich 3D entries are official download footprints and metadata, not live

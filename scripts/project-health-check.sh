@@ -46,6 +46,7 @@ KEY_FILES=(
   "docs/manual-qa-checklist.md"
   "docs/outreach-workflow.md"
   "docs/project-health-check.md"
+  "docs/real-estate-intelligence.md"
   "docs/roadmap.md"
   "docs/screenshots/README.md"
   "backend/README.md"
@@ -58,8 +59,10 @@ KEY_FILES=(
   "open-source/TerriaMap/wwwroot/data/city-intelligence/europe-gics-company-data-sources.geojson"
   "open-source/TerriaMap/wwwroot/index.ejs"
   "open-source/TerriaMap/wwwroot/init/city-intelligence.json"
+  "open-source/TerriaMap/lib/CityIntelligence/investorIntelligence.ts"
   "open-source/TerriaMap/lib/CityIntelligence/leads.ts"
   "open-source/TerriaMap/lib/Views/CityIntelligenceLeadPanel.jsx"
+  "open-source/TerriaMap/lib/Views/InvestorIntelligencePanel.jsx"
   "scripts/add-verification-fields.py"
   "scripts/create-lead-from-feature.py"
   "scripts/export-leads-from-sqlite.py"
@@ -162,6 +165,7 @@ init = json.loads((root / "open-source" / "TerriaMap" / "wwwroot" / "init" / "ci
 top_level_groups = [item["name"] for item in init["catalog"]]
 expected_top_level_groups = [
     "City Intelligence Cockpit",
+    "Real Estate Intelligence",
     "Munich Public Datasets",
     "Germany Public Datasets",
     "Europe Public Datasets",
@@ -189,7 +193,7 @@ members = init["catalog"][0]["members"]
 actual_order = [item["name"] for item in members]
 if actual_order != expected_order:
     raise SystemExit(f"catalog order mismatch: {actual_order}")
-if init.get("workbench") != ["city-intelligence-munich-pharmacies"]:
+if init.get("workbench") != []:
     raise SystemExit(f"workbench mismatch: {init.get('workbench')}")
 base_maps = init.get("baseMaps", {})
 if base_maps.get("defaultBaseMapId") != "basemap-openstreetmap":
@@ -262,6 +266,10 @@ def require_item(item_id, item_type):
 
 
 for group_id in (
+    "real-estate-planning-zoning",
+    "real-estate-land-values",
+    "real-estate-risk-constraints",
+    "real-estate-demand-drivers",
     "munich-boundaries-administration",
     "munich-transport-mobility",
     "munich-environment-green-space",
@@ -293,6 +301,58 @@ if "europe-gics-company-data-sources.geojson" not in gics_reference_layer.get("u
 for item in walk(init["catalog"]):
     if item.get("type") == "group" and item.get("members") == []:
         raise SystemExit(f"empty catalog group found: {item.get('id') or item.get('name')}")
+
+for item_id, expected_url, expected_layers in (
+    ("real-estate-munich-fnp", "geoportal.muenchen.de/geoserver/plan/wms", "g_fnp"),
+    (
+        "real-estate-munich-bebauungsplaene",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "baug_umgriff_veredelt_in_kraft_und_aufstellung",
+    ),
+    (
+        "real-estate-bavaria-bodenrichtwerte-2026",
+        "gdi.bayern.de/services/bodenrichtwerte/2026/vboris",
+        "bodenrichtwerte_2026",
+    ),
+    (
+        "real-estate-munich-flood-areas",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "step_2024_ueberschwemmungsgebiete_c4",
+    ),
+    (
+        "real-estate-munich-landscape-protection",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "schutz_unb_lsg_poly",
+    ),
+    (
+        "real-estate-munich-nature-protection",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "naturschutzgebiet",
+    ),
+    (
+        "real-estate-munich-noise-mitigation",
+        "geoportal.muenchen.de/geoserver/plan/wms",
+        "inko_02_laermminderungsplan",
+    ),
+):
+    item = require_item(item_id, "wms")
+    if expected_url not in item.get("url", "") or item.get("layers") != expected_layers:
+        raise SystemExit(f"{item_id} WMS configuration mismatch")
+    if "official" not in (item.get("description") or "").lower():
+        raise SystemExit(f"{item_id} must describe official source data")
+
+for item_id, expected_url in (
+    ("real-estate-demand-offices", "munich-offices.geojson"),
+    ("real-estate-demand-restaurants", "munich-restaurants.geojson"),
+    ("real-estate-demand-clinics", "munich-clinics.geojson"),
+    ("real-estate-demand-pharmacies", "munich-pharmacies.geojson"),
+    ("real-estate-demand-coworking", "munich-coworking.geojson"),
+):
+    item = require_item(item_id, "geojson")
+    if not item.get("url", "").endswith(expected_url):
+        raise SystemExit(f"{item_id} URL mismatch")
+    if "OSM-derived" not in (item.get("description") or ""):
+        raise SystemExit(f"{item_id} must describe open/community OSM source data")
 
 districts = require_item("munich-public-city-districts", "geojson")
 if "gsm_wfs:vablock_stadtbezirk" not in districts.get("url", ""):
@@ -382,6 +442,19 @@ for item_id, expected_url in (
 
 workbench_ids = set(init.get("workbench") or [])
 for disabled_by_default in (
+    "city-intelligence-munich-pharmacies",
+    "real-estate-munich-fnp",
+    "real-estate-munich-bebauungsplaene",
+    "real-estate-bavaria-bodenrichtwerte-2026",
+    "real-estate-munich-flood-areas",
+    "real-estate-munich-landscape-protection",
+    "real-estate-munich-nature-protection",
+    "real-estate-munich-noise-mitigation",
+    "real-estate-demand-offices",
+    "real-estate-demand-restaurants",
+    "real-estate-demand-clinics",
+    "real-estate-demand-pharmacies",
+    "real-estate-demand-coworking",
     "munich-public-city-districts",
     "munich-public-traffic-signals",
     "munich-public-construction-sites",

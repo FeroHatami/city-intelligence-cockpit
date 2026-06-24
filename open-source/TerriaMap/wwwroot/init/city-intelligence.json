@@ -17,14 +17,14 @@
       "id": "city-intelligence-cockpit",
       "type": "group",
       "name": "City Intelligence Cockpit",
-      "isOpen": true,
+      "isOpen": false,
       "members": [
         {
           "id": "city-intelligence-munich-pharmacies",
           "type": "geojson",
           "name": "Munich Pharmacies",
           "url": "data/city-intelligence/munich-pharmacies.geojson",
-          "description": "Pharmacy locations in the Munich prototype bounds from OpenStreetMap via Overpass. Styled green and enabled by default as the primary lead-discovery layer.",
+          "description": "Pharmacy locations in the Munich prototype bounds from OpenStreetMap via Overpass. Styled green and available from the catalog as a primary lead-discovery layer.",
           "style": {
             "marker-color": "#16a34a",
             "marker-size": "medium"
@@ -161,6 +161,223 @@
             "marker-color": "#f97316",
             "marker-size": "small"
           }
+        }
+      ]
+    },
+    {
+      "id": "real-estate-intelligence",
+      "type": "group",
+      "name": "Real Estate Intelligence",
+      "isOpen": false,
+      "description": "Official Munich/Bavaria planning, land-use, land-value, and risk-context layers plus derived local investor-signal tools. Official WMS layers are raw factual data. Investor scoring is derived analysis, not an official city rating.",
+      "members": [
+        {
+          "id": "real-estate-planning-zoning",
+          "type": "group",
+          "name": "Planning & Zoning",
+          "description": "Official Munich planning WMS layers for land-use and building-plan context. These are factual visual layers; interpretation must be checked against official planning documents.",
+          "members": [
+            {
+              "id": "real-estate-munich-fnp",
+              "type": "wms",
+              "name": "Munich Flächennutzungsplan / FNP (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "g_fnp",
+              "description": "Raw factual planning visualization from the official Munich GeoPortal WMS. Shows the digital Flächennutzungsplan / long-term land-use planning context for Munich. Source: Landeshauptstadt Muenchen GeoPortal, WMS, official planning data.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.7
+            },
+            {
+              "id": "real-estate-munich-bebauungsplaene",
+              "type": "wms",
+              "name": "Munich Bebauungspläne (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "baug_umgriff_veredelt_in_kraft_und_aufstellung",
+              "description": "Raw factual planning visualization from the official Munich GeoPortal WMS. Shows legally binding building plans and building plans in preparation where available. Source: Landeshauptstadt Muenchen GeoPortal, WMS, official planning data.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.75
+            }
+          ]
+        },
+        {
+          "id": "real-estate-land-values",
+          "type": "group",
+          "name": "Land Values",
+          "description": "Official Bavaria land-value WMS context. This is raw official visualization data; fee/legal conditions for official land-value extracts may apply outside this map view.",
+          "members": [
+            {
+              "id": "real-estate-bavaria-bodenrichtwerte-2026",
+              "type": "wms",
+              "name": "Bodenrichtwerte Bayern / Munich 2026 (Official WMS)",
+              "url": "https://gdi.bayern.de/services/bodenrichtwerte/2026/vboris",
+              "layers": "bodenrichtwerte_2026",
+              "description": "Raw factual official land-value-zone visualization from the Bavaria VBORIS / GDI Bayern WMS. Source: Landesamt fuer Digitalisierung, Breitband und Vermessung / GDI Bayern, WMS, official state land-value data.",
+              "dataCustodian": "[GDI Bayern / LDBV](https://geodaten.bayern.de/)",
+              "metadataUrls": [
+                {
+                  "title": "Bavaria Bodenrichtwerte 2026 WMS GetCapabilities",
+                  "url": "https://gdi.bayern.de/services/bodenrichtwerte/2026/vboris?SERVICE=WMS&REQUEST=GetCapabilities"
+                },
+                {
+                  "title": "BORIS Bayern",
+                  "url": "https://www.boris-bayern.de/"
+                }
+              ],
+              "opacity": 0.72
+            }
+          ]
+        },
+        {
+          "id": "real-estate-risk-constraints",
+          "type": "group",
+          "name": "Risk & Constraints",
+          "description": "Official Munich planning/environment context layers. These layers identify possible constraints for deeper research but do not replace legal or technical due diligence.",
+          "members": [
+            {
+              "id": "real-estate-munich-flood-areas",
+              "type": "wms",
+              "name": "Munich Flood / Water Constraint Areas (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "step_2024_ueberschwemmungsgebiete_c4",
+              "description": "Official Munich planning WMS context for flood / water constraint areas from STEP 2024 climate adaptation layers. Raw factual/context data; verify exact regulatory effect with official documents.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.7
+            },
+            {
+              "id": "real-estate-munich-landscape-protection",
+              "type": "wms",
+              "name": "Munich Landscape Protection Areas (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "schutz_unb_lsg_poly",
+              "description": "Official Munich WMS landscape-protection polygons. Raw factual/environmental constraint data from the city GeoPortal.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.65
+            },
+            {
+              "id": "real-estate-munich-nature-protection",
+              "type": "wms",
+              "name": "Munich Nature Protection Areas (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "naturschutzgebiet",
+              "description": "Official Munich WMS nature-protection areas. Raw factual/environmental constraint data from the city GeoPortal.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.65
+            },
+            {
+              "id": "real-estate-munich-noise-mitigation",
+              "type": "wms",
+              "name": "Munich Noise Mitigation Planning 2024 (Official WMS)",
+              "url": "https://geoportal.muenchen.de/geoserver/plan/wms",
+              "layers": "inko_02_laermminderungsplan",
+              "description": "Official Munich WMS planning context for noise mitigation planning. Raw factual/context layer; verify specific constraints with official documents.",
+              "dataCustodian": "[Landeshauptstadt Muenchen GeoPortal](https://geoportal.muenchen.de/portal/)",
+              "metadataUrls": [
+                {
+                  "title": "Munich planning WMS GetCapabilities",
+                  "url": "https://geoportal.muenchen.de/geoserver/plan/wms?SERVICE=WMS&REQUEST=GetCapabilities"
+                }
+              ],
+              "opacity": 0.7
+            }
+          ]
+        },
+        {
+          "id": "real-estate-demand-drivers",
+          "type": "group",
+          "name": "Demand Drivers",
+          "description": "Existing City Intelligence Cockpit OSM-derived business layers reused as demand-driver context for derived investor scoring. These are open/community data, not official planning data.",
+          "members": [
+            {
+              "id": "real-estate-demand-offices",
+              "type": "geojson",
+              "name": "Demand Driver - Munich Offices",
+              "url": "data/city-intelligence/munich-offices.geojson",
+              "description": "OSM-derived office locations reused as demand-driver context for derived investor scoring. Source: OpenStreetMap / Overpass, GeoJSON, open/community data.",
+              "dataCustodian": "[OpenStreetMap contributors](https://www.openstreetmap.org/copyright)",
+              "style": {
+                "marker-color": "#374151",
+                "marker-size": "small"
+              }
+            },
+            {
+              "id": "real-estate-demand-restaurants",
+              "type": "geojson",
+              "name": "Demand Driver - Munich Restaurants",
+              "url": "data/city-intelligence/munich-restaurants.geojson",
+              "description": "OSM-derived restaurant and food-service locations reused as demand-driver context for derived investor scoring. Source: OpenStreetMap / Overpass, GeoJSON, open/community data.",
+              "dataCustodian": "[OpenStreetMap contributors](https://www.openstreetmap.org/copyright)",
+              "style": {
+                "marker-color": "#f97316",
+                "marker-size": "small"
+              }
+            },
+            {
+              "id": "real-estate-demand-clinics",
+              "type": "geojson",
+              "name": "Demand Driver - Munich Clinics",
+              "url": "data/city-intelligence/munich-clinics.geojson",
+              "description": "OSM-derived clinics, doctors, and dentists reused as service demand-driver context for derived investor scoring. Source: OpenStreetMap / Overpass, GeoJSON, open/community data.",
+              "dataCustodian": "[OpenStreetMap contributors](https://www.openstreetmap.org/copyright)",
+              "style": {
+                "marker-color": "#2563eb",
+                "marker-size": "small"
+              }
+            },
+            {
+              "id": "real-estate-demand-pharmacies",
+              "type": "geojson",
+              "name": "Demand Driver - Munich Pharmacies",
+              "url": "data/city-intelligence/munich-pharmacies.geojson",
+              "description": "OSM-derived pharmacies reused as service demand-driver context for derived investor scoring. Source: OpenStreetMap / Overpass, GeoJSON, open/community data.",
+              "dataCustodian": "[OpenStreetMap contributors](https://www.openstreetmap.org/copyright)",
+              "style": {
+                "marker-color": "#16a34a",
+                "marker-size": "small"
+              }
+            },
+            {
+              "id": "real-estate-demand-coworking",
+              "type": "geojson",
+              "name": "Demand Driver - Munich Coworking Spaces",
+              "url": "data/city-intelligence/munich-coworking.geojson",
+              "description": "OSM-derived coworking and startup workspace locations reused as business-activity demand-driver context for derived investor scoring. Source: OpenStreetMap / Overpass, GeoJSON, open/community data.",
+              "dataCustodian": "[OpenStreetMap contributors](https://www.openstreetmap.org/copyright)",
+              "style": {
+                "marker-color": "#7c3aed",
+                "marker-size": "small"
+              }
+            }
+          ]
         }
       ]
     },
@@ -1057,5 +1274,5 @@
       "basemap-carto-voyager"
     ]
   },
-  "workbench": ["city-intelligence-munich-pharmacies"]
+  "workbench": []
 }
